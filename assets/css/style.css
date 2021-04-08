@@ -1,3 +1,8 @@
+:root{
+    --clr-primary: #ff4655;
+    --clr-primary-hover: #ff3333;
+}
+
 *, *::after, *::before {
     box-sizing: border-box;
     margin: 0px;
