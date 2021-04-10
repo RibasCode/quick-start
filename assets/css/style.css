@@ -49,7 +49,7 @@ section{
     justify-content: center;
     width: 100%;
     height: 100vh;
-    min-height: 900px;
+    min-height: 768px;
 }
 
 .hero__container{
