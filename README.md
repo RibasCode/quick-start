@@ -2,28 +2,34 @@
 ## A template with the basics already set up to start a project.
 
 
-### @font-face
-Use of Poppins & Open Sans localy
-Fast performance optimitzation
 
-Google fonts CDN also comentet for fast start, if you want light weith project you can remove the local fonts
-assets/font
-assets/css/font/css
+### @font-face
+- Use of Poppins & Open Sans localy
+- Fast performance optimitzation
+
+* Also Google fonts CDN comented for fast start in case you want lighter weith project, you can remove the local files on:
+- assets/font
+- assets/css/font/css
+
 
 
 ### mobile frist
 This project it's done with mobile frist to keep good practices
 
 
+
 ### jquery
 Contains a local script for making use of jQuery on its version 3.6.0
 Fast performance optimitzation
 
-Also jQuery CDN commented for lighter project
+* Also jQuery CDN comented for fast start in case you want lighter weith project, you can remove the local files on:
+- assets/js/jquery
+
 
 
 ### butter.js
 Warning, fixed elements has to be outside of <main id="butter"> for its proper functioning
+
 
 
 ### @media
@@ -65,6 +71,7 @@ Mescla de Apple i Bootstrap
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
 
+
 #### Aple
 ```
 /*--------------------------------------------------------------
@@ -97,6 +104,7 @@ Mescla de Apple i Bootstrap
 /* Sobretaula amb height comprimit */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
+
 
 #### Bootstrap
 ```
