@@ -1,23 +1,24 @@
 # fast-start-template
 ## A template with the basics already set up to start a project.
 
-###@font-face
+### @font-face
 with Poppins & Open Sans
 Google fonts CDN also comentet for fast start, if you want light weith project you can remove the local fonts
 assets/font
 assets/css/font/css
 
-###mobile frist
+### mobile frist
+this project it's done with mobile frist to keep good practices
 
-###butter.js
+### butter.js
 warning, fixed elements has to be outside of <main id="butter"> for its proper functioning
 
 
-###@media
+### @media
 
-###Custom
+### Custom
 //mescla de Apple i Bootstrap
-
+```
 /*--------------------------------------------------------------
     @media - Custom
 --------------------------------------------------------------*/
@@ -50,8 +51,8 @@ warning, fixed elements has to be outside of <main id="butter"> for its proper f
 
 /* Sobretaula amb height comprimit */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
-
-
+```
+```
 ####Aple
 
 /*--------------------------------------------------------------
@@ -83,8 +84,8 @@ warning, fixed elements has to be outside of <main id="butter"> for its proper f
 
 /* Sobretaula amb height comprimit */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
-
-
+```
+```
 ####Bootstrap
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
@@ -104,3 +105,4 @@ warning, fixed elements has to be outside of <main id="butter"> for its proper f
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+```
