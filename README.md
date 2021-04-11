@@ -14,13 +14,13 @@
 
 
 ### mobile frist
-This project it's done with mobile frist to keep good practices
+- This project it's done with mobile frist to keep good practices
 
 
 
 ### jquery
-Contains a local script for making use of jQuery on its version 3.6.0
-Fast performance optimitzation
+- Contains a local script for making use of jQuery on its version 3.6.0
+- Fast performance optimitzation
 
 * Also jQuery CDN comented for fast start in case you want lighter weith project, you can remove the local files on:
 - assets/js/jquery
@@ -28,14 +28,14 @@ Fast performance optimitzation
 
 
 ### butter.js
-Warning, fixed elements has to be outside of <main id="butter"> for its proper functioning
+- Warning, fixed elements has to be outside of ```<main id="butter">``` for its proper functioning
 
 
 
 ### @media
 
 #### Custom
-Mescla de Apple i Bootstrap
+- Mescla de Apple i Bootstrap
 ```
 /*--------------------------------------------------------------
     @media - Custom
