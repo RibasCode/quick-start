@@ -1,23 +1,35 @@
 # fast-start-template
 ## A template with the basics already set up to start a project.
 
+
 ### @font-face
-with Poppins & Open Sans
+Use of Poppins & Open Sans localy
+Fast performance optimitzation
+
 Google fonts CDN also comentet for fast start, if you want light weith project you can remove the local fonts
 assets/font
 assets/css/font/css
 
+
 ### mobile frist
-this project it's done with mobile frist to keep good practices
+This project it's done with mobile frist to keep good practices
+
+
+### jquery
+Contains a local script for making use of jQuery on its version 3.6.0
+Fast performance optimitzation
+
+Also jQuery CDN commented for lighter project
+
 
 ### butter.js
-warning, fixed elements has to be outside of <main id="butter"> for its proper functioning
+Warning, fixed elements has to be outside of <main id="butter"> for its proper functioning
 
 
 ### @media
 
-### Custom
-//mescla de Apple i Bootstrap
+#### Custom
+Mescla de Apple i Bootstrap
 ```
 /*--------------------------------------------------------------
     @media - Custom
@@ -52,9 +64,9 @@ warning, fixed elements has to be outside of <main id="butter"> for its proper f
 /* Sobretaula amb height comprimit */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
-```
-####Aple
 
+#### Aple
+```
 /*--------------------------------------------------------------
     @media - Apple
 --------------------------------------------------------------*/
@@ -85,8 +97,9 @@ warning, fixed elements has to be outside of <main id="butter"> for its proper f
 /* Sobretaula amb height comprimit */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
+
+#### Bootstrap
 ```
-####Bootstrap
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
