@@ -1,5 +1,5 @@
 # fast-start-template
-## A template with the basics already set up to start a project.
+## A template with the basics already set up to start web projects using HTML, CSS, JavaScript and Php faster.
 
 
 
@@ -34,7 +34,7 @@
 
 ### @media
 
-#### Custom
+#### Custom (currently using this)
 - Mescla de Apple i Bootstrap
 ```
 /*--------------------------------------------------------------
