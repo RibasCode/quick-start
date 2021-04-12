@@ -31,10 +31,12 @@
 - Commented by defauld
 - Warning, fixed elements has to be outside of ```<main id="butter">``` for its proper functioning
 - if you want butter.js on your project you have to uncoment the following lines:
+```
    <!-- <script src="assets/js/butter.js"></script>
-		<script>
-			butter.init({cancelOnTouch: true});
-		</script> -->
+	<script>
+		butter.init({cancelOnTouch: true});
+	</script> -->
+```
 
 - if you dont want butter.js in your project you can remove the local files on:
 - assets/js/butter.js
@@ -45,11 +47,13 @@
 - Commented by defauld
 - A library to animate your website
 - if you want AOS on your project you have to uncoment the following lines:
+```
    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
    <!-- <script src="assets/js/aos.js"></script>
-		<script>
-			AOS.init();
-		</script> -->
+	<script>
+		AOS.init();
+	</script> -->
+```
     
 - if you dont want AOS in your project you can remove the local files on:
 - assets/css/aos.css
