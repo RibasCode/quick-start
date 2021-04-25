@@ -3,6 +3,19 @@
 :root{
     --clr-primary: #ffffff;
     --clr-primary-hover: #7f7f7f;
+        
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-broken-white: #fafafa;
+    --clr-broken-black: #1f1f1f;
+    
+    --clr-typo: #282828;
+    --clr-outline: #d1d1d1;
+    
+    --clr-shadow: rgba(0,0,0, 0.05);
+    --clr-shadow-hover: rgba(0,0,0, 0.10);
+   
+    --transition-time: 0.18s;
 }
 
 *, *::after, *::before {
