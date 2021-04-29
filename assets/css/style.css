@@ -16,6 +16,7 @@
     --clr-shadow-hover: rgba(0,0,0, 0.10);
    
     --transition-time: 0.18s;
+    --transition-ease: ease-out;
 }
 
 *, *::after, *::before {
@@ -29,10 +30,6 @@ body{
     font-weight: 300;
 }
 
-/*--------------------------------------------------------------
-    <main>
---------------------------------------------------------------*/
-
 h1,
 h2,
 h3,
@@ -41,6 +38,7 @@ h5,
 h6{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    transition: color var(--transition-time) var(--transition-ease);
 }
 
 p{
@@ -50,6 +48,16 @@ p{
 
 section{
     margin-bottom: 50px;
+}
+
+/*--------------------------------------------------------------
+    <main>
+--------------------------------------------------------------*/
+
+main{
+    /* footer effect */
+    margin-bottom: 44px;
+    background-color: var(--clr-white);
 }
 
 /*--------------------------------------------------------------
@@ -70,6 +78,32 @@ section{
     margin: 25px;
     margin-bottom: 50px;
     text-align: justify;
+}
+
+/*--------------------------------------------------------------
+    <footer>
+--------------------------------------------------------------*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    height: 44px;
+    width: 100%;
+    background-color: var(--clr-broken-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+footer p{
+    color: var(--clr-white);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    transition: color var(--transition-time) var(--transition-ease);
 }
 
 /*--------------------------------------------------------------
