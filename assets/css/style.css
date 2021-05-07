@@ -28,6 +28,13 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    /* dark theme transition */
+    transition: background-color var(--transition-time) var(--transition-ease);
+}
+
+body *{
+    /* dark theme transition 2 */
+    transition: background-color var(--transition-time) var(--transition-ease);
 }
 
 h1,
@@ -42,9 +49,7 @@ h6{
 }
 
 p{
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    font-weight: 300;
     line-height: 140%;
 }
 
