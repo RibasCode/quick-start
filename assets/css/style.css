@@ -43,11 +43,13 @@ h6{
 
 p{
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
 }
 
 section{
-    margin-bottom: 50px;
+    margin-bottom: 44px;
 }
 
 /*--------------------------------------------------------------
@@ -57,7 +59,7 @@ section{
 main{
     /* footer effect */
     margin-bottom: 44px;
-    background-color: var(--clr-white);
+    background-color: var(--clr-broken-white);
 }
 
 /*--------------------------------------------------------------
@@ -76,7 +78,7 @@ main{
 .hero__container{
     width: 550px;
     margin: 25px;
-    margin-bottom: 50px;
+    padding: 25px;
     text-align: justify;
 }
 
@@ -101,8 +103,6 @@ footer p{
     color: var(--clr-white);
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    font-size: 14px;
-    font-weight: 300;
     transition: color var(--transition-time) var(--transition-ease);
 }
 
