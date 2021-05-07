@@ -53,6 +53,10 @@ p{
     line-height: 140%;
 }
 
+a{
+    text-decoration: none;
+}
+
 section{
     margin-bottom: 44px;
 }
