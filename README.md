@@ -1,4 +1,4 @@
-# fast-start-local-template
+# fast-start-big-project
 ## A template with the basics already set up to start web projects using HTML, CSS, JavaScript and Php faster.
 
 
