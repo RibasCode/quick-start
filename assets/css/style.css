@@ -28,6 +28,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    line-height: 1.4;
     /* dark theme transition */
     transition: background-color var(--transition-time) var(--transition-ease);
 }
@@ -50,7 +51,6 @@ h6{
 
 p{
     font-size: 14px;
-    line-height: 140%;
 }
 
 a{
