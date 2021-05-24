@@ -27,6 +27,8 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    /* si treballes amb rem canviar a la mediaquery font-size: 14px per reduir el contingut d'una */
+    font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
     /* dark theme transition */
