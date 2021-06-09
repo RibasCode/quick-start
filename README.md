@@ -49,7 +49,7 @@
 - if you want AOS on your project you have to uncoment the following lines:
 ```
 	CSS at (style.css)
-	/* @import url(aos.css); */
+     /* @import url(aos.css); */
 
 	JS at (index.html)
    <!-- <script src="assets/js/aos.js"></script>
