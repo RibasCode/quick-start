@@ -7,7 +7,7 @@
 - Use of Poppins & Open Sans localy
 - Fast performance optimitzation
 
-* Also Google fonts CDN comented for fast start in case you want lighter weith project, you can remove the local files on:
+* Also a Google fonts CDN @import comented on the css, to launch a quick start in case you want a lighter weith project, you can remove the local files on:
 - assets/font
 - assets/css/font/css
 
@@ -48,7 +48,10 @@
 - A library to animate your website
 - if you want AOS on your project you have to uncoment the following lines:
 ```
-   <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+	CSS at (style.css)
+	/* @import url(aos.css); */
+
+	JS at (index.html)
    <!-- <script src="assets/js/aos.js"></script>
 	<script>
 		AOS.init();
