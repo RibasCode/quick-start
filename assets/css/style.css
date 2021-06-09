@@ -1,5 +1,11 @@
 /* Mobile frist */
 /* Extra small devices (portrait phones, less than 576px) */
+
+/* @import url(aos.css); */
+
+@import url(font.css); /* fonts en local */
+@import url(normalize.css);
+
 :root{
     --clr-primary: #ffffff;
     --clr-primary-hover: #7f7f7f;
