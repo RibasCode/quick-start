@@ -1,4 +1,4 @@
-# fast-start-template
+# quick-start-template
 ## A template with the basics already set up to start web projects using HTML, CSS, JavaScript and Php faster.
 
 
@@ -22,7 +22,7 @@
 - Contains a local script for making use of jQuery on its version 3.6.0
 - Fast performance optimitzation
 
-* Also jQuery CDN comented for fast start in case you want lighter weith project, you can remove the local files on:
+* Also jQuery CDN comented for quick start in case you want lighter weith project, you can remove the local files on:
 - assets/js/jquery
 
 
