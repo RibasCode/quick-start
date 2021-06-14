@@ -27,10 +27,10 @@
 
 
 
-### butter.js
+### butter
 - Commented by defauld
 - Warning, fixed elements has to be outside of ```<main id="butter">``` for its proper functioning
-- if you want butter.js on your project you have to uncoment the following lines:
+- if you want butter on your project you have to uncoment the following lines:
 ```
    <!-- <script src="assets/js/butter.js"></script>
 	<script>
@@ -44,7 +44,7 @@
 
 
 
-### Normalize
+### normalize
 - A library to neutralize css styles in all browsers
 - you can find normalize.css at:
 ```
