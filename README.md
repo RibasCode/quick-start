@@ -18,7 +18,7 @@
 
 
 
-### jquery
+### jQuery
 - Contains a local script for making use of jQuery on its version 3.6.0
 - Fast performance optimitzation
 
@@ -41,6 +41,24 @@
 - if you dont want butter.js in your project you can remove the local files on:
 - assets/js/butter.js
 - and its respective lines of code previously mentioned
+
+
+
+### AOS
+- Commented by defauld
+- A library to animate your website
+- if you want AOS on your project you have to uncoment the following lines:
+```
+	CSS at (style.css)
+     /* @import url(aos.css); */
+
+	JS at (index.html)
+   <!-- <script src="assets/js/aos.js"></script>
+	<script>
+		AOS.init();
+	</script> -->
+```
+
 
 
 ### AOS
