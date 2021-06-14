@@ -44,19 +44,13 @@
 
 
 
-### AOS
-- Commented by defauld
-- A library to animate your website
-- if you want AOS on your project you have to uncoment the following lines:
+### Normalize
+- A library to neutralize css styles in all browsers
+- you can find normalize.css at:
 ```
 	CSS at (style.css)
-     /* @import url(aos.css); */
+     /* @import url(normalize.css); */
 
-	JS at (index.html)
-   <!-- <script src="assets/js/aos.js"></script>
-	<script>
-		AOS.init();
-	</script> -->
 ```
 
 
