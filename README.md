@@ -95,8 +95,8 @@
 /* Large devices (portatils petits, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
-/* Large devices (portatils, 1200px and up) */
-@media (min-width: 1200px) { ... }
+/* Large devices (portatils, 1281px and up) */
+@media (min-width: 1281px) { ... }
 
 /* Extra large devices (sobretaula, 1441px and up) */
 @media (min-width: 1441px) { ... }
