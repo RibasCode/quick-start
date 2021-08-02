@@ -66,7 +66,8 @@ a, a:visited, a:hover{
 }
 
 section{
-    margin-bottom: 44px;
+    width: 100%;
+    min-height: 768px;
 }
 
 /*--------------------------------------------------------------
@@ -83,16 +84,14 @@ main{
     <section> - hero
 --------------------------------------------------------------*/
 
-.hero{
+.section-hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
     height: 100vh;
-    min-height: 768px;
 }
 
-.hero__container{
+.hero-container{
     width: 550px;
     margin: 25px;
     padding: 25px;
@@ -104,10 +103,12 @@ main{
 --------------------------------------------------------------*/
 
 footer{
+    /* footer effect */
+    z-index: -1;
     position: fixed;
     bottom: 0;
-    z-index: -1;
     height: 44px;
+
     width: 100%;
     background-color: var(--clr-broken-black);
     display: flex;
@@ -148,9 +149,12 @@ footer p{
 }
 
 /* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
-/* Apartir d'aquí es solen col·locar caixes de 1440px en total perque creixin els laterals depenent l'amplada o simplement full with */
+/* Apartir d'aquí es sol col·locar main{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
 @media (min-width: 1441px) {
-
+    section{
+        margin: 0 auto;
+        max-width: 1440px;
+    }
 }
 
 /*--------------------------------------------------------------
