@@ -149,7 +149,7 @@ footer p{
 }
 
 /* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
-/* Apartir d'aquí es sol col·locar main{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
+/* Apartir d'aquí es sol col·locar section{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
 @media (min-width: 1441px) {
     section{
         margin: 0 auto;

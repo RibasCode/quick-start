@@ -98,7 +98,8 @@
 /* Large devices (portatils, 1281px and up) */
 @media (min-width: 1281px) { ... }
 
-/* Extra large devices (sobretaula, 1441px and up) */
+/* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
+/* Apartir d'aquí es sol col·locar section{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------
@@ -131,8 +132,8 @@
 /* Large devices (portatils, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
-/* Extra large devices (sobretaula, 1441px and up) */
-/* Apartir d'aquí es solen col·locar caixes de 1440px en total perque creixin els laterals depenent l'amplada o simplement full with */
+/* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
+/* Apartir d'aquí es sol col·locar section{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------
