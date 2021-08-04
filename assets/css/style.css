@@ -37,7 +37,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    /* si treballes amb rem canviar a la mediaquery font-size: 14px per reduir el contingut d'una */
+    /* si treballes amb rem canviar a la mediaquery font-size: X px per reduir tot el contingut a la vegada */
     font-size: 16px;
     font-weight: 300;
     line-height: 1.4;
