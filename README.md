@@ -80,10 +80,12 @@
 ### @media
 
 #### Custom (currently using this)
-- Mescla de Apple i Bootstrap
+- Apple & Bootstrap mixt
 ```
+/* Small devices (phones, 0px and up) */
+
 /*--------------------------------------------------------------
-    @media - Custom
+    @media - Mobile First
 --------------------------------------------------------------*/
 
 /* Small devices (landscape phones, 576px and up) */
@@ -92,33 +94,34 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
-/* Large devices (portatils petits, 1069px and up) */
+/* Large devices (small laptops, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
-/* Large devices (portatils, 1281px and up) */
+/* Large devices (laptops, 1281px and up) */
 @media (min-width: 1281px) { ... }
 
-/* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
-/* Apartir d'aquí es sol col·locar section{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
+/* Extra large devices (desktop and macbook 16", 1441px and up) */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------
-    @media - compressed
+    @media - Compressed Screens
 --------------------------------------------------------------*/
 
-/* Tablets amb height comprimit */
+/* Tablets compressed height */
 @media screen and (max-width: 1068px) and (min-width: 768px) and (max-height: 733px) and (min-height: 0px) { ... }
 
-/* Portatils amb height comprimit */
+/* Laptops compressed height */
 @media screen and (max-width: 1440px) and (min-width: 1069px) and (max-height: 775px) and (min-height: 0px) { ... }
 
-/* Sobretaula amb height comprimit */
+/* Desktop compressed height */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
 
 
 #### Aple
 ```
+/* Small devices (phones, 0px and up) */
+
 /*--------------------------------------------------------------
     @media - Apple
 --------------------------------------------------------------*/
@@ -129,24 +132,23 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
-/* Large devices (portatils, 1069px and up) */
+/* Large devices (laptops, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
-/* Extra large devices (sobretaula i portatil mac 16", 1441px and up) */
-/* Apartir d'aquí es sol col·locar section{ margin: 0 auto; max-width: 1440px; } perque creixin els laterals o simplement full with */
+/* Extra large devices (desktop and macbook 16", 1441px and up) */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------
-    @media - compressed
+    @media - Compressed Screens
 --------------------------------------------------------------*/
 
-/* Tablets amb height comprimit */
+/* Tablets compressed height */
 @media screen and (max-width: 1068px) and (min-width: 768px) and (max-height: 733px) and (min-height: 0px) { ... }
 
-/* Portatils amb height comprimit */
+/* Laptops compressed height */
 @media screen and (max-width: 1440px) and (min-width: 1069px) and (max-height: 775px) and (min-height: 0px) { ... }
 
-/* Sobretaula amb height comprimit */
+/* Desktop compressed height */
 @media screen and (max-width: 1441000px) and (min-width: 1441px) and (max-height: 775px) and (min-height: 0px) { ... }
 ```
 
