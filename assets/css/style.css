@@ -154,9 +154,35 @@ footer p{
     @media - Mobile First
 --------------------------------------------------------------*/
 
-/* Small devices (landscape phones, 576px and up) */
+/* sm Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-
+    .flex-sm-1{
+        flex: 0 0 100%;
+    }
+    .flex-sm-80p{
+        flex: 0 0 80%;
+    }
+    .flex-sm-70p{
+        flex: 0 0 70%;
+    }
+    .flex-sm-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-sm-2{
+        flex: 0 0 50%;
+    }
+    .flex-sm-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-sm-4{
+        flex: 0 0 25%;
+    }
+    .flex-sm-30p{
+        flex: 0 0 30%;
+    }
+    .flex-sm-20p{
+        flex: 0 0 20%;
+    }
 }
 
 /* Medium devices (tablets, 768px and up) */
