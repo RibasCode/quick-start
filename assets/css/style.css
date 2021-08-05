@@ -129,7 +129,10 @@ footer p{
     transition: color var(--transition-time) var(--transition-ease);
 }
 
-/* Custom "Bootstrap" styles */
+/*--------------------------------------------------------------
+    Custom "Bootstrap" styles
+--------------------------------------------------------------*/
+
 /* Extra Small devices (phones, 0px and up) */
 .center{
     display: flex;
