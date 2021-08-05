@@ -94,13 +94,13 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { ... }
 
-/* Large devices (small laptops, 1069px and up) */
+/* Medium/Large devices (small laptops, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
 /* Large devices (laptops, 1281px and up) */
 @media (min-width: 1281px) { ... }
 
-/* Extra large devices (desktop and macbook 16", 1441px and up) */
+/* Extra large devices (desktop and big laptops, 1441px and up) */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------

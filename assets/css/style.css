@@ -129,8 +129,8 @@ footer p{
     transition: color var(--transition-time) var(--transition-ease);
 }
 
-/* custom "Bootstrap" styles */
-/* xs Extra Small devices (phones, 0px and up) */
+/* Custom "Bootstrap" styles */
+/* Extra Small devices (phones, 0px and up) */
 .center{
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@ footer p{
     @media - Mobile First
 --------------------------------------------------------------*/
 
-/* sm Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .flex-sm-1{
         flex: 0 0 100%;
@@ -216,8 +216,13 @@ footer p{
     }
 }
 
-/* Large devices (small laptops, 1069px and up) */
+/* Medium/Large devices (small laptops, 1069px and up) */
 @media (min-width: 1069px) {
+
+}
+
+/* Large devices (laptops, 1281px and up) */
+@media (min-width: 1281px) {
     .flex-lg-1{
         flex: 0 0 100%;
     }
@@ -245,11 +250,6 @@ footer p{
     .flex-lg-20p{
         flex: 0 0 20%;
     }
-}
-
-/* Large devices (laptops, 1281px and up) */
-@media (min-width: 1281px) {
-
 }
 
 /* Extra large devices (desktop and big laptops, 1441px and up) */
