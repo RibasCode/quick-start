@@ -100,7 +100,7 @@
 /* Large devices (laptops, 1281px and up) */
 @media (min-width: 1281px) { ... }
 
-/* Extra large devices (desktop and big laptops, 1441px and up) */
+/* Extra large devices (desktop & big laptops, 1441px and up) */
 @media (min-width: 1441px) { ... }
 
 /*--------------------------------------------------------------
