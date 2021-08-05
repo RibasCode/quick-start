@@ -1,5 +1,5 @@
 /* Mobile frist */
-/* Small devices (phones, 0px and up) */
+/* Extra Small devices (phones, 0px and up) */
 
 /* @import url(aos.css); */
 
@@ -75,30 +75,6 @@ section{
     max-width: 1440px;
 }
 
-/* custom Bootstrap styles */
-.center{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.responsive-parent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.responsive-child-1,
-.responsive-child-2,
-.responsive-child-3,
-.responsive-child-4{
-    flex: 0 0 100%;
-}
-
-.responsive-child-full{
-    flex: 0 0 100%;
-}
-
 /*--------------------------------------------------------------
     <main>
 --------------------------------------------------------------*/
@@ -153,6 +129,27 @@ footer p{
     transition: color var(--transition-time) var(--transition-ease);
 }
 
+/* custom "Bootstrap" styles */
+/* xs Extra Small devices (phones, 0px and up) */
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-xs-1{
+    flex: 0 0 100%;
+}
+.flex-xs-2{
+    flex: 0 0 50%;
+}
+
 /*--------------------------------------------------------------
     @media - Mobile First
 --------------------------------------------------------------*/
@@ -164,28 +161,17 @@ footer p{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .responsive-child-3,
-    .responsive-child-4{
-        flex: 0 0 50%;
-    }
+
 }
 
 /* Large devices (small laptops, 1069px and up) */
 @media (min-width: 1069px) {
-    .responsive-child-2{
-        flex: 0 0 50%;
-    }
-    .responsive-child-3,
-    .responsive-child-4{
-        flex: 0 0 33.32%;
-    }
+
 }
 
 /* Large devices (laptops, 1281px and up) */
 @media (min-width: 1281px) {
-    .responsive-child-4{
-        flex: 0 0 25%;
-    }
+
 }
 
 /* Extra large devices (desktop and macbook 16", 1441px and up) */
