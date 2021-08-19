@@ -180,6 +180,33 @@
 ### Custom Responsive Grid Class (Similar to Bootstrap)
 - This project it's done with mobile frist to keep good practices
 ```
+<section class="section-hero">
+
+    <div class="row flex-row">
+
+        <div class="column flex-xs-1 flex-sm-1 flex-md-1 flex-lg-2 flex-xl-3 flex-xxl-3">
+            <div class="container">
+
+            </div>
+        </div>
+        
+        <div class="column flex-xs-1 flex-sm-1 flex-md-2 flex-lg-2 flex-xl-3 flex-xxl-3">
+            <div class="container">
+
+            </div>
+        </div>
+
+        <div class="column flex-xs-1 flex-sm-1 flex-md-2 flex-lg-1 flex-xl-3 flex-xxl-3">
+            <div class="container">
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+```
+```
 .flex-row{
     display: flex;
     flex-wrap: wrap;
