@@ -15,7 +15,7 @@
 
 ### mobile frist
 - This project it's done with mobile frist to keep good practices
-
+- Also has custom Responsive Grid Class (Similar to Bootstrap) - Explained at the end of the document
 
 
 ### jQuery
@@ -173,4 +173,187 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
+```
+
+
+
+### Custom Responsive Grid Class (Similar to Bootstrap)
+- This project it's done with mobile frist to keep good practices
+```
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Extra Small devices (phones, 0px and up) */
+
+.flex-xs-1{
+    flex: 0 0 100%;
+}
+.flex-xs-2{
+    flex: 0 0 50%;
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .flex-sm-1{
+        flex: 0 0 100%;
+    }
+    .flex-sm-80p{
+        flex: 0 0 80%;
+    }
+    .flex-sm-70p{
+        flex: 0 0 70%;
+    }
+    .flex-sm-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-sm-2{
+        flex: 0 0 50%;
+    }
+    .flex-sm-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-sm-4{
+        flex: 0 0 25%;
+    }
+    .flex-sm-30p{
+        flex: 0 0 30%;
+    }
+    .flex-sm-20p{
+        flex: 0 0 20%;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .flex-md-1{
+        flex: 0 0 100%;
+    }
+    .flex-md-80p{
+        flex: 0 0 80%;
+    }
+    .flex-md-70p{
+        flex: 0 0 70%;
+    }
+    .flex-md-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-md-2{
+        flex: 0 0 50%;
+    }
+    .flex-md-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-md-4{
+        flex: 0 0 25%;
+    }
+    .flex-md-30p{
+        flex: 0 0 30%;
+    }
+    .flex-md-20p{
+        flex: 0 0 20%;
+    }
+
+}
+
+/* Large devices (small laptops, 1069px and up) */
+@media (min-width: 1069px) {
+    .flex-lg-1{
+        flex: 0 0 100%;
+    }
+    .flex-lg-80p{
+        flex: 0 0 80%;
+    }
+    .flex-lg-70p{
+        flex: 0 0 70%;
+    }
+    .flex-lg-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-lg-2{
+        flex: 0 0 50%;
+    }
+    .flex-lg-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-lg-4{
+        flex: 0 0 25%;
+    }
+    .flex-lg-30p{
+        flex: 0 0 30%;
+    }
+    .flex-lg-20p{
+        flex: 0 0 20%;
+    }
+}
+
+/* Extra large devices (laptops, 1281px and up) */
+@media (min-width: 1281px) {
+    .flex-xl-1{
+        flex: 0 0 100%;
+    }
+    .flex-xl-80p{
+        flex: 0 0 80%;
+    }
+    .flex-xl-70p{
+        flex: 0 0 70%;
+    }
+    .flex-xl-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-xl-2{
+        flex: 0 0 50%;
+    }
+    .flex-xl-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-xl-4{
+        flex: 0 0 25%;
+    }
+    .flex-xl-30p{
+        flex: 0 0 30%;
+    }
+    .flex-xl-20p{
+        flex: 0 0 20%;
+    }
+
+}
+
+/* Extra extra large devices (desktop & big laptops, 1441px and up) */
+@media (min-width: 1441px) {
+    .flex-xxl-1{
+        flex: 0 0 100%;
+    }
+    .flex-xxl-80p{
+        flex: 0 0 80%;
+    }
+    .flex-xxl-70p{
+        flex: 0 0 70%;
+    }
+    .flex-xxl-66p{
+        flex: 0 0 66.666%;
+    }
+    .flex-xxl-2{
+        flex: 0 0 50%;
+    }
+    .flex-xxl-3{
+        flex: 0 0 33.333%;
+    }
+    .flex-xxl-4{
+        flex: 0 0 25%;
+    }
+    .flex-xxl-30p{
+        flex: 0 0 30%;
+    }
+    .flex-xxl-20p{
+        flex: 0 0 20%;
+    }
+
+}
 ```

@@ -94,6 +94,7 @@ section{
 
 .section-hero{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -103,10 +104,11 @@ section{
 .section-hero p{
     text-align: justify;
 }
+
 .container{
     margin: 25px;
-    height: auto;
 }
+
 /*--------------------------------------------------------------
     <footer>
 --------------------------------------------------------------*/
@@ -136,16 +138,6 @@ footer p{
 /*--------------------------------------------------------------
     Custom Responsive Grid
 --------------------------------------------------------------*/
-
-.card{
-    width: auto;
-    margin: 25px;
-    padding: 25px;
-    text-align: justify;
-    box-shadow: 0 0 15px rgba(0,0,0, 1);
-    background-color: #fff;
-    border-radius: 5px;
-}
 
 .flex-row{
     display: flex;
