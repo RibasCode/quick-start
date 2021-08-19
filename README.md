@@ -178,7 +178,7 @@
 
 
 ### Custom Responsive Grid Class (Similar to Bootstrap)
-- This project it's done with mobile frist to keep good practices
+- Example:
 ```
 <section class="section-hero">
 
