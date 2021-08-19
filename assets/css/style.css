@@ -94,18 +94,19 @@ section{
 
 .section-hero{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    padding: 25px;
 }
 
-.hero-container{
-    width: 550px;
-    margin: 25px;
-    padding: 25px;
+.section-hero p{
     text-align: justify;
 }
-
+.container{
+    margin: 25px;
+    height: auto;
+}
 /*--------------------------------------------------------------
     <footer>
 --------------------------------------------------------------*/
