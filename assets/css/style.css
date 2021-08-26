@@ -1,4 +1,4 @@
-/* Mobile frist */
+/* Mobile Frist */
 /* Extra Small devices (phones, 0px and up) */
 
 /* @import url(aos.css); */
@@ -97,15 +97,12 @@ section{
 }
 
 /*--------------------------------------------------------------
-    <section> - hero
+    <section> - hero - Mobile Frist
 --------------------------------------------------------------*/
 
 section.section-hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    min-height: auto;
     padding: 25px;
 }
 
@@ -114,7 +111,7 @@ section.section-hero p{
 }
 
 /*--------------------------------------------------------------
-    <footer>
+    <footer> - Mobile Frist
 --------------------------------------------------------------*/
 
 footer{
@@ -150,7 +147,12 @@ footer p{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
+    section.section-hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
 }
 
 /* Large devices (small laptops, 1069px and up) */
