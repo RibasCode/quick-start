@@ -4,6 +4,8 @@
     Custom Responsive Grid
 --------------------------------------------------------------*/
 
+/* Margin */
+
 .m-100{
     margin: 100px;
 }
@@ -127,6 +129,133 @@
 }
 .ml-5{
     margin-left: 5px;
+}
+
+/* Padding */
+
+.p-100{
+    padding: 100px;
+}
+.p-75{
+    padding: 75px;
+}
+.p-50{
+    padding: 50px;
+}
+.p-25{
+    padding: 25px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-15{
+    padding: 15px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+
+.pt-100{
+    padding-top: 100px;
+}
+.pt-75{
+    padding-top: 75px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.pt-25{
+    padding-top: 25px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-15{
+    padding-top: 15px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-5{
+    padding-top: 5px;
+}
+
+.pr-100{
+    padding-right: 100px;
+}
+.pr-75{
+    padding-right: 75px;
+}
+.pr-50{
+    padding-right: 50px;
+}
+.pr-25{
+    padding-right: 25px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pr-15{
+    padding-right: 15px;
+}
+.pr-10{
+    padding-right: 10px;
+}
+.pr-5{
+    padding-right: 5px;
+}
+
+.pb-100{
+    padding-bottom: 100px;
+}
+.pb-75{
+    padding-bottom: 75px;
+}
+.pb-50{
+    padding-bottom: 50px;
+}
+.pb-25{
+    padding-bottom: 25px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.pb-15{
+    padding-bottom: 15px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-5{
+    padding-bottom: 5px;
+}
+
+.pl-100{
+    padding-left: 100px;
+}
+.pl-75{
+    padding-left: 75px;
+}
+.pl-50{
+    padding-left: 50px;
+}
+.pl-25{
+    padding-left: 25px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.pl-10{
+    padding-left: 10px;
+}
+.pl-5{
+    padding-left: 5px;
 }
 
 /*--------------------------------------------------------------
