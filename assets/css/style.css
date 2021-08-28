@@ -11,7 +11,9 @@
 @import url(font.css);
 /* neutral styles for different browsers */
 @import url(normalize.css);
-/* general custom styles + responsive styles */
+/* custom styles*/
+@import url(custom.css);
+/* custom responsive styles */
 @import url(grid.css);
 
 :root{
