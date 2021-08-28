@@ -5,8 +5,20 @@
 
 ### mobile frist
 - this project it's done with mobile frist to keep good practices
-- also has custom Responsive Grid Class (Similar to Bootstrap) - Explained at the end of the document
 
+- also has custom Responsive Grid Class (Similar to Bootstrap) - Explained at the end of the document
+- you can find grid.css at assets/css/grid.css:
+- also imported to assets/css/styles.css
+```
+@import url(grid.css);
+```
+
+- also has custom styles (Similar to Bootstrap)
+- you can find custom.css at assets/css/custom.css:
+- also imported to assets/css/styles.css
+```
+@import url(custom.css);
+```
 
 
 ### jQuery
