@@ -103,7 +103,7 @@ section{
 
 section.section-hero{
     text-align: center;
-    min-height: auto;
+    min-height: 100vh;
     padding: 25px;
 }
 
@@ -152,7 +152,6 @@ footer p{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        min-height: 100vh;
     }
 }
 
