@@ -101,7 +101,6 @@ section{
 --------------------------------------------------------------*/
 
 section.section-hero{
-    background-color: blue;
     text-align: center;
     /* és una bona pràctica fer servir min-height: 100px; perquè un cop el contingut superi un height: 100px; seguirà adaptan-se */
     min-height: 100vh;
