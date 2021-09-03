@@ -87,7 +87,6 @@ main{
 
 section{
     margin: auto;
-    width: 100%;
     /* max-with es clau, manten el 100% en mesures petites i al superar els 1400px, es queda en 1400px */
     max-width: 1440px;
     background-color: transparent;
