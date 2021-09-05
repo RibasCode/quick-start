@@ -127,8 +127,8 @@
 /* Medium/Large devices (small laptops, 1069px and up) */
 @media (min-width: 1069px) { ... }
 
-/* Large devices (laptops, 1281px and up) */
-@media (min-width: 1281px) { ... }
+/* Large devices (laptops, 1200px and up) */
+@media (min-width: 1200px) { ... }
 
 /* Extra large devices (desktop & big laptops, 1441px and up) */
 @media (min-width: 1441px) { ... }

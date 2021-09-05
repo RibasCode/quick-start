@@ -115,8 +115,8 @@
     }
 }
 
-/* Extra large devices (laptops, 1281px and up) */
-@media (min-width: 1281px) {
+/* Extra large devices (laptops, 1200px and up) */
+@media (min-width: 1200px) {
     .flex-xl-1{
         flex: 0 0 100%;
     }
