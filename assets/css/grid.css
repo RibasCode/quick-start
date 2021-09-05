@@ -49,7 +49,6 @@
     .flex-sm-20p{
         flex: 0 0 20%;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -81,7 +80,6 @@
     .flex-md-20p{
         flex: 0 0 20%;
     }
-
 }
 
 /* Large devices (small laptops, 1069px and up) */
@@ -144,7 +142,6 @@
     .flex-xl-20p{
         flex: 0 0 20%;
     }
-
 }
 
 /* Extra extra large devices (desktop & big laptops, 1441px and up) */
@@ -176,7 +173,6 @@
     .flex-xxl-20p{
         flex: 0 0 20%;
     }
-
 }
 
 /*--------------------------------------------------------------
