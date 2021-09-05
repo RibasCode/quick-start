@@ -80,16 +80,11 @@ a, a:visited, a:hover{
 --------------------------------------------------------------*/
 
 main{
-    /* footer effect */
-    background-color: var(--clr-white);
-    margin-bottom: 44px;
-}
-
-section{
-    margin: auto;
-    /* max-with es clau, manten el 100% en mesures petites i al superar els 1400px, es queda en 1400px */
-    max-width: 1440px;
-    background-color: transparent;
+    margin: 0 auto;
+    padding: 0 0px;
+    padding-bottom: 100px;
+    /* max-width: 100%; valor per defecte, (sobretaula max-width: 1440px;) */
+    transition: max-width var(--transition-time) var(--transition-ease);
 }
 
 .container{
@@ -116,17 +111,12 @@ section.section-hero p{
 --------------------------------------------------------------*/
 
 footer{
-    /* footer effect */
-    z-index: -1;
-    position: fixed;
-    bottom: 0;
-    height: 44px;
-
-    width: 100%;
-    background-color: var(--clr-broken-black);
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 44px;
+    width: 100%;
+    background-color: var(--clr-broken-black);
     user-select: none;
 }
 
@@ -160,14 +150,18 @@ footer p{
 
 }
 
-/* Extra large devices (laptops, 1281px and up) */
-@media (min-width: 1281px) {
-
+/* Large devices (portatils, 1200px and up) */
+@media (min-width: 1200px) {
+    main{
+        max-width: 1200px;
+    }
 }
 
-/* Extra extra large devices (desktop & big laptops, 1441px and up) */
+/* Extra large devices (sobretaula, 1441px and up) */
 @media (min-width: 1441px) {
-
+    main{
+        max-width: 1440px;
+    }
 }
 
 /*--------------------------------------------------------------
