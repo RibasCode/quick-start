@@ -79,12 +79,16 @@ a, a:visited, a:hover{
     <body> - Mobile Frist
 --------------------------------------------------------------*/
 
+main{
+    /* footer effect */
+    margin-bottom: 44px;
+}
+
 h1{
     text-align: center;
 }
 
 section{
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,6 +128,11 @@ section.section-hero p{
 --------------------------------------------------------------*/
 
 footer{
+    /* footer effect */
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
