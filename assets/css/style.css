@@ -78,7 +78,9 @@ a, a:visited, a:hover{
 /*--------------------------------------------------------------
     <body> - Mobile Frist
 --------------------------------------------------------------*/
+body{
 
+}
 main{
     /* footer effect */
     margin-bottom: 44px;
@@ -92,6 +94,8 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* footer effect - per defecte, background-color: transparent;*/
+    background-color: #fff;
 }
 
 .container{
