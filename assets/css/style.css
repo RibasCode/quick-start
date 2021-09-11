@@ -76,19 +76,33 @@ a, a:visited, a:hover{
 }
 
 /*--------------------------------------------------------------
-<main>
+    <body> - Mobile Frist
 --------------------------------------------------------------*/
 
-main{
-    margin: 0 auto;
-    padding: 0 0px;
-    padding-bottom: 100px;
-    /* max-width: 100%; valor per defecte, (sobretaula max-width: 1440px;) */
-    transition: max-width var(--transition-time) var(--transition-ease);
+h1{
+    text-align: center;
+}
+
+section{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
 }
 
 .container{
-    margin: 25px;
+    max-width: 100%;
+    transition: max-width var(--transition-time) var(--transition-ease);
+}
+
+.container-100{
+    max-width: 100%;
+    transition: max-width var(--transition-time) var(--transition-ease);
+}
+
+.area{
+    margin: 15px;
 }
 
 /*--------------------------------------------------------------
@@ -96,8 +110,7 @@ main{
 --------------------------------------------------------------*/
 
 section.section-hero{
-    text-align: center;
-    /* és una bona pràctica fer servir min-height: 100px; perquè un cop el contingut superi un height: 100px; seguirà adaptan-se */
+    flex-direction: column;
     min-height: 100vh;
     padding: 25px;
 }
@@ -138,11 +151,7 @@ footer p{
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    section.section-hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+
 }
 
 /* Large devices (small laptops, 1069px and up) */
@@ -152,14 +161,14 @@ footer p{
 
 /* Large devices (portatils, 1200px and up) */
 @media (min-width: 1200px) {
-    main{
+    .container{
         max-width: 1200px;
     }
 }
 
 /* Extra large devices (sobretaula, 1441px and up) */
 @media (min-width: 1441px) {
-    main{
+    .container{
         max-width: 1440px;
     }
 }
