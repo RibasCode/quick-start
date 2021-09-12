@@ -101,11 +101,13 @@ section:last-child{
 }
 
 .container{
+    width: 100%;
     max-width: 100%;
     transition: max-width var(--transition-time) var(--transition-ease);
 }
 
 .container-100{
+    width: 100%;
     max-width: 100%;
     transition: max-width var(--transition-time) var(--transition-ease);
 }
