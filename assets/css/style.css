@@ -16,23 +16,32 @@
 /* custom responsive styles */
 @import url(grid.css);
 
+
 :root{
-    --clr-primary: #ffffff;
-    --clr-primary-hover: #7f7f7f;
-        
-    --clr-black: #000000;
-    --clr-white: #ffffff;
-    --clr-broken-white: #fafafa;
-    --clr-broken-black: #1f1f1f;
+    --primary-color: deepskyblue;
+    --primary-color-hover: deepskyblue;
+
+    --secondary-color: deepskyblue;
+    --secondary-color-hover: deepskyblue;
     
-    --clr-typo: ##1d1d1f;
-    --clr-outline: #d1d1d1;
+    --accent-color: deepskyblue;
+    --accent-color-hover: deepskyblue;
+
+    --super-light-grey-color: #f5f5f5;
+    --light-grey-color: #f5f5f5;
+    --grey-color: #e0e0e0;
+    --dark-grey-color: #b0b0b0;
+    --super-dark-grey-color: #b0b0b0;
     
-    --clr-shadow: rgba(0,0,0, 0.05);
-    --clr-shadow-hover: rgba(0,0,0, 0.10);
-   
-    --transition-time: 0.18s;
-    --transition-ease: ease-out;
+    --super-light-dark-color: #3d3d3d;
+    --light-dark-color: #3d3d3d;
+    --dark-color: #141414;
+    --super-dark-color: #141414;
+    
+    --typography-color: #1d1d1d;
+    
+    --white-color: #ffffff;
+    --black-color: #000000;
 }
 
 *, *::after, *::before {
