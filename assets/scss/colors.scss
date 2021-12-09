@@ -1,0 +1,51 @@
+:root{
+    --primary-color: deepskyblue;
+    --primary-color-hover: deepskyblue;
+
+    --secondary-color: deepskyblue;
+    --secondary-color-hover: deepskyblue;
+    
+    --accent-color: deepskyblue;
+    --accent-color-hover: deepskyblue;
+
+    --super-light-grey-color: #f5f5f5;
+    --light-grey-color: #f5f5f5;
+    --grey-color: #e0e0e0;
+    --dark-grey-color: #b0b0b0;
+    --super-dark-grey-color: #b0b0b0;
+    
+    --super-light-dark-color: #3d3d3d;
+    --light-dark-color: #3d3d3d;
+    --dark-color: #141414;
+    --super-dark-color: #141414;
+    
+    --typography-color: #1d1d1d;
+    
+    --white-color: #ffffff;
+    --black-color: #000000;
+}
+
+$primary-color: var(--primary-color);
+$primary-color-hover: var(--primary-color-hover);
+
+$secondary-color: var(--secondary-color);
+$secondary-color-hover: var(--secondary-color-hover);
+
+$accent-color: var(--accent-color);
+$accent-color-hover: var(--accent-color-hover);
+
+$super-light-grey-color: var(--super-light-grey-color);
+$light-grey-color: var(--light-grey-color);
+$grey-color: var(--grey-color);
+$dark-grey-color: var(--dark-grey-color);
+$super-dark-grey-color: var(--super-dark-grey-color);
+
+$super-light-dark-color: var(--super-light-dark-color);
+$light-dark-color: var(--light-dark-color);
+$dark-color: var(--dark-color);
+$super-dark-color: var(--super-dark-color);
+
+$typography-color: var(--typography-color);
+
+$white-color: var(--white-color);
+$black-color: var(--black-color);

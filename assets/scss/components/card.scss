@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../colors.scss';
 
 .forums-top{
     display: flex;
@@ -44,7 +45,7 @@
 
         .active{
             color: #ffffff;
-            background-color: var(--clr-primary);
+            background-color: $primary-color;
             cursor: default;
         }
     }
@@ -147,7 +148,7 @@ section#cards{
                                 transition: color var(--transition-time) var(--transition-ease);
 
                                 &:hover{
-                                    color: $primary-color-hover;
+                                    color: $secondary-color;
                                 }
                             }
 

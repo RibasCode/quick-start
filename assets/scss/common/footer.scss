@@ -1,0 +1,23 @@
+@import '../variables.scss';
+@import '../colors.scss';
+
+footer{
+    /* footer effect */
+    z-index: -1;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    width: 100%;
+    background-color: $dark-color;
+    user-select: none;
+
+    p{
+        color: $white-color;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+    }
+}

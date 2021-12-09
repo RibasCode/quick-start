@@ -1,0 +1,108 @@
+@import '../variables.scss';
+@import '../colors.scss';
+
+section#jquery{
+
+    $primary-color: #3F71DA;
+    $primary-color-hover: #2052C6;
+    $secondary-color: #0836AE;
+
+    display: flex;
+    flex-direction: column;
+
+    ::selection{
+        background-color: $secondary-color;
+    }
+
+    .container-100{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        
+        h2{
+            z-index: 1;
+            position: absolute;
+            top: 100px;
+            color: $white-color;
+            font-size: 24px;
+        }
+        
+        .header{
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(90deg, $primary-color, $secondary-color);
+            background-size: 250% 250%;
+        
+            -webkit-animation: background-animation 10s ease infinite;
+            -moz-animation: background-animation 10s ease infinite;
+            animation: background-animation 10s ease infinite;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                height: 400px;
+                background-color: $white-color;
+                background: linear-gradient(180deg, transparent, $white-color);
+            }
+
+
+        }
+    
+        @-webkit-keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    }
+
+    & > .container{
+        z-index: 1;
+        margin-top: -200px;
+
+        .big-card{
+            
+            .square{
+                background-color: $primary-color;
+            }
+    
+            .left-button{
+                color: $white-color;
+                background-color: $primary-color;
+    
+                &:hover{
+                    background-color: $primary-color-hover;
+                }
+            }
+            
+            .center-button{
+                color: $white-color;
+                background-color: $primary-color;
+                
+                &:hover{
+                    background-color: $primary-color-hover;
+                }
+            }
+            
+            .right-button{
+                color: $white-color;
+                background-color: $primary-color;
+    
+                &:hover{
+                    background-color: $primary-color-hover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+@import '../variables.scss';
+@import '../colors.scss';
+
+main{
+
+    .documentation-button{
+        z-index: 2;
+        position: fixed;
+
+
+        &.jquery{
+            $primary-color: #3F71DA;
+            $primary-color-hover: #2052C6;
+            $secondary-color: #0836AE;
+            top: 10px;
+            left: 10px;
+
+            background-color: $primary-color;
+            color: $white-color;
+        }
+        
+        &.javascript{
+            $primary-color: #FCE71E;
+            $primary-color-hover: #FFC224;
+            $secondary-color: #FAB100;
+            top: 60px;
+            left: 10px;
+
+            background-color: $primary-color;
+            color: $black-color;
+        }
+    }
+}

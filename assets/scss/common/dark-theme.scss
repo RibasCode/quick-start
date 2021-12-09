@@ -1,0 +1,18 @@
+@import '../variables.scss';
+@import '../colors.scss';
+
+main{
+
+    .dark-theme-button{
+        z-index: 2;
+        height: 30px;
+        width: 30px;
+        position: fixed;
+        top: 7.5px;
+        right: 7.5px;
+        background-color: $dark-color;
+        box-shadow: $shadow;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,92 @@
+@import '../variables.scss';
+@import '../colors.scss';
+
+section#javascript{
+    
+    $primary-color: #FCE71E;
+    $primary-color-hover: #FFC224;
+    $secondary-color: #FAB100;
+
+    display: flex;
+    flex-direction: column;
+    
+    ::selection{
+        background-color: $secondary-color;
+    }
+
+    .container-100{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $black-color;
+        font-size: 24px;
+        height: 200px;
+        margin-bottom: 50px;
+
+        h2{
+            z-index: 1;
+            position: absolute;
+        }
+
+        .header{
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, $primary-color, $secondary-color);
+            background-size: 250% 250%;
+        
+            -webkit-animation: background-animation 10s ease infinite;
+            -moz-animation: background-animation 10s ease infinite;
+            animation: background-animation 10s ease infinite;
+        }
+    
+        @-webkit-keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes background-animation {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    }
+
+    .big-card{
+            
+        .square{
+            background-color: $primary-color;
+        }
+
+        .left-button{
+            color: $black-color;
+            background-color: $primary-color;
+
+            &:hover{
+                background-color: $primary-color-hover;
+            }
+        }
+        
+        .center-button{
+            color: $black-color;
+            background-color: $primary-color;
+            
+            &:hover{
+                background-color: $primary-color-hover;
+            }
+        }
+        
+        .right-button{
+            color: $black-color;
+            background-color: $primary-color;
+
+            &:hover{
+                background-color: $primary-color-hover;
+            }
+        }
+    }
+}
