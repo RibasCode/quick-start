@@ -1,0 +1,75 @@
+:root{
+    --primary-color: deepskyblue;
+    --primary-color-hover: deepskyblue;
+
+    --secondary-color: deepskyblue;
+    --secondary-color-hover: deepskyblue;
+    
+    --accent-color: deepskyblue;
+    --accent-color-hover: deepskyblue;
+
+    --grey-super-light-color: #f5f5f5;
+    --grey-light-color: #f5f5f5;
+    --grey-color: #e0e0e0;
+    --grey-dark-color: #b0b0b0;
+    --grey-super-dark-color: #b0b0b0;
+    
+    --dark-super-light-color: #3d3d3d;
+    --dark-light-color: #3d3d3d;
+    --dark-color: #141414;
+    --dark-super-dark-color: #141414;
+    
+    --typography-color: #1d1d1d;
+    --outline-color: red;
+    
+    --white-color: #ffffff;
+    --black-color: #000000;
+
+    --shadow-color: rgba(0,0,0, 0.05);
+    --shadow-hover-color: rgba(0,0,0, 0.10);
+   
+    --super-fast-transition: 0.075s;
+    --fast-transition: 0.125s;
+    --transition: 0.25s;
+    --slow-transition: 0.5s;
+    --super-slow-transition: 0.75s;
+
+    --ease-transition: ease-out;
+}
+
+$primary-color: var(--primary-color);
+$primary-color-hover: var(--primary-color-hover);
+
+$secondary-color: var(--secondary-color);
+$secondary-color-hover: var(--secondary-color-hover);
+
+$accent-color: var(--accent-color);
+$accent-color-hover: var(--accent-color-hover);
+
+$grey-super-light-color: var(--grey-super-light-color);
+$grey-light-color: var(--grey-light-color);
+$grey-color: var(--grey-color);
+$grey-dark-color: var(--grey-dark-color);
+$grey-super-dark-color: var(--grey-super-dark-color);
+
+$dark-super-light-color: var(--dark-super-light-color);
+$dark-light-color: var(--dark-light-color);
+$dark-color: var(--dark-color);
+$dark-super-dark-color: var(--dark-super-dark-color);
+
+$typography-color: var(--typography-color);
+$outline-color: var(--outline-color);
+
+$white-color: var(--white-color);
+$black-color: var(--black-color);
+
+$shadow-color: var(--shadow-color);
+$shadow-hover-color: var(--shadow-hover-color);
+
+$super-fast-transition: var(--super-fast-transition);
+$fast-transition: var(--fast-transition);
+$transition: var(--transition);
+$slow-transition: var(--slow-transition);
+$super-slow-transition: var(--super-slow-transition);
+
+$ease-transition: var(--ease-transition);
