@@ -5,6 +5,9 @@
 .flex-row{
     display: flex;
     flex-wrap: wrap;
+
+    /* és necessari en cas de col·locar 2 flex-row 1 a la esquerra i l'altre a la dreta per evitar que els elements s'expandeixin com en el cas del accordion */
+    align-content: flex-start;
 }
 
 /* Extra Small devices (phones, 0px and up) */
