@@ -110,7 +110,6 @@
 ### @media
 
 #### Custom (currently using this)
-- Apple & Bootstrap mixt
 ```
 /* Small devices (phones, 0px and up) */
 
