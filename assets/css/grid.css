@@ -23,7 +23,7 @@
     @media - Mobile First
 --------------------------------------------------------------*/
 
-/* Small devices (landscape phones, 576px and up) */
+/* sm - Small devices (landscape phones - 576px and up) */
 @media (min-width: 576px) {
     .flex-sm-1{
         flex: 0 0 100%;
