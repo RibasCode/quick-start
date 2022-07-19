@@ -11,11 +11,11 @@
 }
 
 .row-padding{
-    padding: 0 -10px;
+    margin: 0 -15px;
 }
 
 .row-padding > *{
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 /* xs - Extra Small devices (phones, 0px and up) (0px - 575px) */
