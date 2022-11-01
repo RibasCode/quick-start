@@ -1,0 +1,17 @@
+/* IMPORTS */
+
+/* Libraries */
+@import url('./assets/libraries/normalize.css');                      /* Normalize styles for different browsers */
+
+/* Fonts */
+@import url('../font/poppins.css');                                   /* Fonts - Local */
+@import url('../font/open-sans.css');                                 /* Fonts - Local */
+
+/* Colors */
+@import url('./assets/color/colors.css');
+
+/* Styles */
+@import url('./assets/base/index.css');
+@import url('./assets/components/index.css');
+@import url('./assets/layout/index.css');
+@import url('./assets/pages/index.css');

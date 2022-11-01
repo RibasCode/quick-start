@@ -1,0 +1,134 @@
+@import "../colors/_colors.scss";
+@import "../utils/_variables.scss";
+
+body{
+
+    section{
+        
+        .container-column{
+            width: 100%;
+
+            .flex-item-accordion{
+                padding-bottom: 30px;
+          
+                .accordion{
+                    width: 100%;
+                    background-color: $color-background-light;
+                    border: solid 2px $color-background-light;
+                    border-radius: $border-radius;
+                    transition: all 0.25s ease-in-out;
+                    
+                    &:hover,
+                    &:active,
+                    &focus{
+                        border: solid 2px $color-background-dark;
+                    }
+                    
+                    &.active{
+                        border: solid 2px $color-background-dark;
+                        
+                        header.accordion-header{
+                            
+                            i.arrow{
+                                transform: rotate(-90deg);
+                            }
+                        }
+
+                        .accordion-body{
+                            opacity: 1;
+                        }
+                    }
+
+                    header.accordion-header{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 30px;
+                        border-radius: $border-radius-top;
+                        cursor: pointer;
+                        user-select: none;
+
+
+                        h4{
+                            color: $color-primary;
+                            word-break: break-all;
+                        }
+
+                        i.arrow{
+                            position: relative;
+                            top: 3px;
+                            display: flex;
+                            height: 18px;
+                            width: 18px;
+                            margin-left: 15px;
+
+                            background-color: $color-primary;
+                            mask-image: url('../../../icons/arrow.svg');
+                            mask-size: cover;
+                            mask-position: center;
+                            mask-repeat: no-repeat;
+                            -webkit-mask-image: url('../../../icons/arrow.svg');
+                            -webkit-mask-size: cover;
+                            -webkit-mask-position: center;
+                            -webkit-mask-repeat: no-repeat;
+
+                            transform: rotate(90deg);
+                            transition: transform 0.2s ease-in-out;
+                        }
+                    }
+
+                    .accordion-body{
+                        padding: 0 30px 30px 30px;
+                        opacity: 0;
+                        transition: opacity 0.2s ease-in-out;
+                        border-radius: $border-radius-bottom;
+
+                        h5{
+                            padding-bottom: 5px;
+                        }
+
+                        p{
+                            padding-bottom: 30px;
+                            opacity: 0.85;
+                            
+                            &:last-child{
+                                padding-bottom: 0px;
+                            }
+                        }
+
+                        a{
+                            text-decoration: none;
+                            
+                            &:hover,
+                            &:active,
+                            &focus{
+                                text-decoration: underline;
+                            }
+                        }
+
+                        img{
+                            width: 100%;
+                        }
+                    }
+
+                    &.inactive{
+                        opacity: 0.5;
+                        pointer-events: none;
+                        cursor: default;
+
+                        header.accordion-header{
+                            
+                            h4{
+                                color: $color-state-inactive;
+                            }
+
+                            i.arrow{
+                                background-color: $color-state-inactive;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

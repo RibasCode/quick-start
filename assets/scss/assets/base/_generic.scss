@@ -1,0 +1,63 @@
+@import "../colors/_colors.scss";
+@import "../utils/_variables.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    body{
+        background-color: $color-background;
+        color: $color-tipograpy;
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 1.4;
+    
+        p{
+            color: $color-tipograpy-60;
+        }
+        
+        a{
+            color: $color-primary;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+/* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
+@media (min-width: 576px) {
+
+}
+
+/* md - Medium devices (tablets - 768px and up) (768px - 991px) */
+@media (min-width: 768px) {
+
+}
+
+/* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
+@media (min-width: 992px) {
+
+}
+
+/* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
+@media (min-width: 1200px) {
+
+}
+
+/* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
+@media (min-width: 1441px) {
+
+}

@@ -1,0 +1,102 @@
+@import "../colors/_colors.scss";
+@import "../utils/_variables.scss";
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    width: fit-content;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 30px;
+    border-radius: $border-radius;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover{
+        text-decoration: none;
+    }
+
+    &:active,
+    &:focus{
+        background-color: $color-secondary;
+    }
+
+    &.button-primary{
+        background-color: $color-primary;
+        
+        &:hover{
+            background-color: $color-secondary;
+        }
+        
+        &:active,
+        &:focus{
+            background-color: $color-secondary;
+        }
+        
+        p{
+            color: $color-tipograpy;
+        }
+    }
+
+    &.button-secondary{
+        color: $color-secondary;
+        background-color: transparent;
+        border: solid 1px $color-secondary;
+        
+        &:hover{
+            background-color: $color-secondary-10;
+        }
+        
+        &:active,
+        &:focus{
+            background-color: $color-secondary-10;
+        }
+    }
+    
+    &.button-100{
+        width: 100%;
+    }
+    
+    &.button-icon{
+        position: relative;
+        padding: 0 52px 0 30px;
+        
+        &:hover,
+        &:active,
+        &:focus{
+            
+            svg.icon{
+                transform: translateX(2.5px);
+            }
+        }
+        
+        svg.icon{
+            position: absolute;
+            right: 30px;
+            width: 12px;
+            transition: all 0.2s ease-in-out;
+    
+            .icon-primary{
+                stroke: #ffffff;
+            }
+    
+            .icon-secondary{
+                stroke: $color-primary;
+            }
+        }
+    }
+
+    &.inactive{
+        background-color: $color-state-inactive;
+        pointer-events: none;
+
+        &:hover,
+        &:active,
+        &:focus{
+            outline: none;
+            background-color: $color-state-inactive;
+        }
+    }
+}
