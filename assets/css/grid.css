@@ -5,20 +5,10 @@
 .flex-row{
     display: flex;
     flex-wrap: wrap;
-
-    /* és necessari en cas de col·locar 2 flex-row 1 a la esquerra i l'altre a la dreta per evitar que els elements s'expandeixin com en el cas del accordion */
-    align-content: flex-start;
 }
 
-.row-padding{
-    margin: 0 -15px;
-}
+/* Extra Small devices (phones, 0px and up) */
 
-.row-padding > *{
-    padding: 0 15px;
-}
-
-/* xs - Extra Small devices (phones, 0px and up) (0px - 575px) */
 .flex-xs-1{
     flex: 0 0 100%;
 }
@@ -30,7 +20,7 @@
     @media - Mobile First
 --------------------------------------------------------------*/
 
-/* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .flex-sm-1{
         flex: 0 0 100%;
