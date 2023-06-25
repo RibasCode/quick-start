@@ -4,11 +4,14 @@
 @import url('./assets/libraries/normalize.css');                      /* Normalize styles for different browsers */
 
 /* Fonts */
-@import url('../font/poppins.css');                                   /* Fonts - Local */
-@import url('../font/open-sans.css');                                 /* Fonts - Local */
+@import url('../font/Poppins.css');                                   /* Fonts - Local */
+@import url('../font/OpenSans.css');                                  /* Fonts - Local */
+
+/* Variables */
+@import url('./assets/config/variables.css');
 
 /* Colors */
-@import url('./assets/color/colors.css');
+@import url('./assets/config/colors.css');
 
 /* Styles */
 @import url('./assets/base/index.css');

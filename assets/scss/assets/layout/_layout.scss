@@ -1,6 +1,3 @@
-@import "../colors/_colors.scss";
-@import "../utils/_variables.scss";
-
 body{
 
     main{
@@ -8,18 +5,13 @@ body{
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
-        padding: 0 50px;
-        
-        section{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 100px 0px;
-        }
+        padding-top: 64px;
+        transition: var(--transition);
     }
 
-    .container-1000{
-        max-width: 1000px;
+    .container-1440{
+        width: 100%;
+        padding: 0 24px;
     }
 }
 
@@ -29,31 +21,32 @@ body{
 
 /* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
 @media (min-width: 576px) {
-    
+
 }
 
 /* md - Medium devices (tablets - 768px and up) (768px - 991px) */
 @media (min-width: 768px) {
-    
+
 }
 
 /* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
 @media (min-width: 992px) {
-    
-    body{
 
-        main{
-            padding: 0;
-        }
-    }
 }
 
-/* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
-@media (min-width: 1200px) {
-    
+/* xl - Large devices (laptops - 1024px and up) (1024px - 1440px) */
+@media (min-width: 1024px) {
+
 }
 
 /* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
 @media (min-width: 1441px) {
-    
+
+    body{
+
+        .container-1440{
+            box-sizing: border-box;
+            max-width: 1440px;
+        }
+    }
 }

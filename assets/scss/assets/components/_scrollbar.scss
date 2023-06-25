@@ -1,0 +1,26 @@
+html{
+    /* Firefox */
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-background);
+}
+
+/* Width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-scrollbar-thumb);
+    border: 3px solid var(--color-background);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-scrollbar-thumb);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}

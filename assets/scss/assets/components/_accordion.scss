@@ -1,133 +1,75 @@
-@import "../colors/_colors.scss";
-@import "../utils/_variables.scss";
 
 body{
 
-    section{
-        
-        .container-column{
-            width: 100%;
+    .accordion-body{
+        display: none;
+        padding: 24px 32px;
+        border-radius: var(--border-radius);
+        background-color: var(--color-primary-10);
+        -webkit-backdrop-filter: saturate(180%) blur(48px);
+        backdrop-filter: saturate(180%) blur(48px);
+        margin-bottom: 24px;
 
-            .flex-item-accordion{
-                padding-bottom: 30px;
-          
-                .accordion{
-                    width: 100%;
-                    background-color: $color-background-light;
-                    border: solid 2px $color-background-light;
-                    border-radius: $border-radius;
-                    transition: all 0.25s ease-in-out;
-                    
-                    &:hover,
-                    &:active,
-                    &focus{
-                        border: solid 2px $color-background-dark;
-                    }
-                    
-                    &.active{
-                        border: solid 2px $color-background-dark;
-                        
-                        header.accordion-header{
-                            
-                            i.arrow{
-                                transform: rotate(-90deg);
-                            }
-                        }
+        &.active{
 
-                        .accordion-body{
-                            opacity: 1;
-                        }
-                    }
+            .container-section{
+                opacity: 1;
+            }
+        }
 
-                    header.accordion-header{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        padding: 30px;
-                        border-radius: $border-radius-top;
-                        cursor: pointer;
-                        user-select: none;
+        .container-section{
+            opacity: 0;
+            display: flex;
+            flex-wrap: wrap;
+            transition: var(--transition);
 
+            .section{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
 
-                        h4{
-                            color: $color-primary;
-                            word-break: break-all;
-                        }
+                width: fit-content;
+                height: auto;
 
-                        i.arrow{
-                            position: relative;
-                            top: 3px;
-                            display: flex;
-                            height: 18px;
-                            width: 18px;
-                            margin-left: 15px;
+                padding-left: 44px;
+                border-right: 1px solid var(--color-primary-10);
 
-                            background-color: $color-primary;
-                            mask-image: url('../../../icons/arrow.svg');
-                            mask-size: cover;
-                            mask-position: center;
-                            mask-repeat: no-repeat;
-                            -webkit-mask-image: url('../../../icons/arrow.svg');
-                            -webkit-mask-size: cover;
-                            -webkit-mask-position: center;
-                            -webkit-mask-repeat: no-repeat;
-
-                            transform: rotate(90deg);
-                            transition: transform 0.2s ease-in-out;
-                        }
-                    }
-
-                    .accordion-body{
-                        padding: 0 30px 30px 30px;
-                        opacity: 0;
-                        transition: opacity 0.2s ease-in-out;
-                        border-radius: $border-radius-bottom;
-
-                        h5{
-                            padding-bottom: 5px;
-                        }
-
-                        p{
-                            padding-bottom: 30px;
-                            opacity: 0.85;
-                            
-                            &:last-child{
-                                padding-bottom: 0px;
-                            }
-                        }
-
-                        a{
-                            text-decoration: none;
-                            
-                            &:hover,
-                            &:active,
-                            &focus{
-                                text-decoration: underline;
-                            }
-                        }
-
-                        img{
-                            width: 100%;
-                        }
-                    }
-
-                    &.inactive{
-                        opacity: 0.5;
-                        pointer-events: none;
-                        cursor: default;
-
-                        header.accordion-header{
-                            
-                            h4{
-                                color: $color-state-inactive;
-                            }
-
-                            i.arrow{
-                                background-color: $color-state-inactive;
-                            }
-                        }
-                    }
+                &:first-of-type{
+                    padding-left: 0;
+                    margin-left: 0;
                 }
+
+                &:last-of-type{
+                    margin-right: 0;
+                    border-right: none;
+                }
+
+                h3{
+                    margin-top: 0;
+                    margin-bottom: 18px;
+                    display: flex;
+                }
+
+                .container-checkbox{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    height: 200px;
+                }
+            }
+
+            .container-input{
+                display: flex;
+                margin-right: 44px;
+
+                &:last-of-type{
+                    margin-bottom: unset;
+                }
+            }
+
+            &.active{
+                opacity: 1;
+                pointer-events: all;
             }
         }
     }

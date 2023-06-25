@@ -1,0 +1,16 @@
+label{
+    user-select: none;
+    transition: var(--transition-2);
+
+    &[for^="checkbox"]{
+        flex: 1;
+        margin-left: 24px;
+        padding-bottom: 12px;
+        font-weight: 400;
+        cursor: pointer;
+
+        &:hover{
+            color: var(--color-primary);
+        }
+    }
+}

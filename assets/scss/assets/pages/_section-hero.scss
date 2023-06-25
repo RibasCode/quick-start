@@ -1,72 +1,14 @@
-@import "../colors/_colors.scss";
-@import "../utils/_variables.scss";
-
-body{
-    
-    section#hero{
-        min-height: 100vh;
-        justify-content: flex-start;
-
-        .hero-container{
-
-            p.hero-greatings{
-                color: $color-tipograpy;
-                font-size: 15px;
-                margin-bottom: 8px;
-            }
-
-            h1.hero-my-name,
-            h2.hero-caption{
-                font-size: clamp(40px, 8vw, 64px);
-                font-weight: 600;
-                margin: 0;
-            }
-
-            h1.hero-my-name{
-                background: linear-gradient(90deg, #00ffaf 0%, #00ccff 25%, #00ffaf 50%, #00ccff 100%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                width: fit-content;
-                
-                animation-name: bg-animation;
-                animation-delay: 0s;
-                animation-duration: 15s;
-                animation-iteration-count: infinite;
-                animation-direction: alternate;
-                animation-fill-mode: none;
-                animation-play-state: running;
-                animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
-                background-size: 250%;
-            }
-
-            h2.hero-caption{
-                margin-bottom: 10px;
-                color: $color-tipograpy-60;
-            }
-            
-            p.hero-description{
-                max-width: 570px;
-                margin-bottom: 38px;
-                font-size: 15px;                
-            }
-        }
-    }
-
-    @keyframes bg-animation{
-
-        0%{
-            background-position: 0%;
-        }
-        100%{
-            background-position: 100%;
-        }
-    }
-}
 
 /*--------------------------------------------------------------
-    @media - Mobile First
+Mobile First
 --------------------------------------------------------------*/
+
+body{
+
+    section#hero{
+
+    }
+}
 
 /* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
 @media (min-width: 576px) {
@@ -83,16 +25,9 @@ body{
 
 }
 
-/* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
-@media (min-width: 1200px) {
-    
-    body{
+/* xl - Large devices (laptops - 1024px and up) (1024px - 1440px) */
+@media (min-width: 1024px) {
 
-        .container-1200{
-            display: flex;
-            max-width: 1200px;
-        }
-    }
 }
 
 /* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */

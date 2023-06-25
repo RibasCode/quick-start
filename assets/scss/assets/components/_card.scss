@@ -1,2 +1,122 @@
-@import "../colors/_colors.scss";
-@import "../utils/_variables.scss";
+
+.card{
+    border-radius: var(--border-radius);
+    box-shadow: var(--color-shadow);
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:hover,
+    &:active,
+    &:focus{
+        outline: none;
+        box-shadow: var(--color-hover-card-primary);
+    }
+
+    &.veus{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-veus);
+        }
+    }
+
+    &.eines{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-eines);
+        }
+    }
+
+    &.experts{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-experts);
+        }
+    }
+
+    &.arees{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-arees);
+        }
+    }
+
+    &.contexts{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-contexts);
+        }
+    }
+
+    &.fets{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-fets);
+        }
+    }
+
+    &.institucions{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-institucions);
+        }
+    }
+
+    &.objectius{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-objectius);
+        }
+    }
+
+    &.legislacions{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-legislacions);
+        }
+    }
+
+    &.collectius{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-collectius);
+        }
+    }
+
+    &.difusors{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-difusors);
+        }
+    }
+
+    &.propostes{
+
+        &:hover,
+        &:active,
+        &:focus{
+            box-shadow: var(--color-hover-card-propostes);
+        }
+    }
+}

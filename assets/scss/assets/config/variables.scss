@@ -1,0 +1,22 @@
+:root{
+
+    body{
+
+        //Border
+        --border-radius: 10px;
+        --border-radius-50: 50px;
+        --border-radius-top: 10px 10px 0 0;
+        --border-radius-top-right: 0 10px 0 0;
+        --border-radius-right: 0 10px 10px 0;
+        --border-radius-bottom: 0 0 10px 10px;
+        --border-radius-bottom-right: 0 0 10px 0;
+
+        //Transition
+        --transition-initial-animation: all 0.75s ease;
+        --transition-05: all 0.6s cubic-bezier(0,0,.5,1);
+        --transition: all 0.3s cubic-bezier(0,0,.5,1);
+        --transition-2: all 0.15s cubic-bezier(0,0,.5,1);
+        --transition-height: height 0.3s cubic-bezier(0,0,.5,1);
+        --transition-width: width 0.3s cubic-bezier(0,0,.5,1);
+    }
+}
