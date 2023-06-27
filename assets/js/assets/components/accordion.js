@@ -5,10 +5,8 @@ $(document).ready(function() {
 	accordionButton.click(function(){
 		let $this = $(this);
 
-        let getButtonType = $(this).attr('data-type');
-
 		$this.toggleClass('active');
-		$(`.accordion-body.${getButtonType}`).toggleClass('active').slideToggle(250);
+		$(`.accordion-body`).toggleClass('active').slideToggle(250);
 
         checkFilterIfInnerItemsActive();
 	});

@@ -7,34 +7,31 @@
 
         //Primary
         --color-primary: #3861fb;
-        --color-primary-75: #3861fbBF;
+        --color-primary-75: #3861fbbf;
         --color-primary-50: #3861fb80;
         --color-primary-25: #3861fb40;
         --color-primary-10: #3861fb1a;
 
         //Secondary
         --color-secondary: #2444d4;
+        --color-secondary-75: #2444d4bf;
+        --color-secondary-50: #2444d480;
         --color-secondary-25: #2444d440;
         --color-secondary-10: #2444d41a;
 
         //Tertiary
         --color-tertiary: #1730a2;
+        --color-tertiary-75: #1730a2bf;
+        --color-tertiary-50: #1730a280;
         --color-tertiary-25: #1730a240;
         --color-tertiary-10: #1730a21a;
 
         //Background color
         --color-background: #ffffff;
-        --color-background-light: #cfcff4;
-        --color-background-dark: red;
-        --color-background-card: #ffffff;
 
         //Tipograpy
         --color-tipograpy: #303030;
-        --color-tipograpy-975: #303030f9;
-        --color-tipograpy-60: #30303099;
-
-        //Border
-        --color-border: #f0f0ff;
+        --color-tipograpy-75: #303030bf;
 
         //Scrollbar color
         --color-scrollbar-thumb: #cfd6e4;
@@ -44,10 +41,8 @@
         --color-selection-background: #00ccff;
 
         //Shadows
-        --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px, rgba(59,130,246, 0.12) 0px 0px 32px;
-
-        //Gradients
-        --color-gradient: linear-gradient(0deg, #3861fb 0%, #3861fb00 100%);
+        --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px,
+                        rgba(59,130,246, 0.12) 0px 0px 32px;
 
         //State
         --color-success: #5cb85c;
@@ -56,37 +51,10 @@
         --color-error: #f44336;
         --color-inactive-text: #d1d1d1;
         --color-inactive-background: #f1f1f1;
-
-        //Basic
-        --color-white: #ffffff;
-        --color-black: #000000;
-        --color-white-75: #ffffffbf;
-        --color-black-75: #000000bf;
-        --color-white-50: #ffffff80;
-        --color-black-50: #00000080;
-
     }
 
 
     body.dark-theme{
-
-        //Primary
-        --color-primary: #698aff;
-        --color-primary-25: #698aff40;
-        --color-primary-10: #698aff1a;
-
-        //Secondary
-        --color-secondary: #2444d4;
-        --color-secondary-25: #2444d440;
-        --color-secondary-10: #2444d41a;
-
-        //Secondary
-        --color-tertiary: #1730a2;
-        --color-tertiary-25: #1730a240;
-        --color-tertiary-10: #1730a21a;
-
-        //Transparent
-        --color-transparent: transparent;
 
         //Background color
         --color-background: #17171a;
@@ -96,37 +64,18 @@
 
         //Tipograpy
         --color-tipograpy: #ffffff;
-        --color-tipograpy-975: #86a0d3f9;
-        --color-tipograpy-60: #86a0d399;
-
-        //Border
-        --color-border: #222531;
+        --color-tipograpy-75: #86a0d3bf;
 
         //Selection color
         --color-selection-background: #86a0d3;
 
         //Shadows
-        --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px, rgba(59,130,246, 0.16) 0px 0px 32px;
-
-        //Gradients
-        --color-background-gradient-body: linear-gradient(90deg, rgba(59,130,246, 0.05) 0%, rgba(59,130,246, 0) 100%);
-        --color-background-gradient-body-mobile: linear-gradient(-180deg, rgba(34, 37, 49, 0.5) 0%, rgba(34, 37, 49, 0) 100%);
-        --color-background-gradient-body-left-right: linear-gradient(-90deg, rgba(23, 23, 26, 1) 0%, rgba(23, 23, 26, 0) 100%);
-        --color-background-gradient-body-right-left: linear-gradient(90deg, rgba(23, 23, 26, 1) 0%, rgba(23, 23, 26, 0) 100%);
-        --color-background-gradient-body-left-right-desktop: linear-gradient(90deg, rgba(25, 28, 35, 1) 0%, rgba(25, 28, 35, 0) 100%);
+        --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
+                        rgba(59,130,246, 0.16) 0px 0px 32px;
 
         //State
         --color-inactive-text: #1e3c6a;
         --color-inactive-background: #0c1d38;
-
-        //Basic
-        --color-white: #000000;
-        --color-black: #ffffff;
-        --color-white-75: #000000bf;
-        --color-black-75: #ffffffbf;
-        --color-white-50: #00000080;
-        --color-black-50: #ffffff80;
-
     }
 
 }

@@ -17,7 +17,7 @@ body{
         width: 100%;
         background-color: var(--color-background);
         opacity: 1;
-        transition: var(--transition-initial-animation);
+        transition: var(--transition-x4);
         pointer-events: all;
 
         &.active{
