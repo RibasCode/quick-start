@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html body {
+  background-color: var(--color-background);
+  color: var(--color-tipograpy);
+  font-family: "Poppins", sans-serif;
+  transition: var(--transition);
+}
+html body ::selection {
+  color: var(--color-selection-text);
+  background-color: var(--color-primary);
+}
+html body h2,
+html body h3 {
+  margin-bottom: 24px;
+}
+html body h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+html body h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+html body p {
+  color: var(--color-tipograpy);
+  font-size: 14px;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+html body a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+html body a:hover {
+  text-decoration: underline;
+}
+html body ul li {
+  list-style: none;
+}
+html body main {
+  padding: 84px 0;
+}
+html body main section {
+  padding: 64px 0;
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+/* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
+/* md - Medium devices (tablets - 768px and up) (768px - 991px) */
+/* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
+/* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
+/* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
+body .initial-animation {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-x4);
+}
+body .initial-animation.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/*# sourceMappingURL=index.css.map */

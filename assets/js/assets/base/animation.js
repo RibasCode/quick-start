@@ -3,15 +3,14 @@
 
 $(document).ready(function() {
 
-    let initialAnimationContainer = $('.initial-animation')
+    let initialAnimation = $('.initial-animation')
 
     setTimeout(function(){
-        initialAnimationContainer.addClass('active');
+        initialAnimation.removeClass('active');
 
         setTimeout(function(){
-            initialAnimationContainer.remove();
-        }, 751);
-
-    }, 640);
+            initialAnimation.remove();
+        }, 500);
+    }, 500);
 
 });

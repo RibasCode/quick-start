@@ -36,26 +36,36 @@
 		<script src="./assets/js/assets/libraries/jquery-3.6.0.min.js"></script>
 
 		<!-- Main -->
-		<!--
-        <script src="./assets/js/assets/template.js"></script>
-        -->
+        <script src="./assets/js/assets/base/animation.js"></script>
 
     </head>
 
-    <body class="light-theme js">
+    <body class="light-theme">
 
-        <h1>Quick start</h1>
+        <div class="initial-animation active"></div>
 
-        <div class="initial-animation"></div>
+        <div class="container-loader active">
+            <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
 
         <nav class="nav-primary"></nav>
 
 		<main>
 
+            <h1>Quick start</h1>
+
 			<section id="hero">
 
                 <div class="container-1440">
-
+                    <div class="container-input">
+                        <input type="checkbox" id="checkbox-arees" value="arees">
+                        <label for="checkbox-arees">Example</label>
+                    </div>
                 </div>
 
 			</section>

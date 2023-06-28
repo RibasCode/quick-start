@@ -1,28 +1,24 @@
 body{
 
-    @keyframes animation-bg-gradient{
-
-        0%{
-            background-position: 0%;
-        }
-        100%{
-            background-position: 100%;
-        }
-    }
-
     .initial-animation{
         z-index: 100;
+
         position: fixed;
+        top: 0;
+        left: 0;
+
         height: 100vh;
         width: 100%;
+
         background-color: var(--color-background);
-        opacity: 1;
+
+        opacity: 0;
+        pointer-events: none;
         transition: var(--transition-x4);
-        pointer-events: all;
 
         &.active{
-            opacity: 0;
-            pointer-events: none;
+            opacity: 1;
+            pointer-events: all;
         }
     }
 }

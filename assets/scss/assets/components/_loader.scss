@@ -1,16 +1,20 @@
+
 body{
 
     .container-loader{
         z-index: 1;
-        position: fixed;
+
         display: flex;
+
+        position: fixed;
         left: 50%;
         bottom: 40px;
+        transform: translate(-50%, -50%) scale(0.64);
+
         opacity: 0;
-        transition: var(--transition-05);
+        transition: var(--transition);
 
         .loader{
-            transform: scale(0.64);
 
             div{
                 background-color: var(--color-primary);
@@ -37,7 +41,6 @@ body{
             width: 13px;
             height: 13px;
             border-radius: 50%;
-            background-color: var(--color-background-light);
             animation-timing-function: cubic-bezier(0, 1, 1, 0);
 
             &:nth-child(1){
@@ -91,5 +94,4 @@ body{
             transform: translate(24px, 0);
         }
     }
-
 }

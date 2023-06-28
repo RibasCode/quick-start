@@ -1,0 +1,14 @@
+:root body {
+  --border-radius: 10px;
+  --border-radius-50: 50px;
+  --border-radius-top: 10px 10px 0 0;
+  --border-radius-top-right: 0 10px 0 0;
+  --border-radius-right: 0 10px 10px 0;
+  --border-radius-bottom: 0 0 10px 10px;
+  --border-radius-bottom-right: 0 0 10px 0;
+  --transition: all 0.125s cubic-bezier(0,0,.5,1);
+  --transition-x2: all 0.25s cubic-bezier(0,0,.5,1);
+  --transition-x4: all 0.5s cubic-bezier(0,0,.5,1);
+}
+
+/*# sourceMappingURL=variables.css.map */
