@@ -45,10 +45,22 @@ html body a:hover {
 html body ul li {
   list-style: none;
 }
+html body .container-1440 {
+  width: 100%;
+  padding: 0 24px;
+}
 html body main {
-  padding: 84px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 88px 0;
 }
 html body main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   padding: 64px 0;
 }
 
@@ -60,6 +72,12 @@ html body main section {
 /* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
 /* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
 /* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
+@media (min-width: 1441px) {
+  body .container-1440 {
+    box-sizing: border-box;
+    max-width: 1440px;
+  }
+}
 body .initial-animation {
   z-index: 100;
   position: fixed;
