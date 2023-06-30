@@ -23,7 +23,8 @@ body{
 }
 
 .button-theme{
-    position: relative;
+    position: fixed;
+    right: 0;
 
     display: flex;
     justify-content: center;

@@ -15,7 +15,7 @@ html body {
 }
 html body ::selection {
   color: var(--color-selection-text);
-  background-color: var(--color-primary);
+  background-color: var(--color-selection-background);
 }
 html body h2,
 html body h3 {

@@ -21,20 +21,17 @@ a.button:hover {
 }
 button.button-primary,
 a.button.button-primary {
+  color: var(--color-white);
   background-color: var(--color-primary);
 }
 button.button-primary:hover,
 a.button.button-primary:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-110);
 }
 button.button-primary:active, button.button-primary:focus,
 a.button.button-primary:active,
 a.button.button-primary:focus {
-  background-color: var(--color-secondary);
-}
-button.button-primary p,
-a.button.button-primary p {
-  color: var(--color-tipograpy);
+  background-color: var(--color-primary-120);
 }
 button.button-secondary,
 a.button.button-secondary {
@@ -110,7 +107,8 @@ body.dark-theme .button-theme i.dark-theme {
 }
 
 .button-theme {
-  position: relative;
+  position: fixed;
+  right: 0;
   display: flex;
   justify-content: center;
   height: 64px;

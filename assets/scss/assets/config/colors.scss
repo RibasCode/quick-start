@@ -6,6 +6,8 @@
     body{
 
         //Primary
+        --color-primary-120: #003eff;
+        --color-primary-110: #0052ff;
         --color-primary: #0066ff;
         --color-primary-75: #0066ffbf;
         --color-primary-50: #0066ff80;
@@ -13,6 +15,8 @@
         --color-primary-10: #0066ff1a;
 
         //Secondary
+        --color-secondary-120: #8b15ff;
+        --color-secondary-110: #8b29ff;
         --color-secondary: #8b3dff;
         --color-secondary-75: #8b3dffbf;
         --color-secondary-50: #8b3dff80;
@@ -20,62 +24,61 @@
         --color-secondary-10: #8b3dff1a;
 
         //Accent
+        --color-accent-120: #00fa78;
+        --color-accent-110: #00fa8c;
         --color-accent: #00faa0;
         --color-accent-75: #00faa0bf;
         --color-accent-50: #00faa080;
         --color-accent-25: #00faa040;
         --color-accent-10: #00faa01a;
 
-        //Background color
+        //Background
         --color-background: #ffffff;
 
         //Tipograpy
         --color-tipograpy: #0d1216;
         --color-tipograpy-75: #0d1216bf;
 
-        //Scrollbar color
+        //Scrollbar
         --color-scrollbar-thumb: #cfd6e4;
 
-        //Selection color
+        //Selection
         --color-selection-text: #ffffff;
-        --color-selection-background: #00ccff;
+        --color-selection-background: #8b3dff;
 
         //Shadows
-        --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px,
-                        rgba(59,130,246, 0.12) 0px 0px 32px;
+        // --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px,
+        //                 rgba(59,130,246, 0.12) 0px 0px 32px;
 
         //State
-        --color-success: #5cb85c;
-        --color-info: #0071e3;
-        --color-warning: #ffa500;
-        --color-error: #f44336;
-        --color-inactive-text: #d1d1d1;
-        --color-inactive-background: #f1f1f1;
+        // --color-success: #5cb85c;
+        // --color-info: #0071e3;
+        // --color-warning: #ffa500;
+        // --color-error: #f44336;
+
+        //Basic
+        --color-white: #ffffff;
+        --color-black: #0d1216;
+
     }
 
 
     body.dark-theme{
 
-        //Background color
-        --color-background: #17171a;
+        //Background
+        --color-background: #0d1216;
 
-        //Scrollbar color
+        //Scrollbar
         --color-scrollbar-thumb: #262628;
 
         //Tipograpy
         --color-tipograpy: #ffffff;
-        --color-tipograpy-75: #86a0d3bf;
-
-        //Selection color
-        --color-selection-background: #86a0d3;
+        --color-tipograpy-75: #ffffffbf;
 
         //Shadows
-        --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
-                        rgba(59,130,246, 0.16) 0px 0px 32px;
+        // --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
+        //                 rgba(59,130,246, 0.16) 0px 0px 32px;
 
-        //State
-        --color-inactive-text: #1e3c6a;
-        --color-inactive-background: #0c1d38;
     }
 
 }

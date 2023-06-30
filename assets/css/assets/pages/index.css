@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 Mobile First
 --------------------------------------------------------------*/
+body section#hero {
+  height: 100vh;
+}
+
 /* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
 /* md - Medium devices (tablets - 768px and up) (768px - 991px) */
 /* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */

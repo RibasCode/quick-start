@@ -27,19 +27,16 @@ a.button{
     }
 
     &.button-primary{
+        color: var(--color-white);
         background-color: var(--color-primary);
 
         &:hover{
-            background-color: var(--color-secondary);
+            background-color: var(--color-primary-110);
         }
 
         &:active,
         &:focus{
-            background-color: var(--color-secondary);
-        }
-
-        p{
-            color: var(--color-tipograpy);
+            background-color: var(--color-primary-120);
         }
     }
 
