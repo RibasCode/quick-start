@@ -22,8 +22,16 @@ a.button{
     cursor: pointer;
     transition: var(--transition);
 
-    &:hover{
-        text-decoration: none;
+    svg{
+        margin-left: -4px;
+
+        // .icon-arrow{
+        //     margin-left: ?px;
+        // }
+    }
+
+    &.button-100{
+        width: 100%;
     }
 
     &.button-primary{
@@ -41,63 +49,38 @@ a.button{
     }
 
     &.button-secondary{
-        color: var(--color-secondary);
-        background-color: var(--color-transparent);
-        border: solid 1px var(--color-secondary);
+        color: var(--color-primary);
+        background-color: transparent;
 
-        &:hover{
-            background-color: var(--color-secondary-10);
-        }
-
-        &:active,
-        &:focus{
-            background-color: var(--color-secondary-10);
-        }
-    }
-
-    &.button-tertiary{
-        background-color: var(--color-transparent);
-        border: 1px solid transparent;
-
-        p{
-            color: var(--color-primary);
-            transform: translate(0, 1px);
-            transition: none;
-        }
-
-        i{
-            z-index: 1;
-
-            min-width: 18px;
-            min-height: 18px;
-            background-repeat: no-repeat;
-            background-position: center;
-
-            margin-right: 8px;
-
-            filter: brightness(1);
-            transition: none;
-        }
+        border: solid var(--border-width) var(--color-primary);
 
         &:hover{
             background-color: var(--color-primary-10);
         }
 
-        &.active{
-            background-color: var(--color-primary);
+        &:active,
+        &:focus{
+            background-color: var(--color-primary-20);
         }
     }
 
-    &.button-100{
-        width: 100%;
-    }
+    &.button-tertiary{
+        color: var(--color-primary);
+        background-color: transparent;
 
-    &.button-icon-left{
-        padding-left: 18px;
+        &:hover{
+            background-color: var(--color-primary-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-primary-20);
+        }
     }
 
     &.inactive{
         background-color: var(--color-state-inactive);
+
         pointer-events: none;
 
         &:hover,
@@ -106,5 +89,12 @@ a.button{
             outline: none;
             background-color: var(--color-state-inactive);
         }
+    }
+}
+
+a.button{
+
+    &:hover{
+        text-decoration: none;
     }
 }

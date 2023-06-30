@@ -9,27 +9,28 @@
         --color-primary-120: #003eff;
         --color-primary-110: #0052ff;
         --color-primary: #0066ff;
-        --color-primary-75: #0066ffbf;
+        --color-primary-80: #0066ffcc;
         --color-primary-50: #0066ff80;
-        --color-primary-25: #0066ff40;
+        --color-primary-30: #0066ff4d;
+        --color-primary-20: #0066ff33;
         --color-primary-10: #0066ff1a;
 
         //Secondary
         --color-secondary-120: #8b15ff;
         --color-secondary-110: #8b29ff;
         --color-secondary: #8b3dff;
-        --color-secondary-75: #8b3dffbf;
+        --color-secondary-80: #8b3dffcc;
         --color-secondary-50: #8b3dff80;
-        --color-secondary-25: #8b3dff40;
+        --color-secondary-20: #8b3dff33;
         --color-secondary-10: #8b3dff1a;
 
         //Accent
         --color-accent-120: #00fa78;
         --color-accent-110: #00fa8c;
         --color-accent: #00faa0;
-        --color-accent-75: #00faa0bf;
+        --color-accent-80: #00faa0cc;
         --color-accent-50: #00faa080;
-        --color-accent-25: #00faa040;
+        --color-accent-20: #00faa033;
         --color-accent-10: #00faa01a;
 
         //Background
@@ -37,10 +38,7 @@
 
         //Tipograpy
         --color-tipograpy: #0d1216;
-        --color-tipograpy-75: #0d1216bf;
-
-        //Scrollbar
-        --color-scrollbar-thumb: #cfd6e4;
+        --color-tipograpy-80: #0d1216cc;
 
         //Selection
         --color-selection-text: #ffffff;
@@ -50,11 +48,16 @@
         // --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px,
         //                 rgba(59,130,246, 0.12) 0px 0px 32px;
 
+        //Scrollbar
+        --color-scrollbar-thumb: #cfd6e4;
+
         //State
         // --color-success: #5cb85c;
         // --color-info: #0071e3;
         // --color-warning: #ffa500;
         // --color-error: #f44336;
+        // --color-inactive-text: #f44336;
+        // --color-inactive-background: #f44336;
 
         //Basic
         --color-white: #ffffff;
@@ -68,16 +71,16 @@
         //Background
         --color-background: #0d1216;
 
-        //Scrollbar
-        --color-scrollbar-thumb: #262628;
-
         //Tipograpy
         --color-tipograpy: #ffffff;
-        --color-tipograpy-75: #ffffffbf;
+        --color-tipograpy-80: #ffffffcc;
 
         //Shadows
         // --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
         //                 rgba(59,130,246, 0.16) 0px 0px 32px;
+
+        //Scrollbar
+        --color-scrollbar-thumb: #262628;
 
     }
 

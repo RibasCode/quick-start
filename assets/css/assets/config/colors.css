@@ -2,38 +2,39 @@
   --color-primary-120: #003eff;
   --color-primary-110: #0052ff;
   --color-primary: #0066ff;
-  --color-primary-75: #0066ffbf;
+  --color-primary-80: #0066ffcc;
   --color-primary-50: #0066ff80;
-  --color-primary-25: #0066ff40;
+  --color-primary-30: #0066ff4d;
+  --color-primary-20: #0066ff33;
   --color-primary-10: #0066ff1a;
   --color-secondary-120: #8b15ff;
   --color-secondary-110: #8b29ff;
   --color-secondary: #8b3dff;
-  --color-secondary-75: #8b3dffbf;
+  --color-secondary-80: #8b3dffcc;
   --color-secondary-50: #8b3dff80;
-  --color-secondary-25: #8b3dff40;
+  --color-secondary-20: #8b3dff33;
   --color-secondary-10: #8b3dff1a;
   --color-accent-120: #00fa78;
   --color-accent-110: #00fa8c;
   --color-accent: #00faa0;
-  --color-accent-75: #00faa0bf;
+  --color-accent-80: #00faa0cc;
   --color-accent-50: #00faa080;
-  --color-accent-25: #00faa040;
+  --color-accent-20: #00faa033;
   --color-accent-10: #00faa01a;
   --color-background: #ffffff;
   --color-tipograpy: #0d1216;
-  --color-tipograpy-75: #0d1216bf;
-  --color-scrollbar-thumb: #cfd6e4;
+  --color-tipograpy-80: #0d1216cc;
   --color-selection-text: #ffffff;
   --color-selection-background: #8b3dff;
+  --color-scrollbar-thumb: #cfd6e4;
   --color-white: #ffffff;
   --color-black: #0d1216;
 }
 :root body.dark-theme {
   --color-background: #0d1216;
-  --color-scrollbar-thumb: #262628;
   --color-tipograpy: #ffffff;
-  --color-tipograpy-75: #ffffffbf;
+  --color-tipograpy-80: #ffffffcc;
+  --color-scrollbar-thumb: #262628;
 }
 
 /*# sourceMappingURL=colors.css.map */

@@ -10,7 +10,7 @@ $(document).ready(function() {
 
         setTimeout(function(){
             initialAnimation.remove();
-        }, 500);
-    }, 500);
+        }, 400);
+    }, 400);
 
 });

@@ -77,12 +77,10 @@ html{
 
             min-height: 100vh;
 
-            padding: 88px 0;
-
             section{
                 display: flex;
+                flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 width: 100%;
                 padding: 64px 0;
             }

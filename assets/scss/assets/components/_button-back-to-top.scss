@@ -36,11 +36,19 @@ a.button{
             }
         }
 
-        &:hover,
+        &:hover{
+            color: var(--color-inactive-text);
+            background-color: var(--color-inactive-background);
+
+            svg.icon{
+                transform: translateY(-3px) rotate(-90deg);
+            }
+        }
+
         &:active,
         &:focus{
-
-            background-color: var(--color-primary-25);
+            color: var(--color-inactive-text);
+            background-color: var(--color-inactive-background);
 
             svg.icon{
                 transform: translateY(-3px) rotate(-90deg);

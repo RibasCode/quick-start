@@ -15,9 +15,13 @@ a.button {
   cursor: pointer;
   transition: var(--transition);
 }
-button:hover,
-a.button:hover {
-  text-decoration: none;
+button svg,
+a.button svg {
+  margin-left: -4px;
+}
+button.button-100,
+a.button.button-100 {
+  width: 100%;
 }
 button.button-primary,
 a.button.button-primary {
@@ -35,56 +39,32 @@ a.button.button-primary:focus {
 }
 button.button-secondary,
 a.button.button-secondary {
-  color: var(--color-secondary);
-  background-color: var(--color-transparent);
-  border: solid 1px var(--color-secondary);
+  color: var(--color-primary);
+  background-color: transparent;
+  border: solid var(--border-width) var(--color-primary);
 }
 button.button-secondary:hover,
 a.button.button-secondary:hover {
-  background-color: var(--color-secondary-10);
+  background-color: var(--color-primary-10);
 }
 button.button-secondary:active, button.button-secondary:focus,
 a.button.button-secondary:active,
 a.button.button-secondary:focus {
-  background-color: var(--color-secondary-10);
+  background-color: var(--color-primary-20);
 }
 button.button-tertiary,
 a.button.button-tertiary {
-  background-color: var(--color-transparent);
-  border: 1px solid transparent;
-}
-button.button-tertiary p,
-a.button.button-tertiary p {
   color: var(--color-primary);
-  transform: translate(0, 1px);
-  transition: none;
-}
-button.button-tertiary i,
-a.button.button-tertiary i {
-  z-index: 1;
-  min-width: 18px;
-  min-height: 18px;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 8px;
-  filter: brightness(1);
-  transition: none;
+  background-color: transparent;
 }
 button.button-tertiary:hover,
 a.button.button-tertiary:hover {
   background-color: var(--color-primary-10);
 }
-button.button-tertiary.active,
-a.button.button-tertiary.active {
-  background-color: var(--color-primary);
-}
-button.button-100,
-a.button.button-100 {
-  width: 100%;
-}
-button.button-icon-left,
-a.button.button-icon-left {
-  padding-left: 18px;
+button.button-tertiary:active, button.button-tertiary:focus,
+a.button.button-tertiary:active,
+a.button.button-tertiary:focus {
+  background-color: var(--color-primary-20);
 }
 button.inactive,
 a.button.inactive {
@@ -97,6 +77,10 @@ a.button.inactive:active,
 a.button.inactive:focus {
   outline: none;
   background-color: var(--color-state-inactive);
+}
+
+a.button:hover {
+  text-decoration: none;
 }
 
 body.light-theme .button-theme i.light-theme {
@@ -164,10 +148,18 @@ a.button.button-back-to-top svg.icon polyline {
   stroke: var(--color-primary);
   transition: var(--transition);
 }
-a.button.button-back-to-top:hover, a.button.button-back-to-top:active, a.button.button-back-to-top:focus {
-  background-color: var(--color-primary-25);
+a.button.button-back-to-top:hover {
+  color: var(--color-inactive-text);
+  background-color: var(--color-inactive-background);
 }
-a.button.button-back-to-top:hover svg.icon, a.button.button-back-to-top:active svg.icon, a.button.button-back-to-top:focus svg.icon {
+a.button.button-back-to-top:hover svg.icon {
+  transform: translateY(-3px) rotate(-90deg);
+}
+a.button.button-back-to-top:active, a.button.button-back-to-top:focus {
+  color: var(--color-inactive-text);
+  background-color: var(--color-inactive-background);
+}
+a.button.button-back-to-top:active svg.icon, a.button.button-back-to-top:focus svg.icon {
   transform: translateY(-3px) rotate(-90deg);
 }
 
@@ -196,10 +188,10 @@ input[type=search]::placeholder {
   appearance: none;
   width: 18px;
   height: 18px;
-  border: 1px solid var(--color-primary);
+  border: solid var(--border-width) var(--color-primary);
   border-radius: 3px;
   cursor: pointer;
-  transition: var(--transition-2);
+  transition: var(--transition-x2);
 }
 .container-input input[type=checkbox]:checked {
   background-color: var(--color-primary);
@@ -209,7 +201,7 @@ input[type=search]::placeholder {
   color: var(--color-primary);
 }
 .container-input input[type=checkbox]:not(:checked) {
-  background-color: var(--color-transparent);
+  background-color: transparent;
 }
 .container-input input[type=checkbox]:hover ~ label {
   color: var(--color-primary);
@@ -224,7 +216,7 @@ input[type=search]::placeholder {
 
 label {
   user-select: none;
-  transition: var(--transition-2);
+  transition: var(--transition-x2);
 }
 label[for^=checkbox] {
   flex: 1;
@@ -321,7 +313,7 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-scrollbar-thumb);
-  border: 4px solid var(--color-background);
+  border: solid 4px var(--color-background);
   border-radius: 7px;
 }
 
