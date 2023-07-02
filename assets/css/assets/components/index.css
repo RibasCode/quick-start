@@ -1,5 +1,10 @@
-button,
-a.button {
+button {
+  border: none;
+}
+
+.button-primary,
+.button-secondary,
+.button-tertiary {
   z-index: 1;
   display: flex;
   align-items: center;
@@ -10,77 +15,74 @@ a.button {
   font-weight: 500;
   padding: 12px 24px;
   white-space: nowrap;
-  border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
   transition: var(--transition);
 }
-button svg,
-a.button svg {
+.button-primary svg,
+.button-secondary svg,
+.button-tertiary svg {
   margin-left: -4px;
-}
-button.button-100,
-a.button.button-100 {
-  width: 100%;
-}
-button.button-primary,
-a.button.button-primary {
-  color: var(--color-white);
-  background-color: var(--color-primary);
-}
-button.button-primary:hover,
-a.button.button-primary:hover {
-  background-color: var(--color-primary-110);
-}
-button.button-primary:active, button.button-primary:focus,
-a.button.button-primary:active,
-a.button.button-primary:focus {
-  background-color: var(--color-primary-120);
-}
-button.button-secondary,
-a.button.button-secondary {
-  color: var(--color-primary);
-  background-color: transparent;
-  border: solid var(--border-width) var(--color-primary);
-}
-button.button-secondary:hover,
-a.button.button-secondary:hover {
-  background-color: var(--color-primary-10);
-}
-button.button-secondary:active, button.button-secondary:focus,
-a.button.button-secondary:active,
-a.button.button-secondary:focus {
-  background-color: var(--color-primary-20);
-}
-button.button-tertiary,
-a.button.button-tertiary {
-  color: var(--color-primary);
-  background-color: transparent;
-}
-button.button-tertiary:hover,
-a.button.button-tertiary:hover {
-  background-color: var(--color-primary-10);
-}
-button.button-tertiary:active, button.button-tertiary:focus,
-a.button.button-tertiary:active,
-a.button.button-tertiary:focus {
-  background-color: var(--color-primary-20);
-}
-button.inactive,
-a.button.inactive {
-  background-color: var(--color-state-inactive);
-  pointer-events: none;
-}
-button.inactive:hover, button.inactive:active, button.inactive:focus,
-a.button.inactive:hover,
-a.button.inactive:active,
-a.button.inactive:focus {
-  outline: none;
-  background-color: var(--color-state-inactive);
 }
 
 a.button:hover {
   text-decoration: none;
+}
+
+.button-100 {
+  width: 100%;
+}
+
+.button-primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+}
+.button-primary:hover {
+  background-color: var(--color-primary-110);
+}
+.button-primary:active, .button-primary:focus {
+  background-color: var(--color-primary-120);
+}
+.button-primary.inactive {
+  color: #d0d0d0;
+  background-color: #f0f0f0;
+  pointer-events: none;
+  outline: none;
+}
+
+.button-secondary {
+  color: var(--color-primary);
+  background-color: transparent;
+  border: solid var(--border-width) var(--color-primary);
+}
+.button-secondary:hover {
+  background-color: var(--color-primary-10);
+}
+.button-secondary:active, .button-secondary:focus {
+  background-color: var(--color-primary-20);
+}
+.button-secondary.inactive {
+  color: #d0d0d0;
+  background-color: #f9f9f9;
+  border: solid var(--border-width) #d0d0d0;
+  pointer-events: none;
+  outline: none;
+}
+
+.button-tertiary {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+.button-tertiary:hover {
+  background-color: var(--color-primary-10);
+}
+.button-tertiary:active, .button-tertiary:focus {
+  background-color: var(--color-primary-20);
+}
+.button-tertiary.inactive {
+  color: #d0d0d0;
+  pointer-events: none;
+  outline: none;
 }
 
 body.light-theme .button-theme i.light-theme {

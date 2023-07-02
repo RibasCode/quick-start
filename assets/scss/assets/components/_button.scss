@@ -1,6 +1,11 @@
 
-button,
-a.button{
+button{
+    border: none;
+}
+
+.button-primary,
+.button-secondary,
+.button-tertiary{
     z-index: 1;
 
     display: flex;
@@ -16,7 +21,6 @@ a.button{
     padding: 12px 24px;
 
     white-space: nowrap;
-    border: none;
     border-radius: var(--border-radius);
 
     cursor: pointer;
@@ -29,72 +33,83 @@ a.button{
         //     margin-left: ?px;
         // }
     }
-
-    &.button-100{
-        width: 100%;
-    }
-
-    &.button-primary{
-        color: var(--color-white);
-        background-color: var(--color-primary);
-
-        &:hover{
-            background-color: var(--color-primary-110);
-        }
-
-        &:active,
-        &:focus{
-            background-color: var(--color-primary-120);
-        }
-    }
-
-    &.button-secondary{
-        color: var(--color-primary);
-        background-color: transparent;
-
-        border: solid var(--border-width) var(--color-primary);
-
-        &:hover{
-            background-color: var(--color-primary-10);
-        }
-
-        &:active,
-        &:focus{
-            background-color: var(--color-primary-20);
-        }
-    }
-
-    &.button-tertiary{
-        color: var(--color-primary);
-        background-color: transparent;
-
-        &:hover{
-            background-color: var(--color-primary-10);
-        }
-
-        &:active,
-        &:focus{
-            background-color: var(--color-primary-20);
-        }
-    }
-
-    &.inactive{
-        background-color: var(--color-state-inactive);
-
-        pointer-events: none;
-
-        &:hover,
-        &:active,
-        &:focus{
-            outline: none;
-            background-color: var(--color-state-inactive);
-        }
-    }
 }
 
 a.button{
 
     &:hover{
         text-decoration: none;
+    }
+}
+
+.button-100{
+    width: 100%;
+}
+
+.button-primary{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+
+    &:hover{
+        background-color: var(--color-primary-110);
+    }
+
+    &:active,
+    &:focus{
+        background-color: var(--color-primary-120);
+    }
+
+    &.inactive{
+        color: #d0d0d0;
+        background-color: #f0f0f0;
+
+        pointer-events: none;
+        outline: none;
+    }
+}
+
+.button-secondary{
+    color: var(--color-primary);
+    background-color: transparent;
+
+    border: solid var(--border-width) var(--color-primary);
+
+    &:hover{
+        background-color: var(--color-primary-10);
+    }
+
+    &:active,
+    &:focus{
+        background-color: var(--color-primary-20);
+    }
+
+    &.inactive{
+        color: #d0d0d0;
+        background-color: #f9f9f9;
+        border: solid var(--border-width) #d0d0d0;
+
+        pointer-events: none;
+        outline: none;
+    }
+}
+
+.button-tertiary{
+    color: var(--color-primary);
+    background-color: transparent;
+
+    &:hover{
+        background-color: var(--color-primary-10);
+    }
+
+    &:active,
+    &:focus{
+        background-color: var(--color-primary-20);
+    }
+
+    &.inactive{
+        color: #d0d0d0;
+
+        pointer-events: none;
+        outline: none;
     }
 }
