@@ -1,19 +1,15 @@
 
 label{
     user-select: none;
-    transition: var(--transition-x2);
 
     &[for^="checkbox"]{
         flex: 1;
 
         padding-left: 14px;
 
+        color: var(--color-primary);
         font-weight: 400;
 
         cursor: pointer;
-
-        &:hover{
-            color: var(--color-primary);
-        }
     }
 }

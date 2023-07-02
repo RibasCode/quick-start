@@ -40,7 +40,7 @@ input{
             border: solid var(--border-width) var(--color-primary);
             border-radius: 3px;
             cursor: pointer;
-            transition: var(--transition-x2);
+            transition: var(--transition);
 
             &:checked{
                 background-color: var(--color-primary);

@@ -1,58 +1,49 @@
 
-a.button{
+.button-back-to-top{
+    position: fixed;
+    right: 48px;
+    bottom: 24px;
 
-    &.button-back-to-top{
-        position: fixed;
-        right: 48px;
-        bottom: 24px;
+    color: var(--color-primary);
+    background-color: var(--color-primary-10);
 
-        color: var(--color-primary);
-        background-color: var(--color-primary-10);
+    opacity: 0;
+    pointer-events: none;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
 
-        opacity: 0;
-        pointer-events: none;
-        border-radius: var(--border-radius);
+    &.active{
+        bottom: 48px;
+
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    svg.icon{
+        height: 14px;
+
+        margin-right: 12px;
+
+        transform: translateY(-1px) rotate(-90deg);
         transition: var(--transition);
 
-        &.active{
-            bottom: 48px;
+        polyline{
+            stroke: var(--color-primary);
 
-            opacity: 1;
-            pointer-events: all;
+            transition: var(--transition);
         }
+    }
+
+    &:hover{
+        background-color: var(--color-primary-20);
 
         svg.icon{
-            height: 14px;
-
-            margin-right: 12px;
-
-            transform: translateY(-1px) rotate(-90deg);
-            transition: var(--transition);
-
-            polyline{
-                stroke: var(--color-primary);
-
-                transition: var(--transition);
-            }
+            transform: translateY(-3px) rotate(-90deg);
         }
+    }
 
-        &:hover{
-            color: var(--color-inactive-text);
-            background-color: var(--color-inactive-background);
-
-            svg.icon{
-                transform: translateY(-3px) rotate(-90deg);
-            }
-        }
-
-        &:active,
-        &:focus{
-            color: var(--color-inactive-text);
-            background-color: var(--color-inactive-background);
-
-            svg.icon{
-                transform: translateY(-3px) rotate(-90deg);
-            }
-        }
+    &:active,
+    &:focus{
+        background-color: var(--color-primary-30);
     }
 }

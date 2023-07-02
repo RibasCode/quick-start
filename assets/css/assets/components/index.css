@@ -4,7 +4,8 @@ button {
 
 .button-primary,
 .button-secondary,
-.button-tertiary {
+.button-tertiary,
+.button-back-to-top {
   z-index: 1;
   display: flex;
   align-items: center;
@@ -21,7 +22,8 @@ button {
 }
 .button-primary svg,
 .button-secondary svg,
-.button-tertiary svg {
+.button-tertiary svg,
+.button-back-to-top svg {
   margin-left: -4px;
 }
 
@@ -124,7 +126,7 @@ body.dark-theme .button-theme i.dark-theme {
   background-size: 46%;
 }
 
-a.button.button-back-to-top {
+.button-back-to-top {
   position: fixed;
   right: 48px;
   bottom: 24px;
@@ -135,34 +137,29 @@ a.button.button-back-to-top {
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
-a.button.button-back-to-top.active {
+.button-back-to-top.active {
   bottom: 48px;
   opacity: 1;
   pointer-events: all;
 }
-a.button.button-back-to-top svg.icon {
+.button-back-to-top svg.icon {
   height: 14px;
   margin-right: 12px;
   transform: translateY(-1px) rotate(-90deg);
   transition: var(--transition);
 }
-a.button.button-back-to-top svg.icon polyline {
+.button-back-to-top svg.icon polyline {
   stroke: var(--color-primary);
   transition: var(--transition);
 }
-a.button.button-back-to-top:hover {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background);
+.button-back-to-top:hover {
+  background-color: var(--color-primary-20);
 }
-a.button.button-back-to-top:hover svg.icon {
+.button-back-to-top:hover svg.icon {
   transform: translateY(-3px) rotate(-90deg);
 }
-a.button.button-back-to-top:active, a.button.button-back-to-top:focus {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background);
-}
-a.button.button-back-to-top:active svg.icon, a.button.button-back-to-top:focus svg.icon {
-  transform: translateY(-3px) rotate(-90deg);
+.button-back-to-top:active, .button-back-to-top:focus {
+  background-color: var(--color-primary-30);
 }
 
 input[type=search] {
@@ -193,7 +190,7 @@ input[type=search]::placeholder {
   border: solid var(--border-width) var(--color-primary);
   border-radius: 3px;
   cursor: pointer;
-  transition: var(--transition-x2);
+  transition: var(--transition);
 }
 .container-input input[type=checkbox]:checked {
   background-color: var(--color-primary);
@@ -218,16 +215,13 @@ input[type=search]::placeholder {
 
 label {
   user-select: none;
-  transition: var(--transition-x2);
 }
 label[for^=checkbox] {
   flex: 1;
   padding-left: 14px;
+  color: var(--color-primary);
   font-weight: 400;
   cursor: pointer;
-}
-label[for^=checkbox]:hover {
-  color: var(--color-primary);
 }
 
 body .container-loader {
