@@ -56,8 +56,9 @@
         // --color-info: #0071e3;
         // --color-warning: #ffa500;
         // --color-error: #f44336;
-        // --color-inactive-text: #f44336;
-        // --color-inactive-background: #f44336;
+        --color-inactive-text: #d0d0d0;
+        --color-inactive-background: #f0f0f0;
+        --color-inactive-background-10: #f9f9f9;
 
         //Basic
         --color-white: #ffffff;
@@ -82,6 +83,10 @@
         //Scrollbar
         --color-scrollbar-thumb: #262628;
 
+        //State
+        --color-inactive-text: #3d464d;
+        --color-inactive-background: #11171c;
+        --color-inactive-background-10: #10161b;
     }
 
 }

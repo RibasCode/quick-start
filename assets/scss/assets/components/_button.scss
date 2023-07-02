@@ -61,8 +61,8 @@ a.button{
     }
 
     &.inactive{
-        color: #d0d0d0;
-        background-color: #f0f0f0;
+        color: var(--color-inactive-text);
+        background-color: var(--color-inactive-background);
 
         pointer-events: none;
         outline: none;
@@ -85,9 +85,9 @@ a.button{
     }
 
     &.inactive{
-        color: #d0d0d0;
-        background-color: #f9f9f9;
-        border: solid var(--border-width) #d0d0d0;
+        color: var(--color-inactive-text);
+        background-color: var(--color-inactive-background-10);
+        border: solid var(--border-width) var(--color-inactive-text);
 
         pointer-events: none;
         outline: none;
@@ -108,7 +108,7 @@ a.button{
     }
 
     &.inactive{
-        color: #d0d0d0;
+        color: var(--color-inactive-text);
 
         pointer-events: none;
         outline: none;
