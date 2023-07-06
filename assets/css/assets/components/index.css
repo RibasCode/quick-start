@@ -2,6 +2,13 @@ button {
   border: none;
 }
 
+a.button-primary:hover,
+a.button-secondary:hover,
+a.button-tertiary:hover,
+a.button-back-to-top:hover {
+  text-decoration: none;
+}
+
 .button-primary,
 .button-secondary,
 .button-tertiary,
@@ -10,32 +17,36 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 36px;
   width: max-content;
   width: fit-content;
   font-size: 14px;
   font-weight: 500;
-  padding: 12px 24px;
+  padding: 12px 16px;
   white-space: nowrap;
   border-radius: var(--border-radius);
+  outline: none;
   cursor: pointer;
   transition: var(--transition);
+}
+.button-primary.inactive,
+.button-secondary.inactive,
+.button-tertiary.inactive,
+.button-back-to-top.inactive {
+  pointer-events: none;
+  outline: none;
+}
+.button-primary.button-100,
+.button-secondary.button-100,
+.button-tertiary.button-100,
+.button-back-to-top.button-100 {
+  width: 100%;
 }
 .button-primary svg,
 .button-secondary svg,
 .button-tertiary svg,
 .button-back-to-top svg {
   margin-left: -4px;
-}
-
-a.button-primary:hover,
-a.button-secondary:hover,
-a.button-tertiary:hover,
-a.button-back-to-top:hover {
-  text-decoration: none;
-}
-
-.button-100 {
-  width: 100%;
 }
 
 .button-primary {
@@ -51,8 +62,6 @@ a.button-back-to-top:hover {
 .button-primary.inactive {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background);
-  pointer-events: none;
-  outline: none;
 }
 
 .button-secondary {
@@ -70,8 +79,6 @@ a.button-back-to-top:hover {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background-10);
   border: solid var(--border-width) var(--color-inactive-text);
-  pointer-events: none;
-  outline: none;
 }
 
 .button-tertiary {
@@ -86,8 +93,9 @@ a.button-back-to-top:hover {
 }
 .button-tertiary.inactive {
   color: var(--color-inactive-text);
-  pointer-events: none;
-  outline: none;
+}
+.button-tertiary.inactive:hover, .button-tertiary.inactive:active, .button-tertiary.inactive:focus {
+  background-color: transparent;
 }
 
 body.light-theme .button-theme i.light-theme {

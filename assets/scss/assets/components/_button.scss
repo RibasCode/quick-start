@@ -3,39 +3,6 @@ button{
     border: none;
 }
 
-.button-primary,
-.button-secondary,
-.button-tertiary,
-.button-back-to-top{
-    z-index: 1;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: max-content;
-    width: fit-content;
-
-    font-size: 14px;
-    font-weight: 500;
-
-    padding: 12px 24px;
-
-    white-space: nowrap;
-    border-radius: var(--border-radius);
-
-    cursor: pointer;
-    transition: var(--transition);
-
-    svg{
-        margin-left: -4px;
-
-        // .icon-arrow{
-        //     margin-left: ?px;
-        // }
-    }
-}
-
 a.button-primary,
 a.button-secondary,
 a.button-tertiary,
@@ -46,8 +13,48 @@ a.button-back-to-top{
     }
 }
 
-.button-100{
-    width: 100%;
+.button-primary,
+.button-secondary,
+.button-tertiary,
+.button-back-to-top{
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 36px;
+    width: max-content;
+    width: fit-content;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    padding: 12px 16px;
+
+    white-space: nowrap;
+    border-radius: var(--border-radius);
+
+    outline: none;
+    cursor: pointer;
+    transition: var(--transition);
+
+    &.inactive{
+        pointer-events: none;
+        outline: none;
+    }
+
+    &.button-100{
+        width: 100%;
+    }
+
+    svg{
+        margin-left: -4px;
+
+        // .icon-arrow{
+        //     margin-left: ?px;
+        // }
+    }
 }
 
 .button-primary{
@@ -66,9 +73,6 @@ a.button-back-to-top{
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background);
-
-        pointer-events: none;
-        outline: none;
     }
 }
 
@@ -91,9 +95,6 @@ a.button-back-to-top{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background-10);
         border: solid var(--border-width) var(--color-inactive-text);
-
-        pointer-events: none;
-        outline: none;
     }
 }
 
@@ -113,7 +114,10 @@ a.button-back-to-top{
     &.inactive{
         color: var(--color-inactive-text);
 
-        pointer-events: none;
-        outline: none;
+        &:hover,
+        &:active,
+        &:focus{
+            background-color: transparent;
+        }
     }
 }
