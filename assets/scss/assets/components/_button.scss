@@ -40,20 +40,92 @@ a.button-back-to-top{
     transition: var(--transition);
 
     &.inactive{
-        pointer-events: none;
         outline: none;
+        cursor: not-allowed;
     }
 
     &.button-100{
         width: 100%;
     }
 
-    svg{
-        margin-left: -4px;
+    &:active,
+    &:focus,
+    &:hover{
 
-        // .icon-arrow{
-        //     margin-left: ?px;
-        // }
+        > svg{
+
+            &.icon-right{
+
+                &.icon-arrow{
+                    transform: translate(3px, 0);
+                }
+            }
+
+            &.icon-left{
+
+                &.icon-arrow{
+                    transform: rotate(180deg) translate(3px, 0);
+                }
+            }
+        }
+    }
+
+    > svg{
+        fill: var(--color-primary);
+        transition: var(--transition);
+
+        &.icon-right{
+            margin-left: 8px;
+            margin-right: -4px;
+        }
+
+        &.icon-left{
+            margin-right: 8px;
+            margin-left: -4px;
+
+            &.icon-arrow{
+                transform: rotate(180deg) translate(0, 0);
+            }
+        }
+
+        &.icon-document{
+            height: 22px;
+            width: 22px;
+            margin-left: -5px;
+        }
+
+        &.icon-email{
+            height: 19px;
+            width: 19px;
+        }
+
+        &.icon-search{
+            height: 20px;
+            width: 20px;
+        }
+
+        &.icon-arrow{
+            height: 14px;
+            width: 14px;
+        }
+
+        &.icon-upload{
+            height: 13px;
+            width: 13px;
+        }
+
+        &.icon-close{
+            height: 13px;
+            width: 13px;
+        }
+    }
+
+    .loader{
+        position: absolute;
+
+        > div{
+            background-color: #ffffff;
+        }
     }
 }
 
@@ -73,6 +145,10 @@ a.button-back-to-top{
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background);
+    }
+
+    svg{
+        fill: #ffffff;
     }
 }
 
@@ -95,6 +171,10 @@ a.button-back-to-top{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background-10);
         border: solid var(--border-width) var(--color-inactive-text);
+    }
+
+    svg{
+        fill: var(--color-primary);
     }
 }
 
