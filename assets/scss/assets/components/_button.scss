@@ -36,7 +36,10 @@ button{
     }
 }
 
-a.button{
+a.button-primary,
+a.button-secondary,
+a.button-tertiary,
+a.button-back-to-top{
 
     &:hover{
         text-decoration: none;

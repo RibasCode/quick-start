@@ -27,7 +27,10 @@ button {
   margin-left: -4px;
 }
 
-a.button:hover {
+a.button-primary:hover,
+a.button-secondary:hover,
+a.button-tertiary:hover,
+a.button-back-to-top:hover {
   text-decoration: none;
 }
 
@@ -321,6 +324,56 @@ html {
 /* Track */
 ::-webkit-scrollbar-track {
   background: transparent;
+}
+
+.modal-container {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
+.modal-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-container .modal-window {
+  z-index: 1;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+}
+.modal-container .modal-window .modal-header {
+  padding: 24px 24px 0 24px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.modal-container .modal-window .modal-body {
+  padding: 24px;
+}
+.modal-container .modal-window .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px;
+  background-color: var(--color-primary-06);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+.modal-container .modal-window .modal-footer > *:last-child {
+  margin-left: 24px;
+}
+.modal-container .modal-backdrop {
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*# sourceMappingURL=index.css.map */

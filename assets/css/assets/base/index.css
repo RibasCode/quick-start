@@ -30,7 +30,7 @@ html body h3 {
   font-weight: 500;
 }
 html body p {
-  color: var(--color-tipograpy);
+  color: var(--color-tipograpy-70);
   font-size: 14px;
   line-height: 1.6;
   transition: var(--transition);
