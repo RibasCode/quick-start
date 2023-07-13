@@ -247,6 +247,7 @@ body.dark-theme .button-theme i.dark-theme {
   position: fixed;
   right: 48px;
   bottom: 24px;
+  height: 44px;
   color: var(--color-primary);
   background-color: var(--color-primary-10);
   opacity: 0;
