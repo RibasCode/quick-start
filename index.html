@@ -41,6 +41,9 @@
         <script src="./assets/js/assets/components/button-back-to-top.js"></script>
         <script src="./assets/js/assets/components/modal.js"></script>
 
+        <!-- Type module - Mechanisms for splitting JavaScript programs up into separate modules that can be imported when needed: -->
+        <script src="./assets/js/assets/app.js" type="module"></script>
+
     </head>
 
     <body class="light-theme">
@@ -91,17 +94,6 @@
                     </div>
 
                     <a class="link" href="http://127.0.0.1:5500/index.html" rel="nofollow noopener noreferrer" target="_blank" tabindex="1">Link</a>
-                    <button class="button-primary modal-button" tabindex="9">Active modal</button>
-
-                    <button class="button-primary loading" tabindex="4">
-                            <div class="loader">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        Loading
-                    </button>
 
                     <button class="button-primary" tabindex="4">
                         <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
@@ -156,6 +148,24 @@
                     <button class="button-tertiary" tabindex="8">Button tertiary</button>
                     <a class="button-tertiary" href="http://127.0.0.1:5500/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="9">Button link tertiary</a>
                     <button class="button-tertiary inactive" tabindex="8">Button tertiary inactive</button>
+
+
+
+
+                    <button class="button-primary loading" tabindex="10">
+                        <div class="loader">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        Loading
+                    </button>
+
+                    <button class="button-primary modal-button" tabindex="9">Active modal</button>
+
+                    <button class="button-primary toast-button" tabindex="9">Toast</button>
+
                 </div>
 
                 <div class="modal-container active">
