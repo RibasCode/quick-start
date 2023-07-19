@@ -12,5 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
