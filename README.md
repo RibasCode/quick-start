@@ -7,10 +7,10 @@ PROJECT DEPENDENCIES
         - URL: https://sprucecss.com/blog/the-simplest-sass-compile-setup#4-set-the-compile-commands
 
     - npm install --save normalize.css
-        - URL: https://www.npmjs.com/package/normalize.css
+        - URL: https://necolas.github.io/normalize.css
 
     - npm install --save toastify-js
-        - URL: https://www.npmjs.com/package/toastify-js
+        - URL: https://apvarun.github.io/toastify-js
 
 -->
 
