@@ -45,6 +45,7 @@ html body a:hover {
 html body ul li {
   list-style: none;
 }
+html body .container-980,
 html body .container-1440 {
   width: 100%;
   padding: 0 24px;
@@ -73,7 +74,6 @@ html body main section {
 /* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
 @media (min-width: 1441px) {
   body .container-1440 {
-    box-sizing: border-box;
     max-width: 1440px;
   }
 }

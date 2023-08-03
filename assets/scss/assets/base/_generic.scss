@@ -64,6 +64,7 @@ html{
             }
         }
 
+        .container-980,
         .container-1440{
             width: 100%;
 
@@ -103,9 +104,16 @@ html{
 }
 
 /* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
-@media (min-width: 992px) {
+// @media (min-width: 992px) {
 
-}
+//     body{
+
+//         .container-980{
+//             max-width: 980px;
+//         }
+//     }
+
+// }
 
 /* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
 @media (min-width: 1200px) {
@@ -118,8 +126,6 @@ html{
     body{
 
         .container-1440{
-            box-sizing: border-box;
-
             max-width: 1440px;
         }
     }
