@@ -46,9 +46,23 @@ html body ul li {
   list-style: none;
 }
 html body .container-980,
-html body .container-1440 {
+html body .container-1200,
+html body .container-1440,
+html body .container-100 {
   width: 100%;
   padding: 0 24px;
+}
+html body .container-980 {
+  max-width: 980px;
+}
+html body .container-1200 {
+  max-width: 1200px;
+}
+html body .container-1440 {
+  max-width: 1440px;
+}
+html body .container-100 {
+  max-width: 100%;
 }
 html body main {
   display: flex;
@@ -67,16 +81,9 @@ html body main section {
 /*--------------------------------------------------------------
     @media - Mobile First
 --------------------------------------------------------------*/
-/* sm - Small devices (landscape phones - 576px and up) (576px - 767px) */
-/* md - Medium devices (tablets - 768px and up) (768px - 991px) */
-/* lg - Large devices (small laptops & big tablets - 992px and up) (992px - 1199px) */
-/* xl - Large devices (laptops - 1200px and up) (1200px - 1440px) */
-/* xxl - Extra extra large devices (desktop & big laptops - 1441px and up) (1441px - Infinity) */
-@media (min-width: 1441px) {
-  body .container-1440 {
-    max-width: 1440px;
-  }
-}
+/*--------------------------------------------------------------
+    @media - Mobile First - Range syntax
+--------------------------------------------------------------*/
 body .initial-animation {
   z-index: 100;
   position: fixed;
