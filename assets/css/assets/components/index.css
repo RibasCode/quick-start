@@ -348,18 +348,6 @@ body.dark-theme .button-theme i.dark-theme {
 .graphic .skill-0 svg circle {
   stroke: url(#gradient-color-0);
 }
-.graphic .skill-1 svg circle {
-  stroke: url(#gradient-color-1);
-}
-.graphic .skill-2 svg circle {
-  stroke: url(#gradient-color-2);
-}
-.graphic .skill-3 svg circle {
-  stroke: url(#gradient-color-3);
-}
-.graphic .skill-4 svg circle {
-  stroke: url(#gradient-color-4);
-}
 
 input[type=search] {
   border: none;
