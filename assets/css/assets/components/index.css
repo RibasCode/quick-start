@@ -280,6 +280,87 @@ body.dark-theme .button-theme i.dark-theme {
   background-color: var(--color-primary-30);
 }
 
+.graphic {
+  display: flex;
+  flex-direction: column;
+}
+.graphic [class^=skill] {
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  position: relative;
+  transform: scale(0.88);
+}
+.graphic [class^=skill] .outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 0px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.graphic [class^=skill] .outer .inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgb(255, 255, 255), 0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+.graphic [class^=skill] .outer .inner p#number {
+  position: absolute;
+  top: 51%;
+  left: calc(50% + 7px);
+  transform: translate(-50%, -50%);
+  color: #1d1d1d;
+  font-size: 28px;
+  font-weight: 700;
+}
+.graphic [class^=skill] .outer .inner p#number sup {
+  top: -6px;
+  vertical-align: baseline;
+  font-size: 18px;
+  font-weight: 400;
+}
+.graphic [class^=skill] svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.graphic [class^=skill] svg circle {
+  fill: none;
+  stroke-width: 20px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  transition: stroke-dashoffset 1.5s ease-in-out;
+}
+.graphic p.description {
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 600;
+  text-align: center;
+  color: #3d3d3d;
+}
+.graphic .skill-0 svg circle {
+  stroke: url(#gradient-color-0);
+}
+.graphic .skill-1 svg circle {
+  stroke: url(#gradient-color-1);
+}
+.graphic .skill-2 svg circle {
+  stroke: url(#gradient-color-2);
+}
+.graphic .skill-3 svg circle {
+  stroke: url(#gradient-color-3);
+}
+.graphic .skill-4 svg circle {
+  stroke: url(#gradient-color-4);
+}
+
 input[type=search] {
   border: none;
   outline: none;
