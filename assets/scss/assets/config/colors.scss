@@ -37,9 +37,9 @@
         //Background
         --color-background: #ffffff;
 
-        //Tipograpy
-        --color-tipograpy: #0d1216;
-        --color-tipograpy-70: #0d1216b3;
+        //Tipography
+        --color-tipography: #0f172a;
+        --color-tipography-70: #0f172ab3;
 
         //Selection
         --color-selection-text: #ffffff;
@@ -67,15 +67,14 @@
 
     }
 
-
     body.dark-theme{
 
         //Background
         --color-background: #0d1216;
 
-        //Tipograpy
-        --color-tipograpy: #ffffff;
-        --color-tipograpy-70: #ffffffb3;
+        //Tipography
+        --color-tipography: #ffffff;
+        --color-tipography-70: #ffffffb3;
 
         //Shadows
         // --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
@@ -89,5 +88,4 @@
         --color-inactive-background: #11171c;
         --color-inactive-background-10: #10161b;
     }
-
 }

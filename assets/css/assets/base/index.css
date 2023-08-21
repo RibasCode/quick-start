@@ -9,31 +9,41 @@ html {
 }
 html body {
   background-color: var(--color-background);
-  color: var(--color-tipograpy);
-  font-family: "Poppins", sans-serif;
+  color: var(--color-tipography);
+  font-family: var(--tipography);
   transition: var(--transition);
 }
 html body ::selection {
   color: var(--color-selection-text);
   background-color: var(--color-selection-background);
 }
+html body h1,
 html body h2,
-html body h3 {
-  margin-bottom: 24px;
+html body h3,
+html body h4 {
+  margin: 0;
+  line-height: 1.3;
+  font-weight: 700;
+  transition: var(--transition);
 }
 html body h2 {
   font-size: 24px;
-  font-weight: 600;
 }
-html body h3 {
+html body h3,
+html body h4 {
   font-size: 20px;
-  font-weight: 500;
+}
+html body p,
+html body a,
+html body li,
+html body label {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: var(--transition);
 }
 html body p {
-  color: var(--color-tipograpy-70);
-  font-size: 14px;
-  line-height: 1.6;
-  transition: var(--transition);
+  color: var(--color-tipography-70);
 }
 html body a {
   color: var(--color-primary);

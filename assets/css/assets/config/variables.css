@@ -1,4 +1,5 @@
 :root body {
+  --tipography: "Poppins", sans-serif;
   --border-radius: 10px;
   --border-radius-50: 50px;
   --border-radius-top: 10px 10px 0 0;

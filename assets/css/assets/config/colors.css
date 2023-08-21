@@ -23,8 +23,8 @@
   --color-accent-20: #00faa033;
   --color-accent-10: #00faa01a;
   --color-background: #ffffff;
-  --color-tipograpy: #0d1216;
-  --color-tipograpy-70: #0d1216b3;
+  --color-tipography: #0f172a;
+  --color-tipography-70: #0f172ab3;
   --color-selection-text: #ffffff;
   --color-selection-background: #8b3dff;
   --color-scrollbar-thumb: #cfd6e4;
@@ -36,8 +36,8 @@
 }
 :root body.dark-theme {
   --color-background: #0d1216;
-  --color-tipograpy: #ffffff;
-  --color-tipograpy-70: #ffffffb3;
+  --color-tipography: #ffffff;
+  --color-tipography-70: #ffffffb3;
   --color-scrollbar-thumb: #262628;
   --color-inactive-text: #3d464d;
   --color-inactive-background: #11171c;

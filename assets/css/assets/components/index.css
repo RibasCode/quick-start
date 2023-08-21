@@ -298,7 +298,7 @@ body.dark-theme .button-theme i.dark-theme {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  padding: 0px;
+  padding: 0;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 .graphic [class^=skill] .outer .inner {
@@ -338,12 +338,7 @@ body.dark-theme .button-theme i.dark-theme {
   transition: stroke-dashoffset 1.5s ease-in-out;
 }
 .graphic p.description {
-  padding-top: 10px;
-  font-size: 14px;
-  line-height: 1.3;
-  font-weight: 600;
   text-align: center;
-  color: #3d3d3d;
 }
 .graphic .skill-0 svg circle {
   stroke: url(#gradient-color-0);
@@ -407,7 +402,6 @@ label[for^=checkbox] {
   flex: 1;
   padding-left: 14px;
   color: var(--color-primary);
-  font-weight: 400;
   cursor: pointer;
 }
 
