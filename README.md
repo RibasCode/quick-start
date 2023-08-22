@@ -6,6 +6,9 @@ PROJECT DEPENDENCIES
     - npm install --save-dev sass
         - URL: https://sprucecss.com/blog/the-simplest-sass-compile-setup#4-set-the-compile-commands
 
+    - npm install --save-dev jquery
+        - URL: https://jquery.com
+
     - npm install --save normalize.css
         - URL: https://necolas.github.io/normalize.css
 
