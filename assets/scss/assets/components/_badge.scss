@@ -1,0 +1,65 @@
+
+.badge-container{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    background-color: #e2e8f0;
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    border: solid 2px transparent;
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    &:hover{
+        border: solid 2px #33415520;
+    }
+
+    &.html{
+        color: #c2410c;
+        background-color: #ffedd5;
+
+        &:hover{
+            border: solid 2px #c2410c20;
+        }
+    }
+
+    &.css{
+        color: #1d4ed8;
+        background-color: #dbeafe;
+
+        &:hover{
+            border: solid 2px #1d4ed820;
+        }
+    }
+
+    &.javascript{
+        color: #854d0e;
+        background-color: #fef08a;
+
+        &:hover{
+            border: solid 2px #854d0e20;
+        }
+    }
+
+    &.react{
+        color: #0891b2;
+        background-color: #cffafe;
+
+        &:hover{
+            border: solid 2px #0891b220;
+        }
+    }
+}

@@ -1,3 +1,54 @@
+.badge-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  background-color: #e2e8f0;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 500;
+  border: solid 2px transparent;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.badge:hover {
+  border: solid 2px rgba(51, 65, 85, 0.1254901961);
+}
+.badge.html {
+  color: #c2410c;
+  background-color: #ffedd5;
+}
+.badge.html:hover {
+  border: solid 2px rgba(194, 65, 12, 0.1254901961);
+}
+.badge.css {
+  color: #1d4ed8;
+  background-color: #dbeafe;
+}
+.badge.css:hover {
+  border: solid 2px rgba(29, 78, 216, 0.1254901961);
+}
+.badge.javascript {
+  color: #854d0e;
+  background-color: #fef08a;
+}
+.badge.javascript:hover {
+  border: solid 2px rgba(133, 77, 14, 0.1254901961);
+}
+.badge.react {
+  color: #0891b2;
+  background-color: #cffafe;
+}
+.badge.react:hover {
+  border: solid 2px rgba(8, 145, 178, 0.1254901961);
+}
+
 .button-back-to-top {
   position: fixed;
   right: 48px;
@@ -286,6 +337,7 @@ a.button-back-to-top:hover {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  padding: 24px;
   width: 100%;
   height: 248px;
   border: solid 2px transparent;
