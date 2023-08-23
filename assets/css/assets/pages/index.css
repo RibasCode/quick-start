@@ -4,5 +4,11 @@ Mobile First
 body section#hero {
   height: 100vh;
 }
+body section#hero .card-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
 
 /*# sourceMappingURL=index.css.map */

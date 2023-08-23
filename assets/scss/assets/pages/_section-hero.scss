@@ -7,5 +7,12 @@ body{
 
     section#hero{
         height: 100vh;
+
+        .card-container{
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 32px;
+        }
     }
 }
