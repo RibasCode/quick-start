@@ -1,14 +1,25 @@
-/*--------------------------------------------------------------
-Mobile First
---------------------------------------------------------------*/
 body section#hero {
   height: 100vh;
 }
 body section#hero .card-container {
   display: grid;
   place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 32px;
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+@media (min-width: 769px) {
+  body section#hero .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1201px) {
+  body section#hero .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

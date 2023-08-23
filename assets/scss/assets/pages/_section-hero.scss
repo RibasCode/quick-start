@@ -1,8 +1,4 @@
 
-/*--------------------------------------------------------------
-Mobile First
---------------------------------------------------------------*/
-
 body{
 
     section#hero{
@@ -11,8 +7,50 @@ body{
         .card-container{
             display: grid;
             place-items: center;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 32px;
         }
     }
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+// Tablet S / Tablet M (426px - 768px)
+@media (min-width: 426px) {
+
+}
+
+// Tablet L / Laptop S (769px - 1200px)
+@media (min-width: 769px) {
+
+    body{
+
+        section#hero{
+
+            .card-container{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+// Laptop M / Laptop L (1201px - 1440px)
+@media (min-width: 1201px) {
+
+    body{
+
+        section#hero{
+
+            .card-container{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    }
+}
+
+// Laptop XL / Desktop (1441px and beyond)
+@media (min-width: 1441px) {
+
 }
