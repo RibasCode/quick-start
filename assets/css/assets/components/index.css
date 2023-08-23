@@ -298,9 +298,9 @@ a.button-back-to-top:hover {
   position: absolute;
   height: 50%;
   width: 50%;
+  background-color: var(--color-primary-10);
   filter: blur(64px);
   opacity: 1;
-  background-color: var(--color-primary-10);
   pointer-events: none;
   transition: var(--transition-x2);
 }
