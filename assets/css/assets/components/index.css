@@ -16,6 +16,7 @@
   border: solid 2px transparent;
   border-radius: 50px;
   cursor: pointer;
+  transition: var(--transition);
 }
 .badge:active, .badge:focus, .badge:hover {
   border: solid 2px rgba(51, 65, 85, 0.1254901961);
