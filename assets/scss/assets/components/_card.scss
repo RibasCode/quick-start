@@ -1,4 +1,10 @@
 
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+
 .card{
     position: relative;
 
@@ -44,4 +50,40 @@
             width: 100%;
         }
     }
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+// Tablet S / Tablet M (426px - 768px)
+@media (min-width: 426px) {
+
+}
+
+// Tablet L / Laptop S (769px - 1200px)
+@media (min-width: 769px) {
+
+    body{
+
+        .card-container{
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+// Laptop M / Laptop L (1201px - 1440px)
+@media (min-width: 1201px) {
+
+    body{
+
+        .card-container{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+// Laptop XL / Desktop (1441px and beyond)
+@media (min-width: 1441px) {
+
 }

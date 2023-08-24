@@ -1,8 +1,9 @@
 
 .badge-container{
     display: flex;
-    gap: 16px;
     flex-wrap: wrap;
+
+    gap: 16px;
 }
 
 .badge{
@@ -12,7 +13,7 @@
 
     padding: 8px 14px;
 
-    background-color: #e2e8f0;
+    background-color: #ccdcf1;
     color: #334155;
 
     font-size: 12px;
@@ -23,43 +24,80 @@
 
     cursor: pointer;
 
+    &:active,
+    &:focus,
     &:hover{
         border: solid 2px #33415520;
     }
 
     &.html{
-        color: #c2410c;
-        background-color: #ffedd5;
-
-        &:hover{
-            border: solid 2px #c2410c20;
-        }
+        color: #794f00;
+        background-color: #ffd17d;
     }
 
     &.css{
-        color: #1d4ed8;
-        background-color: #dbeafe;
+        color: #103a9d;
+        background-color: #80ccff;
 
+        &:active,
+        &:focus,
         &:hover{
-            border: solid 2px #1d4ed820;
+            border: solid 2px #103a9d20;
+        }
+    }
+
+    &.sass{
+        color: #9f0452;
+        background-color: #f8aad1;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #9f045220;
         }
     }
 
     &.javascript{
-        color: #854d0e;
-        background-color: #fef08a;
+        color: #835500;
+        background-color: #fff07e;
 
+        &:active,
+        &:focus,
         &:hover{
-            border: solid 2px #854d0e20;
+            border: solid 2px #83550020;
+        }
+    }
+
+    &.jquery{
+        color: #0836ae;
+        background-color: #b0c4f1;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #0836ae20;
         }
     }
 
     &.react{
-        color: #0891b2;
-        background-color: #cffafe;
+        color: #11748f;
+        background-color: #99e9ff;
 
+        &:active,
+        &:focus,
         &:hover{
-            border: solid 2px #0891b220;
+            border: solid 2px #11748f20;
+        }
+    }
+
+    &.git{
+        color: #9b210b;
+        background-color: #ffad9d;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #9b210b20;
         }
     }
 }

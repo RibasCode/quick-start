@@ -1,7 +1,7 @@
 .badge-container {
   display: flex;
-  gap: 16px;
   flex-wrap: wrap;
+  gap: 16px;
 }
 
 .badge {
@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   padding: 8px 14px;
-  background-color: #e2e8f0;
+  background-color: #ccdcf1;
   color: #334155;
   font-size: 12px;
   font-weight: 500;
@@ -17,36 +17,54 @@
   border-radius: 50px;
   cursor: pointer;
 }
-.badge:hover {
+.badge:active, .badge:focus, .badge:hover {
   border: solid 2px rgba(51, 65, 85, 0.1254901961);
 }
 .badge.html {
-  color: #c2410c;
-  background-color: #ffedd5;
-}
-.badge.html:hover {
-  border: solid 2px rgba(194, 65, 12, 0.1254901961);
+  color: #794f00;
+  background-color: #ffd17d;
 }
 .badge.css {
-  color: #1d4ed8;
-  background-color: #dbeafe;
+  color: #103a9d;
+  background-color: #80ccff;
 }
-.badge.css:hover {
-  border: solid 2px rgba(29, 78, 216, 0.1254901961);
+.badge.css:active, .badge.css:focus, .badge.css:hover {
+  border: solid 2px rgba(16, 58, 157, 0.1254901961);
+}
+.badge.sass {
+  color: #9f0452;
+  background-color: #f8aad1;
+}
+.badge.sass:active, .badge.sass:focus, .badge.sass:hover {
+  border: solid 2px rgba(159, 4, 82, 0.1254901961);
 }
 .badge.javascript {
-  color: #854d0e;
-  background-color: #fef08a;
+  color: #835500;
+  background-color: #fff07e;
 }
-.badge.javascript:hover {
-  border: solid 2px rgba(133, 77, 14, 0.1254901961);
+.badge.javascript:active, .badge.javascript:focus, .badge.javascript:hover {
+  border: solid 2px rgba(131, 85, 0, 0.1254901961);
+}
+.badge.jquery {
+  color: #0836ae;
+  background-color: #b0c4f1;
+}
+.badge.jquery:active, .badge.jquery:focus, .badge.jquery:hover {
+  border: solid 2px rgba(8, 54, 174, 0.1254901961);
 }
 .badge.react {
-  color: #0891b2;
-  background-color: #cffafe;
+  color: #11748f;
+  background-color: #99e9ff;
 }
-.badge.react:hover {
-  border: solid 2px rgba(8, 145, 178, 0.1254901961);
+.badge.react:active, .badge.react:focus, .badge.react:hover {
+  border: solid 2px rgba(17, 116, 143, 0.1254901961);
+}
+.badge.git {
+  color: #9b210b;
+  background-color: #ffad9d;
+}
+.badge.git:active, .badge.git:focus, .badge.git:hover {
+  border: solid 2px rgba(155, 33, 11, 0.1254901961);
 }
 
 .button-back-to-top {
@@ -330,6 +348,12 @@ a.button-back-to-top:hover {
   background-color: transparent;
 }
 
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -366,6 +390,19 @@ a.button-back-to-top:hover {
   width: 100%;
 }
 
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+@media (min-width: 769px) {
+  body .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1201px) {
+  body .card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .graphic {
   display: flex;
   flex-direction: column;
