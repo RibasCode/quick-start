@@ -1,6 +1,21 @@
 
 <!--
 
+HOW TO RUN THE PROJECT
+
+    Use comands at ./
+
+    - Install all dependencies:
+        - npm install
+
+    - Compile Sass to CSS styles:
+        - npm run sass-dev
+        - npm run sass-prod
+
+-->
+
+<!--
+
 PROJECT DEPENDENCIES
 
     - npm install --save-dev sass
