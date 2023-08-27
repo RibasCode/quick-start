@@ -1,0 +1,104 @@
+
+.badge-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 16px;
+}
+
+.badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px 14px;
+
+    background-color: #ccdcf1;
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    border: solid 2px transparent;
+    border-radius: 50px;
+
+    cursor: pointer;
+    transition: var(--transition);
+
+    &:active,
+    &:focus,
+    &:hover{
+        border: solid 2px #33415520;
+    }
+
+    &.html{
+        color: #794f00;
+        background-color: #ffd17d;
+    }
+
+    &.css{
+        color: #103a9d;
+        background-color: #80ccff;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #103a9d20;
+        }
+    }
+
+    &.sass{
+        color: #9f0452;
+        background-color: #f8aad1;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #9f045220;
+        }
+    }
+
+    &.javascript{
+        color: #835500;
+        background-color: #fff07e;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #83550020;
+        }
+    }
+
+    &.jquery{
+        color: #0836ae;
+        background-color: #b0c4f1;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #0836ae20;
+        }
+    }
+
+    &.react{
+        color: #11748f;
+        background-color: #99e9ff;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #11748f20;
+        }
+    }
+
+    &.git{
+        color: #9b210b;
+        background-color: #ffad9d;
+
+        &:active,
+        &:focus,
+        &:hover{
+            border: solid 2px #9b210b20;
+        }
+    }
+}

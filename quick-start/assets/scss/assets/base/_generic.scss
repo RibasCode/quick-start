@@ -1,0 +1,165 @@
+
+*{
+    box-sizing: border-box;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+
+    body{
+        background-color: var(--color-background);
+        color: var(--color-tipography);
+
+        font-family: var(--tipography);
+
+        transition: var(--transition);
+
+        ::selection {
+            color: var(--color-selection-text);
+            background-color: var(--color-selection-background);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4{
+            margin: 0;
+            line-height: 1.3;
+            font-weight: 700;
+
+            transition: var(--transition);
+        }
+
+        h2{
+            font-size: 24px;
+        }
+
+        h3,
+        h4{
+            font-size: 20px;
+        }
+
+        p,
+        a,
+        li,
+        label{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.3;
+
+            transition: var(--transition);
+        }
+
+        p{
+            color: var(--color-tipography-70);
+        }
+
+        a{
+            color: var(--color-primary);
+
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        ul{
+
+            li{
+                list-style: none;
+            }
+        }
+
+        .container-980,
+        .container-1200,
+        .container-1440,
+        .container-100{
+            width: 100%;
+
+            padding: 0 24px;
+        }
+
+        .container-980{
+            max-width: 980px;
+        }
+
+        .container-1200{
+            max-width: 1200px;
+        }
+
+        .container-1440{
+            max-width: 1440px;
+        }
+
+        .container-100{
+            max-width: 100%;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            section{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                padding: 64px 0;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+
+// Tablet S / Tablet M (426px - 768px)
+@media (min-width: 426px) {
+
+}
+
+// Tablet L / Laptop S (769px - 1200px)
+@media (min-width: 769px) {
+
+}
+
+// Laptop M / Laptop L (1201px - 1440px)
+@media (min-width: 1201px) {
+
+}
+
+// Laptop XL / Desktop (1441px and beyond)
+@media (min-width: 1441px) {
+
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First - Range syntax
+--------------------------------------------------------------*/
+
+// Tablet S / Tablet M (426px - 768px)
+@media (width >= 426px) {
+
+}
+
+// Tablet L / Laptop S (769px - 1200px)
+@media (width >= 769px) {
+
+}
+
+// Laptop M / Laptop L (1201px - 1440px)
+@media (width >= 1201px) {
+
+}
+
+// Laptop XL / Desktop (1441px and beyond)
+@media (width >= 1441px) {
+
+}

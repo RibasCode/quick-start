@@ -1,0 +1,47 @@
+:root body {
+  --color-primary-120: #003eff;
+  --color-primary-110: #0052ff;
+  --color-primary: #0066ff;
+  --color-primary-80: #0066ffcc;
+  --color-primary-50: #0066ff80;
+  --color-primary-30: #0066ff4d;
+  --color-primary-20: #0066ff33;
+  --color-primary-10: #0066ff1a;
+  --color-primary-06: #0066ff0f;
+  --color-secondary-120: #8b15ff;
+  --color-secondary-110: #8b29ff;
+  --color-secondary: #8b3dff;
+  --color-secondary-80: #8b3dffcc;
+  --color-secondary-50: #8b3dff80;
+  --color-secondary-20: #8b3dff33;
+  --color-secondary-10: #8b3dff1a;
+  --color-accent-120: #00fa78;
+  --color-accent-110: #00fa8c;
+  --color-accent: #00faa0;
+  --color-accent-80: #00faa0cc;
+  --color-accent-50: #00faa080;
+  --color-accent-20: #00faa033;
+  --color-accent-10: #00faa01a;
+  --color-background: #ffffff;
+  --color-tipography: #0f172a;
+  --color-tipography-70: #0f172ab3;
+  --color-selection-text: #ffffff;
+  --color-selection-background: #8b3dff;
+  --color-scrollbar-thumb: #cfd6e4;
+  --color-inactive-text: #d0d0d0;
+  --color-inactive-background: #f0f0f0;
+  --color-inactive-background-10: #f9f9f9;
+  --color-white: #ffffff;
+  --color-black: #0d1216;
+}
+:root body.dark-theme {
+  --color-background: #0d1216;
+  --color-tipography: #ffffff;
+  --color-tipography-70: #ffffffb3;
+  --color-scrollbar-thumb: #262628;
+  --color-inactive-text: #3d464d;
+  --color-inactive-background: #11171c;
+  --color-inactive-background-10: #10161b;
+}
+
+/*# sourceMappingURL=colors.css.map */

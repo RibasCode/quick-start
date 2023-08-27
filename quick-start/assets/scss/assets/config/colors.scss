@@ -1,0 +1,91 @@
+
+//Css Variables
+
+:root{
+
+    body{
+
+        //Primary
+        --color-primary-120: #003eff;
+        --color-primary-110: #0052ff;
+        --color-primary: #0066ff;
+        --color-primary-80: #0066ffcc;
+        --color-primary-50: #0066ff80;
+        --color-primary-30: #0066ff4d;
+        --color-primary-20: #0066ff33;
+        --color-primary-10: #0066ff1a;
+        --color-primary-06: #0066ff0f;
+
+        //Secondary
+        --color-secondary-120: #8b15ff;
+        --color-secondary-110: #8b29ff;
+        --color-secondary: #8b3dff;
+        --color-secondary-80: #8b3dffcc;
+        --color-secondary-50: #8b3dff80;
+        --color-secondary-20: #8b3dff33;
+        --color-secondary-10: #8b3dff1a;
+
+        //Accent
+        --color-accent-120: #00fa78;
+        --color-accent-110: #00fa8c;
+        --color-accent: #00faa0;
+        --color-accent-80: #00faa0cc;
+        --color-accent-50: #00faa080;
+        --color-accent-20: #00faa033;
+        --color-accent-10: #00faa01a;
+
+        //Background
+        --color-background: #ffffff;
+
+        //Tipography
+        --color-tipography: #0f172a;
+        --color-tipography-70: #0f172ab3;
+
+        //Selection
+        --color-selection-text: #ffffff;
+        --color-selection-background: #8b3dff;
+
+        //Shadows
+        // --color-shadow: rgba(59,130,246, 0.06) 0px 0px 2px,
+        //                 rgba(59,130,246, 0.12) 0px 0px 32px;
+
+        //Scrollbar
+        --color-scrollbar-thumb: #cfd6e4;
+
+        //State
+        // --color-success: #5cb85c;
+        // --color-info: #0071e3;
+        // --color-warning: #ffa500;
+        // --color-error: #f44336;
+        --color-inactive-text: #d0d0d0;
+        --color-inactive-background: #f0f0f0;
+        --color-inactive-background-10: #f9f9f9;
+
+        //Basic
+        --color-white: #ffffff;
+        --color-black: #0d1216;
+
+    }
+
+    body.dark-theme{
+
+        //Background
+        --color-background: #0d1216;
+
+        //Tipography
+        --color-tipography: #ffffff;
+        --color-tipography-70: #ffffffb3;
+
+        //Shadows
+        // --color-shadow: rgba(59,130,246, 0.08) 0px 0px 2px,
+        //                 rgba(59,130,246, 0.16) 0px 0px 32px;
+
+        //Scrollbar
+        --color-scrollbar-thumb: #262628;
+
+        //State
+        --color-inactive-text: #3d464d;
+        --color-inactive-background: #11171c;
+        --color-inactive-background-10: #10161b;
+    }
+}

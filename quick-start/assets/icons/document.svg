@@ -1,0 +1,16 @@
+
+<svg version="1.1" class="icon-document" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+	<style type="text/css">
+		.icon-document-st0{fill:none;}
+		.icon-document-st1{fill:var(--color-primary);}
+	</style>
+	<g id="document" transform="translate(-650 -1458)">
+		<g id="Rectángulo_1545" transform="translate(650 1458)">
+			<path class="icon-document-st0" d="M21.1,8.9h21.7c4.5,0,8.2,3.7,8.2,8.2V47c0,4.5-3.7,8.2-8.2,8.2H21.1c-4.5,0-8.2-3.7-8.2-8.2V17.1C13,12.6,16.6,8.9,21.1,8.9z"/>
+			<path class="icon-document-st1" d="M42.9,55.1H21.1c-4.5,0-8.2-3.7-8.2-8.2V17.1c0-4.5,3.7-8.2,8.2-8.2h21.7c4.5,0,8.2,3.7,8.2,8.2V47C51,51.4,47.4,55.1,42.9,55.1z M21.1,12.4c-2.5,0-4.6,2.1-4.6,4.6v29.9c0,2.5,2.1,4.6,4.6,4.6h21.7c2.5,0,4.6-2.1,4.6-4.6V17.1c0-2.5-2.1-4.7-4.6-4.7C42.8,12.4,21.1,12.4,21.1,12.4z"/>
+		</g>
+		<path class="icon-document-st1" d="M691.4,1486.6h-18.7c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8h18.7c1,0,1.8,0.8,1.8,1.8C693.1,1485.9,692.3,1486.6,691.4,1486.6z"/>
+		<path class="icon-document-st1" d="M691.4,1494.5h-18.7c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8h18.7c1,0,1.8,0.8,1.8,1.8S692.3,1494.5,691.4,1494.5z"/>
+		<path class="icon-document-st1" d="M685.1,1502.3h-12.5c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8h12.5c1,0,1.8,0.8,1.8,1.8C686.9,1501.5,686.1,1502.3,685.1,1502.3z"/>
+	</g>
+</svg>

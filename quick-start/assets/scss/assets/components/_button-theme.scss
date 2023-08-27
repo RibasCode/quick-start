@@ -1,0 +1,69 @@
+
+body{
+
+    &.light-theme{
+
+        .button-theme{
+
+            i.light-theme{
+                opacity: 1;
+            }
+        }
+    }
+
+    &.dark-theme{
+
+        .button-theme{
+
+            i.dark-theme{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.button-theme{
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+
+    height: 64px;
+    width: 64px;
+
+    cursor: pointer;
+
+    i{
+        z-index: 1;
+
+        width: 64px;
+        height: 64px;
+
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &.button-theme{
+
+        i.light-theme,
+        i.dark-theme{
+            position: absolute;
+
+            display: flex;
+
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        i.light-theme{
+            background-image: url(../../../icons/sun.svg);
+            background-size: 46%;
+        }
+
+        i.dark-theme{
+            background-image: url(../../../icons/moon.svg);
+            background-size: 46%;
+        }
+    }
+}
