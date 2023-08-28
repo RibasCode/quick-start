@@ -67,7 +67,7 @@
     body{
 
         .card-container{
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 }
@@ -78,7 +78,7 @@
     body{
 
         .card-container{
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 }

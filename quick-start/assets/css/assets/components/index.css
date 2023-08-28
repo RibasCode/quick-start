@@ -397,12 +397,12 @@ a.button-back-to-top:hover {
 --------------------------------------------------------------*/
 @media (min-width: 769px) {
   body .card-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 1201px) {
   body .card-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .graphic {
