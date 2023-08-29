@@ -13,62 +13,62 @@
   color: #334155;
   font-size: 12px;
   font-weight: 500;
-  border: solid var(--border-width) transparent;
+  border: solid 2px transparent;
   border-radius: var(--border-radius-50);
   cursor: pointer;
   transition: var(--transition);
 }
 .badge:active, .badge:focus, .badge:hover {
-  border: solid var(--border-width) rgba(51, 65, 85, 0.1254901961);
+  border: solid 2px rgba(51, 65, 85, 0.1254901961);
 }
 .badge.html {
   color: #794f00;
   background-color: #ffd17d;
 }
 .badge.html:active, .badge.html:focus, .badge.html:hover {
-  border: solid var(--border-width) rgba(121, 79, 0, 0.1254901961);
+  border: solid 2px rgba(121, 79, 0, 0.1254901961);
 }
 .badge.css {
   color: #103a9d;
   background-color: #80ccff;
 }
 .badge.css:active, .badge.css:focus, .badge.css:hover {
-  border: solid var(--border-width) rgba(16, 58, 157, 0.1254901961);
+  border: solid 2px rgba(16, 58, 157, 0.1254901961);
 }
 .badge.sass {
   color: #9f0452;
   background-color: #f8aad1;
 }
 .badge.sass:active, .badge.sass:focus, .badge.sass:hover {
-  border: solid var(--border-width) rgba(159, 4, 82, 0.1254901961);
+  border: solid 2px rgba(159, 4, 82, 0.1254901961);
 }
 .badge.javascript {
   color: #835500;
   background-color: #fff07e;
 }
 .badge.javascript:active, .badge.javascript:focus, .badge.javascript:hover {
-  border: solid var(--border-width) rgba(131, 85, 0, 0.1254901961);
+  border: solid 2px rgba(131, 85, 0, 0.1254901961);
 }
 .badge.jquery {
   color: #0836ae;
   background-color: #b0c4f1;
 }
 .badge.jquery:active, .badge.jquery:focus, .badge.jquery:hover {
-  border: solid var(--border-width) rgba(8, 54, 174, 0.1254901961);
+  border: solid 2px rgba(8, 54, 174, 0.1254901961);
 }
 .badge.react {
   color: #11748f;
   background-color: #99e9ff;
 }
 .badge.react:active, .badge.react:focus, .badge.react:hover {
-  border: solid var(--border-width) rgba(17, 116, 143, 0.1254901961);
+  border: solid 2px rgba(17, 116, 143, 0.1254901961);
 }
 .badge.git {
   color: #9b210b;
   background-color: #ffad9d;
 }
 .badge.git:active, .badge.git:focus, .badge.git:hover {
-  border: solid var(--border-width) rgba(155, 33, 11, 0.1254901961);
+  border: solid 2px rgba(155, 33, 11, 0.1254901961);
 }
 
 .button-back-to-top {
@@ -89,6 +89,15 @@
   opacity: 1;
   pointer-events: all;
 }
+.button-back-to-top:hover {
+  background-color: var(--color-primary-20);
+}
+.button-back-to-top:hover svg.icon {
+  transform: translateY(-3px) rotate(-90deg);
+}
+.button-back-to-top:active, .button-back-to-top:focus {
+  background-color: var(--color-primary-30);
+}
 .button-back-to-top svg.icon {
   height: 14px;
   margin-right: 12px;
@@ -98,15 +107,6 @@
 .button-back-to-top svg.icon polyline {
   stroke: var(--color-primary);
   transition: var(--transition);
-}
-.button-back-to-top:hover {
-  background-color: var(--color-primary-20);
-}
-.button-back-to-top:hover svg.icon {
-  transform: translateY(-3px) rotate(-90deg);
-}
-.button-back-to-top:active, .button-back-to-top:focus {
-  background-color: var(--color-primary-30);
 }
 
 body.light-theme .button-theme i.light-theme {
@@ -309,12 +309,30 @@ a.button-back-to-top:hover {
 .button-primary:active, .button-primary:focus {
   background-color: var(--color-primary-120);
 }
+.button-primary svg {
+  fill: #ffffff;
+}
 .button-primary.inactive {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background);
 }
-.button-primary svg {
-  fill: #ffffff;
+.button-primary.color-secondary {
+  background-color: var(--color-secondary);
+}
+.button-primary.color-secondary:hover {
+  background-color: var(--color-secondary-110);
+}
+.button-primary.color-secondary:active, .button-primary.color-secondary:focus {
+  background-color: var(--color-secondary-120);
+}
+.button-primary.color-accent {
+  background-color: var(--color-accent);
+}
+.button-primary.color-accent:hover {
+  background-color: var(--color-accent-110);
+}
+.button-primary.color-accent:active, .button-primary.color-accent:focus {
+  background-color: var(--color-accent-120);
 }
 
 .button-secondary {
@@ -328,13 +346,39 @@ a.button-back-to-top:hover {
 .button-secondary:active, .button-secondary:focus {
   background-color: var(--color-primary-20);
 }
+.button-secondary svg {
+  fill: var(--color-primary);
+}
 .button-secondary.inactive {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background-10);
   border: solid var(--border-width) var(--color-inactive-text);
 }
-.button-secondary svg {
-  fill: var(--color-primary);
+.button-secondary.color-secondary {
+  color: var(--color-secondary);
+  border: solid var(--border-width) var(--color-secondary);
+}
+.button-secondary.color-secondary:hover {
+  background-color: var(--color-secondary-10);
+}
+.button-secondary.color-secondary:active, .button-secondary.color-secondary:focus {
+  background-color: var(--color-secondary-20);
+}
+.button-secondary.color-secondary svg {
+  fill: var(--color-secondary);
+}
+.button-secondary.color-accent {
+  color: var(--color-accent);
+  border: solid var(--border-width) var(--color-accent);
+}
+.button-secondary.color-accent:hover {
+  background-color: var(--color-accent-10);
+}
+.button-secondary.color-accent:active, .button-secondary.color-accent:focus {
+  background-color: var(--color-accent-20);
+}
+.button-secondary.color-accent svg {
+  fill: var(--color-accent);
 }
 
 .button-tertiary {
@@ -347,11 +391,38 @@ a.button-back-to-top:hover {
 .button-tertiary:active, .button-tertiary:focus {
   background-color: var(--color-primary-20);
 }
+.button-tertiary svg {
+  fill: var(--color-primary);
+}
 .button-tertiary.inactive {
   color: var(--color-inactive-text);
 }
 .button-tertiary.inactive:hover, .button-tertiary.inactive:active, .button-tertiary.inactive:focus {
   background-color: transparent;
+}
+.button-tertiary.color-secondary {
+  color: var(--color-secondary);
+}
+.button-tertiary.color-secondary:hover {
+  background-color: var(--color-secondary-10);
+}
+.button-tertiary.color-secondary:active, .button-tertiary.color-secondary:focus {
+  background-color: var(--color-secondary-20);
+}
+.button-tertiary.color-secondary svg {
+  fill: var(--color-secondary);
+}
+.button-tertiary.color-accent {
+  color: var(--color-accent);
+}
+.button-tertiary.color-accent:hover {
+  background-color: var(--color-accent-10);
+}
+.button-tertiary.color-accent:active, .button-tertiary.color-accent:focus {
+  background-color: var(--color-accent-20);
+}
+.button-tertiary.color-accent svg {
+  fill: var(--color-accent);
 }
 
 .card-container {
@@ -394,6 +465,26 @@ a.button-back-to-top:hover {
   background-color: var(--color-primary-10);
   height: 100%;
   width: 100%;
+}
+.card.color-secondary::after {
+  background-color: var(--color-secondary-10);
+}
+.card.color-secondary:hover {
+  border: solid 2px var(--color-secondary-10);
+  box-shadow: 0 24px 24px -16px var(--color-secondary-10);
+}
+.card.color-secondary:hover::after {
+  background-color: var(--color-secondary-10);
+}
+.card.color-accent::after {
+  background-color: var(--color-accent-10);
+}
+.card.color-accent:hover {
+  border: solid 2px var(--color-accent-10);
+  box-shadow: 0 24px 24px -16px var(--color-accent-10);
+}
+.card.color-accent:hover::after {
+  background-color: var(--color-accent-10);
 }
 
 /*--------------------------------------------------------------
@@ -523,6 +614,46 @@ input[type=search]::placeholder {
   background-color: var(--color-primary);
   border: var(--color-primary);
 }
+.container-input.color-secondary input[type=checkbox] {
+  border: solid var(--border-width) var(--color-secondary);
+}
+.container-input.color-secondary input[type=checkbox]:checked {
+  background-color: var(--color-secondary);
+  border: var(--color-secondary);
+}
+.container-input.color-secondary input[type=checkbox]:checked ~ label {
+  color: var(--color-secondary);
+}
+.container-input.color-secondary input[type=checkbox]:hover ~ label {
+  color: var(--color-secondary);
+}
+.container-input.color-secondary:hover input[type=checkbox] {
+  background-color: var(--color-secondary-10);
+}
+.container-input.color-secondary:hover input[type=checkbox]:checked {
+  background-color: var(--color-secondary);
+  border: var(--color-secondary);
+}
+.container-input.color-accent input[type=checkbox] {
+  border: solid var(--border-width) var(--color-accent);
+}
+.container-input.color-accent input[type=checkbox]:checked {
+  background-color: var(--color-accent);
+  border: var(--color-accent);
+}
+.container-input.color-accent input[type=checkbox]:checked ~ label {
+  color: var(--color-accent);
+}
+.container-input.color-accent input[type=checkbox]:hover ~ label {
+  color: var(--color-accent);
+}
+.container-input.color-accent:hover input[type=checkbox] {
+  background-color: var(--color-accent-10);
+}
+.container-input.color-accent:hover input[type=checkbox]:checked {
+  background-color: var(--color-accent);
+  border: var(--color-accent);
+}
 
 label {
   user-select: none;
@@ -532,6 +663,12 @@ label[for^=checkbox] {
   padding-left: 14px;
   color: var(--color-primary);
   cursor: pointer;
+}
+label.color-secondary[for^=checkbox] {
+  color: var(--color-secondary);
+}
+label.color-accent[for^=checkbox] {
+  color: var(--color-accent);
 }
 
 body .container-loader {

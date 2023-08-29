@@ -11,4 +11,18 @@ label{
 
         cursor: pointer;
     }
+
+    &.color-secondary{
+
+        &[for^="checkbox"]{
+            color: var(--color-secondary);
+        }
+    }
+
+    &.color-accent{
+
+        &[for^="checkbox"]{
+            color: var(--color-accent);
+        }
+    }
 }

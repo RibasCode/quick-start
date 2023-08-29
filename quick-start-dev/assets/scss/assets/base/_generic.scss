@@ -66,6 +66,14 @@ html{
             &:hover{
                 text-decoration: underline;
             }
+
+            &.color-secondary{
+                color: var(--color-secondary);
+            }
+
+            &.color-accent{
+                color: var(--color-accent);
+            }
         }
 
         ul{

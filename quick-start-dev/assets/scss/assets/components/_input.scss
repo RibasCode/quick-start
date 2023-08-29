@@ -75,4 +75,80 @@ input{
             }
         }
     }
+
+    &.color-secondary{
+
+        input{
+
+            &[type="checkbox"]{
+                border: solid var(--border-width) var(--color-secondary);
+
+                &:checked{
+                    background-color: var(--color-secondary);
+                    border: var(--color-secondary);
+
+                    & ~ label{
+                        color: var(--color-secondary);
+                    }
+                }
+
+                &:hover ~ label{
+                    color: var(--color-secondary);
+                }
+            }
+        }
+
+        &:hover{
+
+            input{
+
+                &[type="checkbox"]{
+                    background-color: var(--color-secondary-10);
+
+                    &:checked{
+                        background-color: var(--color-secondary);
+                        border: var(--color-secondary);
+                    }
+                }
+            }
+        }
+    }
+
+    &.color-accent{
+
+        input{
+
+            &[type="checkbox"]{
+                border: solid var(--border-width) var(--color-accent);
+
+                &:checked{
+                    background-color: var(--color-accent);
+                    border: var(--color-accent);
+
+                    & ~ label{
+                        color: var(--color-accent);
+                    }
+                }
+
+                &:hover ~ label{
+                    color: var(--color-accent);
+                }
+            }
+        }
+
+        &:hover{
+
+            input{
+
+                &[type="checkbox"]{
+                    background-color: var(--color-accent-10);
+
+                    &:checked{
+                        background-color: var(--color-accent);
+                        border: var(--color-accent);
+                    }
+                }
+            }
+        }
+    }
 }

@@ -53,6 +53,12 @@ html body a {
 html body a:hover {
   text-decoration: underline;
 }
+html body a.color-secondary {
+  color: var(--color-secondary);
+}
+html body a.color-accent {
+  color: var(--color-accent);
+}
 html body ul li {
   list-style: none;
 }

@@ -140,13 +140,39 @@ a.button-back-to-top{
         background-color: var(--color-primary-120);
     }
 
+    svg{
+        fill: #ffffff;
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background);
     }
 
-    svg{
-        fill: #ffffff;
+    &.color-secondary{
+        background-color: var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-110);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-120);
+        }
+    }
+
+    &.color-accent{
+        background-color: var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-110);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-120);
+        }
     }
 }
 
@@ -165,14 +191,52 @@ a.button-back-to-top{
         background-color: var(--color-primary-20);
     }
 
+    svg{
+        fill: var(--color-primary);
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background-10);
         border: solid var(--border-width) var(--color-inactive-text);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.color-secondary{
+        color: var(--color-secondary);
+
+        border: solid var(--border-width) var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-20);
+        }
+
+        svg{
+            fill: var(--color-secondary);
+        }
+    }
+
+    &.color-accent{
+        color: var(--color-accent);
+
+        border: solid var(--border-width) var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-20);
+        }
+
+        svg{
+            fill: var(--color-accent);
+        }
     }
 }
 
@@ -189,6 +253,10 @@ a.button-back-to-top{
         background-color: var(--color-primary-20);
     }
 
+    svg{
+        fill: var(--color-primary);
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
 
@@ -196,6 +264,40 @@ a.button-back-to-top{
         &:active,
         &:focus{
             background-color: transparent;
+        }
+    }
+
+    &.color-secondary{
+        color: var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-20);
+        }
+
+        svg{
+            fill: var(--color-secondary);
+        }
+    }
+
+    &.color-accent{
+        color: var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-20);
+        }
+
+        svg{
+            fill: var(--color-accent);
         }
     }
 }
