@@ -13,62 +13,62 @@
   color: #334155;
   font-size: 12px;
   font-weight: 500;
-  border: solid var(--border-width) transparent;
+  border: solid 2px transparent;
   border-radius: var(--border-radius-50);
   cursor: pointer;
   transition: var(--transition);
 }
 .badge:active, .badge:focus, .badge:hover {
-  border: solid var(--border-width) rgba(51, 65, 85, 0.1254901961);
+  border: solid 2px rgba(51, 65, 85, 0.1254901961);
 }
 .badge.html {
   color: #794f00;
   background-color: #ffd17d;
 }
 .badge.html:active, .badge.html:focus, .badge.html:hover {
-  border: solid var(--border-width) rgba(121, 79, 0, 0.1254901961);
+  border: solid 2px rgba(121, 79, 0, 0.1254901961);
 }
 .badge.css {
   color: #103a9d;
   background-color: #80ccff;
 }
 .badge.css:active, .badge.css:focus, .badge.css:hover {
-  border: solid var(--border-width) rgba(16, 58, 157, 0.1254901961);
+  border: solid 2px rgba(16, 58, 157, 0.1254901961);
 }
 .badge.sass {
   color: #9f0452;
   background-color: #f8aad1;
 }
 .badge.sass:active, .badge.sass:focus, .badge.sass:hover {
-  border: solid var(--border-width) rgba(159, 4, 82, 0.1254901961);
+  border: solid 2px rgba(159, 4, 82, 0.1254901961);
 }
 .badge.javascript {
   color: #835500;
   background-color: #fff07e;
 }
 .badge.javascript:active, .badge.javascript:focus, .badge.javascript:hover {
-  border: solid var(--border-width) rgba(131, 85, 0, 0.1254901961);
+  border: solid 2px rgba(131, 85, 0, 0.1254901961);
 }
 .badge.jquery {
   color: #0836ae;
   background-color: #b0c4f1;
 }
 .badge.jquery:active, .badge.jquery:focus, .badge.jquery:hover {
-  border: solid var(--border-width) rgba(8, 54, 174, 0.1254901961);
+  border: solid 2px rgba(8, 54, 174, 0.1254901961);
 }
 .badge.react {
   color: #11748f;
   background-color: #99e9ff;
 }
 .badge.react:active, .badge.react:focus, .badge.react:hover {
-  border: solid var(--border-width) rgba(17, 116, 143, 0.1254901961);
+  border: solid 2px rgba(17, 116, 143, 0.1254901961);
 }
 .badge.git {
   color: #9b210b;
   background-color: #ffad9d;
 }
 .badge.git:active, .badge.git:focus, .badge.git:hover {
-  border: solid var(--border-width) rgba(155, 33, 11, 0.1254901961);
+  border: solid 2px rgba(155, 33, 11, 0.1254901961);
 }
 
 .button-back-to-top {
@@ -89,6 +89,15 @@
   opacity: 1;
   pointer-events: all;
 }
+.button-back-to-top:hover {
+  background-color: var(--color-primary-20);
+}
+.button-back-to-top:hover svg.icon {
+  transform: translateY(-3px) rotate(-90deg);
+}
+.button-back-to-top:active, .button-back-to-top:focus {
+  background-color: var(--color-primary-30);
+}
 .button-back-to-top svg.icon {
   height: 14px;
   margin-right: 12px;
@@ -98,15 +107,6 @@
 .button-back-to-top svg.icon polyline {
   stroke: var(--color-primary);
   transition: var(--transition);
-}
-.button-back-to-top:hover {
-  background-color: var(--color-primary-20);
-}
-.button-back-to-top:hover svg.icon {
-  transform: translateY(-3px) rotate(-90deg);
-}
-.button-back-to-top:active, .button-back-to-top:focus {
-  background-color: var(--color-primary-30);
 }
 
 body.light-theme .button-theme i.light-theme {
@@ -163,7 +163,11 @@ a.button-back-to-top:hover {
 .button-primary,
 .button-secondary,
 .button-tertiary,
-.button-back-to-top {
+.button-back-to-top,
+a.button-primary,
+a.button-secondary,
+a.button-tertiary,
+a.button-back-to-top {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,14 +186,22 @@ a.button-back-to-top:hover {
 .button-primary.inactive,
 .button-secondary.inactive,
 .button-tertiary.inactive,
-.button-back-to-top.inactive {
+.button-back-to-top.inactive,
+a.button-primary.inactive,
+a.button-secondary.inactive,
+a.button-tertiary.inactive,
+a.button-back-to-top.inactive {
   outline: none;
   cursor: not-allowed;
 }
 .button-primary.button-100,
 .button-secondary.button-100,
 .button-tertiary.button-100,
-.button-back-to-top.button-100 {
+.button-back-to-top.button-100,
+a.button-primary.button-100,
+a.button-secondary.button-100,
+a.button-tertiary.button-100,
+a.button-back-to-top.button-100 {
   width: 100%;
 }
 .button-primary:active > svg.icon-right.icon-arrow, .button-primary:focus > svg.icon-right.icon-arrow, .button-primary:hover > svg.icon-right.icon-arrow,
@@ -201,7 +213,19 @@ a.button-back-to-top:hover {
 .button-tertiary:hover > svg.icon-right.icon-arrow,
 .button-back-to-top:active > svg.icon-right.icon-arrow,
 .button-back-to-top:focus > svg.icon-right.icon-arrow,
-.button-back-to-top:hover > svg.icon-right.icon-arrow {
+.button-back-to-top:hover > svg.icon-right.icon-arrow,
+a.button-primary:active > svg.icon-right.icon-arrow,
+a.button-primary:focus > svg.icon-right.icon-arrow,
+a.button-primary:hover > svg.icon-right.icon-arrow,
+a.button-secondary:active > svg.icon-right.icon-arrow,
+a.button-secondary:focus > svg.icon-right.icon-arrow,
+a.button-secondary:hover > svg.icon-right.icon-arrow,
+a.button-tertiary:active > svg.icon-right.icon-arrow,
+a.button-tertiary:focus > svg.icon-right.icon-arrow,
+a.button-tertiary:hover > svg.icon-right.icon-arrow,
+a.button-back-to-top:active > svg.icon-right.icon-arrow,
+a.button-back-to-top:focus > svg.icon-right.icon-arrow,
+a.button-back-to-top:hover > svg.icon-right.icon-arrow {
   transform: translate(3px, 0);
 }
 .button-primary:active > svg.icon-left.icon-arrow, .button-primary:focus > svg.icon-left.icon-arrow, .button-primary:hover > svg.icon-left.icon-arrow,
@@ -213,40 +237,72 @@ a.button-back-to-top:hover {
 .button-tertiary:hover > svg.icon-left.icon-arrow,
 .button-back-to-top:active > svg.icon-left.icon-arrow,
 .button-back-to-top:focus > svg.icon-left.icon-arrow,
-.button-back-to-top:hover > svg.icon-left.icon-arrow {
+.button-back-to-top:hover > svg.icon-left.icon-arrow,
+a.button-primary:active > svg.icon-left.icon-arrow,
+a.button-primary:focus > svg.icon-left.icon-arrow,
+a.button-primary:hover > svg.icon-left.icon-arrow,
+a.button-secondary:active > svg.icon-left.icon-arrow,
+a.button-secondary:focus > svg.icon-left.icon-arrow,
+a.button-secondary:hover > svg.icon-left.icon-arrow,
+a.button-tertiary:active > svg.icon-left.icon-arrow,
+a.button-tertiary:focus > svg.icon-left.icon-arrow,
+a.button-tertiary:hover > svg.icon-left.icon-arrow,
+a.button-back-to-top:active > svg.icon-left.icon-arrow,
+a.button-back-to-top:focus > svg.icon-left.icon-arrow,
+a.button-back-to-top:hover > svg.icon-left.icon-arrow {
   transform: rotate(180deg) translate(3px, 0);
 }
 .button-primary > svg,
 .button-secondary > svg,
 .button-tertiary > svg,
-.button-back-to-top > svg {
+.button-back-to-top > svg,
+a.button-primary > svg,
+a.button-secondary > svg,
+a.button-tertiary > svg,
+a.button-back-to-top > svg {
   fill: var(--color-primary);
   transition: var(--transition);
 }
 .button-primary > svg.icon-right,
 .button-secondary > svg.icon-right,
 .button-tertiary > svg.icon-right,
-.button-back-to-top > svg.icon-right {
+.button-back-to-top > svg.icon-right,
+a.button-primary > svg.icon-right,
+a.button-secondary > svg.icon-right,
+a.button-tertiary > svg.icon-right,
+a.button-back-to-top > svg.icon-right {
   margin-left: 8px;
   margin-right: -4px;
 }
 .button-primary > svg.icon-left,
 .button-secondary > svg.icon-left,
 .button-tertiary > svg.icon-left,
-.button-back-to-top > svg.icon-left {
+.button-back-to-top > svg.icon-left,
+a.button-primary > svg.icon-left,
+a.button-secondary > svg.icon-left,
+a.button-tertiary > svg.icon-left,
+a.button-back-to-top > svg.icon-left {
   margin-right: 8px;
   margin-left: -4px;
 }
 .button-primary > svg.icon-left.icon-arrow,
 .button-secondary > svg.icon-left.icon-arrow,
 .button-tertiary > svg.icon-left.icon-arrow,
-.button-back-to-top > svg.icon-left.icon-arrow {
+.button-back-to-top > svg.icon-left.icon-arrow,
+a.button-primary > svg.icon-left.icon-arrow,
+a.button-secondary > svg.icon-left.icon-arrow,
+a.button-tertiary > svg.icon-left.icon-arrow,
+a.button-back-to-top > svg.icon-left.icon-arrow {
   transform: rotate(180deg) translate(0, 0);
 }
 .button-primary > svg.icon-document,
 .button-secondary > svg.icon-document,
 .button-tertiary > svg.icon-document,
-.button-back-to-top > svg.icon-document {
+.button-back-to-top > svg.icon-document,
+a.button-primary > svg.icon-document,
+a.button-secondary > svg.icon-document,
+a.button-tertiary > svg.icon-document,
+a.button-back-to-top > svg.icon-document {
   height: 22px;
   width: 22px;
   margin-left: -5px;
@@ -254,104 +310,252 @@ a.button-back-to-top:hover {
 .button-primary > svg.icon-email,
 .button-secondary > svg.icon-email,
 .button-tertiary > svg.icon-email,
-.button-back-to-top > svg.icon-email {
+.button-back-to-top > svg.icon-email,
+a.button-primary > svg.icon-email,
+a.button-secondary > svg.icon-email,
+a.button-tertiary > svg.icon-email,
+a.button-back-to-top > svg.icon-email {
   height: 19px;
   width: 19px;
 }
 .button-primary > svg.icon-search,
 .button-secondary > svg.icon-search,
 .button-tertiary > svg.icon-search,
-.button-back-to-top > svg.icon-search {
+.button-back-to-top > svg.icon-search,
+a.button-primary > svg.icon-search,
+a.button-secondary > svg.icon-search,
+a.button-tertiary > svg.icon-search,
+a.button-back-to-top > svg.icon-search {
   height: 20px;
   width: 20px;
 }
 .button-primary > svg.icon-arrow,
 .button-secondary > svg.icon-arrow,
 .button-tertiary > svg.icon-arrow,
-.button-back-to-top > svg.icon-arrow {
+.button-back-to-top > svg.icon-arrow,
+a.button-primary > svg.icon-arrow,
+a.button-secondary > svg.icon-arrow,
+a.button-tertiary > svg.icon-arrow,
+a.button-back-to-top > svg.icon-arrow {
   height: 14px;
   width: 14px;
 }
 .button-primary > svg.icon-upload,
 .button-secondary > svg.icon-upload,
 .button-tertiary > svg.icon-upload,
-.button-back-to-top > svg.icon-upload {
+.button-back-to-top > svg.icon-upload,
+a.button-primary > svg.icon-upload,
+a.button-secondary > svg.icon-upload,
+a.button-tertiary > svg.icon-upload,
+a.button-back-to-top > svg.icon-upload {
   height: 13px;
   width: 13px;
 }
 .button-primary > svg.icon-close,
 .button-secondary > svg.icon-close,
 .button-tertiary > svg.icon-close,
-.button-back-to-top > svg.icon-close {
+.button-back-to-top > svg.icon-close,
+a.button-primary > svg.icon-close,
+a.button-secondary > svg.icon-close,
+a.button-tertiary > svg.icon-close,
+a.button-back-to-top > svg.icon-close {
   height: 13px;
   width: 13px;
 }
 .button-primary .loader,
 .button-secondary .loader,
 .button-tertiary .loader,
-.button-back-to-top .loader {
+.button-back-to-top .loader,
+a.button-primary .loader,
+a.button-secondary .loader,
+a.button-tertiary .loader,
+a.button-back-to-top .loader {
   position: absolute;
 }
 .button-primary .loader > div,
 .button-secondary .loader > div,
 .button-tertiary .loader > div,
-.button-back-to-top .loader > div {
+.button-back-to-top .loader > div,
+a.button-primary .loader > div,
+a.button-secondary .loader > div,
+a.button-tertiary .loader > div,
+a.button-back-to-top .loader > div {
   background-color: #ffffff;
 }
 
-.button-primary {
+.button-primary,
+a.button-primary {
   color: var(--color-white);
   background-color: var(--color-primary);
 }
-.button-primary:hover {
+.button-primary:hover,
+a.button-primary:hover {
   background-color: var(--color-primary-110);
 }
-.button-primary:active, .button-primary:focus {
+.button-primary:active, .button-primary:focus,
+a.button-primary:active,
+a.button-primary:focus {
   background-color: var(--color-primary-120);
 }
-.button-primary.inactive {
+.button-primary svg,
+a.button-primary svg {
+  fill: #ffffff;
+}
+.button-primary.inactive,
+a.button-primary.inactive {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background);
 }
-.button-primary svg {
-  fill: #ffffff;
+.button-primary.color-secondary,
+a.button-primary.color-secondary {
+  background-color: var(--color-secondary);
+}
+.button-primary.color-secondary:hover,
+a.button-primary.color-secondary:hover {
+  background-color: var(--color-secondary-110);
+}
+.button-primary.color-secondary:active, .button-primary.color-secondary:focus,
+a.button-primary.color-secondary:active,
+a.button-primary.color-secondary:focus {
+  background-color: var(--color-secondary-120);
+}
+.button-primary.color-accent,
+a.button-primary.color-accent {
+  background-color: var(--color-accent);
+}
+.button-primary.color-accent:hover,
+a.button-primary.color-accent:hover {
+  background-color: var(--color-accent-110);
+}
+.button-primary.color-accent:active, .button-primary.color-accent:focus,
+a.button-primary.color-accent:active,
+a.button-primary.color-accent:focus {
+  background-color: var(--color-accent-120);
 }
 
-.button-secondary {
+.button-secondary,
+a.button-secondary {
   color: var(--color-primary);
   background-color: transparent;
   border: solid var(--border-width) var(--color-primary);
 }
-.button-secondary:hover {
+.button-secondary:hover,
+a.button-secondary:hover {
   background-color: var(--color-primary-10);
 }
-.button-secondary:active, .button-secondary:focus {
+.button-secondary:active, .button-secondary:focus,
+a.button-secondary:active,
+a.button-secondary:focus {
   background-color: var(--color-primary-20);
 }
-.button-secondary.inactive {
+.button-secondary svg,
+a.button-secondary svg {
+  fill: var(--color-primary);
+}
+.button-secondary.inactive,
+a.button-secondary.inactive {
   color: var(--color-inactive-text);
   background-color: var(--color-inactive-background-10);
   border: solid var(--border-width) var(--color-inactive-text);
 }
-.button-secondary svg {
-  fill: var(--color-primary);
+.button-secondary.color-secondary,
+a.button-secondary.color-secondary {
+  color: var(--color-secondary);
+  border: solid var(--border-width) var(--color-secondary);
+}
+.button-secondary.color-secondary:hover,
+a.button-secondary.color-secondary:hover {
+  background-color: var(--color-secondary-10);
+}
+.button-secondary.color-secondary:active, .button-secondary.color-secondary:focus,
+a.button-secondary.color-secondary:active,
+a.button-secondary.color-secondary:focus {
+  background-color: var(--color-secondary-20);
+}
+.button-secondary.color-secondary svg,
+a.button-secondary.color-secondary svg {
+  fill: var(--color-secondary);
+}
+.button-secondary.color-accent,
+a.button-secondary.color-accent {
+  color: var(--color-accent);
+  border: solid var(--border-width) var(--color-accent);
+}
+.button-secondary.color-accent:hover,
+a.button-secondary.color-accent:hover {
+  background-color: var(--color-accent-10);
+}
+.button-secondary.color-accent:active, .button-secondary.color-accent:focus,
+a.button-secondary.color-accent:active,
+a.button-secondary.color-accent:focus {
+  background-color: var(--color-accent-20);
+}
+.button-secondary.color-accent svg,
+a.button-secondary.color-accent svg {
+  fill: var(--color-accent);
 }
 
-.button-tertiary {
+.button-tertiary,
+a.button-tertiary {
   color: var(--color-primary);
   background-color: transparent;
 }
-.button-tertiary:hover {
+.button-tertiary:hover,
+a.button-tertiary:hover {
   background-color: var(--color-primary-10);
 }
-.button-tertiary:active, .button-tertiary:focus {
+.button-tertiary:active, .button-tertiary:focus,
+a.button-tertiary:active,
+a.button-tertiary:focus {
   background-color: var(--color-primary-20);
 }
-.button-tertiary.inactive {
+.button-tertiary svg,
+a.button-tertiary svg {
+  fill: var(--color-primary);
+}
+.button-tertiary.inactive,
+a.button-tertiary.inactive {
   color: var(--color-inactive-text);
 }
-.button-tertiary.inactive:hover, .button-tertiary.inactive:active, .button-tertiary.inactive:focus {
+.button-tertiary.inactive:hover, .button-tertiary.inactive:active, .button-tertiary.inactive:focus,
+a.button-tertiary.inactive:hover,
+a.button-tertiary.inactive:active,
+a.button-tertiary.inactive:focus {
   background-color: transparent;
+}
+.button-tertiary.color-secondary,
+a.button-tertiary.color-secondary {
+  color: var(--color-secondary);
+}
+.button-tertiary.color-secondary:hover,
+a.button-tertiary.color-secondary:hover {
+  background-color: var(--color-secondary-10);
+}
+.button-tertiary.color-secondary:active, .button-tertiary.color-secondary:focus,
+a.button-tertiary.color-secondary:active,
+a.button-tertiary.color-secondary:focus {
+  background-color: var(--color-secondary-20);
+}
+.button-tertiary.color-secondary svg,
+a.button-tertiary.color-secondary svg {
+  fill: var(--color-secondary);
+}
+.button-tertiary.color-accent,
+a.button-tertiary.color-accent {
+  color: var(--color-accent);
+}
+.button-tertiary.color-accent:hover,
+a.button-tertiary.color-accent:hover {
+  background-color: var(--color-accent-10);
+}
+.button-tertiary.color-accent:active, .button-tertiary.color-accent:focus,
+a.button-tertiary.color-accent:active,
+a.button-tertiary.color-accent:focus {
+  background-color: var(--color-accent-20);
+}
+.button-tertiary.color-accent svg,
+a.button-tertiary.color-accent svg {
+  fill: var(--color-accent);
 }
 
 .card-container {
@@ -394,6 +598,26 @@ a.button-back-to-top:hover {
   background-color: var(--color-primary-10);
   height: 100%;
   width: 100%;
+}
+.card.color-secondary::after {
+  background-color: var(--color-secondary-10);
+}
+.card.color-secondary:hover {
+  border: solid 2px var(--color-secondary-10);
+  box-shadow: 0 24px 24px -16px var(--color-secondary-10);
+}
+.card.color-secondary:hover::after {
+  background-color: var(--color-secondary-10);
+}
+.card.color-accent::after {
+  background-color: var(--color-accent-10);
+}
+.card.color-accent:hover {
+  border: solid 2px var(--color-accent-10);
+  box-shadow: 0 24px 24px -16px var(--color-accent-10);
+}
+.card.color-accent:hover::after {
+  background-color: var(--color-accent-10);
 }
 
 /*--------------------------------------------------------------
@@ -490,11 +714,11 @@ input[type=search]::placeholder {
   opacity: 0.64;
 }
 
-.container-input {
+.container-checkbox {
   display: flex;
   margin-bottom: 12px;
 }
-.container-input input[type=checkbox] {
+.container-checkbox input[type=checkbox] {
   appearance: none;
   width: 18px;
   height: 18px;
@@ -503,35 +727,80 @@ input[type=search]::placeholder {
   cursor: pointer;
   transition: var(--transition);
 }
-.container-input input[type=checkbox]:checked {
+.container-checkbox input[type=checkbox]:checked {
   background-color: var(--color-primary);
   border: var(--color-primary);
 }
-.container-input input[type=checkbox]:checked ~ label {
+.container-checkbox input[type=checkbox]:checked ~ label {
   color: var(--color-primary);
 }
-.container-input input[type=checkbox]:not(:checked) {
+.container-checkbox input[type=checkbox]:not(:checked) {
   background-color: transparent;
 }
-.container-input input[type=checkbox]:hover ~ label {
+.container-checkbox input[type=checkbox]:hover ~ label {
   color: var(--color-primary);
 }
-.container-input:hover input[type=checkbox] {
-  background-color: var(--color-primary-10);
-}
-.container-input:hover input[type=checkbox]:checked {
-  background-color: var(--color-primary);
-  border: var(--color-primary);
-}
-
-label {
+.container-checkbox label {
   user-select: none;
 }
-label[for^=checkbox] {
+.container-checkbox label[for^=checkbox] {
   flex: 1;
   padding-left: 14px;
   color: var(--color-primary);
   cursor: pointer;
+}
+.container-checkbox:hover input[type=checkbox] {
+  background-color: var(--color-primary-10);
+}
+.container-checkbox:hover input[type=checkbox]:checked {
+  background-color: var(--color-primary);
+  border: var(--color-primary);
+}
+.container-checkbox.color-secondary input[type=checkbox] {
+  border: solid var(--border-width) var(--color-secondary);
+}
+.container-checkbox.color-secondary input[type=checkbox]:checked {
+  background-color: var(--color-secondary);
+  border: var(--color-secondary);
+}
+.container-checkbox.color-secondary input[type=checkbox]:checked ~ label {
+  color: var(--color-secondary);
+}
+.container-checkbox.color-secondary input[type=checkbox]:hover ~ label {
+  color: var(--color-secondary);
+}
+.container-checkbox.color-secondary label {
+  color: var(--color-secondary);
+}
+.container-checkbox.color-secondary:hover input[type=checkbox] {
+  background-color: var(--color-secondary-10);
+}
+.container-checkbox.color-secondary:hover input[type=checkbox]:checked {
+  background-color: var(--color-secondary);
+  border: var(--color-secondary);
+}
+.container-checkbox.color-accent input[type=checkbox] {
+  border: solid var(--border-width) var(--color-accent);
+}
+.container-checkbox.color-accent input[type=checkbox]:checked {
+  background-color: var(--color-accent);
+  border: var(--color-accent);
+}
+.container-checkbox.color-accent input[type=checkbox]:checked ~ label {
+  color: var(--color-accent);
+}
+.container-checkbox.color-accent input[type=checkbox]:hover ~ label {
+  color: var(--color-accent);
+}
+.container-checkbox.color-accent label {
+  color: var(--color-accent);
+}
+.container-checkbox.color-accent:hover input[type=checkbox] {
+  background-color: var(--color-accent-10);
+}
+.container-checkbox.color-accent:hover input[type=checkbox]:checked {
+  background-color: var(--color-accent);
+  border: var(--color-accent);
 }
 
 body .container-loader {

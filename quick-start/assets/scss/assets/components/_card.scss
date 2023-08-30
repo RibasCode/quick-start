@@ -50,6 +50,38 @@
             width: 100%;
         }
     }
+
+    &.color-secondary{
+
+        &::after{
+            background-color: var(--color-secondary-10);
+        }
+
+        &:hover{
+            border: solid 2px var(--color-secondary-10);
+            box-shadow: 0 24px 24px -16px var(--color-secondary-10);
+
+            &::after{
+                background-color: var(--color-secondary-10);
+            }
+        }
+    }
+
+    &.color-accent{
+
+        &::after{
+            background-color: var(--color-accent-10);
+        }
+
+        &:hover{
+            border: solid 2px var(--color-accent-10);
+            box-shadow: 0 24px 24px -16px var(--color-accent-10);
+
+            &::after{
+                background-color: var(--color-accent-10);
+            }
+        }
+    }
 }
 
 /*--------------------------------------------------------------

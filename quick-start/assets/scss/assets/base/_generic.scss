@@ -23,83 +23,6 @@ html{
             background-color: var(--color-selection-background);
         }
 
-        h1,
-        h2,
-        h3,
-        h4{
-            margin: 0;
-            line-height: 1.3;
-            font-weight: 700;
-
-            transition: var(--transition);
-        }
-
-        h2{
-            font-size: 24px;
-        }
-
-        h3,
-        h4{
-            font-size: 20px;
-        }
-
-        p,
-        a,
-        li,
-        label{
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 1.3;
-
-            transition: var(--transition);
-        }
-
-        p{
-            color: var(--color-tipography-70);
-        }
-
-        a{
-            color: var(--color-primary);
-
-            text-decoration: none;
-
-            &:hover{
-                text-decoration: underline;
-            }
-        }
-
-        ul{
-
-            li{
-                list-style: none;
-            }
-        }
-
-        .container-980,
-        .container-1200,
-        .container-1440,
-        .container-100{
-            width: 100%;
-
-            padding: 0 24px;
-        }
-
-        .container-980{
-            max-width: 980px;
-        }
-
-        .container-1200{
-            max-width: 1200px;
-        }
-
-        .container-1440{
-            max-width: 1440px;
-        }
-
-        .container-100{
-            max-width: 100%;
-        }
-
         main{
             display: flex;
             flex-direction: column;
@@ -115,6 +38,92 @@ html{
         }
     }
 }
+
+h1,
+h2,
+h3,
+h4{
+    margin: 0;
+    line-height: 1.3;
+    font-weight: 700;
+
+    transition: var(--transition);
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3,
+h4{
+    font-size: 20px;
+}
+
+p,
+a,
+li,
+label{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    transition: var(--transition);
+}
+
+p{
+    color: var(--color-tipography-70);
+}
+
+a{
+    color: var(--color-primary);
+
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+    }
+
+    &.color-secondary{
+        color: var(--color-secondary);
+    }
+
+    &.color-accent{
+        color: var(--color-accent);
+    }
+}
+
+ul{
+
+    li{
+        list-style: none;
+    }
+}
+
+.container-980,
+.container-1200,
+.container-1440,
+.container-100{
+    width: 100%;
+
+    padding: 0 24px;
+}
+
+.container-980{
+    max-width: 980px;
+}
+
+.container-1200{
+    max-width: 1200px;
+}
+
+.container-1440{
+    max-width: 1440px;
+}
+
+.container-100{
+    max-width: 100%;
+}
+
 
 /*--------------------------------------------------------------
     @media - Mobile First

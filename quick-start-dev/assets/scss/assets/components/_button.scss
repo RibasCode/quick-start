@@ -16,7 +16,11 @@ a.button-back-to-top{
 .button-primary,
 .button-secondary,
 .button-tertiary,
-.button-back-to-top{
+.button-back-to-top,
+a.button-primary,
+a.button-secondary,
+a.button-tertiary,
+a.button-back-to-top{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +131,8 @@ a.button-back-to-top{
     }
 }
 
-.button-primary{
+.button-primary,
+a.button-primary{
     color: var(--color-white);
     background-color: var(--color-primary);
 
@@ -176,7 +181,8 @@ a.button-back-to-top{
     }
 }
 
-.button-secondary{
+.button-secondary,
+a.button-secondary{
     color: var(--color-primary);
     background-color: transparent;
 
@@ -240,7 +246,8 @@ a.button-back-to-top{
     }
 }
 
-.button-tertiary{
+.button-tertiary,
+a.button-tertiary{
     color: var(--color-primary);
     background-color: transparent;
 

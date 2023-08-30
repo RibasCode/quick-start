@@ -23,6 +23,19 @@
         pointer-events: all;
     }
 
+    &:hover{
+        background-color: var(--color-primary-20);
+
+        svg.icon{
+            transform: translateY(-3px) rotate(-90deg);
+        }
+    }
+
+    &:active,
+    &:focus{
+        background-color: var(--color-primary-30);
+    }
+
     svg.icon{
         height: 14px;
 
@@ -36,18 +49,5 @@
 
             transition: var(--transition);
         }
-    }
-
-    &:hover{
-        background-color: var(--color-primary-20);
-
-        svg.icon{
-            transform: translateY(-3px) rotate(-90deg);
-        }
-    }
-
-    &:active,
-    &:focus{
-        background-color: var(--color-primary-30);
     }
 }

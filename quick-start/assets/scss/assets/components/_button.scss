@@ -16,7 +16,11 @@ a.button-back-to-top{
 .button-primary,
 .button-secondary,
 .button-tertiary,
-.button-back-to-top{
+.button-back-to-top,
+a.button-primary,
+a.button-secondary,
+a.button-tertiary,
+a.button-back-to-top{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +131,8 @@ a.button-back-to-top{
     }
 }
 
-.button-primary{
+.button-primary,
+a.button-primary{
     color: var(--color-white);
     background-color: var(--color-primary);
 
@@ -140,17 +145,44 @@ a.button-back-to-top{
         background-color: var(--color-primary-120);
     }
 
+    svg{
+        fill: #ffffff;
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background);
     }
 
-    svg{
-        fill: #ffffff;
+    &.color-secondary{
+        background-color: var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-110);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-120);
+        }
+    }
+
+    &.color-accent{
+        background-color: var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-110);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-120);
+        }
     }
 }
 
-.button-secondary{
+.button-secondary,
+a.button-secondary{
     color: var(--color-primary);
     background-color: transparent;
 
@@ -165,18 +197,57 @@ a.button-back-to-top{
         background-color: var(--color-primary-20);
     }
 
+    svg{
+        fill: var(--color-primary);
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
         background-color: var(--color-inactive-background-10);
         border: solid var(--border-width) var(--color-inactive-text);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.color-secondary{
+        color: var(--color-secondary);
+
+        border: solid var(--border-width) var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-20);
+        }
+
+        svg{
+            fill: var(--color-secondary);
+        }
+    }
+
+    &.color-accent{
+        color: var(--color-accent);
+
+        border: solid var(--border-width) var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-20);
+        }
+
+        svg{
+            fill: var(--color-accent);
+        }
     }
 }
 
-.button-tertiary{
+.button-tertiary,
+a.button-tertiary{
     color: var(--color-primary);
     background-color: transparent;
 
@@ -189,6 +260,10 @@ a.button-back-to-top{
         background-color: var(--color-primary-20);
     }
 
+    svg{
+        fill: var(--color-primary);
+    }
+
     &.inactive{
         color: var(--color-inactive-text);
 
@@ -196,6 +271,40 @@ a.button-back-to-top{
         &:active,
         &:focus{
             background-color: transparent;
+        }
+    }
+
+    &.color-secondary{
+        color: var(--color-secondary);
+
+        &:hover{
+            background-color: var(--color-secondary-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-secondary-20);
+        }
+
+        svg{
+            fill: var(--color-secondary);
+        }
+    }
+
+    &.color-accent{
+        color: var(--color-accent);
+
+        &:hover{
+            background-color: var(--color-accent-10);
+        }
+
+        &:active,
+        &:focus{
+            background-color: var(--color-accent-20);
+        }
+
+        svg{
+            fill: var(--color-accent);
         }
     }
 }
