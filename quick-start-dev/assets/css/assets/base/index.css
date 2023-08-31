@@ -1,3 +1,20 @@
+body .initial-animation {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-x4);
+}
+body .initial-animation.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -112,21 +129,57 @@ ul li {
 /*--------------------------------------------------------------
     @media - Mobile First - Range syntax
 --------------------------------------------------------------*/
-body .initial-animation {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--color-background);
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-x4);
+@keyframes arrow-bouncing {
+  0% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
+  50% {
+    transform: translate(0%, -10%) rotate(90deg);
+  }
+  100% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
 }
-body .initial-animation.active {
-  opacity: 1;
-  pointer-events: all;
+.card.ancor {
+  position: relative;
+}
+.card.ancor a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, -50%);
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+  transition: var(--transition);
+}
+.card.ancor a:hover {
+  box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
+}
+.card.ancor a .icon-arrow {
+  height: 32px;
+  width: 32px;
+  animation-name: arrow-bouncing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.card.ancor .card {
+  position: absolute;
+  top: 274px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0;
+  height: fit-content;
+  border: none;
+}
+.card.ancor .card img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: var(--border-radius);
 }
 
 /*# sourceMappingURL=index.css.map */

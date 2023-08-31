@@ -1,0 +1,69 @@
+
+@keyframes arrow-bouncing {
+
+    0% {
+        transform: translate(0%, 10%) rotate(90deg);
+    }
+    50% {
+        transform: translate(0%, -10%) rotate(90deg);
+    }
+    100% {
+        transform: translate(0%, 10%) rotate(90deg);
+    }
+}
+
+.card.ancor{
+    position: relative;
+
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        left: 50%;
+        bottom: 24px;
+        transform: translate(-50%, -50%);
+
+        height: 48px;
+        width: 48px;
+
+        border-radius: 8px;
+        box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+        transition: var(--transition);
+
+        &:hover{
+            box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
+        }
+
+        .icon-arrow{
+            height: 32px;
+            width: 32px;
+
+            animation-name: arrow-bouncing;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+
+        }
+    }
+
+    .card{
+        position: absolute;
+        top: calc(250px + 24px);
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        padding: 0;
+
+        height: fit-content;
+
+        border: none;
+
+        img{
+            width: 100%;
+            aspect-ratio: 16/9;
+
+            border-radius: var(--border-radius);
+        }
+    }
+}
