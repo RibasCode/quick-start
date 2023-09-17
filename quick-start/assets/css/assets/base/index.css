@@ -61,7 +61,8 @@ label {
 }
 
 p {
-  color: var(--color-tipography-70);
+  color: var(--color-typography);
+  opacity: 70%;
 }
 
 a {
