@@ -44,6 +44,8 @@ h2,
 h3,
 h4{
     margin: 0;
+
+    color: var(--color-typography);
     line-height: 1.3;
     font-weight: 700;
 
@@ -123,6 +125,27 @@ ul{
 
 .container-100{
     max-width: 100%;
+}
+
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.hyphens{
+    -o-webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    -moz-webkit-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    -o-hyphenate-limit-chars: 12;
+    -ms-hyphenate-limit-chars: 12;
+    -moz-hyphenate-limit-chars: 12;
+    -webkit-hyphenate-limit-chars: 12;
+    hyphenate-limit-chars: 12;
 }
 
 

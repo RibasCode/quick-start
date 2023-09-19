@@ -24,14 +24,14 @@
   --color-accent-10: #00faa01a;
   --color-background: #ffffff;
   --color-typography: #0f172a;
+  --color-typography-white: #ffffff;
+  --color-typography-black: #0d1216;
   --color-selection-text: #ffffff;
   --color-selection-background: #8b3dff;
   --color-scrollbar-thumb: #cfd6e4;
   --color-inactive-text: #d0d0d0;
   --color-inactive-background: #f0f0f0;
   --color-inactive-background-10: #f9f9f9;
-  --color-white: #ffffff;
-  --color-black: #0d1216;
 }
 :root body.dark-theme {
   --color-background: #0d1216;
