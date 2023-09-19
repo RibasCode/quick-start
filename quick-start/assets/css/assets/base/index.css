@@ -1,3 +1,20 @@
+body .initial-animation {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-x4);
+}
+body .initial-animation.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -36,6 +53,7 @@ h2,
 h3,
 h4 {
   margin: 0;
+  color: var(--color-typography);
   line-height: 1.3;
   font-weight: 700;
   transition: var(--transition);
@@ -107,27 +125,31 @@ ul li {
   max-width: 100%;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hyphens {
+  -o-webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-webkit-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -o-hyphenate-limit-chars: 12;
+  -ms-hyphenate-limit-chars: 12;
+  -moz-hyphenate-limit-chars: 12;
+  -webkit-hyphenate-limit-chars: 12;
+  hyphenate-limit-chars: 12;
+}
+
 /*--------------------------------------------------------------
     @media - Mobile First
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
     @media - Mobile First - Range syntax
 --------------------------------------------------------------*/
-body .initial-animation {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-color: var(--color-background);
-  opacity: 0;
-  pointer-events: none;
-  transition: var(--transition-x4);
-}
-body .initial-animation.active {
-  opacity: 1;
-  pointer-events: all;
-}
 
 /*# sourceMappingURL=index.css.map */

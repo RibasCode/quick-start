@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     const fetchName = () => {
 
-        fetch("assets/documents/cards.json")
+        fetch("assets/documents/fetch.json")
         .then(response => response.json())
         .then(data => {
 

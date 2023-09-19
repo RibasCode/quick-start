@@ -3,6 +3,19 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
+
+    // .card{
+
+    //     .card-header{
+
+    //     }
+    //     .card-body{
+
+    //     }
+    //     .card-footer{
+
+    //     }
+    // }
 }
 
 .card{
@@ -17,7 +30,7 @@
     padding: 24px;
 
     width: 100%;
-    height: 248px;
+    height: 250px;
 
     border: solid 2px transparent;
     border-radius: var(--border-radius);
@@ -40,6 +53,7 @@
         transition: var(--transition-x2);
     }
 
+    &.active,
     &:hover{
         border: solid 2px var(--color-primary-10);
         box-shadow: 0 24px 24px -16px var(--color-primary-10);

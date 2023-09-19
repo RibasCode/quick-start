@@ -5,11 +5,11 @@ $(document).ready(function() {
 
     const fetchName = () => {
 
-        fetch("assets/documents/cards.json")
+        fetch("assets/documents/fetch.json")
         .then(response => response.json())
         .then(data => {
 
-            console.log('Success:', data);
+            // console.log('Success:', data);
 
             for(let i = 0; i < data.length; i++){
 

@@ -385,7 +385,7 @@ a.button-back-to-top .loader > div {
 
 .button-primary,
 a.button-primary {
-  color: var(--color-white);
+  color: var(--color-typography-white);
   background-color: var(--color-primary);
 }
 .button-primary:hover,
@@ -573,7 +573,7 @@ a.button-tertiary.color-accent svg {
   gap: 24px;
   padding: 24px;
   width: 100%;
-  height: 248px;
+  height: 250px;
   border: solid 2px transparent;
   border-radius: var(--border-radius);
   transition: var(--transition);
@@ -590,11 +590,11 @@ a.button-tertiary.color-accent svg {
   pointer-events: none;
   transition: var(--transition-x2);
 }
-.card:hover {
+.card.active, .card:hover {
   border: solid 2px var(--color-primary-10);
   box-shadow: 0 24px 24px -16px var(--color-primary-10);
 }
-.card:hover::after {
+.card.active::after, .card:hover::after {
   background-color: var(--color-primary-10);
   height: 100%;
   width: 100%;
@@ -710,7 +710,7 @@ input[type=search]::-ms-clear, input[type=search]::-ms-reveal {
   height: 0;
 }
 input[type=search]::placeholder {
-  color: var(--color-white);
+  color: var(--color-typography-white);
   opacity: 0.64;
 }
 
