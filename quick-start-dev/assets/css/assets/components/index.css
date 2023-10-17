@@ -21,6 +21,16 @@
 .badge:active, .badge:focus, .badge:hover {
   border: solid 2px rgba(51, 65, 85, 0.1254901961);
 }
+.badge.contrast p {
+  font-size: 12px;
+  font-weight: 800;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: invert(1) grayscale(1) contrast(10);
+  opacity: 100%;
+}
 .badge.html {
   color: #794f00;
   background-color: #ffd17d;
