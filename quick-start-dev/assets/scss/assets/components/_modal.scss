@@ -54,7 +54,7 @@
 
             border-radius: 0 0 var(--border-radius) var(--border-radius);
 
-            > *:last-child{
+            button + button{
                 margin-left: 24px;
             }
         }

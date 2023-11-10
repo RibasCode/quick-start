@@ -31,7 +31,7 @@
         border: solid 2px #33415520;
     }
 
-    &.contrast{
+    &[data-type="contrast"]{
 
         p{
             font-size: 12px;
@@ -49,7 +49,7 @@
         }
     }
 
-    &.html{
+    &[data-type="html"]{
         color: #794f00;
         background-color: #ffd17d;
 
@@ -60,7 +60,7 @@
         }
     }
 
-    &.css{
+    &[data-type="css"]{
         color: #103a9d;
         background-color: #80ccff;
 
@@ -71,7 +71,7 @@
         }
     }
 
-    &.sass{
+    &[data-type="sass"]{
         color: #9f0452;
         background-color: #f8aad1;
 
@@ -82,7 +82,7 @@
         }
     }
 
-    &.javascript{
+    &[data-type="javascript"]{
         color: #835500;
         background-color: #fff07e;
 
@@ -93,7 +93,7 @@
         }
     }
 
-    &.jquery{
+    &[data-type="jquery"]{
         color: #0836ae;
         background-color: #b0c4f1;
 
@@ -104,7 +104,7 @@
         }
     }
 
-    &.react{
+    &[data-type="react"]{
         color: #11748f;
         background-color: #99e9ff;
 
@@ -115,7 +115,7 @@
         }
     }
 
-    &.git{
+    &[data-type="git"]{
         color: #9b210b;
         background-color: #ffad9d;
 
