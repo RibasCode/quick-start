@@ -193,14 +193,14 @@ a.button-back-to-top {
   cursor: pointer;
   transition: var(--transition);
 }
-.button-primary.inactive,
-.button-secondary.inactive,
-.button-tertiary.inactive,
-.button-back-to-top.inactive,
-a.button-primary.inactive,
-a.button-secondary.inactive,
-a.button-tertiary.inactive,
-a.button-back-to-top.inactive {
+.button-primary.state-inactive,
+.button-secondary.state-inactive,
+.button-tertiary.state-inactive,
+.button-back-to-top.state-inactive,
+a.button-primary.state-inactive,
+a.button-secondary.state-inactive,
+a.button-tertiary.state-inactive,
+a.button-back-to-top.state-inactive {
   outline: none;
   cursor: not-allowed;
 }
@@ -411,10 +411,10 @@ a.button-primary:focus {
 a.button-primary svg {
   fill: #ffffff;
 }
-.button-primary.inactive,
-a.button-primary.inactive {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background);
+.button-primary.state-inactive,
+a.button-primary.state-inactive {
+  color: var(--color-state-inactive-text);
+  background-color: var(--color-state-inactive-background);
 }
 .button-primary.color-secondary,
 a.button-primary.color-secondary {
@@ -462,11 +462,11 @@ a.button-secondary:focus {
 a.button-secondary svg {
   fill: var(--color-primary);
 }
-.button-secondary.inactive,
-a.button-secondary.inactive {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background-10);
-  border: solid var(--border-width) var(--color-inactive-text);
+.button-secondary.state-inactive,
+a.button-secondary.state-inactive {
+  color: var(--color-state-inactive-text);
+  background-color: var(--color-state-inactive-background-10);
+  border: solid var(--border-width) var(--color-state-inactive-text);
 }
 .button-secondary.color-secondary,
 a.button-secondary.color-secondary {
@@ -523,14 +523,14 @@ a.button-tertiary:focus {
 a.button-tertiary svg {
   fill: var(--color-primary);
 }
-.button-tertiary.inactive,
-a.button-tertiary.inactive {
-  color: var(--color-inactive-text);
+.button-tertiary.state-inactive,
+a.button-tertiary.state-inactive {
+  color: var(--color-state-inactive-text);
 }
-.button-tertiary.inactive:hover, .button-tertiary.inactive:active, .button-tertiary.inactive:focus,
-a.button-tertiary.inactive:hover,
-a.button-tertiary.inactive:active,
-a.button-tertiary.inactive:focus {
+.button-tertiary.state-inactive:hover, .button-tertiary.state-inactive:active, .button-tertiary.state-inactive:focus,
+a.button-tertiary.state-inactive:hover,
+a.button-tertiary.state-inactive:active,
+a.button-tertiary.state-inactive:focus {
   background-color: transparent;
 }
 .button-tertiary.color-secondary,

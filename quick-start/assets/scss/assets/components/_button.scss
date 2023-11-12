@@ -41,7 +41,7 @@ a.button-back-to-top{
     cursor: pointer;
     transition: var(--transition);
 
-    &.inactive{
+    &.state-inactive{
         outline: none;
         cursor: not-allowed;
     }
@@ -149,9 +149,9 @@ a.button-primary{
         fill: #ffffff;
     }
 
-    &.inactive{
-        color: var(--color-inactive-text);
-        background-color: var(--color-inactive-background);
+    &.state-inactive{
+        color: var(--color-state-inactive-text);
+        background-color: var(--color-state-inactive-background);
     }
 
     &.color-secondary{
@@ -201,10 +201,10 @@ a.button-secondary{
         fill: var(--color-primary);
     }
 
-    &.inactive{
-        color: var(--color-inactive-text);
-        background-color: var(--color-inactive-background-10);
-        border: solid var(--border-width) var(--color-inactive-text);
+    &.state-inactive{
+        color: var(--color-state-inactive-text);
+        background-color: var(--color-state-inactive-background-10);
+        border: solid var(--border-width) var(--color-state-inactive-text);
     }
 
     &.color-secondary{
@@ -264,8 +264,8 @@ a.button-tertiary{
         fill: var(--color-primary);
     }
 
-    &.inactive{
-        color: var(--color-inactive-text);
+    &.state-inactive{
+        color: var(--color-state-inactive-text);
 
         &:hover,
         &:active,
