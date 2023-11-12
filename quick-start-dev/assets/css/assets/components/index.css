@@ -94,7 +94,7 @@
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
-.button-back-to-top.active {
+.button-back-to-top.state-active {
   bottom: 48px;
   opacity: 1;
   pointer-events: all;
@@ -600,11 +600,11 @@ a.button-tertiary.color-accent svg {
   pointer-events: none;
   transition: var(--transition-x2);
 }
-.card.active, .card:hover {
+.card.state-active, .card:hover {
   border: solid 2px var(--color-primary-10);
   box-shadow: 0 24px 24px -16px var(--color-primary-10);
 }
-.card.active::after, .card:hover::after {
+.card.state-active::after, .card:hover::after {
   background-color: var(--color-primary-10);
   height: 100%;
   width: 100%;
@@ -826,7 +826,7 @@ body .container-loader {
 body .container-loader .loader div {
   background-color: var(--color-primary);
 }
-body .container-loader.active {
+body .container-loader.state-active {
   opacity: 1;
 }
 
@@ -900,7 +900,7 @@ body .loader div:nth-child(4) {
   pointer-events: none;
   transition: var(--transition);
 }
-.modal-container.active {
+.modal-container.state-active {
   opacity: 1;
   pointer-events: all;
 }

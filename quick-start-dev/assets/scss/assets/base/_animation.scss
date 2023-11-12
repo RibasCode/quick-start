@@ -17,7 +17,7 @@ body{
         pointer-events: none;
         transition: var(--transition-x4);
 
-        &.active{
+        &.state-active{
             opacity: 1;
             pointer-events: all;
         }

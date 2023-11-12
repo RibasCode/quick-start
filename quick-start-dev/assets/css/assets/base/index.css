@@ -10,7 +10,7 @@ body .initial-animation {
   pointer-events: none;
   transition: var(--transition-x4);
 }
-body .initial-animation.active {
+body .initial-animation.state-active {
   opacity: 1;
   pointer-events: all;
 }
