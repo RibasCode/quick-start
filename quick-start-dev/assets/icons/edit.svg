@@ -1,9 +1,0 @@
-
-<svg version="1.1" class="icon-edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-	<style type="text/css">
-		.icon-edit-st0{fill:var(--color-primary);}
-	</style>
-	<g id="edit" transform="translate(-6.999 -6.475)">
-		<path id="Trazado_421" class="icon-edit-st0" d="M62,25.4c0-1.7-0.6-3.3-1.8-4.5L56.3,17c-2.2-2.2-5.8-2.2-8,0l-28,28c-0.3,0.3-0.5,0.6-0.6,1L16,58.7c-0.2,0.8,0,1.6,0.6,2.2c0.4,0.4,1,0.7,1.6,0.7c0.2,0,0.5,0,0.7-0.1l12.6-3.8c0.4-0.1,0.7-0.3,1-0.6l27.7-27.8C61.3,28.3,62,26.9,62,25.4z M29.6,53.5l-8.1,2.4l2.3-8l21-20.8l5.5,5.6L29.6,53.5z M57.2,25.8c-0.1,0-0.1,0.1-0.2,0.2l-3.4,3.4L51,26.7l-2.9-3l3.5-3.6c0.5-0.4,1.1-0.4,1.6,0l3.9,3.9l0,0c0.3,0.3,0.5,0.7,0.5,1.1C57.5,25.4,57.4,25.7,57.2,25.8z"/>
-	</g>
-</svg>

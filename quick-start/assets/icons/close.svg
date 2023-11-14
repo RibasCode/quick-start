@@ -1,7 +1,0 @@
-
-<svg version="1.1" class="icon-close" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-	<style type="text/css">
-		.icon-close-st0{fill:var(--color-primary);}
-	</style>
-	<path id="close" class="icon-close-st0" d="M37.9,32l15.9-15.9c1.6-1.6,1.6-4.3,0-5.9s-4.3-1.6-5.9,0L32,26.1l-15.9-16c-1.6-1.6-4.3-1.6-5.9,0s-1.6,4.3,0,5.9l15.9,16l-16,15.9c-1.6,1.6-1.6,4.3,0,5.9c0.8,0.8,1.9,1.2,3,1.2s2.1-0.4,3-1.2L32,37.9l15.9,15.9c0.8,0.8,1.9,1.2,3,1.2s2.1-0.4,3-1.2c1.6-1.6,1.6-4.3,0-5.9L37.9,32z"/>
-</svg>

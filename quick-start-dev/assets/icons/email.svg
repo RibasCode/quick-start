@@ -1,7 +1,0 @@
-
-<svg version="1.1" class="icon-email" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-	<style type="text/css">
-		.icon-email-st0{fill:var(--color-primary);}
-	</style>
-	<path id="email" class="icon-email-st0" d="M12.4,50.5c-1.9,0-3.4-1.6-3.5-3.5V17c0-1.9,1.6-3.4,3.5-3.5h39.3c1.9,0,3.4,1.6,3.5,3.5v30c0,1.9-1.6,3.4-3.5,3.5H12.4z M32,33L12.4,20.2V47h39.3V20.2L32,33z M32,29.6L51.4,17H12.7L32,29.6z M12.4,20.2L12.4,20.2z"/>
-</svg>
