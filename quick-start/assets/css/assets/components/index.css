@@ -707,6 +707,11 @@ a.button-tertiary.color-accent svg {
   stroke: url(#gradient-color-0);
 }
 
+svg {
+  height: 32px;
+  width: 32px;
+}
+
 input[type=search] {
   border: none;
   outline: none;
