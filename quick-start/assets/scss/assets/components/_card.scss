@@ -37,6 +37,10 @@
 
     transition: var(--transition);
 
+    animation: reveal-cards-when-scrolling linear both;
+    animation-timeline: view();
+    animation-range: entry -20% cover 20%;
+
     &::after{
         content: '';
         z-index: -1;

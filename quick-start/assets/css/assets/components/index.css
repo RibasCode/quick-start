@@ -587,6 +587,9 @@ a.button-tertiary.color-accent svg {
   border: solid 2px transparent;
   border-radius: var(--border-radius);
   transition: var(--transition);
+  animation: reveal-cards-when-scrolling linear both;
+  animation-timeline: view();
+  animation-range: entry -20% cover 20%;
 }
 .card::after {
   content: "";

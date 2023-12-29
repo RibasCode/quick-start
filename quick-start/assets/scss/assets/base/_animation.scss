@@ -23,3 +23,16 @@ body{
         }
     }
 }
+
+@keyframes reveal-cards-when-scrolling{
+
+    from{
+        opacity: 0;
+        transform: translate(0, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0, -64px);
+    }
+}
