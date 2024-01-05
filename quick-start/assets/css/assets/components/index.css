@@ -110,6 +110,7 @@
 }
 .button-back-to-top svg.icon {
   height: 14px;
+  width: initial;
   margin-right: 12px;
   transform: translateY(-1px) rotate(-90deg);
   transition: var(--transition);
@@ -695,6 +696,8 @@ a.button-tertiary.color-accent svg {
   position: absolute;
   top: 0;
   left: 0;
+  width: 160px;
+  height: 160px;
 }
 .graphic [class^=skill] svg circle {
   fill: none;
