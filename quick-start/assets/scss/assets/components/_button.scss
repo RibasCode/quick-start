@@ -137,12 +137,12 @@ a.button-primary{
     background-color: var(--color-primary);
 
     &:hover{
-        background-color: var(--color-primary-110);
+        background-color: var(--color-primary-hover);
     }
 
     &:active,
     &:focus{
-        background-color: var(--color-primary-120);
+        background-color: var(--color-primary-active);
     }
 
     svg{

@@ -401,12 +401,12 @@ a.button-primary {
 }
 .button-primary:hover,
 a.button-primary:hover {
-  background-color: var(--color-primary-110);
+  background-color: var(--color-primary-hover);
 }
 .button-primary:active, .button-primary:focus,
 a.button-primary:active,
 a.button-primary:focus {
-  background-color: var(--color-primary-120);
+  background-color: var(--color-primary-active);
 }
 .button-primary svg,
 a.button-primary svg {

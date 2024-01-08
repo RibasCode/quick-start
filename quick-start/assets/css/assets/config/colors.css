@@ -1,6 +1,6 @@
 :root body {
-  --color-primary-120: #003eff;
-  --color-primary-110: #0052ff;
+  --color-primary-active: #003eff;
+  --color-primary-hover: #0052ff;
   --color-primary: #0066ff;
   --color-primary-80: #0066ffcc;
   --color-primary-50: #0066ff80;
