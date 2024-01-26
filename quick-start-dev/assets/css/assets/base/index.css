@@ -1,0 +1,233 @@
+body .initial-animation {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--color-background);
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition-x4);
+}
+body .initial-animation.state-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@keyframes reveal-cards-when-scrolling {
+  from {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, -64px);
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+html body {
+  background-color: var(--color-background);
+  color: var(--color-tipography);
+  font-family: var(--tipography);
+  transition: var(--transition);
+}
+html body ::selection {
+  color: var(--color-selection-text);
+  background-color: var(--color-selection-background);
+}
+html body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+html body main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 64px 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  color: var(--color-typography);
+  line-height: 1.3;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3,
+h4 {
+  font-size: 20px;
+}
+
+p,
+a,
+li,
+label {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+  transition: var(--transition);
+}
+
+p {
+  color: var(--color-typography);
+  opacity: 70%;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.color-secondary {
+  color: var(--color-secondary);
+}
+a.color-accent {
+  color: var(--color-accent);
+}
+
+ul li {
+  list-style: none;
+}
+
+.container-980,
+.container-1200,
+.container-1440,
+.container-100 {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.container-980 {
+  max-width: 980px;
+}
+
+.container-1200 {
+  max-width: 1200px;
+}
+
+.container-1440 {
+  max-width: 1440px;
+}
+
+.container-100 {
+  max-width: 100%;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.hyphens {
+  -o-webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-webkit-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  -o-hyphenate-limit-chars: 12;
+  -ms-hyphenate-limit-chars: 12;
+  -moz-hyphenate-limit-chars: 12;
+  -webkit-hyphenate-limit-chars: 12;
+  hyphenate-limit-chars: 12;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+.text-wrap-pretty {
+  text-wrap: pretty;
+}
+
+/*--------------------------------------------------------------
+    @media - Mobile First
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+    @media - Mobile First - Range syntax
+--------------------------------------------------------------*/
+@keyframes arrow-bouncing {
+  0% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
+  50% {
+    transform: translate(0%, -10%) rotate(90deg);
+  }
+  100% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
+}
+.card.ancor {
+  position: relative;
+  margin-bottom: 302px;
+}
+.card.ancor a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  bottom: 24px;
+  transform: translate(-50%, -50%);
+  height: 48px;
+  width: 48px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+  transition: var(--transition);
+}
+.card.ancor a:hover {
+  box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
+}
+.card.ancor a .icon-arrow {
+  height: 32px;
+  width: 32px;
+  animation-name: arrow-bouncing;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.card.ancor #card-content {
+  position: absolute;
+  top: 274px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 0;
+  height: fit-content;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--border-radius);
+}
+.card.ancor #card-content img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: var(--border-radius);
+}
+
+/*# sourceMappingURL=index.css.map */
