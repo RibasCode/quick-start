@@ -2,21 +2,21 @@
 /* IMPORTS */
 
 /* Libraries */
-@import url('../../node_modules/normalize.css/normalize.css');        /* Normalize styles for different browsers */
-@import url('../../node_modules/toastify-js/src/toastify.css');       /* Toastify defauld styles */
+@import url("../../node_modules/normalize.css/normalize.css");        /* Normalize styles for different browsers */
+@import url("../../node_modules/toastify-js/src/toastify.css");       /* Toastify defauld styles */
 
 /* Fonts */
-// @import url('../font/Poppins.css');                                /* Fonts - Local */
-// @import url('../font/OpenSans.css');                               /* Fonts - Local */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+// @import url("../font/Poppins.css");                                /* Fonts - Local */
+// @import url("../font/OpenSans.css");                               /* Fonts - Local */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 
 /* Variables */
-@import url('./assets/config/variables.css');
+@import url("./assets/config/variables.css");
 
 /* Colors */
-@import url('./assets/config/colors.css');
+@import url("./assets/config/colors.css");
 
 /* Styles */
-@import url('./assets/base/index.css');
-@import url('./assets/components/index.css');
-@import url('./assets/pages/index.css');
+@import url("./assets/base/index.css");
+@import url("./assets/components/index.css");
+@import url("./assets/pages/index.css");

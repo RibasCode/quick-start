@@ -1,9 +1,9 @@
 
-'use strict'
+"use strict"
 
 $(document).ready(function() {
 
-    $('.toast-button').click(() => {
+    $(".toast-button").click(() => {
         Toastify({
             text: "This is a toast",
             className: "info",

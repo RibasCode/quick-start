@@ -1,5 +1,5 @@
 
-'use strict'
+"use strict"
 
 // Global: Variables
 
@@ -25,68 +25,68 @@ function setStatus(object){
 
         //Status: Active
         if(statusActive == true){
-            element.addClass('status-active');
+            element.addClass("status-active");
         }
         if(statusActive == false){
-            element.removeClass('status-active');
+            element.removeClass("status-active");
         }
-        if(statusActive == 'toggle'){
-            element.toggleClass('status-active');
+        if(statusActive == "toggle"){
+            element.toggleClass("status-active");
         }
 
         //Status: Inactive
         if(statusInactive == true){
-            element.addClass('status-inactive');
+            element.addClass("status-inactive");
         }
         if(statusInactive == false){
-            element.removeClass('status-inactive');
+            element.removeClass("status-inactive");
         }
-        if(statusInactive == 'toggle'){
-            element.toggleClass('status-inactive');
+        if(statusInactive == "toggle"){
+            element.toggleClass("status-inactive");
         }
 
         //Status: Info
         if(statusInfo == true){
-            element.addClass('status-info');
+            element.addClass("status-info");
         }
         if(statusInfo == false){
-            element.removeClass('status-info');
+            element.removeClass("status-info");
         }
-        if(statusInfo == 'toggle'){
-            element.toggleClass('status-info');
+        if(statusInfo == "toggle"){
+            element.toggleClass("status-info");
         }
 
         //Status: Warning
         if(statusWarning == true){
-            element.addClass('status-warning');
+            element.addClass("status-warning");
         }
         if(statusWarning == false){
-            element.removeClass('status-warning');
+            element.removeClass("status-warning");
         }
-        if(statusWarning == 'toggle'){
-            element.toggleClass('status-warning');
+        if(statusWarning == "toggle"){
+            element.toggleClass("status-warning");
         }
 
         //Status: Error
         if(statusError == true){
-            element.addClass('status-error');
+            element.addClass("status-error");
         }
         if(statusError == false){
-            element.removeClass('status-error');
+            element.removeClass("status-error");
         }
-        if(statusError == 'toggle'){
-            element.toggleClass('status-error');
+        if(statusError == "toggle"){
+            element.toggleClass("status-error");
         }
 
         //Status: Hidden
         if(statusHidden == true){
-            element.addClass('status-hidden');
+            element.addClass("status-hidden");
         }
         if(statusHidden == false){
-            element.removeClass('status-hidden');
+            element.removeClass("status-hidden");
         }
-        if(statusHidden == 'toggle'){
-            element.toggleClass('status-hidden');
+        if(statusHidden == "toggle"){
+            element.toggleClass("status-hidden");
         }
     }
 };

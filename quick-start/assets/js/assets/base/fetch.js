@@ -1,5 +1,5 @@
 
-'use strict'
+"use strict"
 
 $(document).ready(function() {
 
@@ -9,7 +9,7 @@ $(document).ready(function() {
         .then(response => response.json())
         .then(data => {
 
-            // console.log('Success:', data);
+            // console.log("Success:", data);
 
             for(let i = 0; i < data.length; i++){
 
@@ -21,11 +21,11 @@ $(document).ready(function() {
                     </div>
                 `;
 
-                // $('section#section-name .card-container').append(cardHTML);
+                // $("section#section-name .card-container").append(cardHTML);
 
             };
 
-        }).catch( error => console.log('Error:', error));
+        }).catch( error => console.log("Error:", error));
 
     };
 
