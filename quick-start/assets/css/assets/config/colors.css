@@ -53,6 +53,16 @@
   --color-state-inactive-text: #d0d0d0;
   --color-state-inactive-background: #f0f0f0;
   --color-state-inactive-background-10: #f9f9f9;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-white-toggle: #ffffff;
+  --color-white-toggle-24: #ffffff3D;
+  --color-white-toggle-32: #ffffff52;
+  --color-white-toggle-44: #ffffff70;
+  --color-black-toggle: #000000;
+  --color-black-toggle-24: #0000003D;
+  --color-black-toggle-32: #00000052;
+  --color-black-toggle-44: #00000070;
 }
 :root body.dark-theme {
   --color-background: #0d1216;
@@ -61,6 +71,14 @@
   --color-state-inactive-text: #3d464d;
   --color-state-inactive-background: #11171c;
   --color-state-inactive-background-10: #10161b;
+  --color-white-toggle: #000000;
+  --color-white-toggle-24: #0000003D;
+  --color-white-toggle-32: #00000052;
+  --color-white-toggle-44: #00000070;
+  --color-black-toggle: #ffffff;
+  --color-black-toggle-24: #ffffff3D;
+  --color-black-toggle-32: #ffffff52;
+  --color-black-toggle-44: #ffffff70;
 }
 
 /*# sourceMappingURL=colors.css.map */
