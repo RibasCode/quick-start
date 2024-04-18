@@ -1,5 +1,6 @@
 :root body {
   --color-primary-active: #003eff;
+  --color-primary-focus: #0052ff;
   --color-primary-hover: #0052ff;
   --color-primary: #0066ff;
   --color-primary-80: #0066ffcc;
@@ -8,15 +9,17 @@
   --color-primary-20: #0066ff33;
   --color-primary-10: #0066ff1a;
   --color-primary-06: #0066ff0f;
-  --color-secondary-120: #8216ee;
-  --color-secondary-110: #8b29ff;
+  --color-secondary-active: #8216ee;
+  --color-secondary-focus: #8b29ff;
+  --color-secondary-hover: #8b29ff;
   --color-secondary: #8b3dff;
   --color-secondary-80: #8b3dffcc;
   --color-secondary-50: #8b3dff80;
   --color-secondary-20: #8b3dff33;
   --color-secondary-10: #8b3dff1a;
-  --color-accent-120: #00fa78;
-  --color-accent-110: #00fa8c;
+  --color-accent-active: #00fa78;
+  --color-accent-focus: #00fa8c;
+  --color-accent-hover: #00fa8c;
   --color-accent: #00faa0;
   --color-accent-80: #00faa0cc;
   --color-accent-50: #00faa080;
