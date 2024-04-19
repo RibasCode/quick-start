@@ -180,6 +180,32 @@ ul li {
     transform: translate(0%, 10%) rotate(90deg);
   }
 }
+.container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.container-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-icon .icon-filetype-pdf {
+  height: 88px;
+  width: 88px;
+}
+.container-icon .icon-filetype-pdf:nth-of-type(1) {
+  fill: var(--color-primary);
+}
+.container-icon .icon-filetype-pdf:nth-of-type(2) {
+  fill: var(--color-secondary);
+}
+.container-icon .icon-filetype-pdf:nth-of-type(3) {
+  fill: var(--color-accent);
+}
+
 .card.ancor {
   position: relative;
   margin-bottom: 302px;

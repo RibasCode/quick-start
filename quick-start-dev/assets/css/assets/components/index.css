@@ -110,9 +110,9 @@
 }
 .button-back-to-top svg.icon {
   height: 14px;
-  width: initial;
+  width: 14px;
   margin-right: 12px;
-  transform: translateY(-1px) rotate(-90deg);
+  transform: translateY(-0.5px) rotate(-90deg);
   transition: var(--transition);
 }
 .button-back-to-top svg.icon polyline {
@@ -224,166 +224,231 @@ a.button-primary.button-small,
 a.button-secondary.button-small,
 a.button-tertiary.button-small,
 a.button-back-to-top.button-small {
-  padding: 8px 12px;
-  font-size: 12px;
+  padding: 0px 10px;
+  height: 28px;
+  min-height: 28px;
+  font-size: 11px;
 }
-.button-primary:active > svg.icon-right.icon-arrow, .button-primary:focus > svg.icon-right.icon-arrow, .button-primary:hover > svg.icon-right.icon-arrow,
-.button-secondary:active > svg.icon-right.icon-arrow,
-.button-secondary:focus > svg.icon-right.icon-arrow,
-.button-secondary:hover > svg.icon-right.icon-arrow,
-.button-tertiary:active > svg.icon-right.icon-arrow,
-.button-tertiary:focus > svg.icon-right.icon-arrow,
-.button-tertiary:hover > svg.icon-right.icon-arrow,
-.button-back-to-top:active > svg.icon-right.icon-arrow,
-.button-back-to-top:focus > svg.icon-right.icon-arrow,
-.button-back-to-top:hover > svg.icon-right.icon-arrow,
-a.button-primary:active > svg.icon-right.icon-arrow,
-a.button-primary:focus > svg.icon-right.icon-arrow,
-a.button-primary:hover > svg.icon-right.icon-arrow,
-a.button-secondary:active > svg.icon-right.icon-arrow,
-a.button-secondary:focus > svg.icon-right.icon-arrow,
-a.button-secondary:hover > svg.icon-right.icon-arrow,
-a.button-tertiary:active > svg.icon-right.icon-arrow,
-a.button-tertiary:focus > svg.icon-right.icon-arrow,
-a.button-tertiary:hover > svg.icon-right.icon-arrow,
-a.button-back-to-top:active > svg.icon-right.icon-arrow,
-a.button-back-to-top:focus > svg.icon-right.icon-arrow,
-a.button-back-to-top:hover > svg.icon-right.icon-arrow {
+.button-primary.button-small.icon-solo,
+.button-secondary.button-small.icon-solo,
+.button-tertiary.button-small.icon-solo,
+.button-back-to-top.button-small.icon-solo,
+a.button-primary.button-small.icon-solo,
+a.button-secondary.button-small.icon-solo,
+a.button-tertiary.button-small.icon-solo,
+a.button-back-to-top.button-small.icon-solo {
+  height: 28px;
+  min-height: 28px;
+  width: 28px;
+}
+.button-primary.button-small.icon-solo svg, .button-primary.button-small.icon-left svg, .button-primary.button-small.icon-right svg,
+.button-secondary.button-small.icon-solo svg,
+.button-secondary.button-small.icon-left svg,
+.button-secondary.button-small.icon-right svg,
+.button-tertiary.button-small.icon-solo svg,
+.button-tertiary.button-small.icon-left svg,
+.button-tertiary.button-small.icon-right svg,
+.button-back-to-top.button-small.icon-solo svg,
+.button-back-to-top.button-small.icon-left svg,
+.button-back-to-top.button-small.icon-right svg,
+a.button-primary.button-small.icon-solo svg,
+a.button-primary.button-small.icon-left svg,
+a.button-primary.button-small.icon-right svg,
+a.button-secondary.button-small.icon-solo svg,
+a.button-secondary.button-small.icon-left svg,
+a.button-secondary.button-small.icon-right svg,
+a.button-tertiary.button-small.icon-solo svg,
+a.button-tertiary.button-small.icon-left svg,
+a.button-tertiary.button-small.icon-right svg,
+a.button-back-to-top.button-small.icon-solo svg,
+a.button-back-to-top.button-small.icon-left svg,
+a.button-back-to-top.button-small.icon-right svg {
+  height: 12px;
+  width: 12px;
+}
+.button-primary.icon-solo,
+.button-secondary.icon-solo,
+.button-tertiary.icon-solo,
+.button-back-to-top.icon-solo,
+a.button-primary.icon-solo,
+a.button-secondary.icon-solo,
+a.button-tertiary.icon-solo,
+a.button-back-to-top.icon-solo {
+  padding: 0;
+  height: 36px;
+  min-height: 36px;
+  width: 36px;
+}
+.button-primary:active > svg.icon-right.icon-arrow-left, .button-primary:focus > svg.icon-right.icon-arrow-left, .button-primary:hover > svg.icon-right.icon-arrow-left,
+.button-secondary:active > svg.icon-right.icon-arrow-left,
+.button-secondary:focus > svg.icon-right.icon-arrow-left,
+.button-secondary:hover > svg.icon-right.icon-arrow-left,
+.button-tertiary:active > svg.icon-right.icon-arrow-left,
+.button-tertiary:focus > svg.icon-right.icon-arrow-left,
+.button-tertiary:hover > svg.icon-right.icon-arrow-left,
+.button-back-to-top:active > svg.icon-right.icon-arrow-left,
+.button-back-to-top:focus > svg.icon-right.icon-arrow-left,
+.button-back-to-top:hover > svg.icon-right.icon-arrow-left,
+a.button-primary:active > svg.icon-right.icon-arrow-left,
+a.button-primary:focus > svg.icon-right.icon-arrow-left,
+a.button-primary:hover > svg.icon-right.icon-arrow-left,
+a.button-secondary:active > svg.icon-right.icon-arrow-left,
+a.button-secondary:focus > svg.icon-right.icon-arrow-left,
+a.button-secondary:hover > svg.icon-right.icon-arrow-left,
+a.button-tertiary:active > svg.icon-right.icon-arrow-left,
+a.button-tertiary:focus > svg.icon-right.icon-arrow-left,
+a.button-tertiary:hover > svg.icon-right.icon-arrow-left,
+a.button-back-to-top:active > svg.icon-right.icon-arrow-left,
+a.button-back-to-top:focus > svg.icon-right.icon-arrow-left,
+a.button-back-to-top:hover > svg.icon-right.icon-arrow-left {
   transform: translate(3px, 0);
 }
-.button-primary:active > svg.icon-left.icon-arrow, .button-primary:focus > svg.icon-left.icon-arrow, .button-primary:hover > svg.icon-left.icon-arrow,
-.button-secondary:active > svg.icon-left.icon-arrow,
-.button-secondary:focus > svg.icon-left.icon-arrow,
-.button-secondary:hover > svg.icon-left.icon-arrow,
-.button-tertiary:active > svg.icon-left.icon-arrow,
-.button-tertiary:focus > svg.icon-left.icon-arrow,
-.button-tertiary:hover > svg.icon-left.icon-arrow,
-.button-back-to-top:active > svg.icon-left.icon-arrow,
-.button-back-to-top:focus > svg.icon-left.icon-arrow,
-.button-back-to-top:hover > svg.icon-left.icon-arrow,
-a.button-primary:active > svg.icon-left.icon-arrow,
-a.button-primary:focus > svg.icon-left.icon-arrow,
-a.button-primary:hover > svg.icon-left.icon-arrow,
-a.button-secondary:active > svg.icon-left.icon-arrow,
-a.button-secondary:focus > svg.icon-left.icon-arrow,
-a.button-secondary:hover > svg.icon-left.icon-arrow,
-a.button-tertiary:active > svg.icon-left.icon-arrow,
-a.button-tertiary:focus > svg.icon-left.icon-arrow,
-a.button-tertiary:hover > svg.icon-left.icon-arrow,
-a.button-back-to-top:active > svg.icon-left.icon-arrow,
-a.button-back-to-top:focus > svg.icon-left.icon-arrow,
-a.button-back-to-top:hover > svg.icon-left.icon-arrow {
+.button-primary:active > svg.icon-left.icon-arrow-right, .button-primary:focus > svg.icon-left.icon-arrow-right, .button-primary:hover > svg.icon-left.icon-arrow-right,
+.button-secondary:active > svg.icon-left.icon-arrow-right,
+.button-secondary:focus > svg.icon-left.icon-arrow-right,
+.button-secondary:hover > svg.icon-left.icon-arrow-right,
+.button-tertiary:active > svg.icon-left.icon-arrow-right,
+.button-tertiary:focus > svg.icon-left.icon-arrow-right,
+.button-tertiary:hover > svg.icon-left.icon-arrow-right,
+.button-back-to-top:active > svg.icon-left.icon-arrow-right,
+.button-back-to-top:focus > svg.icon-left.icon-arrow-right,
+.button-back-to-top:hover > svg.icon-left.icon-arrow-right,
+a.button-primary:active > svg.icon-left.icon-arrow-right,
+a.button-primary:focus > svg.icon-left.icon-arrow-right,
+a.button-primary:hover > svg.icon-left.icon-arrow-right,
+a.button-secondary:active > svg.icon-left.icon-arrow-right,
+a.button-secondary:focus > svg.icon-left.icon-arrow-right,
+a.button-secondary:hover > svg.icon-left.icon-arrow-right,
+a.button-tertiary:active > svg.icon-left.icon-arrow-right,
+a.button-tertiary:focus > svg.icon-left.icon-arrow-right,
+a.button-tertiary:hover > svg.icon-left.icon-arrow-right,
+a.button-back-to-top:active > svg.icon-left.icon-arrow-right,
+a.button-back-to-top:focus > svg.icon-left.icon-arrow-right,
+a.button-back-to-top:hover > svg.icon-left.icon-arrow-right {
   transform: rotate(180deg) translate(3px, 0);
 }
-.button-primary > svg,
-.button-secondary > svg,
-.button-tertiary > svg,
-.button-back-to-top > svg,
-a.button-primary > svg,
-a.button-secondary > svg,
-a.button-tertiary > svg,
-a.button-back-to-top > svg {
+.button-primary.icon-solo svg, .button-primary.icon-left svg, .button-primary.icon-right svg,
+.button-secondary.icon-solo svg,
+.button-secondary.icon-left svg,
+.button-secondary.icon-right svg,
+.button-tertiary.icon-solo svg,
+.button-tertiary.icon-left svg,
+.button-tertiary.icon-right svg,
+.button-back-to-top.icon-solo svg,
+.button-back-to-top.icon-left svg,
+.button-back-to-top.icon-right svg,
+a.button-primary.icon-solo svg,
+a.button-primary.icon-left svg,
+a.button-primary.icon-right svg,
+a.button-secondary.icon-solo svg,
+a.button-secondary.icon-left svg,
+a.button-secondary.icon-right svg,
+a.button-tertiary.icon-solo svg,
+a.button-tertiary.icon-left svg,
+a.button-tertiary.icon-right svg,
+a.button-back-to-top.icon-solo svg,
+a.button-back-to-top.icon-left svg,
+a.button-back-to-top.icon-right svg {
+  height: 14px;
+  width: 14px;
   fill: var(--color-primary);
   transition: var(--transition);
 }
-.button-primary > svg.icon-right,
-.button-secondary > svg.icon-right,
-.button-tertiary > svg.icon-right,
-.button-back-to-top > svg.icon-right,
-a.button-primary > svg.icon-right,
-a.button-secondary > svg.icon-right,
-a.button-tertiary > svg.icon-right,
-a.button-back-to-top > svg.icon-right {
-  margin-left: 8px;
-  margin-right: -4px;
+.button-primary.icon-solo svg.icon-arrow-up, .button-primary.icon-left svg.icon-arrow-up, .button-primary.icon-right svg.icon-arrow-up,
+.button-secondary.icon-solo svg.icon-arrow-up,
+.button-secondary.icon-left svg.icon-arrow-up,
+.button-secondary.icon-right svg.icon-arrow-up,
+.button-tertiary.icon-solo svg.icon-arrow-up,
+.button-tertiary.icon-left svg.icon-arrow-up,
+.button-tertiary.icon-right svg.icon-arrow-up,
+.button-back-to-top.icon-solo svg.icon-arrow-up,
+.button-back-to-top.icon-left svg.icon-arrow-up,
+.button-back-to-top.icon-right svg.icon-arrow-up,
+a.button-primary.icon-solo svg.icon-arrow-up,
+a.button-primary.icon-left svg.icon-arrow-up,
+a.button-primary.icon-right svg.icon-arrow-up,
+a.button-secondary.icon-solo svg.icon-arrow-up,
+a.button-secondary.icon-left svg.icon-arrow-up,
+a.button-secondary.icon-right svg.icon-arrow-up,
+a.button-tertiary.icon-solo svg.icon-arrow-up,
+a.button-tertiary.icon-left svg.icon-arrow-up,
+a.button-tertiary.icon-right svg.icon-arrow-up,
+a.button-back-to-top.icon-solo svg.icon-arrow-up,
+a.button-back-to-top.icon-left svg.icon-arrow-up,
+a.button-back-to-top.icon-right svg.icon-arrow-up {
+  transform: rotate(-90deg) translate(0, 0);
 }
-.button-primary > svg.icon-left,
-.button-secondary > svg.icon-left,
-.button-tertiary > svg.icon-left,
-.button-back-to-top > svg.icon-left,
-a.button-primary > svg.icon-left,
-a.button-secondary > svg.icon-left,
-a.button-tertiary > svg.icon-left,
-a.button-back-to-top > svg.icon-left {
-  margin-right: 8px;
-  margin-left: -4px;
+.button-primary.icon-solo svg.icon-arrow-right, .button-primary.icon-left svg.icon-arrow-right, .button-primary.icon-right svg.icon-arrow-right,
+.button-secondary.icon-solo svg.icon-arrow-right,
+.button-secondary.icon-left svg.icon-arrow-right,
+.button-secondary.icon-right svg.icon-arrow-right,
+.button-tertiary.icon-solo svg.icon-arrow-right,
+.button-tertiary.icon-left svg.icon-arrow-right,
+.button-tertiary.icon-right svg.icon-arrow-right,
+.button-back-to-top.icon-solo svg.icon-arrow-right,
+.button-back-to-top.icon-left svg.icon-arrow-right,
+.button-back-to-top.icon-right svg.icon-arrow-right,
+a.button-primary.icon-solo svg.icon-arrow-right,
+a.button-primary.icon-left svg.icon-arrow-right,
+a.button-primary.icon-right svg.icon-arrow-right,
+a.button-secondary.icon-solo svg.icon-arrow-right,
+a.button-secondary.icon-left svg.icon-arrow-right,
+a.button-secondary.icon-right svg.icon-arrow-right,
+a.button-tertiary.icon-solo svg.icon-arrow-right,
+a.button-tertiary.icon-left svg.icon-arrow-right,
+a.button-tertiary.icon-right svg.icon-arrow-right,
+a.button-back-to-top.icon-solo svg.icon-arrow-right,
+a.button-back-to-top.icon-left svg.icon-arrow-right,
+a.button-back-to-top.icon-right svg.icon-arrow-right {
+  transform: rotate(0deg) translate(0, 0);
 }
-.button-primary > svg.icon-left.icon-arrow,
-.button-secondary > svg.icon-left.icon-arrow,
-.button-tertiary > svg.icon-left.icon-arrow,
-.button-back-to-top > svg.icon-left.icon-arrow,
-a.button-primary > svg.icon-left.icon-arrow,
-a.button-secondary > svg.icon-left.icon-arrow,
-a.button-tertiary > svg.icon-left.icon-arrow,
-a.button-back-to-top > svg.icon-left.icon-arrow {
+.button-primary.icon-solo svg.icon-arrow-down, .button-primary.icon-left svg.icon-arrow-down, .button-primary.icon-right svg.icon-arrow-down,
+.button-secondary.icon-solo svg.icon-arrow-down,
+.button-secondary.icon-left svg.icon-arrow-down,
+.button-secondary.icon-right svg.icon-arrow-down,
+.button-tertiary.icon-solo svg.icon-arrow-down,
+.button-tertiary.icon-left svg.icon-arrow-down,
+.button-tertiary.icon-right svg.icon-arrow-down,
+.button-back-to-top.icon-solo svg.icon-arrow-down,
+.button-back-to-top.icon-left svg.icon-arrow-down,
+.button-back-to-top.icon-right svg.icon-arrow-down,
+a.button-primary.icon-solo svg.icon-arrow-down,
+a.button-primary.icon-left svg.icon-arrow-down,
+a.button-primary.icon-right svg.icon-arrow-down,
+a.button-secondary.icon-solo svg.icon-arrow-down,
+a.button-secondary.icon-left svg.icon-arrow-down,
+a.button-secondary.icon-right svg.icon-arrow-down,
+a.button-tertiary.icon-solo svg.icon-arrow-down,
+a.button-tertiary.icon-left svg.icon-arrow-down,
+a.button-tertiary.icon-right svg.icon-arrow-down,
+a.button-back-to-top.icon-solo svg.icon-arrow-down,
+a.button-back-to-top.icon-left svg.icon-arrow-down,
+a.button-back-to-top.icon-right svg.icon-arrow-down {
+  transform: rotate(90deg) translate(0, 0);
+}
+.button-primary.icon-solo svg.icon-arrow-left, .button-primary.icon-left svg.icon-arrow-left, .button-primary.icon-right svg.icon-arrow-left,
+.button-secondary.icon-solo svg.icon-arrow-left,
+.button-secondary.icon-left svg.icon-arrow-left,
+.button-secondary.icon-right svg.icon-arrow-left,
+.button-tertiary.icon-solo svg.icon-arrow-left,
+.button-tertiary.icon-left svg.icon-arrow-left,
+.button-tertiary.icon-right svg.icon-arrow-left,
+.button-back-to-top.icon-solo svg.icon-arrow-left,
+.button-back-to-top.icon-left svg.icon-arrow-left,
+.button-back-to-top.icon-right svg.icon-arrow-left,
+a.button-primary.icon-solo svg.icon-arrow-left,
+a.button-primary.icon-left svg.icon-arrow-left,
+a.button-primary.icon-right svg.icon-arrow-left,
+a.button-secondary.icon-solo svg.icon-arrow-left,
+a.button-secondary.icon-left svg.icon-arrow-left,
+a.button-secondary.icon-right svg.icon-arrow-left,
+a.button-tertiary.icon-solo svg.icon-arrow-left,
+a.button-tertiary.icon-left svg.icon-arrow-left,
+a.button-tertiary.icon-right svg.icon-arrow-left,
+a.button-back-to-top.icon-solo svg.icon-arrow-left,
+a.button-back-to-top.icon-left svg.icon-arrow-left,
+a.button-back-to-top.icon-right svg.icon-arrow-left {
   transform: rotate(180deg) translate(0, 0);
-}
-.button-primary > svg.icon-document,
-.button-secondary > svg.icon-document,
-.button-tertiary > svg.icon-document,
-.button-back-to-top > svg.icon-document,
-a.button-primary > svg.icon-document,
-a.button-secondary > svg.icon-document,
-a.button-tertiary > svg.icon-document,
-a.button-back-to-top > svg.icon-document {
-  height: 22px;
-  width: 22px;
-  margin-left: -5px;
-}
-.button-primary > svg.icon-email,
-.button-secondary > svg.icon-email,
-.button-tertiary > svg.icon-email,
-.button-back-to-top > svg.icon-email,
-a.button-primary > svg.icon-email,
-a.button-secondary > svg.icon-email,
-a.button-tertiary > svg.icon-email,
-a.button-back-to-top > svg.icon-email {
-  height: 19px;
-  width: 19px;
-}
-.button-primary > svg.icon-search,
-.button-secondary > svg.icon-search,
-.button-tertiary > svg.icon-search,
-.button-back-to-top > svg.icon-search,
-a.button-primary > svg.icon-search,
-a.button-secondary > svg.icon-search,
-a.button-tertiary > svg.icon-search,
-a.button-back-to-top > svg.icon-search {
-  height: 20px;
-  width: 20px;
-}
-.button-primary > svg.icon-arrow,
-.button-secondary > svg.icon-arrow,
-.button-tertiary > svg.icon-arrow,
-.button-back-to-top > svg.icon-arrow,
-a.button-primary > svg.icon-arrow,
-a.button-secondary > svg.icon-arrow,
-a.button-tertiary > svg.icon-arrow,
-a.button-back-to-top > svg.icon-arrow {
-  height: 14px;
-  width: 14px;
-}
-.button-primary > svg.icon-upload,
-.button-secondary > svg.icon-upload,
-.button-tertiary > svg.icon-upload,
-.button-back-to-top > svg.icon-upload,
-a.button-primary > svg.icon-upload,
-a.button-secondary > svg.icon-upload,
-a.button-tertiary > svg.icon-upload,
-a.button-back-to-top > svg.icon-upload {
-  height: 13px;
-  width: 13px;
-}
-.button-primary > svg.icon-close,
-.button-secondary > svg.icon-close,
-.button-tertiary > svg.icon-close,
-.button-back-to-top > svg.icon-close,
-a.button-primary > svg.icon-close,
-a.button-secondary > svg.icon-close,
-a.button-tertiary > svg.icon-close,
-a.button-back-to-top > svg.icon-close {
-  height: 13px;
-  width: 13px;
 }
 .button-primary .loader,
 .button-secondary .loader,
@@ -423,9 +488,11 @@ a.button-primary:focus {
 a.button-primary:active {
   background-color: var(--color-primary-active);
 }
-.button-primary svg,
-a.button-primary svg {
-  fill: #ffffff;
+.button-primary.icon-solo svg, .button-primary.icon-left svg, .button-primary.icon-right svg,
+a.button-primary.icon-solo svg,
+a.button-primary.icon-left svg,
+a.button-primary.icon-right svg {
+  fill: var(--color-white);
 }
 .button-primary.state-inactive,
 a.button-primary.state-inactive {
@@ -483,8 +550,10 @@ a.button-secondary:focus {
 a.button-secondary:active {
   background-color: var(--color-primary-20);
 }
-.button-secondary svg,
-a.button-secondary svg {
+.button-secondary.icon-solo svg, .button-secondary.icon-left svg, .button-secondary.icon-right svg,
+a.button-secondary.icon-solo svg,
+a.button-secondary.icon-left svg,
+a.button-secondary.icon-right svg {
   fill: var(--color-primary);
 }
 .button-secondary.state-inactive,
@@ -510,8 +579,10 @@ a.button-secondary.color-secondary:focus {
 a.button-secondary.color-secondary:active {
   background-color: var(--color-secondary-20);
 }
-.button-secondary.color-secondary svg,
-a.button-secondary.color-secondary svg {
+.button-secondary.color-secondary.icon-solo svg, .button-secondary.color-secondary.icon-left svg, .button-secondary.color-secondary.icon-right svg,
+a.button-secondary.color-secondary.icon-solo svg,
+a.button-secondary.color-secondary.icon-left svg,
+a.button-secondary.color-secondary.icon-right svg {
   fill: var(--color-secondary);
 }
 .button-secondary.color-accent,
@@ -531,8 +602,10 @@ a.button-secondary.color-accent:focus {
 a.button-secondary.color-accent:active {
   background-color: var(--color-accent-20);
 }
-.button-secondary.color-accent svg,
-a.button-secondary.color-accent svg {
+.button-secondary.color-accent.icon-solo svg, .button-secondary.color-accent.icon-left svg, .button-secondary.color-accent.icon-right svg,
+a.button-secondary.color-accent.icon-solo svg,
+a.button-secondary.color-accent.icon-left svg,
+a.button-secondary.color-accent.icon-right svg {
   fill: var(--color-accent);
 }
 
@@ -553,8 +626,10 @@ a.button-tertiary:focus {
 a.button-tertiary:active {
   background-color: var(--color-primary-20);
 }
-.button-tertiary svg,
-a.button-tertiary svg {
+.button-tertiary.icon-solo svg, .button-tertiary.icon-left svg, .button-tertiary.icon-right svg,
+a.button-tertiary.icon-solo svg,
+a.button-tertiary.icon-left svg,
+a.button-tertiary.icon-right svg {
   fill: var(--color-primary);
 }
 .button-tertiary.state-inactive,
@@ -583,8 +658,10 @@ a.button-tertiary.color-secondary:focus {
 a.button-tertiary.color-secondary:active {
   background-color: var(--color-secondary-20);
 }
-.button-tertiary.color-secondary svg,
-a.button-tertiary.color-secondary svg {
+.button-tertiary.color-secondary.icon-solo svg, .button-tertiary.color-secondary.icon-left svg, .button-tertiary.color-secondary.icon-right svg,
+a.button-tertiary.color-secondary.icon-solo svg,
+a.button-tertiary.color-secondary.icon-left svg,
+a.button-tertiary.color-secondary.icon-right svg {
   fill: var(--color-secondary);
 }
 .button-tertiary.color-accent,
@@ -603,8 +680,10 @@ a.button-tertiary.color-accent:focus {
 a.button-tertiary.color-accent:active {
   background-color: var(--color-accent-20);
 }
-.button-tertiary.color-accent svg,
-a.button-tertiary.color-accent svg {
+.button-tertiary.color-accent.icon-solo svg, .button-tertiary.color-accent.icon-left svg, .button-tertiary.color-accent.icon-right svg,
+a.button-tertiary.color-accent.icon-solo svg,
+a.button-tertiary.color-accent.icon-left svg,
+a.button-tertiary.color-accent.icon-right svg {
   fill: var(--color-accent);
 }
 
@@ -620,7 +699,7 @@ a.button-tertiary.color-accent svg {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
   padding: 24px;
   width: 100%;
   height: 250px;

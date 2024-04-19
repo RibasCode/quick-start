@@ -53,9 +53,36 @@ a.button-back-to-top{
     }
 
     &.button-small{
-        padding: 8px 12px;
+        padding: 0px 10px;
 
-        font-size: 12px;
+        height: 28px;
+        min-height: 28px;
+
+        font-size: 11px;
+
+        &.icon-solo{
+            height: 28px;
+            min-height: 28px;
+            width: 28px;
+        }
+
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                height: 12px;
+                width: 12px;
+            }
+        }
+    }
+
+    &.icon-solo{
+        padding: 0;
+
+        height: 36px;
+        min-height: 36px;
+        width: 36px;
     }
 
     &:active,
@@ -66,67 +93,46 @@ a.button-back-to-top{
 
             &.icon-right{
 
-                &.icon-arrow{
+                &.icon-arrow-left{
                     transform: translate(3px, 0);
                 }
             }
 
             &.icon-left{
 
-                &.icon-arrow{
+                &.icon-arrow-right{
                     transform: rotate(180deg) translate(3px, 0);
                 }
             }
         }
     }
 
-    > svg{
-        fill: var(--color-primary);
-        transition: var(--transition);
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
 
-        &.icon-right{
-            margin-left: 8px;
-            margin-right: -4px;
-        }
-
-        &.icon-left{
-            margin-right: 8px;
-            margin-left: -4px;
-
-            &.icon-arrow{
-                transform: rotate(180deg) translate(0, 0);
-            }
-        }
-
-        &.icon-document{
-            height: 22px;
-            width: 22px;
-            margin-left: -5px;
-        }
-
-        &.icon-email{
-            height: 19px;
-            width: 19px;
-        }
-
-        &.icon-search{
-            height: 20px;
-            width: 20px;
-        }
-
-        &.icon-arrow{
+        svg{
             height: 14px;
             width: 14px;
-        }
 
-        &.icon-upload{
-            height: 13px;
-            width: 13px;
-        }
+            fill: var(--color-primary);
+            transition: var(--transition);
 
-        &.icon-close{
-            height: 13px;
-            width: 13px;
+            &.icon-arrow-up{
+                transform: rotate(-90deg) translate(0, 0);
+            }
+
+            &.icon-arrow-right{
+                transform: rotate(0deg) translate(0, 0);
+            }
+
+            &.icon-arrow-down{
+                transform: rotate(90deg) translate(0, 0);
+            }
+
+            &.icon-arrow-left{
+                transform: rotate(180deg) translate(0, 0);
+            }
         }
     }
 
@@ -156,8 +162,13 @@ a.button-primary{
         background-color: var(--color-primary-active);
     }
 
-    svg{
-        fill: #ffffff;
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-white);
+        }
     }
 
     &.state-inactive{
@@ -217,8 +228,13 @@ a.button-secondary{
         background-color: var(--color-primary-20);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-primary);
+        }
     }
 
     &.state-inactive{
@@ -244,8 +260,13 @@ a.button-secondary{
             background-color: var(--color-secondary-20);
         }
 
-        svg{
-            fill: var(--color-secondary);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-secondary);
+            }
         }
     }
 
@@ -266,8 +287,13 @@ a.button-secondary{
             background-color: var(--color-accent-20);
         }
 
-        svg{
-            fill: var(--color-accent);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-accent);
+            }
         }
     }
 }
@@ -289,8 +315,13 @@ a.button-tertiary{
         background-color: var(--color-primary-20);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-primary);
+        }
     }
 
     &.state-inactive{
@@ -318,8 +349,13 @@ a.button-tertiary{
             background-color: var(--color-secondary-20);
         }
 
-        svg{
-            fill: var(--color-secondary);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-secondary);
+            }
         }
     }
 
@@ -338,8 +374,13 @@ a.button-tertiary{
             background-color: var(--color-accent-20);
         }
 
-        svg{
-            fill: var(--color-accent);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-accent);
+            }
         }
     }
 }
