@@ -52,31 +52,6 @@ a.button-back-to-top{
         width: 100%;
     }
 
-    &.button-small{
-        padding: 0px 10px;
-
-        height: 28px;
-        min-height: 28px;
-
-        font-size: 11px;
-
-        &.icon-solo{
-            height: 28px;
-            min-height: 28px;
-            width: 28px;
-        }
-
-        &.icon-solo,
-        &.icon-left,
-        &.icon-right{
-
-            svg{
-                height: 12px;
-                width: 12px;
-            }
-        }
-    }
-
     &.icon-solo,
     &.icon-right,
     &.icon-left{
@@ -133,6 +108,7 @@ a.button-back-to-top{
         padding: 0;
 
         height: 36px;
+        min-height: 36px;
         width: 36px;
     }
 
@@ -149,6 +125,56 @@ a.button-back-to-top{
 
         svg{
             margin-right: 6px;
+        }
+    }
+
+
+    &.button-small{
+        padding: 0px 10px;
+
+        height: 28px;
+        min-height: 28px;
+
+        font-size: 11px;
+
+        &.icon-solo{
+            height: 28px;
+            min-height: 28px;
+            width: 28px;
+        }
+
+        &.icon-solo,
+        &.icon-right,
+        &.icon-left{
+
+            svg{
+                height: 12px;
+                min-width: 12px;
+                width: 12px;
+            }
+
+            &:hover,
+            &:focus{
+
+                svg{
+
+                    &.icon-arrow-up{
+                        transform: rotate(-90deg) translate(1.5px, 0);
+                    }
+
+                    &.icon-arrow-right{
+                        transform: rotate(0deg) translate(1.5px, 0);
+                    }
+
+                    &.icon-arrow-down{
+                        transform: rotate(90deg) translate(1.5px, 0);
+                    }
+
+                    &.icon-arrow-left{
+                        transform: rotate(180deg) translate(1.5px, 0);
+                    }
+                }
+            }
         }
     }
 
