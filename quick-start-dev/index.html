@@ -74,17 +74,9 @@
             </svg>
         </div>
 
-        <a class="button button-back-to-top" href="#hero">
-            <svg class="icon" version="1.1" x="0px" y="0px"
-            viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                <style type="text/css">
-                    .st10{fill:none;}
-                    .st1{fill:none;stroke:#000000;stroke-width:9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                </style>
-                <rect x="5" y="5" class="st10" width="54" height="54"/>
-                <polyline class="st1 icon-primary" points="20.4,55.2 43.7,32 43.7,32 20.3,8.8 "/>
-                <rect class="st10" width="5" height="5"/>
-                <rect x="59" y="59" class="st10" width="5" height="5"/>
+        <a class="button button-back-to-top icon-left" href="#hero">
+            <svg class="icon-arrow-up">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
             </svg>
             Back to top
         </a>
@@ -228,31 +220,15 @@
                             <button class="button-primary button-small" type="button" tabindex="2">Button primary small</button>
                             <button class="button-primary button-small" type="button" tabindex="2">Button primary small</button>
 
-                            <button class="button-primary" type="button" tabindex="8">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-primary icon-left" type="button" tabindex="8">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button primary icon left
                             </button>
 
-                            <button class="button-primary" type="button" tabindex="9">
+                            <button class="button-primary icon-right" type="button" tabindex="9">
                                 Button primary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card">
-                            <button class="button-secondary icon-right" type="button" tabindex="10">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary icon left
-                            </button>
-
-                            <button class="button-secondary icon-right" type="button" tabindex="11">
-                                Button secondary icon right
                                 <svg class="icon-arrow-right">
                                     <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
@@ -260,17 +236,33 @@
                         </div>
 
                         <div class="card">
-                            <button class="button-tertiary" type="button" tabindex="12">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-secondary icon-right" type="button" tabindex="11">
+                                Button secondary icon right
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                                </svg>
+                            </button>
+
+                            <button class="button-secondary icon-left" type="button" tabindex="10">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                                </svg>
+                                Button secondary icon left
+                            </button>
+                        </div>
+
+                        <div class="card">
+                            <button class="button-tertiary icon-left" type="button" tabindex="12">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button tertiary icon left
                             </button>
 
-                            <button class="button-tertiary" type="button" tabindex="13">
+                            <button class="button-tertiary icon-right" type="button" tabindex="13">
                                 Button tertiary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
@@ -350,49 +342,49 @@
                         </div>
 
                         <div class="card color-secondary">
-                            <button class="button-primary color-secondary" type="button" tabindex="21">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-primary color-secondary icon-left" type="button" tabindex="21">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button primary icon left
                             </button>
 
-                            <button class="button-primary color-secondary" type="button" tabindex="22">
+                            <button class="button-primary color-secondary icon-right" type="button" tabindex="22">
                                 Button primary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
 
                         <div class="card color-secondary">
-                            <button class="button-secondary color-secondary" type="button" tabindex="23">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-secondary color-secondary icon-left" type="button" tabindex="23">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button secondary icon left
                             </button>
 
-                            <button class="button-secondary color-secondary" type="button" tabindex="24">
+                            <button class="button-secondary color-secondary icon-right" type="button" tabindex="24">
                                 Button secondary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
 
                         <div class="card color-secondary">
-                            <button class="button-tertiary color-secondary" type="button" tabindex="25">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-tertiary color-secondary icon-left" type="button" tabindex="25">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button tertiary icon left
                             </button>
 
-                            <button class="button-tertiary color-secondary" type="button" tabindex="26">
+                            <button class="button-tertiary color-secondary icon-right" type="button" tabindex="26">
                                 Button tertiary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
@@ -472,49 +464,49 @@
                         </div>
 
                         <div class="card color-accent">
-                            <button class="button-primary color-accent" type="button" tabindex="34">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-primary color-accent icon-left" type="button" tabindex="34">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button primary icon left
                             </button>
 
-                            <button class="button-primary color-accent" type="button" tabindex="35">
+                            <button class="button-primary color-accent icon-right" type="button" tabindex="35">
                                 Button primary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
 
                         <div class="card color-accent">
-                            <button class="button-secondary color-accent" type="button" tabindex="36">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-secondary color-accent icon-left" type="button" tabindex="36">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button secondary icon left
                             </button>
 
-                            <button class="button-secondary color-accent" type="button" tabindex="37">
+                            <button class="button-secondary color-accent icon-right" type="button" tabindex="37">
                                 Button secondary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
 
                         <div class="card color-accent">
-                            <button class="button-tertiary color-accent" type="button" tabindex="38">
-                                <svg version="1.1" class="icon-arrow icon-left" x="0px" y="0px" viewBox="0 0 64 64">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                            <button class="button-tertiary color-accent icon-left" type="button" tabindex="38">
+                                <svg class="icon-arrow-left">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                                 Button tertiary icon left
                             </button>
 
-                            <button class="button-tertiary color-accent" type="button" tabindex="39">
+                            <button class="button-tertiary color-accent icon-right" type="button" tabindex="39">
                                 Button tertiary icon right
-                                <svg version="1.1" class="icon-arrow icon-right" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <path id="arrow" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow-right">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </button>
                         </div>
@@ -566,11 +558,8 @@
                         <div class="card ancor state-active">
 
                             <a href="#card-content">
-                                <svg version="1.1" class="icon-arrow ancor" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-                                    <style type="text/css">
-                                        .icon-arrow-st0{fill:var(--color-primary);}
-                                    </style>
-                                    <path id="arrow" class="icon-arrow-st0" d="M44.3,29.4L24.9,10c-1.4-1.4-3.7-1.4-5.2,0c-1.4,1.4-1.4,3.7,0,5.2L36.6,32L19.7,48.9c-1.4,1.4-1.4,3.7,0,5.2c0.7,0.7,1.6,1.1,2.6,1.1s1.9-0.4,2.6-1.1l19.4-19.4c0.4-0.4,0.6-0.8,0.8-1.2C45.6,32.1,45.4,30.5,44.3,29.4 z"/>
+                                <svg class="icon-arrow ancor">
+                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
                                 </svg>
                             </a>
 

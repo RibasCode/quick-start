@@ -77,39 +77,9 @@ a.button-back-to-top{
         }
     }
 
-    &.icon-solo{
-        padding: 0;
-
-        height: 36px;
-        min-height: 36px;
-        width: 36px;
-    }
-
-    &:active,
-    &:focus,
-    &:hover{
-
-        > svg{
-
-            &.icon-right{
-
-                &.icon-arrow-left{
-                    transform: translate(3px, 0);
-                }
-            }
-
-            &.icon-left{
-
-                &.icon-arrow-right{
-                    transform: rotate(180deg) translate(3px, 0);
-                }
-            }
-        }
-    }
-
     &.icon-solo,
-    &.icon-left,
-    &.icon-right{
+    &.icon-right,
+    &.icon-left{
 
         svg{
             height: 14px;
@@ -133,6 +103,52 @@ a.button-back-to-top{
             &.icon-arrow-left{
                 transform: rotate(180deg) translate(0, 0);
             }
+        }
+
+        &:hover,
+        &:focus{
+
+            svg{
+
+                &.icon-arrow-up{
+                    transform: rotate(-90deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-right{
+                    transform: rotate(0deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-down{
+                    transform: rotate(90deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-left{
+                    transform: rotate(180deg) translate(3px, 0);
+                }
+            }
+        }
+    }
+
+    &.icon-solo{
+        padding: 0;
+
+        height: 36px;
+        width: 36px;
+    }
+
+    &.icon-right{
+        padding-right: 12px;
+
+        svg{
+            margin-left: 6px;
+        }
+    }
+
+    &.icon-left{
+        padding-left: 12px;
+
+        svg{
+            margin-right: 6px;
         }
     }
 
