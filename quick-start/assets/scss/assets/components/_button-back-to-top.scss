@@ -38,11 +38,11 @@
 
     svg.icon{
         height: 14px;
-        width: initial;
+        width: 14px;
 
         margin-right: 12px;
 
-        transform: translateY(-1px) rotate(-90deg);
+        transform: translateY(-0.5px) rotate(-90deg);
         transition: var(--transition);
 
         polyline{

@@ -52,81 +52,129 @@ a.button-back-to-top{
         width: 100%;
     }
 
-    &.button-small{
-        padding: 8px 12px;
+    &.icon-solo,
+    &.icon-right,
+    &.icon-left{
 
-        font-size: 12px;
-    }
+        svg{
+            height: 14px;
+            width: 14px;
 
-    &:active,
-    &:focus,
-    &:hover{
+            fill: var(--color-primary);
+            transition: var(--transition);
 
-        > svg{
-
-            &.icon-right{
-
-                &.icon-arrow{
-                    transform: translate(3px, 0);
-                }
+            &.icon-arrow-up{
+                transform: rotate(-90deg) translate(0, 0);
             }
 
-            &.icon-left{
+            &.icon-arrow-right{
+                transform: rotate(0deg) translate(0, 0);
+            }
 
-                &.icon-arrow{
+            &.icon-arrow-down{
+                transform: rotate(90deg) translate(0, 0);
+            }
+
+            &.icon-arrow-left{
+                transform: rotate(180deg) translate(0, 0);
+            }
+        }
+
+        &:hover,
+        &:focus{
+
+            svg{
+
+                &.icon-arrow-up{
+                    transform: rotate(-90deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-right{
+                    transform: rotate(0deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-down{
+                    transform: rotate(90deg) translate(3px, 0);
+                }
+
+                &.icon-arrow-left{
                     transform: rotate(180deg) translate(3px, 0);
                 }
             }
         }
     }
 
-    > svg{
-        fill: var(--color-primary);
-        transition: var(--transition);
+    &.icon-solo{
+        padding: 0;
 
-        &.icon-right{
-            margin-left: 8px;
-            margin-right: -4px;
+        height: 36px;
+        min-height: 36px;
+        width: 36px;
+    }
+
+    &.icon-right{
+        padding-right: 12px;
+
+        svg{
+            margin-left: 6px;
+        }
+    }
+
+    &.icon-left{
+        padding-left: 12px;
+
+        svg{
+            margin-right: 6px;
+        }
+    }
+
+
+    &.button-small{
+        padding: 0px 10px;
+
+        height: 28px;
+        min-height: 28px;
+
+        font-size: 11px;
+
+        &.icon-solo{
+            height: 28px;
+            min-height: 28px;
+            width: 28px;
         }
 
+        &.icon-solo,
+        &.icon-right,
         &.icon-left{
-            margin-right: 8px;
-            margin-left: -4px;
 
-            &.icon-arrow{
-                transform: rotate(180deg) translate(0, 0);
+            svg{
+                height: 12px;
+                min-width: 12px;
+                width: 12px;
             }
-        }
 
-        &.icon-document{
-            height: 22px;
-            width: 22px;
-            margin-left: -5px;
-        }
+            &:hover,
+            &:focus{
 
-        &.icon-email{
-            height: 19px;
-            width: 19px;
-        }
+                svg{
 
-        &.icon-search{
-            height: 20px;
-            width: 20px;
-        }
+                    &.icon-arrow-up{
+                        transform: rotate(-90deg) translate(1.5px, 0);
+                    }
 
-        &.icon-arrow{
-            height: 14px;
-            width: 14px;
-        }
+                    &.icon-arrow-right{
+                        transform: rotate(0deg) translate(1.5px, 0);
+                    }
 
-        &.icon-upload{
-            height: 13px;
-            width: 13px;
-        }
+                    &.icon-arrow-down{
+                        transform: rotate(90deg) translate(1.5px, 0);
+                    }
 
-        &.icon-close{
-            height: 13px;
-            width: 13px;
+                    &.icon-arrow-left{
+                        transform: rotate(180deg) translate(1.5px, 0);
+                    }
+                }
+            }
         }
     }
 
@@ -156,8 +204,13 @@ a.button-primary{
         background-color: var(--color-primary-active);
     }
 
-    svg{
-        fill: #ffffff;
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-white);
+        }
     }
 
     &.state-inactive{
@@ -217,8 +270,13 @@ a.button-secondary{
         background-color: var(--color-primary-20);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-primary);
+        }
     }
 
     &.state-inactive{
@@ -244,8 +302,13 @@ a.button-secondary{
             background-color: var(--color-secondary-20);
         }
 
-        svg{
-            fill: var(--color-secondary);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-secondary);
+            }
         }
     }
 
@@ -266,8 +329,13 @@ a.button-secondary{
             background-color: var(--color-accent-20);
         }
 
-        svg{
-            fill: var(--color-accent);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-accent);
+            }
         }
     }
 }
@@ -289,8 +357,13 @@ a.button-tertiary{
         background-color: var(--color-primary-20);
     }
 
-    svg{
-        fill: var(--color-primary);
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right{
+
+        svg{
+            fill: var(--color-primary);
+        }
     }
 
     &.state-inactive{
@@ -318,8 +391,13 @@ a.button-tertiary{
             background-color: var(--color-secondary-20);
         }
 
-        svg{
-            fill: var(--color-secondary);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-secondary);
+            }
         }
     }
 
@@ -338,8 +416,13 @@ a.button-tertiary{
             background-color: var(--color-accent-20);
         }
 
-        svg{
-            fill: var(--color-accent);
+        &.icon-solo,
+        &.icon-left,
+        &.icon-right{
+
+            svg{
+                fill: var(--color-accent);
+            }
         }
     }
 }
