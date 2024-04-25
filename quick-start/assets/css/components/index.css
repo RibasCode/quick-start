@@ -152,11 +152,11 @@ body.dark-theme .button-theme i.dark-theme {
   transition: var(--transition);
 }
 .button-theme.button-theme i.light-theme {
-  background-image: url("../../../icons/sun.svg");
+  background-image: url("../../icons/sun.svg");
   background-size: 46%;
 }
 .button-theme.button-theme i.dark-theme {
-  background-image: url("../../../icons/moon.svg");
+  background-image: url("../../icons/moon.svg");
   background-size: 46%;
 }
 
