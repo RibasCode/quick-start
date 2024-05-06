@@ -155,6 +155,10 @@ ul li {
   hyphenate-limit-chars: 12;
 }
 
+.word-break-break-word {
+  word-break: break-word;
+}
+
 .text-wrap-balance {
   text-wrap: balance;
 }
