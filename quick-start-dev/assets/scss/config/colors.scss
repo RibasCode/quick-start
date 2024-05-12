@@ -38,7 +38,9 @@
         --color-accent-10: #00faa01a;
 
         //Background
-        --color-background: #ffffff;
+        --color-background-primary: #ffffff;
+
+        --color-background-secondary: #ffffff;
 
         //Typography
         --color-typography: #0f172a;
@@ -102,7 +104,8 @@
     body.dark-theme{
 
         //Background
-        --color-background: #0d1216;
+        --color-background-primary: #0d1216;
+        --color-background-secondary: #0d0e15;
 
         //Typography
         --color-typography: #ffffff;

@@ -5,7 +5,7 @@ body .initial-animation {
   left: 0;
   height: 100vh;
   width: 100%;
-  background-color: var(--color-background);
+  background-color: var(--color-background-primary);
   opacity: 0;
   pointer-events: none;
   transition: var(--transition-x4);
@@ -36,7 +36,7 @@ html {
   scrollbar-gutter: stable;
 }
 html body {
-  background-color: var(--color-background);
+  background-color: var(--color-background-primary);
   color: var(--color-tipography);
   font-family: var(--tipography);
   transition: var(--transition);

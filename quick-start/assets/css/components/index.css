@@ -1390,7 +1390,7 @@ body .loader div:nth-child(4) {
   z-index: 1;
   min-width: 100px;
   min-height: 100px;
-  background-color: var(--color-background);
+  background-color: var(--color-background-primary);
   border-radius: var(--border-radius);
 }
 .modal-container .modal-window .modal-header {
@@ -1419,7 +1419,7 @@ body .loader div:nth-child(4) {
 
 html {
   /* Firefox */
-  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background);
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
 }
 
 /* Width */
@@ -1430,7 +1430,7 @@ html {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-scrollbar-thumb);
-  border: solid 4px var(--color-background);
+  border: solid 4px var(--color-background-primary);
   border-radius: var(--border-radius);
 }
 

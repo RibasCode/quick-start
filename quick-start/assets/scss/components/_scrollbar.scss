@@ -1,7 +1,7 @@
 
 html{
     /* Firefox */
-    scrollbar-color: var(--color-scrollbar-thumb) var(--color-background);
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
 }
 
 /* Width */
@@ -12,7 +12,7 @@ html{
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--color-scrollbar-thumb);
-    border: solid 4px var(--color-background);
+    border: solid 4px var(--color-background-primary);
     border-radius: var(--border-radius);
 }
 

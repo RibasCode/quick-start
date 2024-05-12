@@ -25,7 +25,7 @@
   --color-accent-50: #00faa080;
   --color-accent-20: #00faa033;
   --color-accent-10: #00faa01a;
-  --color-background: #ffffff;
+  --color-background-primary: #ffffff;
   --color-typography: #0f172a;
   --color-typography-white: #ffffff;
   --color-typography-black: #0d1216;
@@ -68,7 +68,7 @@
   --color-black-toggle-44: #00000070;
 }
 :root body.dark-theme {
-  --color-background: #0d1216;
+  --color-background-primary: #0d1216;
   --color-typography: #ffffff;
   --color-scrollbar-thumb: #262628;
   --color-state-inactive-text: #3d464d;

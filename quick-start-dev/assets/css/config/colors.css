@@ -25,7 +25,8 @@
   --color-accent-50: #00faa080;
   --color-accent-20: #00faa033;
   --color-accent-10: #00faa01a;
-  --color-background: #ffffff;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #ffffff;
   --color-typography: #0f172a;
   --color-typography-white: #ffffff;
   --color-typography-black: #0d1216;
@@ -57,6 +58,7 @@
   --color-state-inactive-background: #f0f0f0;
   --color-state-inactive-background-10: #f9f9f9;
   --color-white: #ffffff;
+  --color-grey: #b0b0b0;
   --color-black: #000000;
   --color-white-toggle: #ffffff;
   --color-white-toggle-24: #ffffff3D;
@@ -68,7 +70,8 @@
   --color-black-toggle-44: #00000070;
 }
 :root body.dark-theme {
-  --color-background: #0d1216;
+  --color-background-primary: #0d1216;
+  --color-background-secondary: #0d0e15;
   --color-typography: #ffffff;
   --color-scrollbar-thumb: #262628;
   --color-state-inactive-text: #3d464d;
