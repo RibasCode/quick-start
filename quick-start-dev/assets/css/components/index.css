@@ -1234,7 +1234,8 @@ input[type=search]::placeholder {
 .textarea-container.big.status-focus label {
   font-size: 10px;
 }
-.input-container.status-focus.status-inactive label,
+.input-container.status-focus:disabled label, .input-container.status-focus.status-inactive label,
+.textarea-container.status-focus:disabled label,
 .textarea-container.status-focus.status-inactive label {
   color: var(--color-grey);
 }
@@ -1244,17 +1245,22 @@ input[type=search]::placeholder {
   font-size: 10px;
   font-weight: 600;
 }
-.input-container.status-inactive,
+.input-container:disabled, .input-container.status-inactive,
+.textarea-container:disabled,
 .textarea-container.status-inactive {
   cursor: not-allowed;
 }
-.input-container.status-inactive label,
+.input-container:disabled label, .input-container.status-inactive label,
+.textarea-container:disabled label,
 .textarea-container.status-inactive label {
   color: #e0e0e0;
   pointer-events: none;
 }
-.input-container.status-inactive input,
+.input-container:disabled input,
+.input-container:disabled textarea, .input-container.status-inactive input,
 .input-container.status-inactive textarea,
+.textarea-container:disabled input,
+.textarea-container:disabled textarea,
 .textarea-container.status-inactive input,
 .textarea-container.status-inactive textarea {
   border: solid 1px #f0f0f0;
@@ -1378,7 +1384,7 @@ input[type=search]::placeholder {
 .input-container.big.status-focus label {
   transform: translateY(-21.5px);
 }
-.input-container.status-focus.status-inactive label {
+.input-container.status-focus:disabled label, .input-container.status-focus.status-inactive label {
   color: var(--color-grey);
 }
 .input-container.status-focus label {

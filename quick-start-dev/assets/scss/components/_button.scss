@@ -43,6 +43,7 @@ a.button-back-to-top{
     cursor: pointer;
     transition: var(--transition);
 
+    &:disabled,
     &.state-inactive{
         outline: none;
         cursor: not-allowed;
@@ -213,6 +214,7 @@ a.button-primary{
         }
     }
 
+    &:disabled,
     &.state-inactive{
         color: var(--color-state-inactive-text);
         background-color: var(--color-state-inactive-background);
@@ -279,6 +281,7 @@ a.button-secondary{
         }
     }
 
+    &:disabled,
     &.state-inactive{
         color: var(--color-state-inactive-text);
         background-color: var(--color-state-inactive-background-10);
@@ -366,6 +369,7 @@ a.button-tertiary{
         }
     }
 
+    &:disabled,
     &.state-inactive{
         color: var(--color-state-inactive-text);
 

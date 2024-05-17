@@ -200,6 +200,7 @@ input{
 
     &.status-focus{
 
+        &:disabled,
         &.status-inactive{
 
             label{
@@ -214,6 +215,7 @@ input{
         }
     }
 
+    &:disabled,
     &.status-inactive{
         cursor: not-allowed;
 
@@ -343,6 +345,7 @@ input{
 
     &.status-focus{
 
+        &:disabled,
         &.status-inactive{
 
             label{
