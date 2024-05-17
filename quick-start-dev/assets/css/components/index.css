@@ -94,7 +94,7 @@
   border-radius: var(--border-radius);
   transition: var(--transition);
 }
-.button-back-to-top.state-active {
+.button-back-to-top.status-active {
   bottom: 48px;
   opacity: 1;
   pointer-events: all;
@@ -195,14 +195,21 @@ a.button-back-to-top {
   cursor: pointer;
   transition: var(--transition);
 }
-.button-primary.state-inactive,
-.button-secondary.state-inactive,
-.button-tertiary.state-inactive,
-.button-back-to-top.state-inactive,
-a.button-primary.state-inactive,
-a.button-secondary.state-inactive,
-a.button-tertiary.state-inactive,
-a.button-back-to-top.state-inactive {
+.button-primary:disabled, .button-primary.status-inactive,
+.button-secondary:disabled,
+.button-secondary.status-inactive,
+.button-tertiary:disabled,
+.button-tertiary.status-inactive,
+.button-back-to-top:disabled,
+.button-back-to-top.status-inactive,
+a.button-primary:disabled,
+a.button-primary.status-inactive,
+a.button-secondary:disabled,
+a.button-secondary.status-inactive,
+a.button-tertiary:disabled,
+a.button-tertiary.status-inactive,
+a.button-back-to-top:disabled,
+a.button-back-to-top.status-inactive {
   outline: none;
   cursor: not-allowed;
 }
@@ -847,10 +854,11 @@ a.button-primary.icon-left svg,
 a.button-primary.icon-right svg {
   fill: var(--color-white);
 }
-.button-primary.state-inactive,
-a.button-primary.state-inactive {
-  color: var(--color-state-inactive-text);
-  background-color: var(--color-state-inactive-background);
+.button-primary:disabled, .button-primary.status-inactive,
+a.button-primary:disabled,
+a.button-primary.status-inactive {
+  color: var(--color-inactive-text);
+  background-color: var(--color-inactive-background);
 }
 .button-primary.color-secondary,
 a.button-primary.color-secondary {
@@ -909,11 +917,12 @@ a.button-secondary.icon-left svg,
 a.button-secondary.icon-right svg {
   fill: var(--color-primary);
 }
-.button-secondary.state-inactive,
-a.button-secondary.state-inactive {
-  color: var(--color-state-inactive-text);
-  background-color: var(--color-state-inactive-background-10);
-  border: solid var(--border-width) var(--color-state-inactive-text);
+.button-secondary:disabled, .button-secondary.status-inactive,
+a.button-secondary:disabled,
+a.button-secondary.status-inactive {
+  color: var(--color-inactive-text);
+  background-color: var(--color-inactive-background-10);
+  border: solid var(--border-width) var(--color-inactive-text);
 }
 .button-secondary.color-secondary,
 a.button-secondary.color-secondary {
@@ -985,14 +994,18 @@ a.button-tertiary.icon-left svg,
 a.button-tertiary.icon-right svg {
   fill: var(--color-primary);
 }
-.button-tertiary.state-inactive,
-a.button-tertiary.state-inactive {
-  color: var(--color-state-inactive-text);
+.button-tertiary:disabled, .button-tertiary.status-inactive,
+a.button-tertiary:disabled,
+a.button-tertiary.status-inactive {
+  color: var(--color-inactive-text);
 }
-.button-tertiary.state-inactive:hover, .button-tertiary.state-inactive:active, .button-tertiary.state-inactive:focus,
-a.button-tertiary.state-inactive:hover,
-a.button-tertiary.state-inactive:active,
-a.button-tertiary.state-inactive:focus {
+.button-tertiary:disabled:hover, .button-tertiary:disabled:active, .button-tertiary:disabled:focus, .button-tertiary.status-inactive:hover, .button-tertiary.status-inactive:active, .button-tertiary.status-inactive:focus,
+a.button-tertiary:disabled:hover,
+a.button-tertiary:disabled:active,
+a.button-tertiary:disabled:focus,
+a.button-tertiary.status-inactive:hover,
+a.button-tertiary.status-inactive:active,
+a.button-tertiary.status-inactive:focus {
   background-color: transparent;
 }
 .button-tertiary.color-secondary,
@@ -1423,7 +1436,7 @@ body .container-loader {
 body .container-loader .loader div {
   background-color: var(--color-primary);
 }
-body .container-loader.state-active {
+body .container-loader.status-active {
   opacity: 1;
 }
 
@@ -1497,7 +1510,7 @@ body .loader div:nth-child(4) {
   pointer-events: none;
   transition: var(--transition);
 }
-.modal-container.state-active {
+.modal-container.status-active {
   opacity: 1;
   pointer-events: all;
 }

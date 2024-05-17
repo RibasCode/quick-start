@@ -6,7 +6,7 @@ $(document).ready(function() {
     let initialAnimation = $(".initial-animation")
 
     setTimeout(function(){
-        initialAnimation.removeClass("state-active");
+        initialAnimation.removeClass("status-active");
 
         setTimeout(function(){
             initialAnimation.remove();

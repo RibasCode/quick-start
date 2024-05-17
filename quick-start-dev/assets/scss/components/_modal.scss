@@ -19,7 +19,7 @@
 
     transition: var(--transition);
 
-    &.state-active{
+    &.status-active{
         opacity: 1;
         pointer-events: all;
     }

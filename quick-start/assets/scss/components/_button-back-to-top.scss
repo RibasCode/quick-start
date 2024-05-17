@@ -16,7 +16,7 @@
     border-radius: var(--border-radius);
     transition: var(--transition);
 
-    &.state-active{
+    &.status-active{
         bottom: 48px;
 
         opacity: 1;

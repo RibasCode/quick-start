@@ -10,7 +10,7 @@ body .initial-animation {
   pointer-events: none;
   transition: var(--transition-x4);
 }
-body .initial-animation.state-active {
+body .initial-animation.status-active {
   opacity: 1;
   pointer-events: all;
 }
@@ -284,7 +284,7 @@ ul li {
   animation-timeline: view();
   animation-range: entry -20% cover 20%;
 }
-.card.state-active, .card:hover {
+.card.status-active, .card:hover {
   box-shadow: 0 24px 24px -16px var(--color-primary-10);
 }
 .card.color-secondary {

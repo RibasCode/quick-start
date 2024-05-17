@@ -17,10 +17,10 @@ PROJECT: quick-start-dev
 
     - Un cop acabem de manipular el projecte quick-start-dev:
         - Al projecte quick-start esborrem  la carpeta js, css i scss.
-        - Copiem la carpeta js i scss del projecte quick-start-dev al quick-start.
+        - Copiem la carpeta js, scss i css del projecte quick-start-dev al quick-start.
         - Dins del projecte quick-start, esborrem  l'arxiu js/components/toast.js
         - Dins de scss/style.scss esborrem el @inport del toastify.css
         - Esborrem el scss/base/_others.scss i el seu @import dins del index.scss
-        - Compilem els estils del projecte quick-start.
+        - Fem els pasos a la inversa per comprobar que dins del quick-start-dev no s'hagi borrat res per error.
 
 -->

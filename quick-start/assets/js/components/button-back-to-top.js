@@ -8,9 +8,9 @@ $(document).ready(function(){
         let buttonBackToTop = $(".button-back-to-top");
 
         if(scroll >= 64){
-            buttonBackToTop.addClass("state-active");
+            buttonBackToTop.addClass("status-active");
         }else{
-            buttonBackToTop.removeClass("state-active");
+            buttonBackToTop.removeClass("status-active");
         }
     });
 

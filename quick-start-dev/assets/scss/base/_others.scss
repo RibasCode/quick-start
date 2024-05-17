@@ -141,7 +141,7 @@
     animation-timeline: view();
     animation-range: entry -20% cover 20%;
 
-    &.state-active,
+    &.status-active,
     &:hover{
         box-shadow: 0 24px 24px -16px var(--color-primary-10);
     }

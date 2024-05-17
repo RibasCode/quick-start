@@ -4,7 +4,7 @@
 $(document).ready(function() {
 
 	$(".accordion").click(function(){
-		$(this).toggleClass("state-active");
+		$(this).toggleClass("status-active");
         $(this).find(".content").slideToggle(200);
 	});
 
