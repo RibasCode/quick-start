@@ -18,11 +18,11 @@ body .initial-animation.status-active {
 @keyframes reveal-cards-when-scrolling {
   from {
     opacity: 0;
-    transform: translate(0, 0);
+    transform: translate(0, 64px);
   }
   to {
     opacity: 1;
-    transform: translate(0, -64px);
+    transform: translate(0, 0);
   }
 }
 * {
@@ -276,7 +276,7 @@ ul li {
   padding: 24px;
   width: 100%;
   height: 250px;
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-background-primary-light);
   border-radius: var(--border-radius);
   border: solid 2px var(--color-primary-10);
   transition: var(--transition);
