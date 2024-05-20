@@ -18,16 +18,24 @@ HOW TO RUN THE PROJECT
 
 PROJECT DEPENDENCIES
 
-    - npm install --save-dev sass
+    - npm install sass --save-dev
         - URL: https://sprucecss.com/blog/the-simplest-sass-compile-setup#4-set-the-compile-commands
 
-    - npm install --save-dev jquery
+    - npm install jquery --save-dev
         - URL: https://jquery.com
 
-    - npm install --save normalize.css
+    - npm install standard --save-dev
+        - URL: https://standardjs.com/
+        - Install: ESLint extension
+        - Settings > Enables ESLint as a formatter: true
+        - Settings > Defauld formatter: ESLint
+        - Settings > Format on save: true
+        - Create & config: ./.eslintrc.json
+
+    - npm install normalize.css --save
         - URL: https://necolas.github.io/normalize.css
 
-    - npm install --save toastify-js
+    - npm install toastify-js --save
         - URL: https://apvarun.github.io/toastify-js
 
 -->

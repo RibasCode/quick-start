@@ -6,13 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
-    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css"
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css",
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "jquery": "^3.7.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "standard": "^17.1.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1",
