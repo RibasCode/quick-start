@@ -120,44 +120,31 @@
   transition: var(--transition);
 }
 
-body.light-theme .button-theme i.light-theme {
-  opacity: 1;
-}
-body.dark-theme .button-theme i.dark-theme {
-  opacity: 1;
-}
-
-.button-theme {
+.container-button-theme {
   z-index: 1;
   position: fixed;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  height: 64px;
-  width: 64px;
+  top: 32px;
+  right: 32px;
+  height: 36px;
+  width: 36px;
+  transform: rotate(0deg);
   cursor: pointer;
-}
-.button-theme i {
-  z-index: 1;
-  width: 64px;
-  height: 64px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.button-theme.button-theme i.light-theme,
-.button-theme.button-theme i.dark-theme {
-  position: absolute;
-  display: flex;
-  opacity: 0;
   transition: var(--transition);
 }
-.button-theme.button-theme i.light-theme {
-  background-image: url("../../icons/sun.svg");
-  background-size: 46%;
+.container-button-theme:hover {
+  transform: rotate(45deg);
 }
-.button-theme.button-theme i.dark-theme {
-  background-image: url("../../icons/moon.svg");
-  background-size: 46%;
+.container-button-theme .icon-light-theme,
+.container-button-theme .icon-dark-theme {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  fill: var(--color-black-toggle);
+  opacity: 0;
+}
+.container-button-theme .icon-light-theme.status-active,
+.container-button-theme .icon-dark-theme.status-active {
+  opacity: 1;
 }
 
 button {
@@ -1356,7 +1343,7 @@ input[type=search]::placeholder {
   font-size: 14px;
   font-weight: 300;
   color: var(--color-grey);
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-background-primary-light);
   pointer-events: none;
   user-select: none;
   transition: var(--transition);
@@ -1365,7 +1352,7 @@ input[type=search]::placeholder {
 .input-container textarea,
 .textarea-container input,
 .textarea-container textarea {
-  background-color: var(--color-background-secondary);
+  background-color: var(--color-background-primary-light);
   color: var(--color-tipograpy);
   outline: none;
   border: solid 1px #bdbdbd;

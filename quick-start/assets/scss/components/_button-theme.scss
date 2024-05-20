@@ -1,71 +1,36 @@
 
-body{
-
-    &.light-theme{
-
-        .button-theme{
-
-            i.light-theme{
-                opacity: 1;
-            }
-        }
-    }
-
-    &.dark-theme{
-
-        .button-theme{
-
-            i.dark-theme{
-                opacity: 1;
-            }
-        }
-    }
-}
-
-.button-theme{
+.container-button-theme{
     z-index: 1;
 
     position: fixed;
-    right: 0;
+    top: 32px;
+    right: 32px;
 
-    display: flex;
-    justify-content: center;
+    height: 36px;
+    width: 36px;
 
-    height: 64px;
-    width: 64px;
-
+    transform: rotate(0deg);
     cursor: pointer;
 
-    i{
-        z-index: 1;
+    transition: var(--transition);
 
-        width: 64px;
-        height: 64px;
-
-        background-repeat: no-repeat;
-        background-position: center;
+    &:hover{
+        transform: rotate(45deg);
     }
 
-    &.button-theme{
+    .icon-light-theme,
+    .icon-dark-theme{
+        position: absolute;
 
-        i.light-theme,
-        i.dark-theme{
-            position: absolute;
+        height: 100%;
+        width: 100%;
 
-            display: flex;
+        fill: var(--color-black-toggle);
 
-            opacity: 0;
-            transition: var(--transition);
-        }
+        opacity: 0;
 
-        i.light-theme{
-            background-image: url("../../icons/sun.svg");
-            background-size: 46%;
-        }
-
-        i.dark-theme{
-            background-image: url("../../icons/moon.svg");
-            background-size: 46%;
+        &.status-active{
+            opacity: 1;
         }
     }
 }

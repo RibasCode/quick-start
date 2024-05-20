@@ -295,7 +295,7 @@ input{
         font-size: 14px;
         font-weight: 300;
         color: var(--color-grey);
-        background-color: var(--color-background-secondary);
+        background-color: var(--color-background-primary-light);
         pointer-events: none;
         user-select: none;
         transition: var(--transition);
@@ -303,7 +303,7 @@ input{
 
     input,
     textarea{
-        background-color: var(--color-background-secondary);
+        background-color: var(--color-background-primary-light);
         color: var(--color-tipograpy);
         outline: none;
         border: solid 1px #bdbdbd;
