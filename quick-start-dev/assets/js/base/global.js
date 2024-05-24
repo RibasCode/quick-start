@@ -1,15 +1,11 @@
-
-"use strict"
+'use strict'
 
 // Global: Variables
 
-
-
 // Global: Functions
 
-function setStatus(object){
-
-    let {elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null} = object;
+function setStatus(object) {
+    let { elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null } = object
 
     // Si no es pasa cap paràmetre a la funció, la propietat serà = null
     // let statusActive = object.statusActive;
@@ -19,74 +15,73 @@ function setStatus(object){
     // let statusError = object.statusError;
     // let statusHidden = object.statusHidden;
 
-    for(let i = 0; i < elements.length; i++){
+    for (let i = 0; i < elements.length; i++) {
+        let element = $(elements[i])
 
-        let element = $(elements[i]);
-
-        //Status: Active
-        if(statusActive == true){
-            element.addClass("status-active");
+        // Status: Active
+        if (statusActive === true) {
+            element.addClass('status-active')
         }
-        if(statusActive == false){
-            element.removeClass("status-active");
+        if (statusActive === false) {
+            element.removeClass('status-active')
         }
-        if(statusActive == "toggle"){
-            element.toggleClass("status-active");
-        }
-
-        //Status: Inactive
-        if(statusInactive == true){
-            element.addClass("status-inactive");
-        }
-        if(statusInactive == false){
-            element.removeClass("status-inactive");
-        }
-        if(statusInactive == "toggle"){
-            element.toggleClass("status-inactive");
+        if (statusActive === 'toggle') {
+            element.toggleClass('status-active')
         }
 
-        //Status: Info
-        if(statusInfo == true){
-            element.addClass("status-info");
+        // Status: Inactive
+        if (statusInactive === true) {
+            element.addClass('status-inactive')
         }
-        if(statusInfo == false){
-            element.removeClass("status-info");
+        if (statusInactive === false) {
+            element.removeClass('status-inactive')
         }
-        if(statusInfo == "toggle"){
-            element.toggleClass("status-info");
-        }
-
-        //Status: Warning
-        if(statusWarning == true){
-            element.addClass("status-warning");
-        }
-        if(statusWarning == false){
-            element.removeClass("status-warning");
-        }
-        if(statusWarning == "toggle"){
-            element.toggleClass("status-warning");
+        if (statusInactive === 'toggle') {
+            element.toggleClass('status-inactive')
         }
 
-        //Status: Error
-        if(statusError == true){
-            element.addClass("status-error");
+        // Status: Info
+        if (statusInfo === true) {
+            element.addClass('status-info')
         }
-        if(statusError == false){
-            element.removeClass("status-error");
+        if (statusInfo === false) {
+            element.removeClass('status-info')
         }
-        if(statusError == "toggle"){
-            element.toggleClass("status-error");
+        if (statusInfo === 'toggle') {
+            element.toggleClass('status-info')
         }
 
-        //Status: Hidden
-        if(statusHidden == true){
-            element.addClass("status-hidden");
+        // Status: Warning
+        if (statusWarning === true) {
+            element.addClass('status-warning')
         }
-        if(statusHidden == false){
-            element.removeClass("status-hidden");
+        if (statusWarning === false) {
+            element.removeClass('status-warning')
         }
-        if(statusHidden == "toggle"){
-            element.toggleClass("status-hidden");
+        if (statusWarning === 'toggle') {
+            element.toggleClass('status-warning')
+        }
+
+        // Status: Error
+        if (statusError === true) {
+            element.addClass('status-error')
+        }
+        if (statusError === false) {
+            element.removeClass('status-error')
+        }
+        if (statusError === 'toggle') {
+            element.toggleClass('status-error')
+        }
+
+        // Status: Hidden
+        if (statusHidden === true) {
+            element.addClass('status-hidden')
+        }
+        if (statusHidden === false) {
+            element.removeClass('status-hidden')
+        }
+        if (statusHidden === 'toggle') {
+            element.toggleClass('status-hidden')
         }
     }
 };
