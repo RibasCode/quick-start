@@ -1,11 +1,15 @@
 'use strict'
 
+/* eslint-disable no-unused-vars */
+
 // Global: Variables
 
 // Global: Functions
 
 function setStatus(object) {
     let { elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null } = object
+
+    if (!elements) throw new Error('Must specify some elements to apply an status')
 
     // Si no es pasa cap paràmetre a la funció, la propietat serà = null
     // let statusActive = object.statusActive;
@@ -85,3 +89,15 @@ function setStatus(object) {
         }
     }
 };
+
+function removeElements(object) {
+    let { elements = null } = object
+
+    if (!elements) throw new Error('Must specify some elements to remove')
+
+    for (let i = 0; i < elements.length; i++) {
+        let element = $(elements[i])
+
+        element.remove()
+    }
+}
