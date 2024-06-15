@@ -1,27 +1,26 @@
-
-html{
-    /* Firefox */
-    scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
+html {
+  /* Firefox */
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
 }
 
 /* Width */
 ::-webkit-scrollbar {
-    width: 14px;
+  width: 14px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-scrollbar-thumb);
-    border: solid 4px var(--color-background-primary);
-    border-radius: var(--border-radius);
+  background: var(--color-scrollbar-thumb);
+  border: solid 4px var(--color-background-primary);
+  border-radius: var(--border-radius);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--color-scrollbar-thumb);
+  background: var(--color-scrollbar-thumb);
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }

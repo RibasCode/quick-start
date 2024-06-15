@@ -13,6 +13,7 @@
   color: #334155;
   font-size: 12px;
   font-weight: 500;
+  text-wrap: nowrap;
   border: solid 2px transparent;
   border-radius: var(--border-radius-50);
   cursor: pointer;
@@ -1530,6 +1531,96 @@ body .loader div:nth-child(4) {
   height: 101%;
   width: 101%;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+}
+.slider .gradient-right {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 64px;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent 0%, var(--color-background-primary) 100%);
+  transition: var(--transition);
+}
+.slider .gradient-right.status-active {
+  opacity: 1;
+}
+.slider .gradient-left {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 64px;
+  opacity: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--color-background-primary) 0%, transparent 100%);
+  transition: var(--transition);
+}
+.slider .gradient-left.status-active {
+  opacity: 1;
+}
+.slider .button-slider {
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  cursor: pointer;
+  background-color: var(--color-black-toggle-24);
+  pointer-events: none;
+  transform: translate(0, -50%) scale(0.9);
+  transition: var(--transition);
+}
+.slider .button-slider:hover {
+  transform: translate(0, -50%) scale(1);
+  background-color: var(--color-black-toggle-32);
+}
+.slider .button-slider:active {
+  transform: translate(0, -50%) scale(1);
+  background-color: var(--color-black-toggle-44);
+}
+.slider .button-slider.status-active {
+  opacity: 1;
+  pointer-events: all;
+}
+.slider .button-slider.left {
+  left: 14px;
+}
+.slider .button-slider.right {
+  right: 14px;
+}
+.slider .button-slider .icon-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+.slider .button-slider .icon-slider svg {
+  height: 22px;
+}
+.slider .button-slider .icon-slider.left {
+  transform: scale(0.9) rotate(180deg);
+}
+.slider .button-slider .icon-slider.left:hover, .slider .button-slider .icon-slider.left:active {
+  transform: scale(1) rotate(180deg);
+}
+.slider .slider-element-container {
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
 }
 
 html {

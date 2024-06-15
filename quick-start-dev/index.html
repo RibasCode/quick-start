@@ -2,743 +2,884 @@
 
 <html lang="es">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Quick start dev</title>
+  <title>Quick start dev</title>
 
-        <link rel="icon" href="./assets/icons/favicon.png">
-        <!--
-        <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: dark)">
-        <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: light)">
-        -->
+  <link rel="icon" href="./assets/icons/favicon.png">
+  <!--
+  <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: light)">
+  -->
 
-        <meta name="descriptison" content="Quick start dev">
-        <meta name="keywords" content="Ribas Code, Quick start dev">
-		<meta name="author" content="Marc Ribas">
+  <meta name="descriptison" content="Quick start dev">
+  <meta name="keywords" content="Ribas Code, Quick start dev">
+  <meta name="author" content="Marc Ribas">
 
-		<!--
-        <meta property="og:type" content="website">
-		<meta property="og:title" content="">
-		<meta property="og:description" content="">
-		<meta property="og:image" content="">
-		<meta property="og:url" content="">
+  <!--
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
 
-		<link rel="canonical" href="">
-        -->
+  <link rel="canonical" href="">
+  -->
 
-		<!-- CSS -->
-        <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-        <!-- jQuery -->
-		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <!-- jQuery -->
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
-		<!-- Libraries -->
-		<script src="./node_modules/toastify-js/src/toastify.js"></script>
+  <!-- Libraries -->
+  <script src="./node_modules/toastify-js/src/toastify.js"></script>
 
-		<!-- Main -->
-        <script src="./assets/js/base/global.js"></script>
-        <script src="./assets/js/base/animation.js"></script>
-        <script src="./assets/js/base/fetch.js"></script>
-        <script src="./assets/js/components/button-back-to-top.js"></script>
-        <script src="./assets/js/components/button-theme.js"></script>
-        <script src="./assets/js/components/graphic.js"></script>
-        <script src="./assets/js/components/modal.js"></script>
-        <script src="./assets/js/components/input.js"></script>
-        <script src="./assets/js/components/toast.js"></script>
+  <!-- Main -->
+  <script src="./assets/js/base/global.js"></script>
+  <script src="./assets/js/base/animation.js"></script>
+  <script src="./assets/js/base/fetch.js"></script>
+  <script src="./assets/js/components/button-back-to-top.js"></script>
+  <script src="./assets/js/components/button-theme.js"></script>
+  <script src="./assets/js/components/graphic.js"></script>
+  <script src="./assets/js/components/input.js"></script>
+  <script src="./assets/js/components/modal.js"></script>
+  <script src="./assets/js/components/slider.js"></script>
+  <script src="./assets/js/components/toast.js"></script>
 
-    </head>
+</head>
 
-    <body class="light-theme">
+<body class="light-theme">
 
-        <div class="initial-animation status-active"></div>
+  <div class="initial-animation status-active"></div>
 
-        <div class="container-loader status-active">
-            <div class="loader">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+  <div class="container-loader status-active">
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="container-button-theme">
+    <svg class="icon icon-theme icon-light-theme status-active">
+      <use href="./assets/icons/icons.svg#light-mode" xlink:href="./assets/icons/icons.svg##light-mode"></use>
+    </svg>
+    <svg class="icon icon-theme icon-dark-theme">
+      <use href="./assets/icons/icons.svg#dark-mode" xlink:href="./assets/icons/icons.svg#dark-mode"></use>
+    </svg>
+  </div>
+
+  <a class="button button-back-to-top icon-left" href="#hero">
+    <svg class="icon-arrow-up">
+      <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+    </svg>
+    Back to top
+  </a>
+
+  <nav class="nav-primary"></nav>
+
+  <main>
+
+    <div class="container-980">
+
+      <div class="slider">
+        <div class="gradient-right"></div>
+        <div class="gradient-left"></div>
+
+        <div class="button-slider left">
+          <div class="icon-slider left">
+            <svg version="1.1" id="arrow" x="0px" y="0px" viewBox="0 0 257.6 451.9"
+              style="enable-background: new 0 0 257.6 451.9;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #ffffff;
+                }
+              </style>
+              <path class="st0"
+                d="M257.6,225.9c0,8.4-3.3,16.4-9.3,22.4L54,442.6c-12.4,12.4-32.4,12.4-44.8,0s-12.4-32.4,0-44.8l0,0l171.9-171.9 L9.3,54C-2.9,41.4-2.6,21.4,10,9.3c12.3-11.9,31.8-11.9,44,0l194.3,194.3C254.2,209.5,257.6,217.5,257.6,225.9z" />
+            </svg>
+          </div>
+        </div>
+
+        <div class="button-slider right">
+          <div class="icon-slider right">
+            <svg version="1.1" id="arrow" x="0px" y="0px" viewBox="0 0 257.6 451.9"
+              style="enable-background: new 0 0 257.6 451.9;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                  fill: #ffffff;
+                }
+              </style>
+              <path class="st0"
+                d="M257.6,225.9c0,8.4-3.3,16.4-9.3,22.4L54,442.6c-12.4,12.4-32.4,12.4-44.8,0s-12.4-32.4,0-44.8l0,0l171.9-171.9 L9.3,54C-2.9,41.4-2.6,21.4,10,9.3c12.3-11.9,31.8-11.9,44,0l194.3,194.3C254.2,209.5,257.6,217.5,257.6,225.9z" />
+            </svg>
+          </div>
+        </div>
+
+        <nav class="status-active slider-element-container">
+          <button class="slider-element badge" type="button">Corporatiu</button>
+          <button class="slider-element badge" type="button" data-type="html">HTML</button>
+          <button class="slider-element badge" type="button" data-type="css">CSS</button>
+          <button class="slider-element badge" type="button" data-type="sass">Sass</button>
+          <button class="slider-element badge" type="button" data-type="javascript">JavaScript</button>
+          <button class="slider-element badge" type="button" data-type="jquery">jQuery</button>
+          <button class="slider-element badge" type="button" data-type="react">React</button>
+          <button class="slider-element badge" type="button" data-type="git">Git</button>
+          <button class="slider-element badge" type="button" data-type="contrast" style="background-color: #000000;">
+            <p>Light contrast</p>
+          </button>
+          <button class="slider-element badge" type="button" data-type="contrast" style="background-color: #e0e0e0;">
+            <p>Dark contrast</p>
+          </button>
+          <button class="slider-element badge" type="button">Corporatiu</button>
+          <button class="slider-element badge" type="button" data-type="html">HTML</button>
+          <button class="slider-element badge" type="button" data-type="css">CSS</button>
+          <button class="slider-element badge" type="button" data-type="sass">Sass</button>
+          <button class="slider-element badge" type="button" data-type="javascript">JavaScript</button>
+          <button class="slider-element badge" type="button" data-type="jquery">jQuery</button>
+          <button class="slider-element badge" type="button" data-type="react">React</button>
+          <button class="slider-element badge" type="button" data-type="git">Git</button>
+          <button class="slider-element badge" type="button" data-type="contrast" style="background-color: #000000;">
+            <p>Light contrast</p>
+          </button>
+          <button class="slider-element badge" type="button" data-type="contrast" style="background-color: #e0e0e0;">
+            <p>Dark contrast</p>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+
+    <section id="hero">
+
+      <div class="container-1440">
+
+        <h1 style="font-size: clamp(40px, 8vw, 64px); text-align: center; margin: 88px 0;">Quick start</h1>
+
+        <div class="card-container">
+
+          <div class="card" style="gap: 8px;">
+            <h3 class="text-wrap-balance">text-wrap: balance; als titulars. D'aquesta manera cada línia del títol
+              mantindrà un equilibri en quant al width.</h3>
+            <p class="text-wrap-pretty">text-wrap: preatty; als textos. Així evitarem que quedin paraules òrfenes.</p>
+          </div>
+
+          <div class="card" style="gap: 8px;">
+            <h3>Line clamp</h3>
+            <p class="line-clamp">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+              Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+              (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal
+              manera que logró hacer un libro de textos especimen.</p>
+            <h3>word-break: break-word;</h3>
+            <p class="word-break-break-word">
+              Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorem.</p>
+          </div>
+
+          <div class="card" style="gap: 10px;">
+            <h3>HTML divider</h3>
+            <p>
+              LoremIpsum&shy;es&shy;simplemente&shy;el&shy;texto&shy;de&shy;relleno&shy;de&shy;las&shy;imprentas&shy;y&shy;archivos&shy;de&shy;texto.
+            </p>
+            <h3>Hyphens:</h3>
+            <p class="hyphens">Lorem Ipsumes simplemente el texto extremadamente largo de las imprentas y archivos de
+              texto.</p>
+          </div>
+
+          <div class="card">
+            <div class="container-icon">
+
+              <svg class="icon icon-filetype-pdf">
+                <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf">
+                </use>
+              </svg>
+
+              <svg class="icon icon-filetype-pdf">
+                <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf">
+                </use>
+              </svg>
+
+              <svg class="icon icon-filetype-pdf">
+                <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf">
+                </use>
+              </svg>
             </div>
+          </div>
+
+          <div class="card">
+            <a class="link" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer"
+              target="_blank" tabindex="1">Link</a>
+
+            <div class="container-checkbox">
+              <input type="checkbox" id="checkbox-example">
+              <label for="checkbox-example">Example</label>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container-flex">
+              <button class="button-primary icon-solo" type="button" tabindex="2">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-primary button-small icon-solo" type="button" tabindex="3">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-primary button-small" type="button" tabindex="4">Button primary small</button>
+
+            <button class="button-primary" type="button" tabindex="5">Button primary</button>
+
+            <a class="button-primary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="6">Button link primary</a>
+
+          </div>
+
+          <div class="card no-shadow">
+            <div id="input-subject-container" class="input-container">
+              <label for="input-subject">Assumpte</label>
+              <input type="text" id="input-subject" name="subject" autocomplete="off">
+            </div>
+            <div id="textarea-message" class="textarea-container">
+              <label for="textarea-message">Descripció</label>
+              <textarea id="textarea-message" name="message"></textarea>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="container-flex">
+              <button class="button-secondary icon-solo" type="button" tabindex="7">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-secondary button-small icon-solo" type="button" tabindex="8">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-secondary button-small" type="button" tabindex="9">Button secondary small</button>
+
+            <button class="button-secondary" type="button" tabindex="10">Button secondary</button>
+            <a class="button-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="11">Button link secondary</a>
+          </div>
+
+          <div class="card">
+            <div class="container-flex">
+              <button class="button-tertiary icon-solo" type="button" tabindex="12">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-tertiary button-small icon-solo" type="button" tabindex="13">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-tertiary button-small" type="button" tabindex="14">Button tertiary small</button>
+
+            <button class="button-tertiary" type="button" tabindex="15">Button tertiary</button>
+            <a class="button-tertiary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="16">Button link tertiary</a>
+          </div>
+
+          <div class="card">
+
+            <button class="button-primary button-small icon-left" type="button" tabindex="17">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary small icon left
+            </button>
+
+            <button class="button-primary button-small icon-right" type="button" tabindex="18">
+              Button primary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-primary icon-left" type="button" tabindex="19">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary icon left
+            </button>
+
+            <button class="button-primary icon-right" type="button" tabindex="20">
+              Button primary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card">
+
+            <button class="button-secondary button-small icon-left" type="button" tabindex="21">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary small icon left
+            </button>
+
+            <button class="button-secondary button-small icon-right" type="button" tabindex="22">
+              Button secondary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-secondary icon-right" type="button" tabindex="23">
+              Button secondary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-secondary icon-left" type="button" tabindex="24">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary icon left
+            </button>
+          </div>
+
+          <div class="card">
+
+            <button class="button-tertiary button-small icon-left" type="button" tabindex="25">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary small icon left
+            </button>
+
+            <button class="button-tertiary button-small icon-right" type="button" tabindex="26">
+              Button tertiary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-tertiary icon-left" type="button" tabindex="27">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary icon left
+            </button>
+
+            <button class="button-tertiary icon-right" type="button" tabindex="28">
+              Button tertiary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-secondary">
+            <a class="link color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" tabindex="29">Link secondary</a>
+
+            <div class="container-checkbox color-secondary">
+              <input type="checkbox" id="checkbox-example-secondary">
+              <label for="checkbox-example-secondary">Example secondary</label>
+            </div>
+          </div>
+
+          <div class="card color-secondary">
+            <div class="container-flex">
+              <button class="button-primary icon-solo color-secondary" type="button" tabindex="30">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-primary button-small icon-solo color-secondary" type="button" tabindex="31">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-primary button-small color-secondary" type="button">Button primary small</button>
+
+            <button class="button-primary color-secondary" type="button" tabindex="33">Button primary</button>
+
+            <a class="button-primary color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              type="button" rel="nofollow noopener noreferrer" target="_blank" role="button">Button link primary</a>
+
+          </div>
+
+          <div class="card color-secondary">
+            <div class="container-flex">
+              <button class="button-secondary icon-solo color-secondary" type="button" tabindex="35">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-secondary button-small icon-solo color-secondary" type="button">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-secondary button-small color-secondary" type="button">Button secondary small</button>
+
+            <button class="button-secondary color-secondary" type="button" tabindex="38">Button secondary</button>
+            <a class="button-secondary color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="39">Button link secondary</a>
+          </div>
+
+          <div class="card color-secondary">
+            <div class="container-flex">
+              <button class="button-tertiary icon-solo color-secondary" type="button" tabindex="40">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-tertiary button-small icon-solo color-secondary" type="button" tabindex="41">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-tertiary button-small color-secondary" type="button" tabindex="42">Button tertiary
+              small</button>
+
+            <button class="button-tertiary color-secondary" type="button" tabindex="43">Button tertiary</button>
+            <a class="button-tertiary color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="44">Button link tertiary</a>
+          </div>
+
+          <div class="card color-secondary">
+
+            <button class="button-primary button-small color-secondary icon-left" type="button" tabindex="45">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary small icon left
+            </button>
+
+            <button class="button-primary button-small color-secondary icon-right" type="button" tabindex="46">
+              Button primary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-primary color-secondary icon-left" type="button" tabindex="47">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary icon left
+            </button>
+
+            <button class="button-primary color-secondary icon-right" type="button" tabindex="48">
+              Button primary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-secondary">
+
+            <button class="button-secondary button-small color-secondary icon-left" type="button" tabindex="49">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary small icon left
+            </button>
+
+            <button class="button-secondary button-small color-secondary icon-right" type="button" tabindex="50">
+              Button secondary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-secondary color-secondary icon-left" type="button" tabindex="51">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary icon left
+            </button>
+
+            <button class="button-secondary color-secondary icon-right" type="button" tabindex="52">
+              Button secondary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-secondary">
+
+            <button class="button-tertiary button-small color-secondary icon-left" type="button" tabindex="53">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary small icon left
+            </button>
+
+            <button class="button-tertiary button-small color-secondary icon-right" type="button" tabindex="54">
+              Button tertiary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-tertiary color-secondary icon-left" type="button" tabindex="55">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary icon left
+            </button>
+
+            <button class="button-tertiary color-secondary icon-right" type="button" tabindex="56">
+              Button tertiary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-accent">
+            <a class="link color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" tabindex="57">Link accent</a>
+
+            <div class="container-checkbox color-accent">
+              <input type="checkbox" id="checkbox-example-accent">
+              <label for="checkbox-example-accent">Example accent</label>
+            </div>
+          </div>
+
+          <div class="card color-accent">
+            <div class="container-flex">
+              <button class="button-primary icon-solo color-accent" type="button" tabindex="58">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-primary button-small icon-solo color-accent" type="button" tabindex="59">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-primary button-small color-accent" type="button" tabindex="60">Button primary
+              small</button>
+
+            <button class="button-primary color-accent" type="button" tabindex="61">Button primary</button>
+
+            <a class="button-primary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="62">Button link primary</a>
+
+          </div>
+
+          <div class="card color-accent">
+            <div class="container-flex">
+              <button class="button-secondary icon-solo color-accent" type="button" tabindex="63">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-secondary button-small icon-solo color-accent" type="button" tabindex="64">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-secondary button-small color-accent" type="button" tabindex="65">Button secondary
+              small</button>
+
+            <button class="button-secondary color-accent" type="button" tabindex="66">Button secondary</button>
+            <a class="button-secondary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="67">Button link secondary</a>
+          </div>
+
+          <div class="card color-accent">
+            <div class="container-flex">
+              <button class="button-tertiary icon-solo color-accent" type="button" tabindex="68">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+
+              <button class="button-tertiary button-small icon-solo color-accent" type="button" tabindex="69">
+                <svg class="icon-arrow-up">
+                  <use href="./assets/icons/icons.svg#arrow-forward"
+                    xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+                </svg>
+              </button>
+            </div>
+
+            <button class="button-tertiary button-small color-accent" type="button" tabindex="70">Button tertiary
+              small</button>
+
+            <button class="button-tertiary color-accent" type="button" tabindex="71">Button tertiary</button>
+            <a class="button-tertiary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html"
+              rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="72">Button link tertiary</a>
+          </div>
+
+          <div class="card color-accent">
+
+            <button class="button-primary button-small color-accent icon-left" type="button" tabindex="73">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary small icon left
+            </button>
+
+            <button class="button-primary button-small color-accent icon-right" type="button" tabindex="74">
+              Button primary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-primary color-accent icon-left" type="button" tabindex="75">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button primary icon left
+            </button>
+
+            <button class="button-primary color-accent icon-right" type="button" tabindex="76">
+              Button primary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-accent">
+
+            <button class="button-secondary button-small color-accent icon-left" type="button" tabindex="77">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary small icon left
+            </button>
+
+            <button class="button-secondary button-small color-accent icon-right" type="button" tabindex="78">
+              Button secondary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-secondary color-accent icon-left" type="button" tabindex="79">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button secondary icon left
+            </button>
+
+            <button class="button-secondary color-accent icon-right" type="button" tabindex="80">
+              Button secondary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card color-accent">
+
+            <button class="button-tertiary button-small color-accent icon-left" type="button" tabindex="81">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary small icon left
+            </button>
+
+            <button class="button-tertiary button-small color-accent icon-right" type="button" tabindex="82">
+              Button tertiary small icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+
+            <button class="button-tertiary color-accent icon-left" type="button" tabindex="83">
+              <svg class="icon-arrow-left">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+              Button tertiary icon left
+            </button>
+
+            <button class="button-tertiary color-accent icon-right" type="button" tabindex="84">
+              Button tertiary icon right
+              <svg class="icon-arrow-right">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </button>
+          </div>
+
+          <div class="card">
+            <button class="button-primary status-inactive" disabled type="button" tabindex="85">Button primary
+              inactive</button>
+            <button class="button-secondary status-inactive" disabled type="button" tabindex="86">Button secondary
+              inactive</button>
+            <button class="button-tertiary status-inactive" disabled type="button" tabindex="87">Button tertiary
+              inactive</button>
+          </div>
+
+          <div class="card">
+            <button class="button-primary loading" type="button" tabindex="88">
+              <div class="loader">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              Loading state when Click
+            </button>
+
+            <button class="button-primary modal-button" type="button" tabindex="89">Active modal</button>
+
+            <button class="button-primary toast-button" type="button" tabindex="90">Toast</button>
+          </div>
+
+          <div class="card">
+            <div class="graphic">
+              <div class="skill-0">
+                <div class="outer">
+                  <div class="inner">
+                    <p id="number">70<sup>%</sup></p>
+                  </div>
+                </div>
+                <svg version="1.1" width="160px" height="160px">
+                  <defs>
+                    <linearGradient id="gradient-color-0">
+                      <stop offset="0%" stop-color="#54e379" />
+                      <stop offset="100%" stop-color="#4db8ad" />
+                    </linearGradient>
+                  </defs>
+                  <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                </svg>
+              </div>
+              <p class="description">Graphic</p>
+            </div>
+          </div>
+
+          <div class="card ancor status-active">
+
+            <a href="#card-content">
+              <svg class="icon-arrow ancor">
+                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward">
+                </use>
+              </svg>
+            </a>
+
+            <div id="card-content" class="status-active">
+              <img src="assets/images/aspect-ratio.png" alt="aspect ratio">
+            </div>
+          </div>
         </div>
 
-        <div class="container-button-theme">
-            <svg class="icon icon-theme icon-light-theme status-active">
-                <use href="./assets/icons/icons.svg#light-mode" xlink:href="./assets/icons/icons.svg##light-mode"></use>
-            </svg>
-            <svg class="icon icon-theme icon-dark-theme">
-                <use href="./assets/icons/icons.svg#dark-mode" xlink:href="./assets/icons/icons.svg#dark-mode"></use>
-            </svg>
+      </div>
+
+      <div class="modal-container status-active">
+        <div class="modal-window">
+
+          <div class="modal-header">
+            <h4>Modal example</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="button-tertiary button-cancel" type="button">Cancelar</button>
+            <button class="button-primary button-accept" type="button">Acceptar</button>
+          </div>
         </div>
 
-        <a class="button button-back-to-top icon-left" href="#hero">
-            <svg class="icon-arrow-up">
-                <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-            </svg>
-            Back to top
-        </a>
+        <div class="modal-backdrop"></div>
+      </div>
 
-        <nav class="nav-primary"></nav>
+    </section>
 
-		<main>
+  </main>
 
-            <section id="hero">
+  <footer></footer>
 
-                <div class="container-1440">
-
-                    <h1 style="font-size: clamp(40px, 8vw, 64px); text-align: center; margin: 88px 0;">Quick start</h1>
-
-                    <div class="card-container">
-
-                        <div class="card" style="gap: 8px;">
-                            <h3 class="text-wrap-balance">text-wrap: balance; als titulars. D'aquesta manera cada línia del títol mantindrà un equilibri en quant al width.</h3>
-                            <p class="text-wrap-pretty">text-wrap: preatty; als textos. Així evitarem que quedin paraules òrfenes.</p>
-                        </div>
-
-                        <div class="card" style="gap: 8px;">
-                            <h3>Line clamp</h3>
-                            <p class="line-clamp">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.</p>
-                            <h3>word-break: break-word;</h3>
-                            <p class="word-break-break-word">Looooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooorem.</p>
-                        </div>
-
-                        <div class="card" style="gap: 10px;">
-                            <h3>HTML divider</h3>
-                            <p>LoremIpsum&shy;es&shy;simplemente&shy;el&shy;texto&shy;de&shy;relleno&shy;de&shy;las&shy;imprentas&shy;y&shy;archivos&shy;de&shy;texto.</p>
-                            <h3>Hyphens:</h3>
-                            <p class="hyphens">Lorem Ipsumes simplemente el texto extremadamente largo de las imprentas y archivos de texto.</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="badge-container">
-                                <button class="badge" type="button">Corporatiu</button>
-                                <button class="badge" type="button" data-type="html">HTML</button>
-                                <button class="badge" type="button" data-type="css">CSS</button>
-                                <button class="badge" type="button" data-type="sass">Sass</button>
-                                <button class="badge" type="button" data-type="javascript">JavaScript</button>
-                                <button class="badge" type="button" data-type="jquery">jQuery</button>
-                                <button class="badge" type="button" data-type="react">React</button>
-                                <button class="badge" type="button" data-type="git">Git</button>
-                                <button class="badge" type="button" data-type="contrast" style="background-color: #000000;"><p>Light contrast</p></button>
-                                <button class="badge" type="button" data-type="contrast" style="background-color: #e0e0e0;"><p>Dark contrast</p></button>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="container-icon">
-
-                                <svg class="icon icon-filetype-pdf">
-                                    <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf"></use>
-                                </svg>
-
-                                <svg class="icon icon-filetype-pdf">
-                                    <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf"></use>
-                                </svg>
-
-                                <svg class="icon icon-filetype-pdf">
-                                    <use href="./assets/icons/icons.svg#filetype-pdf" xlink:href="./assets/icons/icons.svg#filetype-pdf"></use>
-                                </svg>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <a class="link" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" tabindex="1">Link</a>
-
-                            <div class="container-checkbox">
-                                <input type="checkbox" id="checkbox-example">
-                                <label for="checkbox-example">Example</label>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="container-flex">
-                                <button class="button-primary icon-solo" type="button" tabindex="2">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-primary button-small icon-solo" type="button" tabindex="3">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-primary button-small" type="button" tabindex="4">Button primary small</button>
-
-                            <button class="button-primary" type="button" tabindex="5">Button primary</button>
-
-                            <a class="button-primary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="6">Button link primary</a>
-
-                        </div>
-
-                        <div class="card no-shadow">
-                            <div id="input-subject-container" class="input-container">
-                                <label for="input-subject">Assumpte</label>
-                                <input type="text" id="input-subject" name="subject" autocomplete="off">
-                            </div>
-                            <div id="textarea-message" class="textarea-container">
-                                <label for="textarea-message">Descripció</label>
-                                <textarea id="textarea-message" name="message"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="container-flex">
-                                <button class="button-secondary icon-solo" type="button" tabindex="7">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-secondary button-small icon-solo" type="button" tabindex="8">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-secondary button-small" type="button" tabindex="9">Button secondary small</button>
-
-                            <button class="button-secondary" type="button" tabindex="10">Button secondary</button>
-                            <a class="button-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="11">Button link secondary</a>
-                        </div>
-
-                        <div class="card">
-                            <div class="container-flex">
-                                <button class="button-tertiary icon-solo" type="button" tabindex="12">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-tertiary button-small icon-solo" type="button" tabindex="13">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-tertiary button-small" type="button" tabindex="14">Button tertiary small</button>
-
-                            <button class="button-tertiary" type="button" tabindex="15">Button tertiary</button>
-                            <a class="button-tertiary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="16">Button link tertiary</a>
-                        </div>
-
-                        <div class="card">
-
-                            <button class="button-primary button-small icon-left" type="button" tabindex="17">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary small icon left
-                            </button>
-
-                            <button class="button-primary button-small icon-right" type="button" tabindex="18">
-                                Button primary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-primary icon-left" type="button" tabindex="19">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary icon left
-                            </button>
-
-                            <button class="button-primary icon-right" type="button" tabindex="20">
-                                Button primary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card">
-
-                            <button class="button-secondary button-small icon-left" type="button" tabindex="21">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary small icon left
-                            </button>
-
-                            <button class="button-secondary button-small icon-right" type="button" tabindex="22">
-                                Button secondary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-secondary icon-right" type="button" tabindex="23">
-                                Button secondary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-secondary icon-left" type="button" tabindex="24">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary icon left
-                            </button>
-                        </div>
-
-                        <div class="card">
-
-                            <button class="button-tertiary button-small icon-left" type="button" tabindex="25">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary small icon left
-                            </button>
-
-                            <button class="button-tertiary button-small icon-right" type="button" tabindex="26">
-                                Button tertiary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-tertiary icon-left" type="button" tabindex="27">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary icon left
-                            </button>
-
-                            <button class="button-tertiary icon-right" type="button" tabindex="28">
-                                Button tertiary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-secondary">
-                            <a class="link color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" tabindex="29">Link secondary</a>
-
-                            <div class="container-checkbox color-secondary">
-                                <input type="checkbox" id="checkbox-example-secondary">
-                                <label for="checkbox-example-secondary">Example secondary</label>
-                            </div>
-                        </div>
-
-                        <div class="card color-secondary">
-                            <div class="container-flex">
-                                <button class="button-primary icon-solo color-secondary" type="button" tabindex="30">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-primary button-small icon-solo color-secondary" type="button" tabindex="31">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-primary button-small color-secondary" type="button" tabindex="32">Button primary small</button>
-
-                            <button class="button-primary color-secondary" type="button" tabindex="33">Button primary</button>
-
-                            <a class="button-primary color-secondary" type="button" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="34">Button link primary</a>
-
-                        </div>
-
-                        <div class="card color-secondary">
-                            <div class="container-flex">
-                                <button class="button-secondary icon-solo color-secondary" type="button" tabindex="35">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-secondary button-small icon-solo color-secondary" type="button" tabindex="36">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-secondary button-small color-secondary" type="button" tabindex="37">Button secondary small</button>
-
-                            <button class="button-secondary color-secondary" type="button" tabindex="38">Button secondary</button>
-                            <a class="button-secondary color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="39">Button link secondary</a>
-                        </div>
-
-                        <div class="card color-secondary">
-                            <div class="container-flex">
-                                <button class="button-tertiary icon-solo color-secondary" type="button" tabindex="40">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-tertiary button-small icon-solo color-secondary" type="button" tabindex="41">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-tertiary button-small color-secondary" type="button" tabindex="42">Button tertiary small</button>
-
-                            <button class="button-tertiary color-secondary" type="button" tabindex="43">Button tertiary</button>
-                            <a class="button-tertiary color-secondary" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="44">Button link tertiary</a>
-                        </div>
-
-                        <div class="card color-secondary">
-
-                            <button class="button-primary button-small color-secondary icon-left" type="button" tabindex="45">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary small icon left
-                            </button>
-
-                            <button class="button-primary button-small color-secondary icon-right" type="button" tabindex="46">
-                                Button primary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-primary color-secondary icon-left" type="button" tabindex="47">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary icon left
-                            </button>
-
-                            <button class="button-primary color-secondary icon-right" type="button" tabindex="48">
-                                Button primary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-secondary">
-
-                            <button class="button-secondary button-small color-secondary icon-left" type="button" tabindex="49">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary small icon left
-                            </button>
-
-                            <button class="button-secondary button-small color-secondary icon-right" type="button" tabindex="50">
-                                Button secondary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-secondary color-secondary icon-left" type="button" tabindex="51">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary icon left
-                            </button>
-
-                            <button class="button-secondary color-secondary icon-right" type="button" tabindex="52">
-                                Button secondary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-secondary">
-
-                            <button class="button-tertiary button-small color-secondary icon-left" type="button" tabindex="53">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary small icon left
-                            </button>
-
-                            <button class="button-tertiary button-small color-secondary icon-right" type="button" tabindex="54">
-                                Button tertiary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-tertiary color-secondary icon-left" type="button" tabindex="55">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary icon left
-                            </button>
-
-                            <button class="button-tertiary color-secondary icon-right" type="button" tabindex="56">
-                                Button tertiary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-accent">
-                            <a class="link color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" tabindex="57">Link accent</a>
-
-                            <div class="container-checkbox color-accent">
-                                <input type="checkbox" id="checkbox-example-accent">
-                                <label for="checkbox-example-accent">Example accent</label>
-                            </div>
-                        </div>
-
-                        <div class="card color-accent">
-                            <div class="container-flex">
-                                <button class="button-primary icon-solo color-accent" type="button" tabindex="58">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-primary button-small icon-solo color-accent" type="button" tabindex="59">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-primary button-small color-accent" type="button" tabindex="60">Button primary small</button>
-
-                            <button class="button-primary color-accent" type="button" tabindex="61">Button primary</button>
-
-                            <a class="button-primary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="62">Button link primary</a>
-
-                        </div>
-
-                        <div class="card color-accent">
-                            <div class="container-flex">
-                                <button class="button-secondary icon-solo color-accent" type="button" tabindex="63">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-secondary button-small icon-solo color-accent" type="button" tabindex="64">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-secondary button-small color-accent" type="button" tabindex="65">Button secondary small</button>
-
-                            <button class="button-secondary color-accent" type="button" tabindex="66">Button secondary</button>
-                            <a class="button-secondary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="67">Button link secondary</a>
-                        </div>
-
-                        <div class="card color-accent">
-                            <div class="container-flex">
-                                <button class="button-tertiary icon-solo color-accent" type="button" tabindex="68">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-
-                                <button class="button-tertiary button-small icon-solo color-accent" type="button" tabindex="69">
-                                    <svg class="icon-arrow-up">
-                                        <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                    </svg>
-                                </button>
-                            </div>
-
-                            <button class="button-tertiary button-small color-accent" type="button" tabindex="70">Button tertiary small</button>
-
-                            <button class="button-tertiary color-accent" type="button" tabindex="71">Button tertiary</button>
-                            <a class="button-tertiary color-accent" href="http://127.0.0.1:5500/quick-start-dev/index.html" rel="nofollow noopener noreferrer" target="_blank" role="button" tabindex="72">Button link tertiary</a>
-                        </div>
-
-                        <div class="card color-accent">
-
-                            <button class="button-primary button-small color-accent icon-left" type="button" tabindex="73">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary small icon left
-                            </button>
-
-                            <button class="button-primary button-small color-accent icon-right" type="button" tabindex="74">
-                                Button primary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-primary color-accent icon-left" type="button" tabindex="75">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button primary icon left
-                            </button>
-
-                            <button class="button-primary color-accent icon-right" type="button" tabindex="76">
-                                Button primary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-accent">
-
-                            <button class="button-secondary button-small color-accent icon-left" type="button" tabindex="77">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary small icon left
-                            </button>
-
-                            <button class="button-secondary button-small color-accent icon-right" type="button" tabindex="78">
-                                Button secondary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-secondary color-accent icon-left" type="button" tabindex="79">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button secondary icon left
-                            </button>
-
-                            <button class="button-secondary color-accent icon-right" type="button" tabindex="80">
-                                Button secondary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card color-accent">
-
-                            <button class="button-tertiary button-small color-accent icon-left" type="button" tabindex="81">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary small icon left
-                            </button>
-
-                            <button class="button-tertiary button-small color-accent icon-right" type="button" tabindex="82">
-                                Button tertiary small icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-
-                            <button class="button-tertiary color-accent icon-left" type="button" tabindex="83">
-                                <svg class="icon-arrow-left">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                                Button tertiary icon left
-                            </button>
-
-                            <button class="button-tertiary color-accent icon-right" type="button" tabindex="84">
-                                Button tertiary icon right
-                                <svg class="icon-arrow-right">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <div class="card">
-                            <button class="button-primary status-inactive" disabled type="button" tabindex="85">Button primary inactive</button>
-                            <button class="button-secondary status-inactive" disabled type="button" tabindex="86">Button secondary inactive</button>
-                            <button class="button-tertiary status-inactive" disabled type="button" tabindex="87">Button tertiary inactive</button>
-                        </div>
-
-                        <div class="card">
-                            <button class="button-primary loading" type="button" tabindex="88">
-                                <div class="loader">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                                Loading state when Click
-                            </button>
-
-                            <button class="button-primary modal-button" type="button" tabindex="89">Active modal</button>
-
-                            <button class="button-primary toast-button" type="button" tabindex="90">Toast</button>
-                        </div>
-
-                        <div class="card">
-                            <div class="graphic">
-                                <div class="skill-0">
-                                    <div class="outer">
-                                        <div class="inner">
-                                            <p id="number">70<sup>%</sup></p>
-                                        </div>
-                                    </div>
-                                    <svg version="1.1" width="160px" height="160px">
-                                        <defs>
-                                            <linearGradient id="gradient-color-0">
-                                                <stop offset="0%" stop-color="#54e379" />
-                                                <stop offset="100%" stop-color="#4db8ad" />
-                                            </linearGradient>
-                                        </defs>
-                                        <circle cx="80" cy="80" r="70" stroke-linecap="round" />
-                                    </svg>
-                                </div>
-                                <p class="description">Graphic</p>
-                            </div>
-                        </div>
-
-                        <div class="card ancor status-active">
-
-                            <a href="#card-content">
-                                <svg class="icon-arrow ancor">
-                                    <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
-                                </svg>
-                            </a>
-
-                            <div id="card-content" class="status-active">
-                                <img src="assets/images/aspect-ratio.png" alt="aspect ratio">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="modal-container status-active">
-                    <div class="modal-window">
-
-                        <div class="modal-header">
-                            <h4>Modal example</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="button-tertiary button-cancel" type="button">Cancelar</button>
-                            <button class="button-primary button-accept" type="button">Acceptar</button>
-                        </div>
-                    </div>
-
-                    <div class="modal-backdrop"></div>
-                </div>
-
-			</section>
-
-		</main>
-
-		<footer></footer>
-
-  	</body>
+</body>
 
 </html>
