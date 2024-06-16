@@ -1,54 +1,53 @@
+.button-back-to-top {
+   z-index: 1;
 
-.button-back-to-top{
-    z-index: 1;
+   position: fixed;
+   right: 48px;
+   bottom: 24px;
 
-    position: fixed;
-    right: 48px;
-    bottom: 24px;
+   height: 44px;
 
-    height: 44px;
+   color: var(--color-primary);
+   background-color: var(--color-primary-10);
 
-    color: var(--color-primary);
-    background-color: var(--color-primary-10);
+   opacity: 0;
+   pointer-events: none;
+   border-radius: var(--border-radius);
+   transition: var(--transition);
 
-    opacity: 0;
-    pointer-events: none;
-    border-radius: var(--border-radius);
-    transition: var(--transition);
+   &.status-active {
+      bottom: 48px;
 
-    &.status-active{
-        bottom: 48px;
+      opacity: 1;
+      pointer-events: all;
+   }
 
-        opacity: 1;
-        pointer-events: all;
-    }
+   &:hover {
+      background-color: var(--color-primary-20);
 
-    &:hover{
-        background-color: var(--color-primary-20);
+      svg.icon {
+         transform: translateY(-3px) rotate(-90deg);
+      }
+   }
 
-        svg.icon{
-            transform: translateY(-3px) rotate(-90deg);
-        }
-    }
+   &:active,
+   &:focus {
+      background-color: var(--color-primary-30);
+   }
 
-    &:active,
-    &:focus{
-        background-color: var(--color-primary-30);
-    }
+   svg.icon {
+      height: 14px;
+      width: 14px;
 
-    svg.icon{
-        height: 14px;
-        width: 14px;
+      margin-right: 12px;
 
-        margin-right: 12px;
+      transform: translateY(-0.5px) rotate(-90deg);
+      transition: var(--transition);
 
-        transform: translateY(-0.5px) rotate(-90deg);
-        transition: var(--transition);
+      polyline {
+         stroke: var(--color-primary);
 
-        polyline{
-            stroke: var(--color-primary);
-
-            transition: var(--transition);
-        }
-    }
+         transition: var(--transition);
+      }
+   }
 }

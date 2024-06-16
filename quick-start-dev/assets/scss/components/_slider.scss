@@ -1,106 +1,106 @@
 .slider {
-  position: relative;
-  width: 100%;
+   position: relative;
+   width: 100%;
 
-  .gradient-right {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 64px;
-    opacity: 0;
-    pointer-events: none;
-    background: linear-gradient(90deg, transparent 0%, var(--color-background-primary) 100%);
-    transition: var(--transition);
+   .gradient-right {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 64px;
+      opacity: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, transparent 0%, var(--color-background-primary) 100%);
+      transition: var(--transition);
 
-    &.status-active {
-      opacity: 1;
-    }
-  }
+      &.status-active {
+         opacity: 1;
+      }
+   }
 
-  .gradient-left {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 64px;
-    opacity: 0;
-    pointer-events: none;
-    background: linear-gradient(90deg, var(--color-background-primary) 0%, transparent 100%);
-    transition: var(--transition);
+   .gradient-left {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 64px;
+      opacity: 0;
+      pointer-events: none;
+      background: linear-gradient(90deg, var(--color-background-primary) 0%, transparent 100%);
+      transition: var(--transition);
 
-    &.status-active {
-      opacity: 1;
-    }
-  }
+      &.status-active {
+         opacity: 1;
+      }
+   }
 
-  .button-slider {
-    position: absolute;
-    top: 50%;
-    width: 48px;
-    height: 48px;
-    border-radius: 50px;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    cursor: pointer;
-    background-color: var(--color-black-toggle-24);
-    pointer-events: none;
-    transform: translate(0, -50%) scale(0.9);
-    transition: var(--transition);
-
-    &:hover {
-      transform: translate(0, -50%) scale(1);
-      background-color: var(--color-black-toggle-32);
-    }
-
-    &:active {
-      transform: translate(0, -50%) scale(1);
-      background-color: var(--color-black-toggle-44);
-    }
-
-    &.status-active {
-      opacity: 1;
-      pointer-events: all;
-    }
-
-    &.left {
-      left: 14px;
-    }
-
-    &.right {
-      right: 14px;
-    }
-
-    .icon-slider {
+   .button-slider {
+      position: absolute;
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      border-radius: 50px;
+      z-index: 2;
       display: flex;
       align-items: center;
       justify-content: center;
+      opacity: 0;
+      cursor: pointer;
+      background-color: var(--color-black-toggle-24);
       pointer-events: none;
+      transform: translate(0, -50%) scale(0.9);
+      transition: var(--transition);
 
-      svg {
-        height: 22px;
+      &:hover {
+         transform: translate(0, -50%) scale(1);
+         background-color: var(--color-black-toggle-32);
+      }
+
+      &:active {
+         transform: translate(0, -50%) scale(1);
+         background-color: var(--color-black-toggle-44);
+      }
+
+      &.status-active {
+         opacity: 1;
+         pointer-events: all;
       }
 
       &.left {
-        transform: scale(0.9) rotate(180deg);
-
-        &:hover,
-        &:active {
-          transform: scale(1) rotate(180deg);
-        }
+         left: 14px;
       }
-    }
-  }
 
-  .slider-element-container {
-    display: flex;
-    gap: 8px;
+      &.right {
+         right: 14px;
+      }
 
-    overflow: hidden;
-  }
+      .icon-slider {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         pointer-events: none;
+
+         svg {
+            height: 22px;
+         }
+
+         &.left {
+            transform: scale(0.9) rotate(180deg);
+
+            &:hover,
+            &:active {
+               transform: scale(1) rotate(180deg);
+            }
+         }
+      }
+   }
+
+   .slider-element-container {
+      display: flex;
+      gap: 8px;
+
+      overflow: hidden;
+   }
 }

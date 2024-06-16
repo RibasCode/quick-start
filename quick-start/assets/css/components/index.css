@@ -13,6 +13,7 @@
   color: #334155;
   font-size: 12px;
   font-weight: 500;
+  text-wrap: nowrap;
   border: solid 2px transparent;
   border-radius: var(--border-radius-50);
   cursor: pointer;
@@ -1532,33 +1533,6 @@ body .loader div:nth-child(4) {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-html {
-  /* Firefox */
-  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
-}
-
-/* Width */
-::-webkit-scrollbar {
-  width: 14px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--color-scrollbar-thumb);
-  border: solid 4px var(--color-background-primary);
-  border-radius: var(--border-radius);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-scrollbar-thumb);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 .slider {
   position: relative;
   width: 100%;
@@ -1647,6 +1621,33 @@ html {
   display: flex;
   gap: 8px;
   overflow: hidden;
+}
+
+html {
+  /* Firefox */
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border: solid 4px var(--color-background-primary);
+  border-radius: var(--border-radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 /*# sourceMappingURL=index.css.map */

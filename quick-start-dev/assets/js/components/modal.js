@@ -1,14 +1,11 @@
-
 "use strict"
 
-$(document).ready(function(){
+$(document).ready(function () {
+   $(".modal-container .button-cancel").click(function () {
+      $(this).closest(".modal-container").removeClass("status-active")
+   })
 
-	$(".modal-container .button-cancel").click(function(){
-        $(this).closest(".modal-container").removeClass("status-active");
-	});
-
-    $(".modal-button").click(function(){
-        $(".modal-container").addClass("status-active");
-	});
-
-});
+   $(".modal-button").click(function () {
+      $(".modal-container").addClass("status-active")
+   })
+})

@@ -1,393 +1,392 @@
+input {
 
-input{
+   &[type="search"] {
+      border: none;
+      outline: none;
 
-    &[type="search"]{
-        border: none;
-        outline: none;
+      &::-webkit-search-decoration,
+      &::-webkit-search-cancel-button,
+      &::-webkit-search-results-button,
+      &::-webkit-search-results-decoration {
+         display: none;
+      }
 
-        &::-webkit-search-decoration,
-        &::-webkit-search-cancel-button,
-        &::-webkit-search-results-button,
-        &::-webkit-search-results-decoration {
-            display: none;
-        }
+      &::-ms-clear,
+      &::-ms-reveal {
+         display: none;
+         width: 0;
+         height: 0;
+      }
 
-        &::-ms-clear,
-        &::-ms-reveal {
-            display: none;
-            width : 0;
-            height: 0;
-        }
-
-        &::placeholder{
-            color: var(--color-typography-white);
-            opacity: 0.64;
-        }
-    }
+      &::placeholder {
+         color: var(--color-typography-white);
+         opacity: 0.64;
+      }
+   }
 }
 
-.container-checkbox{
-    display: flex;
+.container-checkbox {
+   display: flex;
 
-    margin-bottom: 12px;
+   margin-bottom: 12px;
 
-    input{
+   input {
 
-        &[type="checkbox"]{
-            appearance: none;
-            width: 18px;
-            height: 18px;
-            border: solid var(--border-width) var(--color-primary);
-            border-radius: 3px;
-            cursor: pointer;
-            transition: var(--transition);
+      &[type="checkbox"] {
+         appearance: none;
+         width: 18px;
+         height: 18px;
+         border: solid var(--border-width) var(--color-primary);
+         border-radius: 3px;
+         cursor: pointer;
+         transition: var(--transition);
 
-            &:checked{
-                background-color: var(--color-primary);
-                border: var(--color-primary);
+         &:checked {
+            background-color: var(--color-primary);
+            border: var(--color-primary);
 
-                & ~ label{
-                    color: var(--color-primary);
-                }
+            &~label {
+               color: var(--color-primary);
             }
+         }
 
-            &:not(:checked){
-                background-color: transparent;
-            }
+         &:not(:checked) {
+            background-color: transparent;
+         }
 
-            &:hover ~ label{
-                color: var(--color-primary);
-            }
-        }
-    }
-
-    label{
-        user-select: none;
-
-        &[for^="checkbox"]{
-            flex: 1;
-
-            padding-left: 14px;
-
+         &:hover~label {
             color: var(--color-primary);
+         }
+      }
+   }
 
-            cursor: pointer;
-        }
-    }
+   label {
+      user-select: none;
 
-    &:hover{
+      &[for^="checkbox"] {
+         flex: 1;
 
-        input{
+         padding-left: 14px;
 
-            &[type="checkbox"]{
-                background-color: var(--color-primary-10);
+         color: var(--color-primary);
 
-                &:checked{
-                    background-color: var(--color-primary);
-                    border: var(--color-primary);
-                }
+         cursor: pointer;
+      }
+   }
+
+   &:hover {
+
+      input {
+
+         &[type="checkbox"] {
+            background-color: var(--color-primary-10);
+
+            &:checked {
+               background-color: var(--color-primary);
+               border: var(--color-primary);
             }
-        }
-    }
+         }
+      }
+   }
 
-    &.color-secondary{
+   &.color-secondary {
 
-        input{
+      input {
 
-            &[type="checkbox"]{
-                border: solid var(--border-width) var(--color-secondary);
+         &[type="checkbox"] {
+            border: solid var(--border-width) var(--color-secondary);
 
-                &:checked{
-                    background-color: var(--color-secondary);
-                    border: var(--color-secondary);
+            &:checked {
+               background-color: var(--color-secondary);
+               border: var(--color-secondary);
 
-                    & ~ label{
-                        color: var(--color-secondary);
-                    }
-                }
-
-                &:hover ~ label{
-                    color: var(--color-secondary);
-                }
+               &~label {
+                  color: var(--color-secondary);
+               }
             }
-        }
 
-        label{
-            color: var(--color-secondary);
-        }
-
-        &:hover{
-
-            input{
-
-                &[type="checkbox"]{
-                    background-color: var(--color-secondary-10);
-
-                    &:checked{
-                        background-color: var(--color-secondary);
-                        border: var(--color-secondary);
-                    }
-                }
+            &:hover~label {
+               color: var(--color-secondary);
             }
-        }
-    }
+         }
+      }
 
-    &.color-accent{
+      label {
+         color: var(--color-secondary);
+      }
 
-        input{
+      &:hover {
 
-            &[type="checkbox"]{
-                border: solid var(--border-width) var(--color-accent);
+         input {
 
-                &:checked{
-                    background-color: var(--color-accent);
-                    border: var(--color-accent);
+            &[type="checkbox"] {
+               background-color: var(--color-secondary-10);
 
-                    & ~ label{
-                        color: var(--color-accent);
-                    }
-                }
-
-                &:hover ~ label{
-                    color: var(--color-accent);
-                }
+               &:checked {
+                  background-color: var(--color-secondary);
+                  border: var(--color-secondary);
+               }
             }
-        }
+         }
+      }
+   }
 
-        label{
-            color: var(--color-accent);
-        }
+   &.color-accent {
 
-        &:hover{
+      input {
 
-            input{
+         &[type="checkbox"] {
+            border: solid var(--border-width) var(--color-accent);
 
-                &[type="checkbox"]{
-                    background-color: var(--color-accent-10);
+            &:checked {
+               background-color: var(--color-accent);
+               border: var(--color-accent);
 
-                    &:checked{
-                        background-color: var(--color-accent);
-                        border: var(--color-accent);
-                    }
-                }
+               &~label {
+                  color: var(--color-accent);
+               }
             }
-        }
-    }
+
+            &:hover~label {
+               color: var(--color-accent);
+            }
+         }
+      }
+
+      label {
+         color: var(--color-accent);
+      }
+
+      &:hover {
+
+         input {
+
+            &[type="checkbox"] {
+               background-color: var(--color-accent-10);
+
+               &:checked {
+                  background-color: var(--color-accent);
+                  border: var(--color-accent);
+               }
+            }
+         }
+      }
+   }
 }
 
 .input-container,
-.textarea-container{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    user-select: all;
+.textarea-container {
+   box-sizing: border-box;
+   position: relative;
+   display: flex;
+   align-items: center;
+   width: 100%;
+   user-select: all;
 
-    &.big{
+   &.big {
 
-        label{
-            left: 10px;
-        }
+      label {
+         left: 10px;
+      }
 
-        &.status-focus{
+      &.status-focus {
 
-            label{
-                font-size: 10px;
-            }
-        }
-    }
-
-    &.status-focus{
-
-        &:disabled,
-        &.status-inactive{
-
-            label{
-                color: var(--color-grey);
-            }
-        }
-
-        label{
-            color: var(--color-tipograpy);
+         label {
             font-size: 10px;
-            font-weight: 600;
-        }
-    }
+         }
+      }
+   }
 
-    &:disabled,
-    &.status-inactive{
-        cursor: not-allowed;
+   &.status-focus {
 
-        label{
-            color: #e0e0e0;
-            pointer-events: none;
-        }
+      &:disabled,
+      &.status-inactive {
 
-        input,
-        textarea{
-            border: solid 1px #f0f0f0;
-        }
-    }
+         label {
+            color: var(--color-grey);
+         }
+      }
 
-    &.status-error,
-    &.status-warning,
-    &.status-success{
-        padding: initial;
-        margin-bottom: initial;
-        text-shadow: initial;
-        -webkit-border-radius: initial;
-        -moz-border-radius: initial;
-        border-radius: initial;
-        border: initial;
-        background-color: initial;
-        color: initial;
-    }
+      label {
+         color: var(--color-tipograpy);
+         font-size: 10px;
+         font-weight: 600;
+      }
+   }
 
-    &.status-success{
+   &:disabled,
+   &.status-inactive {
+      cursor: not-allowed;
 
-        input,
-        input:hover,
-        input:active,
-        input:focus,
-        textarea,
-        textarea:hover,
-        textarea:active,
-        textarea:focus{
-            border: solid 1px var(--color-success);
-        }
-    }
+      label {
+         color: #e0e0e0;
+         pointer-events: none;
+      }
 
-    &.status-warning{
+      input,
+      textarea {
+         border: solid 1px #f0f0f0;
+      }
+   }
 
-        input,
-        input:hover,
-        input:active,
-        input:focus,
-        textarea,
-        textarea:hover,
-        textarea:active,
-        textarea:focus{
-            border: solid 1px var(--color-warning);
-        }
-    }
+   &.status-error,
+   &.status-warning,
+   &.status-success {
+      padding: initial;
+      margin-bottom: initial;
+      text-shadow: initial;
+      -webkit-border-radius: initial;
+      -moz-border-radius: initial;
+      border-radius: initial;
+      border: initial;
+      background-color: initial;
+      color: initial;
+   }
 
-    &.status-error{
+   &.status-success {
 
-        input,
-        input:hover,
-        input:active,
-        input:focus,
-        textarea,
-        textarea:hover,
-        textarea:active,
-        textarea:focus{
-            border: solid 1px var(--color-error);
-        }
-    }
+      input,
+      input:hover,
+      input:active,
+      input:focus,
+      textarea,
+      textarea:hover,
+      textarea:active,
+      textarea:focus {
+         border: solid 1px var(--color-success);
+      }
+   }
 
-    label{
-        position: absolute;
-        margin: 0;
-        left: 6.5px;
-        padding: 0 5px;
-        line-height: 1;
-        font-size: 14px;
-        font-weight: 300;
-        color: var(--color-grey);
-        background-color: var(--color-background-primary-light);
-        pointer-events: none;
-        user-select: none;
-        transition: var(--transition);
-    }
+   &.status-warning {
 
-    input,
-    textarea{
-        background-color: var(--color-background-primary-light);
-        color: var(--color-tipograpy);
-        outline: none;
-        border: solid 1px #bdbdbd;
-        height: 38px;
-        width: 100%;
-        font-size: 14px;
-        font-weight: 300;
-        border-radius: 5px;
-        box-shadow: none;
-        transition: var(--transition);
+      input,
+      input:hover,
+      input:active,
+      input:focus,
+      textarea,
+      textarea:hover,
+      textarea:active,
+      textarea:focus {
+         border: solid 1px var(--color-warning);
+      }
+   }
 
-        &:active,
-        &:focus{
-            border: solid 1px var(--color-primary);
-        }
-    }
+   &.status-error {
+
+      input,
+      input:hover,
+      input:active,
+      input:focus,
+      textarea,
+      textarea:hover,
+      textarea:active,
+      textarea:focus {
+         border: solid 1px var(--color-error);
+      }
+   }
+
+   label {
+      position: absolute;
+      margin: 0;
+      left: 6.5px;
+      padding: 0 5px;
+      line-height: 1;
+      font-size: 14px;
+      font-weight: 300;
+      color: var(--color-grey);
+      background-color: var(--color-background-primary-light);
+      pointer-events: none;
+      user-select: none;
+      transition: var(--transition);
+   }
+
+   input,
+   textarea {
+      background-color: var(--color-background-primary-light);
+      color: var(--color-tipograpy);
+      outline: none;
+      border: solid 1px #bdbdbd;
+      height: 38px;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 300;
+      border-radius: 5px;
+      box-shadow: none;
+      transition: var(--transition);
+
+      &:active,
+      &:focus {
+         border: solid 1px var(--color-primary);
+      }
+   }
 }
 
-.input-container{
+.input-container {
 
-    input{
-        padding: 0 10px;
-    }
+   input {
+      padding: 0 10px;
+   }
 
-    &.big{
+   &.big {
 
-        input{
-            height: 44px;
-            padding: 0 14px;
-        }
+      input {
+         height: 44px;
+         padding: 0 14px;
+      }
 
-        &.status-focus{
+      &.status-focus {
 
-            label{
-                transform: translateY(-21.5px);
-            }
-        }
-    }
+         label {
+            transform: translateY(-21.5px);
+         }
+      }
+   }
 
-    &.status-focus{
+   &.status-focus {
 
-        &:disabled,
-        &.status-inactive{
+      &:disabled,
+      &.status-inactive {
 
-            label{
-                color: var(--color-grey);
-            }
-        }
+         label {
+            color: var(--color-grey);
+         }
+      }
 
-        label{
-            transform: translateY(-18px);
-        }
-    }
+      label {
+         transform: translateY(-18px);
+      }
+   }
 }
 
-.textarea-container{
+.textarea-container {
 
-    textarea{
-        height: 88px;
-        padding: 8px 10px;
+   textarea {
+      height: 88px;
+      padding: 8px 10px;
 
-        resize: none;
-    }
+      resize: none;
+   }
 
-    label{
-        top: 10px;
-    }
+   label {
+      top: 10px;
+   }
 
-    &.big{
+   &.big {
 
-        textarea{
-            padding: 12px 14px;
-            height: 112px;
-        }
+      textarea {
+         padding: 12px 14px;
+         height: 112px;
+      }
 
-        label{
-            top: 14px;
-        }
-    }
+      label {
+         top: 14px;
+      }
+   }
 
-    &.status-focus{
+   &.status-focus {
 
-        label{
-            transform: translateY(-15px);
-        }
-    }
+      label {
+         transform: translateY(-15px);
+      }
+   }
 }

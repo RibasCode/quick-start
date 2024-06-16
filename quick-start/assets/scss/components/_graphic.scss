@@ -1,87 +1,86 @@
+.graphic {
+   display: flex;
+   flex-direction: column;
 
-.graphic{
-    display: flex;
-    flex-direction: column;
+   [class^="skill"] {
+      width: 160px;
+      height: 160px;
+      margin: auto;
+      position: relative;
+      transform: scale(0.88);
 
-    [class^="skill"]{
-        width: 160px;
-        height: 160px;
-        margin: auto;
-        position: relative;
-        transform: scale(0.88);
+      .outer {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width: 160px;
+         height: 160px;
+         border-radius: 50%;
+         padding: 0;
+         box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 
-        .outer{
+         .inner {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 160px;
-            height: 160px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            padding: 0;
-            box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-                        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+               inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+               -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+               0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+               0px 12px 10px -10px rgba(0, 0, 0, 0.05);
 
-            .inner{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 120px;
-                height: 120px;
-                border-radius: 50%;
-                box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-                            inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-                            -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-                            0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-                            0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+            p#number {
+               position: absolute;
+               top: 51%;
+               left: calc(50% + 7px);
+               transform: translate(-50%, -50%);
+               color: #1d1d1d;
+               font-size: 28px;
+               font-weight: 700;
 
-                p#number{
-                    position: absolute;
-                    top: 51%;
-                    left: calc(50% + 7px);
-                    transform: translate(-50%, -50%);
-                    color: #1d1d1d;
-                    font-size: 28px;
-                    font-weight: 700;
-
-                    sup{
-                        top: -6px;
-                        vertical-align: baseline;
-                        font-size: 18px;
-                        font-weight: 400;
-                    }
-                }
+               sup {
+                  top: -6px;
+                  vertical-align: baseline;
+                  font-size: 18px;
+                  font-weight: 400;
+               }
             }
-        }
+         }
+      }
 
-        svg{
-            position: absolute;
-            top: 0;
-            left: 0;
+      svg {
+         position: absolute;
+         top: 0;
+         left: 0;
 
-            width: 160px;
-            height: 160px;
+         width: 160px;
+         height: 160px;
 
-            circle{
-                fill: none;
-                stroke-width: 20px;
-                stroke-dasharray: 472;
-                stroke-dashoffset: 472;
-                transition: stroke-dashoffset 1.5s ease-in-out;
-            }
-        }
-    }
+         circle {
+            fill: none;
+            stroke-width: 20px;
+            stroke-dasharray: 472;
+            stroke-dashoffset: 472;
+            transition: stroke-dashoffset 1.5s ease-in-out;
+         }
+      }
+   }
 
-    p.description{
-        text-align: center;
-    }
+   p.description {
+      text-align: center;
+   }
 
-    .skill-0{
+   .skill-0 {
 
-        svg{
+      svg {
 
-            circle{
-                stroke: url(#gradient-color-0);
-            }
-        }
-    }
+         circle {
+            stroke: url(#gradient-color-0);
+         }
+      }
+   }
 }

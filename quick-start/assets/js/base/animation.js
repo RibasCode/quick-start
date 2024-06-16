@@ -1,16 +1,13 @@
-
 "use strict"
 
-$(document).ready(function() {
+$(document).ready(function () {
+   let initialAnimation = $(".initial-animation")
 
-    let initialAnimation = $(".initial-animation")
+   setTimeout(function () {
+      initialAnimation.removeClass("status-active")
 
-    setTimeout(function(){
-        initialAnimation.removeClass("status-active");
-
-        setTimeout(function(){
-            initialAnimation.remove();
-        }, 400);
-    }, 400);
-
-});
+      setTimeout(function () {
+         initialAnimation.remove()
+      }, 400)
+   }, 400)
+})

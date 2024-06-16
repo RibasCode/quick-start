@@ -1,47 +1,47 @@
-'use strict'
+"use strict"
 
-$(document).ready(function() {
-  let input = $('input')
+$(document).ready(function () {
+   let input = $("input")
 
-  input.each(function() {
-    let $this = $(this)
+   input.each(function () {
+      let $this = $(this)
 
-    if ($this.val() !== '') {
-      $this.closest('.input-container').addClass('status-focus')
-    }
-  })
+      if ($this.val() !== "") {
+         $this.closest(".input-container").addClass("status-focus")
+      }
+   })
 
-  input.focusin(function() {
-    $(this).closest('.input-container').addClass('status-focus')
-  })
+   input.focusin(function () {
+      $(this).closest(".input-container").addClass("status-focus")
+   })
 
-  input.focusout(function() {
-    let $this = $(this)
+   input.focusout(function () {
+      let $this = $(this)
 
-    if ($this.val() === '') {
-      $this.closest('.input-container').removeClass('status-focus')
-    }
-  })
+      if ($this.val() === "") {
+         $this.closest(".input-container").removeClass("status-focus")
+      }
+   })
 
-  let textarea = $('textarea')
+   let textarea = $("textarea")
 
-  textarea.each(function() {
-    let $this = $(this)
+   textarea.each(function () {
+      let $this = $(this)
 
-    if ($this.val() !== '') {
-      $this.closest('.textarea-container').addClass('status-focus')
-    }
-  })
+      if ($this.val() !== "") {
+         $this.closest(".textarea-container").addClass("status-focus")
+      }
+   })
 
-  textarea.focusin(function() {
-    $(this).closest('.textarea-container').addClass('status-focus')
-  })
+   textarea.focusin(function () {
+      $(this).closest(".textarea-container").addClass("status-focus")
+   })
 
-  textarea.focusout(function() {
-    let $this = $(this)
+   textarea.focusout(function () {
+      let $this = $(this)
 
-    if ($this.val() === '') {
-      $this.closest('.textarea-container').removeClass('status-focus')
-    }
-  })
+      if ($this.val() === "") {
+         $this.closest(".textarea-container").removeClass("status-focus")
+      }
+   })
 })

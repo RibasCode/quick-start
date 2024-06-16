@@ -1,19 +1,22 @@
 {
-    "env": {
-        "browser": true,
-        "commonjs": true,
-        "es6": true,
-        "jquery": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 6
-    },
-    "extends": "./node_modules/standard/eslintrc.json",
-    "rules": {
-        "quotes": ["error", "single"],
-        "semi": ["error", "never"],
-        "indent": ["error", 2],
-        "prefer-const": "off",
-        "space-before-function-paren": ["error", "never"]
-    }
+   "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jquery": true
+   },
+   "parserOptions": {
+      "ecmaVersion": 6
+   },
+   "extends": "./node_modules/standard/eslintrc.json",
+   "rules": {
+      "quotes": ["error", "double"],
+      "semi": ["error", "never"],
+      "indent": ["error", 3],
+      "prefer-const": "off",
+      "space-before-function-paren": ["error", "always"],
+      "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
+      "keyword-spacing": ["error", { "before": true, "after": true }],
+      "padded-blocks": ["error", "never"]
+   }
 }
