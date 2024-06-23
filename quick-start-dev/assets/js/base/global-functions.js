@@ -1,12 +1,8 @@
 "use strict"
 
-/* eslint-disable no-unused-vars */
-
-// Global: Variables
-
 // Global: Functions
 
-function setStatus (object) {
+export function setStatus (object) {
    let { elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null } = object
 
    if (!elements) throw new Error("Must specify some elements to apply an status")
@@ -21,6 +17,17 @@ function setStatus (object) {
 
    for (let i = 0; i < elements.length; i++) {
       let element = $(elements[i])
+
+      // Status: Hidden
+      if (statusHidden === true) {
+         element.addClass("status-hidden")
+      }
+      if (statusHidden === false) {
+         element.removeClass("status-hidden")
+      }
+      if (statusHidden === "toggle") {
+         element.toggleClass("status-hidden")
+      }
 
       // Status: Active
       if (statusActive === true) {
@@ -76,21 +83,10 @@ function setStatus (object) {
       if (statusError === "toggle") {
          element.toggleClass("status-error")
       }
-
-      // Status: Hidden
-      if (statusHidden === true) {
-         element.addClass("status-hidden")
-      }
-      if (statusHidden === false) {
-         element.removeClass("status-hidden")
-      }
-      if (statusHidden === "toggle") {
-         element.toggleClass("status-hidden")
-      }
    }
 };
 
-function removeElements (object) {
+export function removeElements (object) {
    let { elements = null } = object
 
    if (!elements) throw new Error("Must specify some elements to remove")
