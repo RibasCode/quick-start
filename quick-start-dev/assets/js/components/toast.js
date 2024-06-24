@@ -1,5 +1,7 @@
 "use strict"
 
+/* global Toastify */
+
 $(document).ready(function () {
    $(".toast-button").click(() => {
       Toastify({
