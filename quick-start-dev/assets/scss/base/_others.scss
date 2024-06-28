@@ -92,6 +92,8 @@
 
       border: none;
 
+      mask-image: linear-gradient(black 80%, transparent);
+
       img {
          width: 100%;
          aspect-ratio: 16/9;

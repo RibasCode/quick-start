@@ -1,9 +1,7 @@
 /* IMPORTS */
 /* Libraries */
 @import url("../../node_modules/normalize.css/normalize.css");
-/* Normalize styles for different browsers */
 @import url("../../node_modules/toastify-js/src/toastify.css");
-/* Toastify defauld styles */
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 /* Variables */
