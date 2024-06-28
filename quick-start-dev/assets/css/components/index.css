@@ -1533,6 +1533,33 @@ body .loader div:nth-child(4) {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+html {
+  /* Firefox */
+  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border: solid 4px var(--color-background-primary);
+  border-radius: var(--border-radius);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 .slider {
   position: relative;
   width: 100%;
@@ -1623,31 +1650,34 @@ body .loader div:nth-child(4) {
   overflow: hidden;
 }
 
-html {
-  /* Firefox */
-  scrollbar-color: var(--color-scrollbar-thumb) var(--color-background-primary);
+.state-tooltip {
+  position: relative;
+}
+.state-tooltip:hover .tooltip {
+  transform: translate(-50%, calc(-100% - 4px));
+  opacity: 100%;
+  transition: all 0.1s ease-in;
 }
 
-/* Width */
-::-webkit-scrollbar {
-  width: 14px;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--color-scrollbar-thumb);
-  border: solid 4px var(--color-background-primary);
+.tooltip {
+  position: absolute;
+  left: 50%;
+  top: -6px;
+  transform: translate(-50%, -100%);
+  display: initial;
+  padding: 6px 8px;
+  margin: initial;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.75);
+  font-size: 11px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
   border-radius: var(--border-radius);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-scrollbar-thumb);
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
+  opacity: 0%;
+  pointer-events: none;
+  user-select: none;
+  transition: all 0.1s ease-out;
 }
 
 /*# sourceMappingURL=index.css.map */
