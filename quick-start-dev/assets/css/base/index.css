@@ -353,11 +353,11 @@ ul li {
   fill: var(--color-accent);
 }
 
-.card.ancor {
+.card-quick-start.ancor {
   position: relative;
   margin-bottom: 302px;
 }
-.card.ancor a {
+.card-quick-start.ancor a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -371,17 +371,17 @@ ul li {
   box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
   transition: var(--transition);
 }
-.card.ancor a:hover {
+.card-quick-start.ancor a:hover {
   box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
 }
-.card.ancor a .icon-arrow {
+.card-quick-start.ancor a .icon-arrow {
   height: 32px;
   width: 32px;
   animation-name: arrow-bouncing;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-.card.ancor #card-content {
+.card-quick-start.ancor #card-content {
   position: absolute;
   top: 274px;
   left: 50%;
@@ -398,7 +398,7 @@ ul li {
   height: 250px;
   border-radius: var(--border-radius);
 }
-.card.ancor #card-content img {
+.card-quick-start.ancor #card-content img {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: var(--border-radius);
@@ -410,7 +410,7 @@ ul li {
   gap: 32px;
 }
 
-.card {
+.card-quick-start {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -428,19 +428,19 @@ ul li {
   animation-timeline: view();
   animation-range: entry -20% cover 20%;
 }
-.card.status-active, .card:hover {
+.card-quick-start.status-active, .card-quick-start:hover {
   box-shadow: 0 24px 24px -16px var(--color-primary-10);
 }
-.card.color-secondary {
+.card-quick-start.color-secondary {
   border: solid 2px var(--color-secondary-10);
 }
-.card.color-secondary:hover {
+.card-quick-start.color-secondary:hover {
   box-shadow: 0 24px 24px -16px var(--color-secondary-10);
 }
-.card.color-accent {
+.card-quick-start.color-accent {
   border: solid 2px var(--color-accent-10);
 }
-.card.color-accent:hover {
+.card-quick-start.color-accent:hover {
   box-shadow: 0 24px 24px -16px var(--color-accent-10);
 }
 

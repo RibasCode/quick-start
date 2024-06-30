@@ -1,0 +1,11 @@
+:root body {
+  --tipography: "Poppins", sans-serif;
+  --border-radius: 10px;
+  --border-radius-50: 50px;
+  --border-width: 1px;
+  --transition: all 0.1s cubic-bezier(0, 0, .5, 1);
+  --transition-x2: all 0.2s cubic-bezier(0, 0, .5, 1);
+  --transition-x4: all 0.4s cubic-bezier(0, 0, .5, 1);
+}
+
+/*# sourceMappingURL=properties.css.map */
