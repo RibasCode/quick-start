@@ -1,0 +1,34 @@
+// Common card
+.card {
+   box-sizing: border-box;
+
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 8px;
+
+   width: 100%;
+   height: fit-content;
+
+   padding: 24px;
+
+   background-color: #ffffff;
+
+   border: solid 1px #e0e0e0;
+   border-radius: var(--border-radius);
+
+   transition: var(--transition);
+
+   // Card type: Horizontal
+   &.card-horizontal {
+      height: 125px;
+   }
+
+   // Card type: Vertical
+   &.card-vertical {
+      height: 250px;
+   }
+}

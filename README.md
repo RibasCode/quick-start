@@ -22,6 +22,6 @@ PROJECT: quick-start-dev
       - Dins de scss/style.scss esborrem el @inport del toastify.css
       - Esborrem el scss/base/_others.scss i el seu @import dins del index.scss
       - Compilem el quick-start
-      - Comprobem en el git status que no aparegui res de quick-start-dev/... per comprobar que no s'hagi borrat res per error.
+      - Comprobem que en el git status no apareix res de quick-start-dev/... per comprobar que no s'ha esborrat res per error.
 
 -->
