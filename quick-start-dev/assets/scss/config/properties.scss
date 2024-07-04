@@ -1,19 +1,19 @@
 :root {
 
-   body {
+  body {
 
-      //Tipography
-      --tipography: 'Poppins', sans-serif;
+    //Tipography
+    --tipography: 'Poppins', sans-serif;
 
-      //Border
-      --border-radius: 10px;
-      --border-radius-50: 50px;
+    //Border
+    --border-radius: 10px;
+    --border-radius-50: 50px;
 
-      --border-width: 1px;
+    --border-width: 1px;
 
-      //Transition
-      --transition: all 0.1s cubic-bezier(0, 0, .5, 1);
-      --transition-x2: all 0.2s cubic-bezier(0, 0, .5, 1);
-      --transition-x4: all 0.4s cubic-bezier(0, 0, .5, 1);
-   }
+    //Transition
+    --transition: all 0.1s cubic-bezier(0, 0, .5, 1);
+    --transition-x2: all 0.2s cubic-bezier(0, 0, .5, 1);
+    --transition-x4: all 0.4s cubic-bezier(0, 0, .5, 1);
+  }
 }

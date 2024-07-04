@@ -1,5 +1,5 @@
 button {
-   border: none;
+  border: none;
 }
 
 a.button-primary,
@@ -7,9 +7,9 @@ a.button-secondary,
 a.button-tertiary,
 a.button-back-to-top {
 
-   &:hover {
-      text-decoration: none;
-   }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .button-primary,
@@ -20,412 +20,412 @@ a.button-primary,
 a.button-secondary,
 a.button-tertiary,
 a.button-back-to-top {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   height: 36px;
-   width: max-content;
-   width: fit-content;
+  height: 36px;
+  width: max-content;
+  width: fit-content;
 
-   font-size: 14px;
-   font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 
-   padding: 12px 16px;
+  padding: 12px 16px;
 
-   white-space: nowrap;
-   line-height: 1;
+  white-space: nowrap;
+  line-height: 1;
 
-   border-radius: var(--border-radius);
+  border-radius: var(--border-radius);
 
-   outline: none;
-   cursor: pointer;
-   transition: var(--transition);
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
 
-   &:disabled,
-   &.status-inactive {
-      outline: none;
-      cursor: not-allowed;
-   }
+  &:disabled,
+  &.status-inactive {
+    outline: none;
+    cursor: not-allowed;
+  }
 
-   &.button-100 {
-      width: 100%;
-   }
+  &.button-100 {
+    width: 100%;
+  }
 
-   &.icon-solo,
-   &.icon-right,
-   &.icon-left {
+  &.icon-solo,
+  &.icon-right,
+  &.icon-left {
+
+    svg {
+      height: 14px;
+      width: 14px;
+
+      fill: var(--color-primary);
+      transition: var(--transition);
+
+      &.icon-arrow-up {
+        transform: rotate(-90deg) translate(0, 0);
+      }
+
+      &.icon-arrow-right {
+        transform: rotate(0deg) translate(0, 0);
+      }
+
+      &.icon-arrow-down {
+        transform: rotate(90deg) translate(0, 0);
+      }
+
+      &.icon-arrow-left {
+        transform: rotate(180deg) translate(0, 0);
+      }
+    }
+
+    &:hover,
+    &:focus {
 
       svg {
-         height: 14px;
-         width: 14px;
 
-         fill: var(--color-primary);
-         transition: var(--transition);
+        &.icon-arrow-up {
+          transform: rotate(-90deg) translate(3px, 0);
+        }
 
-         &.icon-arrow-up {
-            transform: rotate(-90deg) translate(0, 0);
-         }
+        &.icon-arrow-right {
+          transform: rotate(0deg) translate(3px, 0);
+        }
 
-         &.icon-arrow-right {
-            transform: rotate(0deg) translate(0, 0);
-         }
+        &.icon-arrow-down {
+          transform: rotate(90deg) translate(3px, 0);
+        }
 
-         &.icon-arrow-down {
-            transform: rotate(90deg) translate(0, 0);
-         }
+        &.icon-arrow-left {
+          transform: rotate(180deg) translate(3px, 0);
+        }
+      }
+    }
+  }
 
-         &.icon-arrow-left {
-            transform: rotate(180deg) translate(0, 0);
-         }
+  &.icon-solo {
+    padding: 0;
+
+    height: 36px;
+    min-height: 36px;
+    width: 36px;
+  }
+
+  &.icon-right {
+    padding-right: 12px;
+
+    svg {
+      margin-left: 6px;
+    }
+  }
+
+  &.icon-left {
+    padding-left: 12px;
+
+    svg {
+      margin-right: 6px;
+    }
+  }
+
+
+  &.button-small {
+    padding: 0px 10px;
+
+    height: 28px;
+    min-height: 28px;
+
+    font-size: 11px;
+
+    &.icon-solo {
+      height: 28px;
+      min-height: 28px;
+      width: 28px;
+    }
+
+    &.icon-solo,
+    &.icon-right,
+    &.icon-left {
+
+      svg {
+        height: 12px;
+        min-width: 12px;
+        width: 12px;
       }
 
       &:hover,
       &:focus {
 
-         svg {
+        svg {
 
-            &.icon-arrow-up {
-               transform: rotate(-90deg) translate(3px, 0);
-            }
+          &.icon-arrow-up {
+            transform: rotate(-90deg) translate(1.5px, 0);
+          }
 
-            &.icon-arrow-right {
-               transform: rotate(0deg) translate(3px, 0);
-            }
+          &.icon-arrow-right {
+            transform: rotate(0deg) translate(1.5px, 0);
+          }
 
-            &.icon-arrow-down {
-               transform: rotate(90deg) translate(3px, 0);
-            }
+          &.icon-arrow-down {
+            transform: rotate(90deg) translate(1.5px, 0);
+          }
 
-            &.icon-arrow-left {
-               transform: rotate(180deg) translate(3px, 0);
-            }
-         }
+          &.icon-arrow-left {
+            transform: rotate(180deg) translate(1.5px, 0);
+          }
+        }
       }
-   }
+    }
+  }
 
-   &.icon-solo {
-      padding: 0;
+  .loader {
+    position: absolute;
 
-      height: 36px;
-      min-height: 36px;
-      width: 36px;
-   }
-
-   &.icon-right {
-      padding-right: 12px;
-
-      svg {
-         margin-left: 6px;
-      }
-   }
-
-   &.icon-left {
-      padding-left: 12px;
-
-      svg {
-         margin-right: 6px;
-      }
-   }
-
-
-   &.button-small {
-      padding: 0px 10px;
-
-      height: 28px;
-      min-height: 28px;
-
-      font-size: 11px;
-
-      &.icon-solo {
-         height: 28px;
-         min-height: 28px;
-         width: 28px;
-      }
-
-      &.icon-solo,
-      &.icon-right,
-      &.icon-left {
-
-         svg {
-            height: 12px;
-            min-width: 12px;
-            width: 12px;
-         }
-
-         &:hover,
-         &:focus {
-
-            svg {
-
-               &.icon-arrow-up {
-                  transform: rotate(-90deg) translate(1.5px, 0);
-               }
-
-               &.icon-arrow-right {
-                  transform: rotate(0deg) translate(1.5px, 0);
-               }
-
-               &.icon-arrow-down {
-                  transform: rotate(90deg) translate(1.5px, 0);
-               }
-
-               &.icon-arrow-left {
-                  transform: rotate(180deg) translate(1.5px, 0);
-               }
-            }
-         }
-      }
-   }
-
-   .loader {
-      position: absolute;
-
-      >div {
-         background-color: #ffffff;
-      }
-   }
+    >div {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .button-primary,
 a.button-primary {
-   color: var(--color-typography-white);
-   background-color: var(--color-primary);
+  color: var(--color-typography-white);
+  background-color: var(--color-primary);
 
-   &:hover {
-      background-color: var(--color-primary-hover);
-   }
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
 
-   &:focus {
-      background-color: var(--color-primary-focus);
-   }
+  &:focus {
+    background-color: var(--color-primary-focus);
+  }
 
-   &:active {
-      background-color: var(--color-primary-active);
-   }
+  &:active {
+    background-color: var(--color-primary-active);
+  }
 
-   &.icon-solo,
-   &.icon-left,
-   &.icon-right {
+  &.icon-solo,
+  &.icon-left,
+  &.icon-right {
 
-      svg {
-         fill: var(--color-white);
-      }
-   }
+    svg {
+      fill: var(--color-white);
+    }
+  }
 
-   &:disabled,
-   &.status-inactive {
-      color: var(--color-inactive-text);
-      background-color: var(--color-inactive-background);
-   }
+  &:disabled,
+  &.status-inactive {
+    color: var(--color-inactive-text);
+    background-color: var(--color-inactive-background);
+  }
 
-   &.color-secondary {
-      background-color: var(--color-secondary);
+  &.color-secondary {
+    background-color: var(--color-secondary);
 
-      &:hover {
-         background-color: var(--color-secondary-hover);
-      }
+    &:hover {
+      background-color: var(--color-secondary-hover);
+    }
 
-      &:focus {
-         background-color: var(--color-secondary-focus);
-      }
+    &:focus {
+      background-color: var(--color-secondary-focus);
+    }
 
-      &:active {
-         background-color: var(--color-secondary-active);
-      }
-   }
+    &:active {
+      background-color: var(--color-secondary-active);
+    }
+  }
 
-   &.color-accent {
-      background-color: var(--color-accent);
+  &.color-accent {
+    background-color: var(--color-accent);
 
-      &:hover {
-         background-color: var(--color-accent-hover);
-      }
+    &:hover {
+      background-color: var(--color-accent-hover);
+    }
 
-      &:focus {
-         background-color: var(--color-accent-focus);
-      }
+    &:focus {
+      background-color: var(--color-accent-focus);
+    }
 
-      &:active {
-         background-color: var(--color-accent-active);
-      }
-   }
+    &:active {
+      background-color: var(--color-accent-active);
+    }
+  }
 }
 
 .button-secondary,
 a.button-secondary {
-   color: var(--color-primary);
-   background-color: transparent;
+  color: var(--color-primary);
+  background-color: transparent;
 
-   border: solid var(--border-width) var(--color-primary);
+  border: solid var(--border-width) var(--color-primary);
 
-   &:hover {
-      background-color: var(--color-primary-10);
-   }
+  &:hover {
+    background-color: var(--color-primary-10);
+  }
 
-   &:focus {
-      background-color: var(--color-primary-10);
-   }
+  &:focus {
+    background-color: var(--color-primary-10);
+  }
 
-   &:active {
-      background-color: var(--color-primary-20);
-   }
+  &:active {
+    background-color: var(--color-primary-20);
+  }
 
-   &.icon-solo,
-   &.icon-left,
-   &.icon-right {
+  &.icon-solo,
+  &.icon-left,
+  &.icon-right {
+
+    svg {
+      fill: var(--color-primary);
+    }
+  }
+
+  &:disabled,
+  &.status-inactive {
+    color: var(--color-inactive-text);
+    background-color: var(--color-inactive-background-10);
+    border: solid var(--border-width) var(--color-inactive-text);
+  }
+
+  &.color-secondary {
+    color: var(--color-secondary);
+
+    border: solid var(--border-width) var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-10);
+    }
+
+    &:focus {
+      background-color: var(--color-secondary-10);
+    }
+
+    &:active {
+      background-color: var(--color-secondary-20);
+    }
+
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right {
 
       svg {
-         fill: var(--color-primary);
+        fill: var(--color-secondary);
       }
-   }
+    }
+  }
 
-   &:disabled,
-   &.status-inactive {
-      color: var(--color-inactive-text);
-      background-color: var(--color-inactive-background-10);
-      border: solid var(--border-width) var(--color-inactive-text);
-   }
+  &.color-accent {
+    color: var(--color-accent);
 
-   &.color-secondary {
-      color: var(--color-secondary);
+    border: solid var(--border-width) var(--color-accent);
 
-      border: solid var(--border-width) var(--color-secondary);
+    &:hover {
+      background-color: var(--color-accent-10);
+    }
 
-      &:hover {
-         background-color: var(--color-secondary-10);
+    &:focus {
+      background-color: var(--color-accent-10);
+    }
+
+    &:active {
+      background-color: var(--color-accent-20);
+    }
+
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right {
+
+      svg {
+        fill: var(--color-accent);
       }
-
-      &:focus {
-         background-color: var(--color-secondary-10);
-      }
-
-      &:active {
-         background-color: var(--color-secondary-20);
-      }
-
-      &.icon-solo,
-      &.icon-left,
-      &.icon-right {
-
-         svg {
-            fill: var(--color-secondary);
-         }
-      }
-   }
-
-   &.color-accent {
-      color: var(--color-accent);
-
-      border: solid var(--border-width) var(--color-accent);
-
-      &:hover {
-         background-color: var(--color-accent-10);
-      }
-
-      &:focus {
-         background-color: var(--color-accent-10);
-      }
-
-      &:active {
-         background-color: var(--color-accent-20);
-      }
-
-      &.icon-solo,
-      &.icon-left,
-      &.icon-right {
-
-         svg {
-            fill: var(--color-accent);
-         }
-      }
-   }
+    }
+  }
 }
 
 .button-tertiary,
 a.button-tertiary {
-   color: var(--color-primary);
-   background-color: transparent;
+  color: var(--color-primary);
+  background-color: transparent;
 
-   &:hover {
-      background-color: var(--color-primary-10);
-   }
+  &:hover {
+    background-color: var(--color-primary-10);
+  }
 
-   &:focus {
-      background-color: var(--color-primary-10);
-   }
+  &:focus {
+    background-color: var(--color-primary-10);
+  }
 
-   &:active {
-      background-color: var(--color-primary-20);
-   }
+  &:active {
+    background-color: var(--color-primary-20);
+  }
 
-   &.icon-solo,
-   &.icon-left,
-   &.icon-right {
+  &.icon-solo,
+  &.icon-left,
+  &.icon-right {
+
+    svg {
+      fill: var(--color-primary);
+    }
+  }
+
+  &:disabled,
+  &.status-inactive {
+    color: var(--color-inactive-text);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+
+  &.color-secondary {
+    color: var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-10);
+    }
+
+    &:focus {
+      background-color: var(--color-secondary-10);
+    }
+
+    &:active {
+      background-color: var(--color-secondary-20);
+    }
+
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right {
 
       svg {
-         fill: var(--color-primary);
+        fill: var(--color-secondary);
       }
-   }
+    }
+  }
 
-   &:disabled,
-   &.status-inactive {
-      color: var(--color-inactive-text);
+  &.color-accent {
+    color: var(--color-accent);
 
-      &:hover,
-      &:active,
-      &:focus {
-         background-color: transparent;
+    &:hover {
+      background-color: var(--color-accent-10);
+    }
+
+    &:focus {
+      background-color: var(--color-accent-10);
+    }
+
+    &:active {
+      background-color: var(--color-accent-20);
+    }
+
+    &.icon-solo,
+    &.icon-left,
+    &.icon-right {
+
+      svg {
+        fill: var(--color-accent);
       }
-   }
-
-   &.color-secondary {
-      color: var(--color-secondary);
-
-      &:hover {
-         background-color: var(--color-secondary-10);
-      }
-
-      &:focus {
-         background-color: var(--color-secondary-10);
-      }
-
-      &:active {
-         background-color: var(--color-secondary-20);
-      }
-
-      &.icon-solo,
-      &.icon-left,
-      &.icon-right {
-
-         svg {
-            fill: var(--color-secondary);
-         }
-      }
-   }
-
-   &.color-accent {
-      color: var(--color-accent);
-
-      &:hover {
-         background-color: var(--color-accent-10);
-      }
-
-      &:focus {
-         background-color: var(--color-accent-10);
-      }
-
-      &:active {
-         background-color: var(--color-accent-20);
-      }
-
-      &.icon-solo,
-      &.icon-left,
-      &.icon-right {
-
-         svg {
-            fill: var(--color-accent);
-         }
-      }
-   }
+    }
+  }
 }

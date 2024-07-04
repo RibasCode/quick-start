@@ -1,169 +1,169 @@
 @keyframes arrow-bouncing {
 
-   0% {
-      transform: translate(0%, 10%) rotate(90deg);
-   }
+  0% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
 
-   50% {
-      transform: translate(0%, -10%) rotate(90deg);
-   }
+  50% {
+    transform: translate(0%, -10%) rotate(90deg);
+  }
 
-   100% {
-      transform: translate(0%, 10%) rotate(90deg);
-   }
+  100% {
+    transform: translate(0%, 10%) rotate(90deg);
+  }
 }
 
 .container-flex {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .container-icon {
-   display: flex;
-   align-items: center;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-   .icon-filetype-pdf {
-      height: 88px;
-      width: 88px;
+  .icon-filetype-pdf {
+    height: 88px;
+    width: 88px;
 
-      &:nth-of-type(1) {
-         fill: var(--color-primary);
-      }
+    &:nth-of-type(1) {
+      fill: var(--color-primary);
+    }
 
-      &:nth-of-type(2) {
-         fill: var(--color-secondary);
-      }
+    &:nth-of-type(2) {
+      fill: var(--color-secondary);
+    }
 
-      &:nth-of-type(3) {
-         fill: var(--color-accent);
-      }
-   }
+    &:nth-of-type(3) {
+      fill: var(--color-accent);
+    }
+  }
 }
 
 .card-quick-start.ancor {
-   position: relative;
+  position: relative;
 
-   margin-bottom: 302px;
+  margin-bottom: 302px;
 
-   a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-      position: absolute;
-      left: 50%;
-      bottom: 24px;
-      transform: translate(-50%, -50%);
+    position: absolute;
+    left: 50%;
+    bottom: 24px;
+    transform: translate(-50%, -50%);
 
-      height: 48px;
-      width: 48px;
+    height: 48px;
+    width: 48px;
 
-      border-radius: 8px;
-      box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
-      transition: var(--transition);
+    border-radius: 8px;
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent;
+    transition: var(--transition);
 
-      &:hover {
-         box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
-      }
+    &:hover {
+      box-shadow: 0 0 0 1.5px transparent, 0 0 0 3.5px var(--color-primary);
+    }
 
-      .icon-arrow {
-         height: 32px;
-         width: 32px;
+    .icon-arrow {
+      height: 32px;
+      width: 32px;
 
-         animation-name: arrow-bouncing;
-         animation-duration: 3s;
-         animation-iteration-count: infinite;
+      animation-name: arrow-bouncing;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
 
-      }
-   }
+    }
+  }
 
-   #card-content {
-      position: absolute;
-      top: calc(250px + 24px);
-      left: 50%;
-      transform: translate(-50%, 0);
+  #card-content {
+    position: absolute;
+    top: calc(250px + 24px);
+    left: 50%;
+    transform: translate(-50%, 0);
 
-      padding: 0;
+    padding: 0;
 
-      height: fit-content;
+    height: fit-content;
 
-      border: none;
+    border: none;
 
-      mask-image: linear-gradient(black 80%, transparent);
+    mask-image: linear-gradient(black 80%, transparent);
 
-      img {
-         width: 100%;
-         aspect-ratio: 16/9;
-
-         border-radius: var(--border-radius);
-      }
-
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-
+    img {
       width: 100%;
-      height: 250px;
+      aspect-ratio: 16/9;
 
       border-radius: var(--border-radius);
-   }
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 250px;
+
+    border-radius: var(--border-radius);
+  }
 }
 
 .card-container {
-   display: grid;
-   grid-template-columns: 1fr;
-   gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
 }
 
 .card-quick-start {
-   position: relative;
+  position: relative;
 
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
-   padding: 24px;
+  padding: 24px;
 
-   width: 100%;
-   height: 250px;
+  width: 100%;
+  height: 250px;
 
-   background-color: var(--color-background-primary-light);
+  background-color: var(--color-background-primary-light);
 
-   border-radius: var(--border-radius);
-   border: solid 2px var(--color-primary-10);
+  border-radius: var(--border-radius);
+  border: solid 2px var(--color-primary-10);
 
-   transition: var(--transition);
+  transition: var(--transition);
 
-   animation: reveal-cards-when-scrolling linear both;
-   animation-timeline: view();
-   animation-range: entry -20% cover 20%;
+  animation: reveal-cards-when-scrolling linear both;
+  animation-timeline: view();
+  animation-range: entry -20% cover 20%;
 
-   &.status-active,
-   &:hover {
-      box-shadow: 0 24px 24px -16px var(--color-primary-10);
-   }
+  &.status-active,
+  &:hover {
+    box-shadow: 0 24px 24px -16px var(--color-primary-10);
+  }
 
-   &.color-secondary {
-      border: solid 2px var(--color-secondary-10);
+  &.color-secondary {
+    border: solid 2px var(--color-secondary-10);
 
-      &:hover {
-         box-shadow: 0 24px 24px -16px var(--color-secondary-10);
-      }
-   }
+    &:hover {
+      box-shadow: 0 24px 24px -16px var(--color-secondary-10);
+    }
+  }
 
-   &.color-accent {
-      border: solid 2px var(--color-accent-10);
+  &.color-accent {
+    border: solid 2px var(--color-accent-10);
 
-      &:hover {
-         box-shadow: 0 24px 24px -16px var(--color-accent-10);
-      }
-   }
+    &:hover {
+      box-shadow: 0 24px 24px -16px var(--color-accent-10);
+    }
+  }
 }
 
 /*--------------------------------------------------------------
@@ -176,23 +176,23 @@
 // Tablet L / Laptop S (769px - 1200px)
 @media (min-width: 769px) {
 
-   body {
+  body {
 
-      .card-container {
-         grid-template-columns: repeat(2, 1fr);
-      }
-   }
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 // Laptop M / Laptop L (1201px - 1440px)
 @media (min-width: 1201px) {
 
-   body {
+  body {
 
-      .card-container {
-         grid-template-columns: repeat(3, 1fr);
-      }
-   }
+    .card-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
 // Laptop XL / Desktop (1441px and beyond)
