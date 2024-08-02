@@ -353,12 +353,20 @@ ul li {
   fill: var(--color-accent);
 }
 
-.card-preformated {
+.card-container .card-preformated {
   overflow: auto;
+  background-color: #292929;
+  color: #ffffff;
 }
-.card-preformated pre {
+.card-container .card-preformated::-webkit-scrollbar-thumb {
+  border: solid 0px #292929;
+}
+.card-container .card-preformated pre {
   height: 100%;
   width: 100%;
+}
+.card-container .card-preformated xmp {
+  display: inline;
 }
 
 .card-quick-start.ancor {

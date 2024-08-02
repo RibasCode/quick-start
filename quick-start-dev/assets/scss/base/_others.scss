@@ -43,12 +43,25 @@
   }
 }
 
-.card-preformated {
-  overflow: auto;
+.card-container {
 
-  pre {
-    height: 100%;
-    width: 100%;
+  .card-preformated {
+    overflow: auto;
+    background-color: #292929;
+    color: #ffffff;
+
+    &::-webkit-scrollbar-thumb {
+      border: solid 0px #292929;
+    }
+
+    pre {
+      height: 100%;
+      width: 100%;
+    }
+
+    xmp {
+      display: inline;
+    }
   }
 }
 
