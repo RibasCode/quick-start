@@ -43,6 +43,15 @@
   }
 }
 
+.card-preformated {
+  overflow: auto;
+
+  pre {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 .card-quick-start.ancor {
   position: relative;
 
