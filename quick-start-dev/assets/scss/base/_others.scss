@@ -71,6 +71,10 @@
   gap: 32px;
 }
 
+html {
+  /* Firefox */
+}
+
 .card {
 
   &.card-quick-start {
@@ -135,6 +139,10 @@
           animation-duration: 3s;
           animation-iteration-count: infinite;
         }
+
+        svg {
+          fill: var(--color-primary);
+        }
       }
 
       #card-content {
@@ -167,6 +175,19 @@
         height: 250px;
 
         border-radius: var(--border-radius);
+      }
+    }
+  }
+}
+
+body {
+
+  .card {
+
+    &.card-preformated {
+
+      &::-webkit-scrollbar-thumb {
+        background: #cfd6e4;
       }
     }
   }

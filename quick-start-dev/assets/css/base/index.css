@@ -375,6 +375,10 @@ ul li {
   gap: 32px;
 }
 
+html {
+  /* Firefox */
+}
+
 .card.card-quick-start {
   height: 250px;
   animation: reveal-cards-when-scrolling linear both;
@@ -424,6 +428,9 @@ ul li {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+.card.card-quick-start.ancor a svg {
+  fill: var(--color-primary);
+}
 .card.card-quick-start.ancor #card-content {
   position: absolute;
   top: 274px;
@@ -445,6 +452,10 @@ ul li {
   width: 100%;
   aspect-ratio: 16/9;
   border-radius: var(--border-radius);
+}
+
+body .card.card-preformated::-webkit-scrollbar-thumb {
+  background: #cfd6e4;
 }
 
 /*--------------------------------------------------------------

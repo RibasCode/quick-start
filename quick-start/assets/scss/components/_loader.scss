@@ -6,9 +6,9 @@ body {
     display: flex;
 
     position: fixed;
-    left: 50%;
-    bottom: 40px;
-    transform: translate(-50%, -50%) scale(0.64);
+    right: 50px;
+    top: 42px;
+    transform: translate(-50%, -50%);
 
     opacity: 0;
     transition: var(--transition);
@@ -31,7 +31,7 @@ body {
   .loader {
     display: inline-block;
     position: relative;
-    width: 79px;
+    width: 76px;
     height: 64px;
 
     div {
