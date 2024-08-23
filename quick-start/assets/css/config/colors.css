@@ -31,7 +31,7 @@
   --color-typography-white: #ffffff;
   --color-typography-black: #0d1216;
   --color-selection-text: #ffffff;
-  --color-selection-background: #8b3dff;
+  --color-selection-background: var(--color-primary);
   --color-scrollbar-thumb: #cfd6e4;
   --color-error-text: #a70000;
   --color-error: #fe4444;
