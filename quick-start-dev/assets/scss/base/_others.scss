@@ -177,6 +177,16 @@ html {
         border-radius: var(--border-radius);
       }
     }
+
+    &.data-text {
+
+      p {
+
+        &::before {
+          content: attr(data-text);
+        }
+      }
+    }
   }
 }
 
