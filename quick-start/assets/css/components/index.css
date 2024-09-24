@@ -1708,6 +1708,7 @@ html {
 }
 
 .tooltip {
+  z-index: 1;
   position: absolute;
   display: initial;
   padding: 6px 8px;
