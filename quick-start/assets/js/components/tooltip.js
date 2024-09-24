@@ -1,11 +1,19 @@
 "use strict"
 
-$(document).ready(function () {
-   let tooltipNew = $(".tooltip")
+const tooltip = {
+  init: function () {
+    let tooltips = $(".tooltip")
 
-   tooltipNew.each(function () {
+    tooltips.each(function () {
       let $this = $(this)
 
       $this.parent().addClass("state-tooltip")
-   })
+    })
+  }
+}
+
+$(document).ready(function () {
+  tooltip.init()
 })
+
+export { tooltip }

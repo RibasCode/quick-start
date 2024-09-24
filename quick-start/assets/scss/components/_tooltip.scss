@@ -4,20 +4,31 @@
   &:hover {
 
     .tooltip {
-      transform: translate(-50%, calc(-100% - 4px));
-
       opacity: 100%;
 
       transition: all 0.1s ease-in;
+
+      &.top {
+        top: -10px;
+      }
+
+      &.right {
+        right: -10px;
+      }
+
+      &.bottom {
+        bottom: -10px;
+      }
+
+      &.left {
+        left: -10px;
+      }
     }
   }
 }
 
 .tooltip {
   position: absolute;
-  left: 50%;
-  top: -6px;
-  transform: translate(-50%, -100%);
 
   display: initial;
 
@@ -40,4 +51,36 @@
   user-select: none;
 
   transition: all 0.1s ease-out;
+
+  &.top {
+    top: -6px;
+    right: initial;
+    bottom: initial;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+
+  &.right {
+    top: 50%;
+    right: -6px;
+    bottom: initial;
+    left: initial;
+    transform: translate(100%, -50%);
+  }
+
+  &.bottom {
+    top: initial;
+    right: initial;
+    bottom: -6px;
+    left: 50%;
+    transform: translate(-50%, 100%);
+  }
+
+  &.left {
+    top: 50%;
+    right: initial;
+    bottom: initial;
+    left: -6px;
+    transform: translate(-100%, -50%);
+  }
 }
