@@ -1654,7 +1654,7 @@ html {
 }
 .container-slider .slider .button-slider:active {
   transform: translate(0, -50%) scale(1);
-  background-color: var(--color-black-toggle-44);
+  background-color: var(--color-black-toggle-40);
 }
 .container-slider .slider .button-slider.status-active {
   opacity: 1;
