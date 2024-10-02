@@ -52,7 +52,7 @@
   pointer-events: none;
   user-select: none;
 
-  transition: all 0.1s ease-out;
+  transition: var(--transition);
 
   &.top {
     top: -6px;
