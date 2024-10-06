@@ -36,6 +36,8 @@ html {
   scrollbar-gutter: stable;
 }
 html body {
+  min-width: 320px;
+  min-height: 100vh;
   background-color: var(--color-background-primary);
   color: var(--color-tipography);
   font-family: var(--tipography);
