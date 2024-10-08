@@ -1,5 +1,5 @@
 // Desktop
-.display-grid-container {
+.container-display-grid {
   display: grid;
   gap: 24px;
 
@@ -25,7 +25,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-laptop-large-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -51,7 +51,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-laptop-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -77,7 +77,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-laptop-small-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -103,7 +103,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-tablet-large-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -129,7 +129,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-tablet-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -155,7 +155,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-tablet-small-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -181,7 +181,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-mobile-large-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -207,7 +207,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-mobile-4 {
         grid-template-columns: repeat(4, 1fr);
@@ -233,7 +233,7 @@
 
   body {
 
-    .display-grid-container {
+    .container-display-grid {
 
       &.columns-mobile-small-4 {
         grid-template-columns: repeat(4, 1fr);
