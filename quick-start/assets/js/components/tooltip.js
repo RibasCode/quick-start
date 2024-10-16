@@ -2,9 +2,9 @@
 
 const tooltip = {
   init: function () {
-    let tooltips = $(".tooltip")
+    let allTooltips = $(".tooltip")
 
-    tooltips.each(function () {
+    allTooltips.each(function () {
       let $this = $(this)
 
       $this.parent().addClass("state-tooltip")
