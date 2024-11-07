@@ -1,7 +1,5 @@
 "use strict"
 
-// Global: Functions
-
 export function setStatus (object) {
   let { elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null } = object
 
