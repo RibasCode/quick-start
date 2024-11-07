@@ -1,5 +1,7 @@
 "use strict"
 
+// Set status class to elements in bulk
+
 export function setStatus (object) {
   let { elements = null, statusActive = null, statusInactive = null, statusInfo = null, statusWarning = null, statusError = null, statusHidden = null } = object
 
