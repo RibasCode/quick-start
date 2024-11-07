@@ -1,5 +1,5 @@
 "use strict"
 
-// Global: Variables
+// Global variables
 
 export const GLOBAL_VARIABLE_EXAMPLE = []
