@@ -17,10 +17,16 @@
 
   background-color: var(--color-background-primary-light);
 
-  border: solid 2px var(--color-primary-10);
+  border: solid 2px var(--color-primary-12);
   border-radius: var(--border-radius);
 
   transition: var(--transition);
+
+  &:hover {
+    scale: 1.01;
+
+    border: solid 2px var(--color-primary-24);
+  }
 
   // Card type: Horizontal
   &.card-horizontal {

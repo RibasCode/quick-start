@@ -1053,9 +1053,13 @@ a.button-tertiary.color-accent.icon-right svg {
   height: fit-content;
   padding: 24px;
   background-color: var(--color-background-primary-light);
-  border: solid 2px var(--color-primary-10);
+  border: solid 2px var(--color-primary-12);
   border-radius: var(--border-radius);
   transition: var(--transition);
+}
+.card:hover {
+  scale: 1.01;
+  border: solid 2px var(--color-primary-24);
 }
 .card.card-horizontal {
   height: 125px;
