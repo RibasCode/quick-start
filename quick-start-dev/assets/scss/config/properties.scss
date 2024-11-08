@@ -12,8 +12,8 @@
     --border-width: 1px;
 
     //Transition
+    --transition-fast: all 0.05s cubic-bezier(0, 0, .5, 1);
     --transition: all 0.1s cubic-bezier(0, 0, .5, 1);
-    --transition-x2: all 0.2s cubic-bezier(0, 0, .5, 1);
-    --transition-x4: all 0.4s cubic-bezier(0, 0, .5, 1);
+    --transition-slow: all 0.2s cubic-bezier(0, 0, .5, 1);
   }
 }
