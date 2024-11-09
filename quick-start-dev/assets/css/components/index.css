@@ -1461,7 +1461,7 @@ body .container-loader {
 body .container-loader .loader div {
   background-color: var(--color-primary);
 }
-body .container-loader.status-active {
+body .container-loader.status-visible {
   opacity: 1;
 }
 
@@ -1535,7 +1535,7 @@ body .loader div:nth-child(4) {
   pointer-events: none;
   transition: var(--transition);
 }
-.modal-container.status-active {
+.modal-container.status-visible {
   opacity: 1;
   pointer-events: all;
 }

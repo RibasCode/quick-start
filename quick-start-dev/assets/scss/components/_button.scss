@@ -42,8 +42,7 @@ a.button-back-to-top {
   cursor: pointer;
   transition: var(--transition);
 
-  &:disabled,
-  &.status-inactive {
+  &:disabled {
     outline: none;
     cursor: not-allowed;
   }
@@ -213,8 +212,7 @@ a.button-primary {
     }
   }
 
-  &:disabled,
-  &.status-inactive {
+  &:disabled {
     color: var(--color-inactive-text);
     background-color: var(--color-inactive-background);
   }
@@ -280,8 +278,7 @@ a.button-secondary {
     }
   }
 
-  &:disabled,
-  &.status-inactive {
+  &:disabled {
     color: var(--color-inactive-text);
     background-color: var(--color-inactive-background-10);
     border: solid var(--border-width) var(--color-inactive-text);
@@ -368,8 +365,7 @@ a.button-tertiary {
     }
   }
 
-  &:disabled,
-  &.status-inactive {
+  &:disabled {
     color: var(--color-inactive-text);
 
     &:hover,

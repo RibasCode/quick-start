@@ -199,8 +199,7 @@ input {
 
   &.status-focus {
 
-    &:disabled,
-    &.status-inactive {
+    &:disabled {
 
       label {
         color: var(--color-grey);
@@ -214,8 +213,7 @@ input {
     }
   }
 
-  &:disabled,
-  &.status-inactive {
+  &:disabled {
     cursor: not-allowed;
 
     label {
@@ -344,8 +342,7 @@ input {
 
   &.status-focus {
 
-    &:disabled,
-    &.status-inactive {
+    &:disabled {
 
       label {
         color: var(--color-grey);
