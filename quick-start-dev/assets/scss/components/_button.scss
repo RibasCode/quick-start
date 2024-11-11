@@ -213,8 +213,8 @@ a.button-primary {
   }
 
   &:disabled {
-    color: var(--color-inactive-text);
-    background-color: var(--color-inactive-background);
+    color: var(--color-disabled-text);
+    background-color: var(--color-disabled-background);
   }
 
   &.color-secondary {
@@ -279,9 +279,9 @@ a.button-secondary {
   }
 
   &:disabled {
-    color: var(--color-inactive-text);
-    background-color: var(--color-inactive-background-10);
-    border: solid var(--border-width) var(--color-inactive-text);
+    color: var(--color-disabled-text);
+    background-color: var(--color-disabled-background-10);
+    border: solid var(--border-width) var(--color-disabled-text);
   }
 
   &.color-secondary {
@@ -366,7 +366,7 @@ a.button-tertiary {
   }
 
   &:disabled {
-    color: var(--color-inactive-text);
+    color: var(--color-disabled-text);
 
     &:hover,
     &:active,

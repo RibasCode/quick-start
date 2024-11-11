@@ -3,7 +3,7 @@
 // Apply status to elements in bulk
 
 export function setStatus (object) {
-  let { elements = null, statusVisible = null, statusHidden = null, statusActive = null, statusInactive = null, statusDisabled = null, statusInfo = null, statusWarning = null, statusError = null } = object
+  let { elements = null, statusVisible = null, statusHidden = null, statusActive = null, statusDisabled = null, statusInfo = null, statusWarning = null, statusError = null } = object
 
   if (!elements) throw new Error("Must specify some elements to apply a status")
 
@@ -11,7 +11,6 @@ export function setStatus (object) {
   // let statusVisible = object.statusVisible;
   // let statusHidden = object.statusHidden;
   // let statusActive = object.statusActive;
-  // let statusInactive = object.statusInactive;
   // let statusDisabled = object.statusDisabled;
   // let statusInfo = object.statusInfo;
   // let statusWarning = object.statusWarning;
@@ -56,19 +55,6 @@ export function setStatus (object) {
       }
       if (statusActive === "toggle") {
         element.toggleClass("status-active")
-      }
-    }
-
-    // Status: Inactive
-    if (statusInactive !== null) {
-      if (statusInactive === true) {
-        element.addClass("status-inactive")
-      }
-      if (statusInactive === false) {
-        element.removeClass("status-inactive")
-      }
-      if (statusInactive === "toggle") {
-        element.toggleClass("status-inactive")
       }
     }
 

@@ -837,8 +837,8 @@ a.button-primary.icon-right svg {
 }
 .button-primary:disabled,
 a.button-primary:disabled {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background);
+  color: var(--color-disabled-text);
+  background-color: var(--color-disabled-background);
 }
 .button-primary.color-secondary,
 a.button-primary.color-secondary {
@@ -899,9 +899,9 @@ a.button-secondary.icon-right svg {
 }
 .button-secondary:disabled,
 a.button-secondary:disabled {
-  color: var(--color-inactive-text);
-  background-color: var(--color-inactive-background-10);
-  border: solid var(--border-width) var(--color-inactive-text);
+  color: var(--color-disabled-text);
+  background-color: var(--color-disabled-background-10);
+  border: solid var(--border-width) var(--color-disabled-text);
 }
 .button-secondary.color-secondary,
 a.button-secondary.color-secondary {
@@ -975,7 +975,7 @@ a.button-tertiary.icon-right svg {
 }
 .button-tertiary:disabled,
 a.button-tertiary:disabled {
-  color: var(--color-inactive-text);
+  color: var(--color-disabled-text);
 }
 .button-tertiary:disabled:hover, .button-tertiary:disabled:active, .button-tertiary:disabled:focus,
 a.button-tertiary:disabled:hover,
