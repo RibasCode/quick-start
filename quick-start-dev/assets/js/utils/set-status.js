@@ -22,13 +22,13 @@ export function setStatus (object) {
     // Status: Visible
     if (statusVisible !== null) {
       if (statusVisible === true) {
-        element.addClass("status-shown")
+        element.addClass("status-visible")
       }
       if (statusVisible === false) {
-        element.removeClass("status-shown")
+        element.removeClass("status-visible")
       }
       if (statusVisible === "toggle") {
-        element.toggleClass("status-shown")
+        element.toggleClass("status-visible")
       }
     }
 
