@@ -3,25 +3,12 @@
 // Apply status to elements in bulk
 
 export function setStatus (object) {
-  let { elements = null, statusVisible = null, statusHidden = null, statusActive = null, statusDisabled = null, statusInfo = null, statusWarning = null, statusError = null } = object
+  let { elements = null, statusHidden = null, statusActive = null, statusDisabled = null, statusInfo = null, statusWarning = null, statusError = null } = object
 
   if (!elements) throw new Error("Must specify some elements to apply a status")
 
   for (let i = 0; i < elements.length; i++) {
     let element = $(elements[i])
-
-    // Status: Visible
-    if (statusVisible !== null) {
-      if (statusVisible === true) {
-        element.addClass("status-visible")
-      }
-      if (statusVisible === false) {
-        element.removeClass("status-visible")
-      }
-      if (statusVisible === "toggle") {
-        element.toggleClass("status-visible")
-      }
-    }
 
     // Status: Hidden
     if (statusHidden !== null) {
