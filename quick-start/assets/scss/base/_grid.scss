@@ -1,209 +1,30 @@
-// Desktop
-.container-display-grid {
-  display: grid;
-  gap: 24px;
+// Mobile S (0px - 512px)
+body {
 
-  &.columns-desktop-4 {
-    grid-template-columns: repeat(4, 1fr);
-  }
+  .container-display-grid {
+    display: grid;
+    gap: 24px;
 
-  &.columns-desktop-3 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  &.columns-desktop-2 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  &.columns-desktop-1 {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-// Laptop L (1301px - 1488px)
-@media (max-width: 1488px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-laptop-large-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-laptop-large-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-laptop-large-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-laptop-large-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    &.columns-mobile-small-4 {
+      grid-template-columns: repeat(4, 1fr);
     }
-  }
-}
 
-// Laptop M (1201px - 1300px)
-@media (max-width: 1388px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-laptop-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-laptop-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-laptop-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-laptop-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    &.columns-mobile-small-3 {
+      grid-template-columns: repeat(3, 1fr);
     }
-  }
-}
 
-// Laptop S (1025px - 1200px)
-@media (max-width: 1288px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-laptop-small-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-laptop-small-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-laptop-small-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-laptop-small-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    &.columns-mobile-small-2 {
+      grid-template-columns: repeat(2, 1fr);
     }
-  }
-}
 
-// Tablet L (961px - 1024px)
-@media (max-width: 1024px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-tablet-large-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-tablet-large-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-tablet-large-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-tablet-large-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  }
-}
-
-// Tablet M (861px - 960px)
-@media (max-width: 924px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-tablet-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-tablet-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-tablet-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-tablet-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  }
-}
-
-// Tablet S (726px - 860px)
-@media (max-width: 824px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-tablet-small-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-tablet-small-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-tablet-small-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-tablet-small-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  }
-}
-
-// Mobile L (626px 725px)
-@media (max-width: 724px) {
-
-  body {
-
-    .container-display-grid {
-
-      &.columns-mobile-large-4 {
-        grid-template-columns: repeat(4, 1fr);
-      }
-
-      &.columns-mobile-large-3 {
-        grid-template-columns: repeat(3, 1fr);
-      }
-
-      &.columns-mobile-large-2 {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      &.columns-mobile-large-1 {
-        grid-template-columns: repeat(1, 1fr);
-      }
+    &.columns-mobile-small-1 {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 }
 
 // Mobile M (513px - 625px)
-@media (max-width: 624px) {
+@media (min-width: 513px) {
 
   body {
 
@@ -228,26 +49,209 @@
   }
 }
 
-// Mobile S (0px - 512px)
-@media (max-width: 524px) {
+// Mobile L (626px - 725px)
+@media (min-width: 626px) {
 
   body {
 
     .container-display-grid {
 
-      &.columns-mobile-small-4 {
+      &.columns-mobile-large-4 {
         grid-template-columns: repeat(4, 1fr);
       }
 
-      &.columns-mobile-small-3 {
+      &.columns-mobile-large-3 {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      &.columns-mobile-small-2 {
+      &.columns-mobile-large-2 {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      &.columns-mobile-small-1 {
+      &.columns-mobile-large-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Tablet S (726px - 860px)
+@media (min-width: 726px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-tablet-small-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-tablet-small-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-tablet-small-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-tablet-small-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+
+// Tablet M (861px - 960px)
+@media (min-width: 861px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-tablet-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-tablet-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-tablet-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-tablet-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Tablet L (961px - 1024px)
+@media (min-width: 961px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-tablet-large-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-tablet-large-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-tablet-large-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-tablet-large-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Laptop S (1025px - 1200px)
+@media (min-width: 1025px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-laptop-small-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-laptop-small-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-laptop-small-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-laptop-small-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Laptop M (1201px - 1300px)
+@media (min-width: 1201px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-laptop-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-laptop-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-laptop-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-laptop-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Laptop L (1301px - 1488px)
+@media (min-width: 1301px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-laptop-large-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-laptop-large-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-laptop-large-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-laptop-large-1 {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+// Desktop (1441px and beyond)
+@media (min-width: 1441px) {
+
+  body {
+
+    .container-display-grid {
+
+      &.columns-desktop-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &.columns-desktop-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &.columns-desktop-2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      &.columns-desktop-1 {
         grid-template-columns: repeat(1, 1fr);
       }
     }

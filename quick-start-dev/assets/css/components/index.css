@@ -183,21 +183,14 @@ a.button-back-to-top {
   cursor: pointer;
   transition: var(--transition);
 }
-.button-primary:disabled, .button-primary.status-disabled,
+.button-primary:disabled,
 .button-secondary:disabled,
-.button-secondary.status-disabled,
 .button-tertiary:disabled,
-.button-tertiary.status-disabled,
 .button-back-to-top:disabled,
-.button-back-to-top.status-disabled,
 a.button-primary:disabled,
-a.button-primary.status-disabled,
 a.button-secondary:disabled,
-a.button-secondary.status-disabled,
 a.button-tertiary:disabled,
-a.button-tertiary.status-disabled,
-a.button-back-to-top:disabled,
-a.button-back-to-top.status-disabled {
+a.button-back-to-top:disabled {
   outline: none;
   cursor: not-allowed;
 }
@@ -842,9 +835,8 @@ a.button-primary.icon-left svg,
 a.button-primary.icon-right svg {
   fill: var(--color-white);
 }
-.button-primary:disabled, .button-primary.status-disabled,
-a.button-primary:disabled,
-a.button-primary.status-disabled {
+.button-primary:disabled,
+a.button-primary:disabled {
   color: var(--color-disabled-text);
   background-color: var(--color-disabled-background);
 }
@@ -905,9 +897,8 @@ a.button-secondary.icon-left svg,
 a.button-secondary.icon-right svg {
   fill: var(--color-primary);
 }
-.button-secondary:disabled, .button-secondary.status-disabled,
-a.button-secondary:disabled,
-a.button-secondary.status-disabled {
+.button-secondary:disabled,
+a.button-secondary:disabled {
   color: var(--color-disabled-text);
   background-color: var(--color-disabled-background-10);
   border: solid var(--border-width) var(--color-disabled-text);
@@ -982,18 +973,14 @@ a.button-tertiary.icon-left svg,
 a.button-tertiary.icon-right svg {
   fill: var(--color-primary);
 }
-.button-tertiary:disabled, .button-tertiary.status-disabled,
-a.button-tertiary:disabled,
-a.button-tertiary.status-disabled {
+.button-tertiary:disabled,
+a.button-tertiary:disabled {
   color: var(--color-disabled-text);
 }
-.button-tertiary:disabled:hover, .button-tertiary:disabled:active, .button-tertiary:disabled:focus, .button-tertiary.status-disabled:hover, .button-tertiary.status-disabled:active, .button-tertiary.status-disabled:focus,
+.button-tertiary:disabled:hover, .button-tertiary:disabled:active, .button-tertiary:disabled:focus,
 a.button-tertiary:disabled:hover,
 a.button-tertiary:disabled:active,
-a.button-tertiary:disabled:focus,
-a.button-tertiary.status-disabled:hover,
-a.button-tertiary.status-disabled:active,
-a.button-tertiary.status-disabled:focus {
+a.button-tertiary:disabled:focus {
   background-color: transparent;
 }
 .button-tertiary.color-secondary,
@@ -1272,9 +1259,8 @@ input[type=search]::placeholder {
 .textarea-container.big.status-focus label {
   font-size: 10px;
 }
-.input-container.status-focus:disabled label, .input-container.status-focus.status-disabled label,
-.textarea-container.status-focus:disabled label,
-.textarea-container.status-focus.status-disabled label {
+.input-container.status-focus:disabled label,
+.textarea-container.status-focus:disabled label {
   color: var(--color-grey);
 }
 .input-container.status-focus label,
@@ -1283,24 +1269,19 @@ input[type=search]::placeholder {
   font-size: 10px;
   font-weight: 600;
 }
-.input-container:disabled, .input-container.status-disabled,
-.textarea-container:disabled,
-.textarea-container.status-disabled {
+.input-container:disabled,
+.textarea-container:disabled {
   cursor: not-allowed;
 }
-.input-container:disabled label, .input-container.status-disabled label,
-.textarea-container:disabled label,
-.textarea-container.status-disabled label {
+.input-container:disabled label,
+.textarea-container:disabled label {
   color: #e0e0e0;
   pointer-events: none;
 }
 .input-container:disabled input,
-.input-container:disabled textarea, .input-container.status-disabled input,
-.input-container.status-disabled textarea,
+.input-container:disabled textarea,
 .textarea-container:disabled input,
-.textarea-container:disabled textarea,
-.textarea-container.status-disabled input,
-.textarea-container.status-disabled textarea {
+.textarea-container:disabled textarea {
   border: solid 1px #f0f0f0;
 }
 .input-container.status-error, .input-container.status-warning, .input-container.status-success,
@@ -1422,7 +1403,7 @@ input[type=search]::placeholder {
 .input-container.big.status-focus label {
   transform: translateY(-21.5px);
 }
-.input-container.status-focus:disabled label, .input-container.status-focus.status-disabled label {
+.input-container.status-focus:disabled label {
   color: var(--color-grey);
 }
 .input-container.status-focus label {
