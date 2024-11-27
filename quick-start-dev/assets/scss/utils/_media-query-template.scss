@@ -1,31 +1,92 @@
-/*--------------------------------------------------------------
-    @media - Mobile First
---------------------------------------------------------------*/
+// Basic Media Query (Reference: Apple)
+// Mobile first (320px - 734px)
 
-// Tablet S / Tablet M (426px - 768px)
-@media (min-width: 426px) {}
+// Tablet (735px - 1068px)
+@media (min-width: 735px) {}
 
-// Tablet L / Laptop S (769px - 1200px)
-@media (min-width: 769px) {}
+// Laptop (1069px - 1440px)
+@media (min-width: 1069px) {}
 
-// Laptop M / Laptop L (1201px - 1440px)
-@media (min-width: 1201px) {}
-
-// Laptop XL / Desktop (1441px and beyond)
+// Desktop (1441px and beyond)
 @media (min-width: 1441px) {}
 
-/*--------------------------------------------------------------
-    @media - Mobile First - Range syntax
---------------------------------------------------------------*/
 
-// Tablet S / Tablet M (426px - 768px)
-@media (width >=426px) {}
 
-// Tablet L / Laptop S (769px - 1200px)
-@media (width >=769px) {}
 
-// Laptop M / Laptop L (1201px - 1440px)
-@media (width >=1201px) {}
+// Extended Media Query
+// Mobile first (320px - 512px)
 
-// Laptop XL / Desktop (1441px and beyond)
-@media (width >=1441px) {}
+// Mobile M (513px - 625px)
+@media (min-width: 513px) {}
+
+// Mobile L (626px - 734px)
+@media (min-width: 626px) {}
+
+// Tablet S (735px - 860px)
+@media (min-width: 735px) {}
+
+// Tablet M (861px - 960px)
+@media (min-width: 861px) {}
+
+// Tablet L (961px - 1068px)
+@media (min-width: 961px) {}
+
+// Laptop S (1069px - 1200px)
+@media (min-width: 1069px) {}
+
+// Laptop M (1201px - 1300px)
+@media (min-width: 1201px) {}
+
+// Laptop L (1301px - 1440px)
+@media (min-width: 1301px) {}
+
+// Desktop (1441px and beyond)
+@media (min-width: 1441px) {}
+
+
+
+
+// Basic Media Query (Reference: Apple)
+// Desktop firts (1441px and beyond)
+
+// Laptop (1069px - 1440px)
+@media (max-width: 1440px) {}
+
+// Tablet (735px - 1068px)
+@media (max-width: 1068px) {}
+
+// Mobile (320px - 734px)
+@media (max-width: 734px) {}
+
+
+
+
+// Extended Media Query
+// Desktop first (1441px and beyond)
+
+// Laptop L (1301px - 1440px)
+@media (max-width: 1440px) {}
+
+// Laptop M (1201px - 1300px)
+@media (max-width: 1300px) {}
+
+// Laptop S (1069px - 1200px)
+@media (max-width: 1200px) {}
+
+// Tablet L (961px - 1068px)
+@media (max-width: 1068px) {}
+
+// Tablet M (861px - 960px)
+@media (max-width: 960px) {}
+
+// Tablet S (735px - 860px)
+@media (max-width: 860px) {}
+
+// Mobile L (626px - 734px)
+@media (max-width: 734px) {}
+
+// Mobile M (513px - 625px)
+@media (max-width: 625px) {}
+
+// Mobile S (320px - 512px)
+@media (max-width: 512px) {}
