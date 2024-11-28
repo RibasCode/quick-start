@@ -61,7 +61,7 @@ body .container-display-grid.columns-mobile-small-6 {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media (min-width: 726px) {
+@media (min-width: 735px) {
   body .container-display-grid.columns-tablet-small-1 {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -121,7 +121,7 @@ body .container-display-grid.columns-mobile-small-6 {
     grid-template-columns: repeat(6, 1fr);
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1069px) {
   body .container-display-grid.columns-laptop-small-1 {
     grid-template-columns: repeat(1, 1fr);
   }

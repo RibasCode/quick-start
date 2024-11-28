@@ -1,4 +1,4 @@
-// Mobile S (320px - 512px)
+// Mobile first (320px - 512px)
 body {
 
   .container-display-grid {
@@ -65,7 +65,7 @@ body {
   }
 }
 
-// Mobile L (626px - 725px)
+// Mobile L (626px - 734px)
 @media (min-width: 626px) {
 
   body {
@@ -99,8 +99,8 @@ body {
   }
 }
 
-// Tablet S (726px - 860px)
-@media (min-width: 726px) {
+// Tablet S (735px - 860px)
+@media (min-width: 735px) {
 
   body {
 
@@ -132,7 +132,6 @@ body {
     }
   }
 }
-
 
 // Tablet M (861px - 960px)
 @media (min-width: 861px) {
@@ -168,7 +167,7 @@ body {
   }
 }
 
-// Tablet L (961px - 1024px)
+// Tablet L (961px - 1068px)
 @media (min-width: 961px) {
 
   body {
@@ -202,8 +201,8 @@ body {
   }
 }
 
-// Laptop S (1025px - 1200px)
-@media (min-width: 1025px) {
+// Laptop S (1069px - 1200px)
+@media (min-width: 1069px) {
 
   body {
 
@@ -270,7 +269,7 @@ body {
   }
 }
 
-// Laptop L (1301px - 1488px)
+// Laptop L (1301px - 1440px)
 @media (min-width: 1301px) {
 
   body {
