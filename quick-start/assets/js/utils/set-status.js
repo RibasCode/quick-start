@@ -7,6 +7,14 @@ export function setStatus (object) {
 
   if (!elements) throw new Error("Must specify some elements to apply a status")
 
+  // Si no es pasa cap paràmetre a la funció, la propietat serà = null
+  // let statusHidden = object.statusHidden;
+  // let statusActive = object.statusActive;
+  // let statusDisabled = object.statusDisabled;
+  // let statusInfo = object.statusInfo;
+  // let statusWarning = object.statusWarning;
+  // let statusError = object.statusError;
+
   for (let i = 0; i < elements.length; i++) {
     let element = $(elements[i])
 
