@@ -238,10 +238,6 @@ ul li {
   gap: 32px;
 }
 
-html {
-  /* Firefox */
-}
-
 .card.card-quick-start {
   height: 250px;
   animation: reveal-cards-when-scrolling linear both;
@@ -327,7 +323,7 @@ body .card.card-preformated::-webkit-scrollbar-thumb {
 /*--------------------------------------------------------------
     @media - Mobile First
 --------------------------------------------------------------*/
-@media (min-width: 769px) {
+@media (min-width: 735px) {
   body .card-container {
     grid-template-columns: repeat(2, 1fr);
   }

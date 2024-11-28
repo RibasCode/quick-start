@@ -71,10 +71,6 @@
   gap: 32px;
 }
 
-html {
-  /* Firefox */
-}
-
 .card {
 
   &.card-quick-start {
@@ -207,11 +203,14 @@ body {
     @media - Mobile First
 --------------------------------------------------------------*/
 
-// Tablet S / Tablet M (426px - 768px)
-@media (min-width: 426px) {}
+// Mobile M (513px - 625px)
+@media (min-width: 513px) {}
 
-// Tablet L / Laptop S (769px - 1200px)
-@media (min-width: 769px) {
+// Mobile L (626px - 734px)
+@media (min-width: 626px) {}
+
+// Tablet S (735px - 860px)
+@media (min-width: 735px) {
 
   body {
 
@@ -221,7 +220,16 @@ body {
   }
 }
 
-// Laptop M / Laptop L (1201px - 1440px)
+// Tablet M (861px - 960px)
+@media (min-width: 861px) {}
+
+// Tablet L (961px - 1068px)
+@media (min-width: 961px) {}
+
+// Laptop S (1069px - 1200px)
+@media (min-width: 1069px) {}
+
+// Laptop M (1201px - 1300px)
 @media (min-width: 1201px) {
 
   body {
@@ -232,5 +240,8 @@ body {
   }
 }
 
-// Laptop XL / Desktop (1441px and beyond)
+// Laptop L (1301px - 1440px)
+@media (min-width: 1301px) {}
+
+// Desktop (1441px and beyond)
 @media (min-width: 1441px) {}

@@ -38,27 +38,27 @@ body {
 
     .container-display-grid {
 
-      &.columns-mobile-1 {
+      &.columns-mobile-medium-1 {
         grid-template-columns: repeat(1, 1fr);
       }
 
-      &.columns-mobile-2 {
+      &.columns-mobile-medium-2 {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      &.columns-mobile-3 {
+      &.columns-mobile-medium-3 {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      &.columns-mobile-4 {
+      &.columns-mobile-medium-4 {
         grid-template-columns: repeat(4, 1fr);
       }
 
-      &.columns-mobile-5 {
+      &.columns-mobile-medium-5 {
         grid-template-columns: repeat(5, 1fr);
       }
 
-      &.columns-mobile-6 {
+      &.columns-mobile-medium-6 {
         grid-template-columns: repeat(6, 1fr);
       }
     }
@@ -140,27 +140,27 @@ body {
 
     .container-display-grid {
 
-      &.columns-tablet-1 {
+      &.columns-tablet-medium-1 {
         grid-template-columns: repeat(1, 1fr);
       }
 
-      &.columns-tablet-2 {
+      &.columns-tablet-medium-2 {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      &.columns-tablet-3 {
+      &.columns-tablet-medium-3 {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      &.columns-tablet-4 {
+      &.columns-tablet-medium-4 {
         grid-template-columns: repeat(4, 1fr);
       }
 
-      &.columns-tablet-5 {
+      &.columns-tablet-medium-5 {
         grid-template-columns: repeat(5, 1fr);
       }
 
-      &.columns-tablet-6 {
+      &.columns-tablet-medium-6 {
         grid-template-columns: repeat(6, 1fr);
       }
     }
@@ -242,27 +242,27 @@ body {
 
     .container-display-grid {
 
-      &.columns-laptop-1 {
+      &.columns-laptop-medium-1 {
         grid-template-columns: repeat(1, 1fr);
       }
 
-      &.columns-laptop-2 {
+      &.columns-laptop-medium-2 {
         grid-template-columns: repeat(2, 1fr);
       }
 
-      &.columns-laptop-3 {
+      &.columns-laptop-medium-3 {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      &.columns-laptop-4 {
+      &.columns-laptop-medium-4 {
         grid-template-columns: repeat(4, 1fr);
       }
 
-      &.columns-laptop-5 {
+      &.columns-laptop-medium-5 {
         grid-template-columns: repeat(5, 1fr);
       }
 
-      &.columns-laptop-6 {
+      &.columns-laptop-medium-6 {
         grid-template-columns: repeat(6, 1fr);
       }
     }
