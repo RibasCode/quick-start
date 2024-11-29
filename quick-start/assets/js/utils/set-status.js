@@ -60,13 +60,13 @@ export function setStatus (object) {
     // Status: Disabled
     if (statusDisabled !== null) {
       if (statusDisabled === true) {
-        element.addClass("status-disabled")
+        element.attr("disabled", true)
       }
       if (statusDisabled === false) {
-        element.removeClass("status-disabled")
+        element.attr("disabled", false)
       }
       if (statusDisabled === "toggle") {
-        element.toggleClass("status-disabled")
+        element.hasAttr("disabled") ? element.attr("disabled", false) : element.attr("disabled", true)
       }
     }
 
