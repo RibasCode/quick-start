@@ -1242,8 +1242,7 @@ input[type=search]::placeholder {
   opacity: 0.64;
 }
 
-.input-container,
-.textarea-container {
+.input-container {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -1251,43 +1250,37 @@ input[type=search]::placeholder {
   width: 100%;
   user-select: all;
 }
-.input-container.big label,
-.textarea-container.big label {
+.input-container.big label {
   left: 10px;
 }
-.input-container.big.status-focus label,
-.textarea-container.big.status-focus label {
-  font-size: 10px;
+.input-container.big input {
+  height: 44px;
+  padding: 0 14px;
 }
-.input-container.status-focus:disabled label,
-.textarea-container.status-focus:disabled label {
+.input-container.big.status-focus label {
+  font-size: 10px;
+  transform: translateY(-21.5px);
+}
+.input-container.status-focus:disabled label {
   color: var(--color-grey);
 }
-.input-container.status-focus label,
-.textarea-container.status-focus label {
+.input-container.status-focus label {
   color: var(--color-typography);
   font-size: 10px;
   font-weight: 600;
+  transform: translateY(-18px);
 }
-.input-container:disabled,
-.textarea-container:disabled {
+.input-container:disabled {
   cursor: not-allowed;
 }
-.input-container:disabled label,
-.textarea-container:disabled label {
+.input-container:disabled label {
   color: #e0e0e0;
   pointer-events: none;
 }
-.input-container:disabled input,
-.input-container:disabled textarea,
-.textarea-container:disabled input,
-.textarea-container:disabled textarea {
+.input-container:disabled input {
   border: solid 1px #f0f0f0;
 }
-.input-container.status-error, .input-container.status-warning, .input-container.status-success,
-.textarea-container.status-error,
-.textarea-container.status-warning,
-.textarea-container.status-success {
+.input-container.status-error, .input-container.status-warning, .input-container.status-success {
   padding: initial;
   margin-bottom: initial;
   text-shadow: initial;
@@ -1301,59 +1294,22 @@ input[type=search]::placeholder {
 .input-container.status-success input,
 .input-container.status-success input:hover,
 .input-container.status-success input:active,
-.input-container.status-success input:focus,
-.input-container.status-success textarea,
-.input-container.status-success textarea:hover,
-.input-container.status-success textarea:active,
-.input-container.status-success textarea:focus,
-.textarea-container.status-success input,
-.textarea-container.status-success input:hover,
-.textarea-container.status-success input:active,
-.textarea-container.status-success input:focus,
-.textarea-container.status-success textarea,
-.textarea-container.status-success textarea:hover,
-.textarea-container.status-success textarea:active,
-.textarea-container.status-success textarea:focus {
+.input-container.status-success input:focus {
   border: solid 1px var(--color-success);
 }
 .input-container.status-warning input,
 .input-container.status-warning input:hover,
 .input-container.status-warning input:active,
-.input-container.status-warning input:focus,
-.input-container.status-warning textarea,
-.input-container.status-warning textarea:hover,
-.input-container.status-warning textarea:active,
-.input-container.status-warning textarea:focus,
-.textarea-container.status-warning input,
-.textarea-container.status-warning input:hover,
-.textarea-container.status-warning input:active,
-.textarea-container.status-warning input:focus,
-.textarea-container.status-warning textarea,
-.textarea-container.status-warning textarea:hover,
-.textarea-container.status-warning textarea:active,
-.textarea-container.status-warning textarea:focus {
+.input-container.status-warning input:focus {
   border: solid 1px var(--color-warning);
 }
 .input-container.status-error input,
 .input-container.status-error input:hover,
 .input-container.status-error input:active,
-.input-container.status-error input:focus,
-.input-container.status-error textarea,
-.input-container.status-error textarea:hover,
-.input-container.status-error textarea:active,
-.input-container.status-error textarea:focus,
-.textarea-container.status-error input,
-.textarea-container.status-error input:hover,
-.textarea-container.status-error input:active,
-.textarea-container.status-error input:focus,
-.textarea-container.status-error textarea,
-.textarea-container.status-error textarea:hover,
-.textarea-container.status-error textarea:active,
-.textarea-container.status-error textarea:focus {
+.input-container.status-error input:focus {
   border: solid 1px var(--color-error);
 }
-.input-container label,
-.textarea-container label {
+.input-container label {
   position: absolute;
   margin: 0;
   left: 6.5px;
@@ -1367,14 +1323,12 @@ input[type=search]::placeholder {
   user-select: none;
   transition: var(--transition);
 }
-.input-container input,
-.input-container textarea,
-.textarea-container input,
-.textarea-container textarea {
+.input-container input {
   background-color: var(--color-background-primary-light);
   color: var(--color-typography);
   outline: none;
   border: solid 1px #bdbdbd;
+  padding: 0 10px;
   height: 38px;
   width: 100%;
   font-size: 14px;
@@ -1383,50 +1337,8 @@ input[type=search]::placeholder {
   box-shadow: none;
   transition: var(--transition);
 }
-.input-container input:active, .input-container input:focus,
-.input-container textarea:active,
-.input-container textarea:focus,
-.textarea-container input:active,
-.textarea-container input:focus,
-.textarea-container textarea:active,
-.textarea-container textarea:focus {
+.input-container input:active, .input-container input:focus {
   border: solid 1px var(--color-primary);
-}
-
-.input-container input {
-  padding: 0 10px;
-}
-.input-container.big input {
-  height: 44px;
-  padding: 0 14px;
-}
-.input-container.big.status-focus label {
-  transform: translateY(-21.5px);
-}
-.input-container.status-focus:disabled label {
-  color: var(--color-grey);
-}
-.input-container.status-focus label {
-  transform: translateY(-18px);
-}
-
-.textarea-container textarea {
-  height: 88px;
-  padding: 8px 10px;
-  resize: none;
-}
-.textarea-container label {
-  top: 10px;
-}
-.textarea-container.big textarea {
-  padding: 12px 14px;
-  height: 112px;
-}
-.textarea-container.big label {
-  top: 14px;
-}
-.textarea-container.status-focus label {
-  transform: translateY(-15px);
 }
 
 body .container-loader {
@@ -1670,6 +1582,107 @@ html {
   display: flex;
   gap: 8px;
   overflow: hidden;
+}
+
+.textarea-container {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  user-select: all;
+}
+.textarea-container.big label {
+  top: 14px;
+  left: 10px;
+}
+.textarea-container.big textarea {
+  padding: 12px 14px;
+  height: 112px;
+}
+.textarea-container.big.status-focus label {
+  font-size: 10px;
+}
+.textarea-container.status-focus:disabled label {
+  color: var(--color-grey);
+}
+.textarea-container.status-focus label {
+  color: var(--color-typography);
+  font-size: 10px;
+  font-weight: 600;
+  transform: translateY(-15px);
+}
+.textarea-container:disabled {
+  cursor: not-allowed;
+}
+.textarea-container:disabled label {
+  color: #e0e0e0;
+  pointer-events: none;
+}
+.textarea-container:disabled textarea {
+  border: solid 1px #f0f0f0;
+}
+.textarea-container.status-error, .textarea-container.status-warning, .textarea-container.status-success {
+  padding: initial;
+  margin-bottom: initial;
+  text-shadow: initial;
+  -webkit-border-radius: initial;
+  -moz-border-radius: initial;
+  border-radius: initial;
+  border: initial;
+  background-color: initial;
+  color: initial;
+}
+.textarea-container.status-success textarea,
+.textarea-container.status-success textarea:hover,
+.textarea-container.status-success textarea:active,
+.textarea-container.status-success textarea:focus {
+  border: solid 1px var(--color-success);
+}
+.textarea-container.status-warning textarea,
+.textarea-container.status-warning textarea:hover,
+.textarea-container.status-warning textarea:active,
+.textarea-container.status-warning textarea:focus {
+  border: solid 1px var(--color-warning);
+}
+.textarea-container.status-error textarea,
+.textarea-container.status-error textarea:hover,
+.textarea-container.status-error textarea:active,
+.textarea-container.status-error textarea:focus {
+  border: solid 1px var(--color-error);
+}
+.textarea-container label {
+  position: absolute;
+  margin: 0;
+  top: 10px;
+  left: 6.5px;
+  padding: 0 5px;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-grey);
+  background-color: var(--color-background-primary-light);
+  pointer-events: none;
+  user-select: none;
+  transition: var(--transition);
+}
+.textarea-container textarea {
+  background-color: var(--color-background-primary-light);
+  color: var(--color-typography);
+  outline: none;
+  border: solid 1px #bdbdbd;
+  height: 88px;
+  padding: 8px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  border-radius: 5px;
+  box-shadow: none;
+  transition: var(--transition);
+  resize: none;
+}
+.textarea-container textarea:active, .textarea-container textarea:focus {
+  border: solid 1px var(--color-primary);
 }
 
 .state-tooltip {
