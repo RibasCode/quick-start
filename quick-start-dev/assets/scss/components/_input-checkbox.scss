@@ -1,0 +1,148 @@
+.container-checkbox {
+  display: flex;
+
+  margin-bottom: 12px;
+
+  input {
+
+    &[type="checkbox"] {
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border: solid var(--border-width) var(--color-primary);
+      border-radius: 3px;
+      cursor: pointer;
+      transition: var(--transition);
+
+      &:checked {
+        background-color: var(--color-primary);
+        border: var(--color-primary);
+
+        &~label {
+          color: var(--color-primary);
+        }
+      }
+
+      &:not(:checked) {
+        background-color: transparent;
+      }
+
+      &:hover~label {
+        color: var(--color-primary);
+      }
+    }
+  }
+
+  label {
+    user-select: none;
+
+    &[for^="checkbox"] {
+      flex: 1;
+
+      padding-left: 14px;
+
+      color: var(--color-primary);
+
+      cursor: pointer;
+    }
+  }
+
+  &:hover {
+
+    input {
+
+      &[type="checkbox"] {
+        background-color: var(--color-primary-10);
+
+        &:checked {
+          background-color: var(--color-primary);
+          border: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  &.color-secondary {
+
+    input {
+
+      &[type="checkbox"] {
+        border: solid var(--border-width) var(--color-secondary);
+
+        &:checked {
+          background-color: var(--color-secondary);
+          border: var(--color-secondary);
+
+          &~label {
+            color: var(--color-secondary);
+          }
+        }
+
+        &:hover~label {
+          color: var(--color-secondary);
+        }
+      }
+    }
+
+    label {
+      color: var(--color-secondary);
+    }
+
+    &:hover {
+
+      input {
+
+        &[type="checkbox"] {
+          background-color: var(--color-secondary-10);
+
+          &:checked {
+            background-color: var(--color-secondary);
+            border: var(--color-secondary);
+          }
+        }
+      }
+    }
+  }
+
+  &.color-accent {
+
+    input {
+
+      &[type="checkbox"] {
+        border: solid var(--border-width) var(--color-accent);
+
+        &:checked {
+          background-color: var(--color-accent);
+          border: var(--color-accent);
+
+          &~label {
+            color: var(--color-accent);
+          }
+        }
+
+        &:hover~label {
+          color: var(--color-accent);
+        }
+      }
+    }
+
+    label {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+
+      input {
+
+        &[type="checkbox"] {
+          background-color: var(--color-accent-10);
+
+          &:checked {
+            background-color: var(--color-accent);
+            border: var(--color-accent);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+input {
+
+  &[type="search"] {
+    border: none;
+    outline: none;
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+
+    &::-ms-clear,
+    &::-ms-reveal {
+      display: none;
+      width: 0;
+      height: 0;
+    }
+
+    &::placeholder {
+      color: var(--color-typography-white);
+      opacity: 0.64;
+    }
+  }
+}

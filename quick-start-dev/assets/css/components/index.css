@@ -1136,23 +1136,6 @@ svg {
   width: 32px;
 }
 
-input[type=search] {
-  border: none;
-  outline: none;
-}
-input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
-  display: none;
-}
-input[type=search]::-ms-clear, input[type=search]::-ms-reveal {
-  display: none;
-  width: 0;
-  height: 0;
-}
-input[type=search]::placeholder {
-  color: var(--color-typography-white);
-  opacity: 0.64;
-}
-
 .container-checkbox {
   display: flex;
   margin-bottom: 12px;
@@ -1240,6 +1223,23 @@ input[type=search]::placeholder {
 .container-checkbox.color-accent:hover input[type=checkbox]:checked {
   background-color: var(--color-accent);
   border: var(--color-accent);
+}
+
+input[type=search] {
+  border: none;
+  outline: none;
+}
+input[type=search]::-webkit-search-decoration, input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-results-button, input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+input[type=search]::-ms-clear, input[type=search]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type=search]::placeholder {
+  color: var(--color-typography-white);
+  opacity: 0.64;
 }
 
 .input-container,
