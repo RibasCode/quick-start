@@ -147,6 +147,14 @@ ul li {
   max-width: 100%;
 }
 
+.container-button {
+  position: relative;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  width: fit-content;
+}
+
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: 2;
