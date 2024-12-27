@@ -9,10 +9,10 @@
 
   <title>Quick start</title>
 
-  <link rel="icon" href="./assets/icons/favicon.png">
+  <link rel="icon" href="./src/assets/icons/favicon.png">
   <!--
-  <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="./assets/icons/favicon.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="./src/assets/icons/favicon.png" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="./src/assets/icons/favicon.png" media="(prefers-color-scheme: light)">
   -->
 
   <meta name="descriptison" content="Quick start">
@@ -30,17 +30,15 @@
    -->
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="./src/css/index.css">
 
   <!-- jQuery -->
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 
   <!-- Main -->
-  <script defer type="module" src="./assets/js/base/global-variables.js"></script>
-  <script defer type="module" src="./assets/js/base/global-functions.js"></script>
-  <script defer type="module" src="./assets/js/base/animation.js"></script>
-  <script defer type="module" src="./assets/js/components/button-back-to-top.js"></script>
-  <script defer type="module" src="./assets/js/components/button-theme.js"></script>
+  <script defer type="module" src="./src/js/base/animation.js"></script>
+  <script defer type="module" src="./src/js/components/button-back-to-top.js"></script>
+  <script defer type="module" src="./src/js/components/button-theme.js"></script>
 
 </head>
 
@@ -50,16 +48,17 @@
 
   <div class="container-button-theme">
     <svg class="icon icon-theme icon-light-theme status-active">
-      <use href="./assets/icons/icons.svg#light-mode" xlink:href="./assets/icons/icons.svg##light-mode"></use>
+      <use href="./src/assets/icons/icons.svg#light-mode" xlink:href="./src/assets/icons/icons.svg##light-mode"></use>
     </svg>
     <svg class="icon icon-theme icon-dark-theme">
-      <use href="./assets/icons/icons.svg#dark-mode" xlink:href="./assets/icons/icons.svg#dark-mode"></use>
+      <use href="./src/assets/icons/icons.svg#dark-mode" xlink:href="./src/assets/icons/icons.svg#dark-mode"></use>
     </svg>
   </div>
 
   <a class="button button-back-to-top icon-left" href="#hero">
     <svg class="icon-arrow-up">
-      <use href="./assets/icons/icons.svg#arrow-forward" xlink:href="./assets/icons/icons.svg#arrow-forward"></use>
+      <use href="./src/assets/icons/icons.svg#arrow-forward" xlink:href="./src/assets/icons/icons.svg#arrow-forward">
+      </use>
     </svg>
     Back to top
   </a>

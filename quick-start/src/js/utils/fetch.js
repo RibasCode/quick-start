@@ -1,7 +1,7 @@
 "use strict"
 
 const fetchName = () => {
-  fetch("assets/documents/fetch.json")
+  fetch("src/assets/documents/fetch.json")
     .then(response => response.json())
     .then(data => {
       console.log("Success:", data)
