@@ -2,7 +2,6 @@
 
 /* Libraries */
 @import url("../../node_modules/normalize.css/normalize.css");
-@import url("../../node_modules/toastify-js/src/toastify.css");
 
 /* Fonts */
 // @import url("../font/Poppins.css");
@@ -15,7 +14,7 @@
 @import url("./config/colors.css");
 
 /* Styles */
-@import url("./base/index.css");
-@import url("./components/index.css");
-@import url("./pages/index.css");
-@import url("./utils/index.css");
+@import url("./base/index-base.css");
+@import url("./components/index-components.css");
+@import url("./pages/index-pages.css");
+@import url("./utils/index-utils.css");
