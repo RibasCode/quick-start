@@ -3,9 +3,9 @@
 let initialAnimation = $(".initial-animation")
 
 setTimeout(function () {
-   initialAnimation.removeClass("status-active")
+  initialAnimation.removeClass("status-active")
 
-   setTimeout(function () {
-      initialAnimation.remove()
-   }, 400)
+  setTimeout(function () {
+    initialAnimation.remove()
+  }, 400)
 }, 400)
