@@ -1,8 +1,7 @@
 "use strict"
 
-let initialAnimation = $(".initial-animation")
-
 setTimeout(function () {
+  let initialAnimation = $(".initial-animation")
   initialAnimation.removeClass("status-active")
 
   setTimeout(function () {

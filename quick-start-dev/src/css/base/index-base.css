@@ -8,7 +8,7 @@ body .initial-animation {
   background-color: var(--color-background-primary);
   opacity: 0;
   pointer-events: none;
-  transition: var(--transition-x4);
+  transition: var(--transition-fast);
 }
 body .initial-animation.status-active {
   opacity: 1;
