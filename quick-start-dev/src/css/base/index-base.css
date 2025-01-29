@@ -205,6 +205,15 @@ ul li {
   gap: 18px;
 }
 
+.slider {
+  margin: auto;
+  margin-bottom: 24px;
+  padding: 0;
+}
+.slider .slider-container {
+  gap: 8px;
+}
+
 .container-icon {
   display: flex;
   align-items: center;

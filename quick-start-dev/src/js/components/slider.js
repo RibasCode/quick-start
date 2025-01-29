@@ -1,137 +1,152 @@
 "use strict"
 
-function gradientStatus () {
-   let sliderCategoryContainerJQ = $(".slider .slider-element-container")
-   let sliderCategoryContainerJS = document.querySelector(".slider .slider-element-container")
-   let sliderGradientRight = $(".slider .gradient-right")
-   let sliderGradientLeft = $(".slider .gradient-left")
+function updateGradients (object) {
+  let { thisSlider = null } = object
 
-   let currentScroll = sliderCategoryContainerJQ.scrollLeft()
-   let maxScroll = sliderCategoryContainerJS.scrollWidth - sliderCategoryContainerJS.clientWidth
+  let sliderGradientRight = thisSlider.find(".slider-gradient.right")
+  let sliderGradientLeft = thisSlider.find(".slider-gradient.left")
+  let currentScroll = thisSlider.find(".slider-container").scrollLeft()
+  let maxScroll = thisSlider.find(".slider-container").get(0).scrollWidth - thisSlider.find(".slider-container").get(0).clientWidth
 
-   if (currentScroll !== maxScroll) {
-      sliderGradientRight.addClass("status-active")
-   }
-   if (currentScroll === maxScroll) {
-      sliderGradientRight.removeClass("status-active")
-   }
-   if (currentScroll !== 0) {
-      sliderGradientLeft.addClass("status-active")
-   }
-   if (currentScroll === 0) {
-      sliderGradientLeft.removeClass("status-active")
-   }
+  if (currentScroll !== maxScroll) {
+    sliderGradientRight.addClass("status-active")
+  }
+  if (currentScroll === maxScroll) {
+    sliderGradientRight.removeClass("status-active")
+  }
+
+  if (currentScroll !== 0) {
+    sliderGradientLeft.addClass("status-active")
+  }
+  if (currentScroll === 0) {
+    sliderGradientLeft.removeClass("status-active")
+  }
 }
 
-// Variables
-let slider = $(".slider")
-let sliderCategoryContainerJQ = $(".slider .slider-element-container")
-let sliderCategoryContainerJS = document.querySelector(".slider .slider-element-container")
-let sliderElement = $(".slider .slider-element")
-let sliderButtonLeft = $(".slider .button-slider.left")
-let sliderButtonRight = $(".slider .button-slider.right")
-let sliderGradientRight = $(".slider .gradient-right")
-let sliderGradientLeft = $(".slider .gradient-left")
+function updateButtons (object) {
+  let { thisSlider = null } = object
 
-// Functions
-function moveScroll (direction) {
-   let currentScroll = sliderCategoryContainerJQ.scrollLeft()
-   let getCourseCardWidth = sliderElement.width() + 30.424 * 5
+  let thisSliderContainer = thisSlider.find(".slider-container")
+  let sliderButtonRight = thisSlider.find(".slider-button.right")
+  let sliderButtonLeft = thisSlider.find(".slider-button.left")
 
-   if (direction === "right") {
-      sliderCategoryContainerJQ.animate({ scrollLeft: currentScroll + getCourseCardWidth }, 200)
-   }
+  setTimeout(function () {
+    let currentScroll = thisSliderContainer.scrollLeft()
+    let maxScroll = thisSliderContainer.get(0).scrollWidth - thisSliderContainer.get(0).clientWidth
 
-   if (direction === "left") {
-      sliderCategoryContainerJQ.animate({ scrollLeft: currentScroll - getCourseCardWidth }, 200)
-   }
-};
+    console.log(currentScroll, maxScroll)
 
-// Slider - Hover.
-slider.hover(function () {
-   let currentScroll = sliderCategoryContainerJQ.scrollLeft()
-   let maxScroll = sliderCategoryContainerJS.scrollWidth - sliderCategoryContainerJS.clientWidth
-
-   if (currentScroll === 0) {
+    if (currentScroll !== maxScroll) {
       sliderButtonRight.addClass("status-active")
-   }
+    }
 
-   if (currentScroll !== 0) {
-      sliderButtonLeft.addClass("status-active")
-   }
-
-   if (currentScroll === maxScroll) {
-      sliderButtonLeft.addClass("status-active")
-   }
-
-   if (currentScroll !== maxScroll) {
-      sliderButtonRight.addClass("status-active")
-   }
-
-   if (currentScroll === 0 && maxScroll === 0) {
-      sliderButtonLeft.removeClass("status-active")
+    if (currentScroll === maxScroll) {
       sliderButtonRight.removeClass("status-active")
-   }
-}, function () {
-   sliderButtonLeft.removeClass("status-active")
-   sliderButtonRight.removeClass("status-active")
+    }
+
+    if (currentScroll !== 0) {
+      sliderButtonLeft.addClass("status-active")
+    }
+
+    if (currentScroll === 0) {
+      sliderButtonLeft.removeClass("status-active")
+    }
+  }, 201)
+}
+
+function scrollAnimation (object) {
+  let { thisSlider = null, direction = null } = object
+
+  let thisSliderContainer = thisSlider.find(".slider-container")
+  let currentScroll = thisSliderContainer.scrollLeft()
+
+  if (direction === "right") {
+    thisSliderContainer.animate({ scrollLeft: currentScroll + 300 }, 200)
+  }
+
+  if (direction === "left") {
+    thisSliderContainer.animate({ scrollLeft: currentScroll - 300 }, 200)
+  }
+}
+
+$(document).ready(function () {
+  let slider = $(".slider")
+  let sliderContainer = $(".slider-container")
+  let sliderButtonRight = $(".slider-button.right")
+  let sliderButtonLeft = $(".slider-button.left")
+
+  // Slider - Hover.
+  slider.hover(function () {
+    let thisSliderContainer = $(this).find(".slider-container")
+    let sliderButtonRight = $(this).find(".slider-button.right")
+    let sliderButtonLeft = $(this).find(".slider-button.left")
+
+    let currentScroll = thisSliderContainer.scrollLeft()
+    let maxScroll = thisSliderContainer.get(0).scrollWidth - thisSliderContainer.get(0).clientWidth
+
+    if (currentScroll === 0 || currentScroll !== maxScroll) {
+      sliderButtonRight.addClass("status-active")
+    }
+
+    if (currentScroll !== 0 || currentScroll === maxScroll) {
+      sliderButtonLeft.addClass("status-active")
+    }
+
+    if (currentScroll === 0 && maxScroll === 0) {
+      sliderButtonRight.removeClass("status-active")
+      sliderButtonLeft.removeClass("status-active")
+    }
+  }, function () {
+    sliderButtonRight.removeClass("status-active")
+    sliderButtonLeft.removeClass("status-active")
+  })
+
+  // Slider - Button right.
+  sliderButtonRight.click(function () {
+    scrollAnimation({
+      thisSlider: $(this).closest(".slider"),
+      direction: "right"
+    })
+
+    updateButtons({
+      thisSlider: $(this).closest(".slider")
+    })
+  })
+
+  // Slider - Button left.
+  sliderButtonLeft.click(function () {
+    scrollAnimation({
+      thisSlider: $(this).closest(".slider"),
+      direction: "left"
+    })
+
+    updateButtons({
+      thisSlider: $(this).closest(".slider")
+    })
+  })
+
+  // Gradients functionallity on horizontal scroll for mobile
+  sliderContainer.scroll(function () {
+    slider.each(function () {
+      updateGradients({
+        thisSlider: $(this)
+      })
+    })
+  })
+
+  // Check if gradients are needed when resizing the window.
+  $(window).resize(function () {
+    slider.each(function () {
+      updateGradients({
+        thisSlider: $(this)
+      })
+    })
+  })
+
+  // Initialization
+  slider.each(function () {
+    updateGradients({
+      thisSlider: $(this)
+    })
+  })
 })
-
-// Slider - Button left.
-sliderButtonLeft.click(function () {
-   moveScroll("left")
-})
-
-sliderButtonLeft.mouseup(function () {
-   setTimeout(function () {
-      let currentScroll = sliderCategoryContainerJQ.scrollLeft()
-      let maxScroll = sliderCategoryContainerJS.scrollWidth - sliderCategoryContainerJS.clientWidth
-
-      if (currentScroll !== maxScroll) {
-         sliderButtonRight.addClass("status-active")
-         sliderGradientRight.addClass("status-active")
-      }
-
-      if (currentScroll === 0) {
-         sliderButtonLeft.removeClass("status-active")
-         sliderGradientLeft.removeClass("status-active")
-      }
-   }, 201)
-})
-
-// Slider - Button right.
-sliderButtonRight.click(function () {
-   moveScroll("right")
-})
-
-sliderButtonRight.mouseup(function () {
-   setTimeout(function () {
-      let currentScroll = sliderCategoryContainerJQ.scrollLeft()
-      let maxScroll = sliderCategoryContainerJS.scrollWidth - sliderCategoryContainerJS.clientWidth
-
-      if (currentScroll === maxScroll) {
-         sliderButtonRight.removeClass("status-active")
-         sliderGradientRight.removeClass("status-active")
-      }
-
-      if (currentScroll !== 0) {
-         sliderButtonLeft.addClass("status-active")
-         sliderGradientLeft.addClass("status-active")
-      }
-   }, 201)
-})
-
-// Gradients functionallity on horizontal scroll for mobile
-sliderCategoryContainerJQ.scroll(function () {
-   gradientStatus()
-})
-
-// Check if gradients are needed when resizing the window.
-$(window).resize(function () {
-   gradientStatus()
-})
-
-setTimeout(() => {
-   gradientStatus()
-}, "1000")
-// Initialization

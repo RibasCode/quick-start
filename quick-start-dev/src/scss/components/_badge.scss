@@ -11,6 +11,7 @@
   justify-content: center;
 
   padding: 8px 14px;
+  height: fit-content;
 
   background-color: #ccdcf1;
   color: #334155;
@@ -29,6 +30,12 @@
   &:focus,
   &:hover {
     border: solid 2px #33415520;
+  }
+
+  p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   &[data-type="contrast"] {
