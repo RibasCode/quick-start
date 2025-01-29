@@ -1515,8 +1515,8 @@ html {
 .slider .slider-button {
   position: absolute;
   top: 50%;
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   border-radius: 50px;
   z-index: 2;
   display: flex;
@@ -1524,7 +1524,7 @@ html {
   justify-content: center;
   opacity: 0;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.24);
+  background-color: var(--color-black-toggle-24);
   pointer-events: none;
   transform: translate(0, -50%) scale(0.9);
   transition: all 0.3s cubic-bezier(0, 0, 0.5, 1);
@@ -1537,10 +1537,10 @@ html {
   transform: translate(0, -50%) scale(1);
 }
 .slider .slider-button:hover {
-  background-color: rgba(0, 0, 0, 0.32);
+  background-color: var(--color-black-toggle-32);
 }
 .slider .slider-button:active {
-  background-color: rgba(0, 0, 0, 0.44);
+  background-color: var(--color-black-toggle-44);
 }
 .slider .slider-button.left {
   left: 14px;
@@ -1554,15 +1554,16 @@ html {
   align-items: center;
   justify-content: center;
   pointer-events: none;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
 }
 .slider .slider-button .slider-icon-container.left {
-  left: 12%;
+  left: 10%;
+}
+.slider .slider-button .slider-icon-container.right {
+  left: 3%;
 }
 .slider .slider-button .slider-icon-container svg {
-  width: 20px;
-  height: 20px;
   fill: #ffffff;
 }
 .slider .slider-container {
