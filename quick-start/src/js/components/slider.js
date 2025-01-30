@@ -125,19 +125,27 @@ $(document).ready(function () {
     })
   })
 
-  // Gradients functionallity on horizontal scroll for mobile
+  // Gradients and buttons functionallity on horizontal scroll for mobile
   sliderContainer.scroll(function () {
     slider.each(function () {
       updateGradients({
         thisSlider: $(this)
       })
+
+      updateButtons({
+        thisSlider: $(this)
+      })
     })
   })
 
-  // Check if gradients are needed when resizing the window.
+  // Check if gradients and buttons are needed when resizing the window.
   $(window).resize(function () {
     slider.each(function () {
       updateGradients({
+        thisSlider: $(this)
+      })
+
+      updateButtons({
         thisSlider: $(this)
       })
     })
@@ -146,6 +154,10 @@ $(document).ready(function () {
   // Initialization
   slider.each(function () {
     updateGradients({
+      thisSlider: $(this)
+    })
+
+    updateButtons({
       thisSlider: $(this)
     })
   })
