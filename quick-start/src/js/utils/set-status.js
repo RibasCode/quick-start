@@ -3,7 +3,7 @@
 // Apply status to elements in bulk
 
 export function setStatus (object) {
-  let { elements = null, statusHidden = null, statusVisible = null, statusActive = null, statusDisabled = null, statusInfo = null, statusWarning = null, statusError = null } = object
+  let { elements = null, statusHidden = null, statusVisible = null, statusActive = null, statusDisabled = null, statusSuccess = null, statusInfo = null, statusWarning = null, statusError = null } = object
 
   if (!elements) throw new Error("Must specify some elements to apply a status")
 
@@ -11,6 +11,7 @@ export function setStatus (object) {
   // let statusHidden = object.statusHidden;
   // let statusActive = object.statusActive;
   // let statusDisabled = object.statusDisabled;
+  // let statusSuccess = object.statusSuccess;
   // let statusInfo = object.statusInfo;
   // let statusWarning = object.statusWarning;
   // let statusError = object.statusError;
@@ -67,6 +68,19 @@ export function setStatus (object) {
       }
       if (statusDisabled === "toggle") {
         element.hasAttr("disabled") ? element.attr("disabled", false) : element.attr("disabled", true)
+      }
+    }
+
+    // Status: Success
+    if (statusSuccess !== null) {
+      if (statusSuccess === true) {
+        element.addClass("status-success")
+      }
+      if (statusSuccess === false) {
+        element.removeClass("status-success")
+      }
+      if (statusSuccess === "toggle") {
+        element.toggleClass("status-success")
       }
     }
 
