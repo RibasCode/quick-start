@@ -1566,15 +1566,15 @@ html {
 .slider .slider-button .slider-icon-container svg {
   fill: #ffffff;
 }
-.slider .slider-container {
+.slider .slider-element-container {
   display: flex;
   overflow: auto;
 }
-.slider .slider-container::-webkit-scrollbar {
+.slider .slider-element-container::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
-.slider .slider-container::-webkit-scrollbar-thumb {
+.slider .slider-element-container::-webkit-scrollbar-thumb {
   background: transparent;
 }
 

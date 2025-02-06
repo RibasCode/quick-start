@@ -5,8 +5,8 @@ function updateGradients (object) {
 
   let sliderGradientRight = thisSlider.find(".slider-gradient.right")
   let sliderGradientLeft = thisSlider.find(".slider-gradient.left")
-  let currentScroll = thisSlider.find(".slider-container").scrollLeft()
-  let maxScroll = thisSlider.find(".slider-container").get(0).scrollWidth - thisSlider.find(".slider-container").get(0).clientWidth
+  let currentScroll = thisSlider.find(".slider-element-container").scrollLeft()
+  let maxScroll = thisSlider.find(".slider-element-container").get(0).scrollWidth - thisSlider.find(".slider-element-container").get(0).clientWidth
 
   if (currentScroll !== maxScroll) {
     sliderGradientRight.addClass("status-active")
@@ -26,7 +26,7 @@ function updateGradients (object) {
 function updateButtons (object) {
   let { thisSlider = null } = object
 
-  let thisSliderContainer = thisSlider.find(".slider-container")
+  let thisSliderContainer = thisSlider.find(".slider-element-container")
   let sliderButtonRight = thisSlider.find(".slider-button.right")
   let sliderButtonLeft = thisSlider.find(".slider-button.left")
 
@@ -57,7 +57,7 @@ function updateButtons (object) {
 function scrollAnimation (object) {
   let { thisSlider = null, direction = null } = object
 
-  let thisSliderContainer = thisSlider.find(".slider-container")
+  let thisSliderContainer = thisSlider.find(".slider-element-container")
   let currentScroll = thisSliderContainer.scrollLeft()
 
   if (direction === "right") {
@@ -71,13 +71,13 @@ function scrollAnimation (object) {
 
 $(document).ready(function () {
   let slider = $(".slider")
-  let sliderContainer = $(".slider-container")
+  let sliderContainer = $(".slider-element-container")
   let sliderButtonRight = $(".slider-button.right")
   let sliderButtonLeft = $(".slider-button.left")
 
   // Slider - Hover.
   slider.hover(function () {
-    let thisSliderContainer = $(this).find(".slider-container")
+    let thisSliderContainer = $(this).find(".slider-element-container")
     let sliderButtonRight = $(this).find(".slider-button.right")
     let sliderButtonLeft = $(this).find(".slider-button.left")
 
