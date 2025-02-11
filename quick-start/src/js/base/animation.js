@@ -1,10 +1,14 @@
 "use strict"
 
-setTimeout(function () {
-  let initialAnimation = $(".initial-animation")
-  initialAnimation.removeClass("status-active")
+export function initFadeWebAnimation (object) {
+  let { startAnimation } = object
 
   setTimeout(function () {
-    initialAnimation.remove()
-  }, 400)
-}, 400)
+    let initialAnimationContainer = $(".initial-animation")
+    initialAnimationContainer.removeClass("status-active")
+
+    setTimeout(function () {
+      initialAnimationContainer.remove()
+    }, startAnimation + 100)
+  }, startAnimation)
+}
