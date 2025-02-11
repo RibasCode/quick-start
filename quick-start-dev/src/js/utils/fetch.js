@@ -1,6 +1,6 @@
 "use strict"
 
-const fetchName = () => {
+export const fetchName = () => {
   fetch("src/assets/documents/fetch.json")
     .then(response => response.json())
     .then(data => {
