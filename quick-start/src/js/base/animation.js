@@ -1,6 +1,6 @@
 "use strict"
 
-export function initFadeWebAnimation (object) {
+export function initFadeOutWebAnimation (object) {
   let { startAnimation } = object
 
   setTimeout(function () {

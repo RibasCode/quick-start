@@ -1,10 +1,10 @@
 "use strict"
 
-import { initFadeWebAnimation } from "./base/animation.js"
+import { initFadeOutWebAnimation } from "./base/animation.js"
 // import { fetchName } from "./base/fetch.js"
 
 // init fade in web animation
-initFadeWebAnimation({
+initFadeOutWebAnimation({
   startAnimation: 640
 })
 
