@@ -28,6 +28,48 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.badge.icon-right svg, .badge.icon-left svg {
+  height: 14px;
+  width: 14px;
+  fill: var(--color-primary);
+  transition: var(--transition);
+}
+.badge.icon-right svg.icon-arrow-up, .badge.icon-left svg.icon-arrow-up {
+  transform: rotate(-90deg) translate(0, 0);
+}
+.badge.icon-right svg.icon-arrow-right, .badge.icon-left svg.icon-arrow-right {
+  transform: rotate(0deg) translate(0, 0);
+}
+.badge.icon-right svg.icon-arrow-down, .badge.icon-left svg.icon-arrow-down {
+  transform: rotate(90deg) translate(0, 0);
+}
+.badge.icon-right svg.icon-arrow-left, .badge.icon-left svg.icon-arrow-left {
+  transform: rotate(180deg) translate(0, 0);
+}
+.badge.icon-right:hover svg.icon-arrow-up, .badge.icon-right:focus svg.icon-arrow-up, .badge.icon-left:hover svg.icon-arrow-up, .badge.icon-left:focus svg.icon-arrow-up {
+  transform: rotate(-90deg) translate(3px, 0);
+}
+.badge.icon-right:hover svg.icon-arrow-right, .badge.icon-right:focus svg.icon-arrow-right, .badge.icon-left:hover svg.icon-arrow-right, .badge.icon-left:focus svg.icon-arrow-right {
+  transform: rotate(0deg) translate(3px, 0);
+}
+.badge.icon-right:hover svg.icon-arrow-down, .badge.icon-right:focus svg.icon-arrow-down, .badge.icon-left:hover svg.icon-arrow-down, .badge.icon-left:focus svg.icon-arrow-down {
+  transform: rotate(90deg) translate(3px, 0);
+}
+.badge.icon-right:hover svg.icon-arrow-left, .badge.icon-right:focus svg.icon-arrow-left, .badge.icon-left:hover svg.icon-arrow-left, .badge.icon-left:focus svg.icon-arrow-left {
+  transform: rotate(180deg) translate(3px, 0);
+}
+.badge.icon-right {
+  padding-right: 12px;
+}
+.badge.icon-right svg {
+  margin-left: 6px;
+}
+.badge.icon-left {
+  padding-left: 12px;
+}
+.badge.icon-left svg {
+  margin-right: 6px;
+}
 .badge[data-type=contrast] p {
   font-size: 12px;
   font-weight: 800;
