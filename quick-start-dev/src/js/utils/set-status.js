@@ -3,12 +3,15 @@
 // Apply status to elements in bulk
 
 export function setStatus (object) {
-  let { elements = null, statusHidden = null, statusVisible = null, statusActive = null, statusDisabled = null, statusSuccess = null, statusInfo = null, statusWarning = null, statusError = null } = object
+  let { elements = null, statusHidden = null, statusVisible = null, statusInvisible = null, statusLoading = null, statusActive = null, statusDisabled = null, statusSuccess = null, statusInfo = null, statusWarning = null, statusError = null } = object
 
   if (!elements) throw new Error("Must specify some elements to apply a status")
 
   // Si no es pasa cap paràmetre a la funció, la propietat serà = null
   // let statusHidden = object.statusHidden;
+  // let statusVisible = object.statusVisible;
+  // let statusInvisible = object.statusInvisible;
+  // let statusInvisible = object.statusLoading;
   // let statusActive = object.statusActive;
   // let statusDisabled = object.statusDisabled;
   // let statusSuccess = object.statusSuccess;
@@ -42,6 +45,32 @@ export function setStatus (object) {
       }
       if (statusVisible === "toggle") {
         element.toggleClass("status-visible")
+      }
+    }
+
+    // Status: Invisible
+    if (statusInvisible !== null) {
+      if (statusInvisible === true) {
+        element.addClass("status-invisible")
+      }
+      if (statusInvisible === false) {
+        element.removeClass("status-invisible")
+      }
+      if (statusInvisible === "toggle") {
+        element.toggleClass("status-invisible")
+      }
+    }
+
+    // Status: Loading
+    if (statusLoading !== null) {
+      if (statusLoading === true) {
+        element.addClass("status-invisible")
+      }
+      if (statusLoading === false) {
+        element.removeClass("status-invisible")
+      }
+      if (statusLoading === "toggle") {
+        element.toggleClass("status-invisible")
       }
     }
 
