@@ -1,6 +1,6 @@
 "use strict"
 
-// Global constants
+// Global Enums
 
 // En JavaScript no hay enums como en TypeScript, pero puedes simularlo usando objetos congelados (frozen objects).
 // Esto es útil para evitar "magic strings" y hacer el código más legible y mantenible.
@@ -12,7 +12,7 @@ export const Role = Object.freeze({
 })
 
 // importa el "enum" en otro fichero y usalo así:
-// import { Role } from "./utils/constants.js"
+// import { Role } from "./utils/enums.js"
 // if (user.role === Role.ADMIN) {
 //   grantAccess()
 // }

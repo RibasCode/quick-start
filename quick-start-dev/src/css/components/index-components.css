@@ -169,7 +169,7 @@
   transition: var(--transition);
 }
 
-.container-button-theme {
+.container-button-dark-light-theme {
   z-index: 1;
   position: fixed;
   top: 32px;
@@ -180,19 +180,19 @@
   cursor: pointer;
   transition: var(--transition);
 }
-.container-button-theme:hover {
+.container-button-dark-light-theme:hover {
   transform: rotate(45deg);
 }
-.container-button-theme .icon-light-theme,
-.container-button-theme .icon-dark-theme {
+.container-button-dark-light-theme .icon-light-theme,
+.container-button-dark-light-theme .icon-dark-theme {
   position: absolute;
   height: 100%;
   width: 100%;
   fill: var(--color-black-toggle);
   opacity: 0;
 }
-.container-button-theme .icon-light-theme.status-active,
-.container-button-theme .icon-dark-theme.status-active {
+.container-button-dark-light-theme .icon-light-theme.status-active,
+.container-button-dark-light-theme .icon-dark-theme.status-active {
   opacity: 1;
 }
 
