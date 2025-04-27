@@ -10,7 +10,7 @@
   },
   "extends": "./node_modules/standard/eslintrc.json",
   "rules": {
-    "quotes": ["error", "double"],
+    "quotes": ["error", "single"],
     "semi": ["error", "never"],
     "indent": ["error", 2],
     "prefer-const": "off",
